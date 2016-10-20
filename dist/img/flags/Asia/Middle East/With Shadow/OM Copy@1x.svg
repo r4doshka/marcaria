@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="36px" height="28px" viewBox="0 0 36 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.1 (33804) - http://www.bohemiancoding.com/sketch -->
+    <title>OM Copy@1x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <rect id="path-2" x="0" y="0" width="28" height="20" rx="2"></rect>
+        <mask id="mask-3" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="28" height="20" fill="white">
+            <use xlink:href="#path-2"></use>
+        </mask>
+        <mask id="mask-5" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="28" height="20" fill="white">
+            <use xlink:href="#path-2"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="OM-Copy" filter="url(#filter-1)" transform="translate(4.000000, 2.000000)">
+            <mask id="mask-4" fill="white">
+                <use xlink:href="#path-2"></use>
+            </mask>
+            <g id="Mask" stroke="#F5F5F5" mask="url(#mask-3)" fill="#FFFFFF">
+                <use mask="url(#mask-5)" xlink:href="#path-2"></use>
+            </g>
+            <rect id="Rectangle-2" fill="#138E16" mask="url(#mask-4)" x="0" y="13.3333333" width="28" height="6.66666667"></rect>
+            <polygon id="Rectangle-2" fill="#ED2B35" mask="url(#mask-4)" points="0 20 9.33333333 20 9.33333333 13.3333333 28 13.3333333 28 6.66666667 9.33333333 6.66666667 9.33333333 0 0 0"></polygon>
+            <polygon id="Star-32" fill="#FFFFFF" mask="url(#mask-4)" points="4.66666667 4.71175799 3.50964336 6.40258365 4.11019186 4.44377385 2.0668589 4.59338916 3.97275393 3.84161895 2.58178271 2.33736053 4.35784645 3.35872821 4.66666667 1.33333333 4.97548689 3.35872821 6.75155062 2.33736053 5.3605794 3.84161895 7.26647443 4.59338916 5.22314147 4.44377385 5.82368997 6.40258365"></polygon>
+        </g>
+    </g>
+</svg>

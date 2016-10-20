@@ -6,8 +6,7 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
@@ -16,8 +15,1575 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- Add your site or application content here -->
-        <p>Hello all!</p>
+        <header class="header">
+            <div class="header__logo">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 ">
+                            <img src="img/icons/logo.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header__container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 col-xs-12 col-sm-8">
+                            <div class="header__header-menu">
+                                <div class="header__toggle">
+                                    <div class="toggle__icon">
+                                        <img src="img/icons/Menu.png" alt="">
+                                    </div>
+                                    <span class="header__label">Menu</span>
+                                </div>
+                                <nav class="header__nav">
+                                    <ul>
+                                        <li class="header__nav-item"><a href="#">American Trademarks</a></li>
+                                        <li class="header__nav-item"><a href="#">African Trademarks</a></li>
+                                        <li class="header__nav-item"><a href="#">Asian Trademarks</a>
+                                            <ul class="header__nav__dropdown">
+                                                <li>
+                                            <span class="header__nav__country-flag">
+                                                <img src="img/flags/popular/CN.png" alt="">
+                                            </span>
+                                                    <a href="#">China</a>
+                                                </li>
+                                                <li>
+                                            <span class="header__nav__country-flag">
+                                                <img src="img/flags/popular/HK.png" alt="">
+                                            </span>
+                                                    <a href="#">Japan</a></li>
+                                                <li>
+                                            <span class="header__nav__country-flag">
+                                                <img src="img/flags/popular/JP.png" alt="">
+                                            </span>
+                                                    <a href="#">Hong Kong</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="header__nav-item"><a href="#">European Trademarks</a></li>
+                                        <li class="header__nav-item"><a href="#">Oceanian Trademarks</a></li>
+                                        <li class="header__nav-item header__nav-item__search-icon"><a href="#">Class Search</a> </li>
+                                        <li class="header__nav-item header__nav-item__away-link"><a href="#">Go to Marcaria.com</a></li>
+                                        <li class="header__nav-item"><a href="#">Language</a>
+                                            <ul class="header__nav__dropdown">
+                                                <li>
+                                            <span class="header__nav__country-flag">
+                                                <img src="img/flags/popular/UK.png" alt="">
+                                            </span>
+                                                    <a href="#">English</a>
+                                                </li>
+                                                <li>
+                                            <span class="header__nav__country-flag">
+                                                <img src="img/flags/popular/ES.png" alt="">
+                                            </span>
+                                                    <a href="#">Spanish</a></li>
+                                                <li>
+                                            <span class="header__nav__country-flag">
+                                                <img src="img/flags/popular/PT.png" alt="">
+                                            </span>
+                                                    <a href="#">Portuguese</a>
+                                                </li>
+                                                <li>
+                                            <span class="header__nav__country-flag">
+                                                <img src="img/flags/popular/FR.png" alt="">
+                                            </span>
+                                                    <a href="#">French</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-info">
+                <div class="container">
+                    <div class="header-info__content">
+                        <div class="header-info__heading" >
+                            Trademark Search World Wide
+                            <img src="img/icons/Trademar_Search.png" alt="">
+                        </div>
+                        <div class="header-info__text">
+                            Search trademarks in over 30 countries and jurisdictions. Search <br>
+                            by Trademark Name, Number or Applicant Name.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="filter">
+            <div class="container">
+                <div class="main-search">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-1 col-sm-9 col-md-offset-0">
+                            <input class="main-search__search-field"  type="text" placeholder="Enter trademark term to search...">
+                        </div>
+                        <div class="col-md-2 col-sm-3">
+                            <div class="main-search__search">
+                                <input class="main-search__search-button" type="submit" value="Search">
+                                <div class="main-search__search-icon">
+                                    <img src="img/icons/Search@1x.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter__filter-container">
+                    <ul class="filter__filter-menu filter__filter-menu__hide">
+                        <li class="filter__filter-menu__current"><a href="#Popular">Popular</a></li>
+                        <li><a href="#Africa">Africa</a></li>
+                        <li><a href="#Asia">Asia</a></li>
+                        <li><a href="#Americas">Americas</a></li>
+                        <li><a href="#Europe">Europe</a></li>
+                        <li><a href="#Oceania">Oceania</a></li>
+                    </ul>
+                    <div class="filter__filter-content filter__filter-content__hide">
+                        <div id="Popular" class="filter__tab-content">
+                            <div class="filter__item filter__item__select-all">
+                                <input type="checkbox" id="sall">
+                                <label for="sall"></label>
+                                <label for="sall" class="filter__item-name">Select All</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="br">
+                                <label for="br"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/popular/BR.png" alt="">
+                                </div>
+                                <label for="br" class="filter__item-name">Brazil</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="bx">
+                                <label for="bx"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/popular/Benelux.png" alt="">
+                                </div>
+                                <label for="bx" class="filter__item-name">Benelux</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="eu">
+                                <label for="eu"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/popular/EU.png" alt="">
+                                </div>
+                                <label for="eu" class="filter__item-name">EU</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="cn">
+                                <label for="cn"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/popular/CA-shadow.png" alt="">
+                                </div>
+                                <label for="cn" class="filter__item-name">Canada</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="de">
+                                <label for="de"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/popular/DE-shadow.png" alt="">
+                                </div>
+                                <label for="cn" class="filter__item-name">Germany</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="fr2">
+                                <label for="fr2"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/popular/FR-shadow.png" alt="">
+                                </div>
+                                <label for="fr2" class="filter__item-name">France</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="us">
+                                <label for="us"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/popular/US-shadow.png" alt="">
+                                </div>
+                                <label for="us" class="filter__item-name">United States</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="jp">
+                                <label for="jp"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/popular/JP-shadow.png" alt="">
+                                </div>
+                                <label for="jp" class="filter__item-name">Japan</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="mx">
+                                <label for="mx"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/popular/MX-shadow.png" alt="">
+                                </div>
+                                <label for="mx" class="filter__item-name">Mexico</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="rf">
+                                <label for="rf"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/popular/RU-shadow.png" alt="">
+                                </div>
+                                <label for="rf" class="filter__item-name">Russian Federation</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="sp">
+                                <label for="sp"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/popular/ES-shadow.png" alt="">
+                                </div>
+                                <label for="sp" class="filter__item-name">Spain</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="ch">
+                                <label for="ch"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/popular/CH-shadow.png" alt="">
+                                </div>
+                                <label for="ch" class="filter__item-name">Switzerland</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="fr">
+                                <label for="fr"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/popular/FR-shadow.png" alt="">
+                                </div>
+                                <label for="fr" class="filter__item-name">France</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="uk">
+                                <label for="uk"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/popular/UK-shadow.png" alt="">
+                                </div>
+                                <label for="uk" class="filter__item-name">United Kingdom</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="wipo">
+                                <label for="wipo"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/popular/WIPO-shadow.png" alt="">
+                                </div>
+                                <label for="wipo" class="filter__item-name">WIPO</label>
+                            </div>
+                        </div>
+                        <div id="Africa" class="filter__tab-content">
+                            <div class="filter__item filter__item__select-all">
+                                <input type="checkbox" id="sall1">
+                                <label for="sall1"></label>
+                                <label for="sall1" class="filter__item-name">Select All</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="ml">
+                                <label for="ml"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Africa/With%20Shadow/ML%20Copy.png" alt="">
+                                </div>
+                                <label for="ml" class="filter__item-name">.ml - Mali</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="ao">
+                                <label for="ao"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Africa/With%20Shadow/AO%20Copy.png" alt="">
+                                </div>
+                                <label for="ao" class="filter__item-name">.it.ao - Angola</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="bi">
+                                <label for="bi"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Africa/With%20Shadow/BI%20Copy.png" alt="">
+                                </div>
+                                <label for="bi" class="filter__item-name">.bi - Burundi</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="bj">
+                                <label for="bj"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Africa/With%20Shadow/BJ%20Copy.png" alt="">
+                                </div>
+                                <label for="bj" class="filter__item-name">.bj - Benin</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="bf">
+                                <label for="bf"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Africa/With%20Shadow/BF%20Copy.png" alt="">
+                                </div>
+                                <label for="bf" class="filter__item-name">.bf - Burkina Faso</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="cd">
+                                <label for="cd"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Africa/With%20Shadow/CD%20Copy.png" alt="">
+                                </div>
+                                <label for="cd" class="filter__item-name">.cd - Congo Democratic</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="cm">
+                                <label for="cm"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Africa/With%20Shadow/CM%20Copy.png" alt="">
+                                </div>
+                                <label for="cm" class="filter__item-name">.com.cm - Cameroon</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="eg">
+                                <label for="eg"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Africa/With%20Shadow/EG%20Copy.png" alt="">
+                                </div>
+                                <label for="eg" class="filter__item-name">.eg - Egypt</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="gq">
+                                <label for="gq"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Africa/With%20Shadow/GQ%20Copy.png" alt="">
+                                </div>
+                                <label for="gq" class="filter__item-name">.gq - Equatorial Guinea</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="cg">
+                                <label for="cg"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Africa/With%20Shadow/CG%20Copy.png" alt="">
+                                </div>
+                                <label for="cg" class="filter__item-name">.cg - Congo Republic</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="gh">
+                                <label for="gh"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Africa/With%20Shadow/GH%20Copy.png" alt="">
+                                </div>
+                                <label for="gh" class="filter__item-name">.com.gh - Ghana</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="ci">
+                                <label for="ci"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Africa/With%20Shadow/CI%20Copy.png" alt="">
+                                </div>
+                                <label for="ci" class="filter__item-name">.ci - Ivory Coast</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="ga">
+                                <label for="ga"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Africa/With%20Shadow/GA%20Copy.png" alt="">
+                                </div>
+                                <label for="ga" class="filter__item-name">.ga - Gabon</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="mg">
+                                <label for="mg"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Africa/With%20Shadow/MG%20Copy.png" alt="">
+                                </div>
+                                <label for="mg" class="filter__item-name">.mg - Madagascar</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="mw">
+                                <label for="mw"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Africa/With%20Shadow/MW%20Copy.png" alt="">
+                                </div>
+                                <label for="mw" class="filter__item-name">.mw - Malawi</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="ke">
+                                <label for="ke"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Africa/With%20Shadow/KE%20Copy.png" alt="">
+                                </div>
+                                <label for="ke" class="filter__item-name">.co.ke - Kenia</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="mu">
+                                <label for="mu"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Africa/With%20Shadow/MU%20Copy.png" alt="">
+                                </div>
+                                <label for="mu" class="filter__item-name">.mu - Mauritius</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="yt">
+                                <label for="yt"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Africa/With%20Shadow/YT%20Copy.png" alt="">
+                                </div>
+                                <label for="yt" class="filter__item-name">.yt - Mayotte</label>
+                            </div>
+                        </div>
+                        <div id="Oceania" class="filter__tab-content">
+                            <div class="filter__item filter__item__select-all">
+                                <input type="checkbox" id="sall22">
+                                <label for="sall22"></label>
+                                <label for="sall22" class="filter__item-name">Select All</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="as">
+                                <label for="as"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Oceania/With%20Shadow/AS@1x.png" alt="">
+                                </div>
+                                <label for="as" class="filter__item-name">American Samoa</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="cx">
+                                <label for="cx"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Oceania/With%20Shadow/CX@1x.png" alt="">
+                                </div>
+                                <label for="cx" class="filter__item-name">Christmas Islands</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="cc">
+                                <label for="cc"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Oceania/With%20Shadow/CC@1x.png" alt="">
+                                </div>
+                                <label for="cc" class="filter__item-name">Cocos Islands</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="ck">
+                                <label for="ck"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Oceania/With%20Shadow/CK@1x.png" alt="">
+                                </div>
+                                <label for="ck" class="filter__item-name">Cook Islands</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="pf">
+                                <label for="pf"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Oceania/With%20Shadow/PF@1x.png" alt="">
+                                </div>
+                                <label for="pf" class="filter__item-name">French Polynesia</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="nu">
+                                <label for="nu"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Oceania/With%20Shadow/NU@1x.png" alt="">
+                                </div>
+                                <label for="nu" class="filter__item-name">Niue</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="ki">
+                                <label for="ki"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Oceania/With%20Shadow/KI@1x.png" alt="">
+                                </div>
+                                <label for="ki" class="filter__item-name">Kiribati</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="nr">
+                                <label for="nr"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Oceania/With%20Shadow/NR@1x.png" alt="">
+                                </div>
+                                <label for="nr" class="filter__item-name">Nauru Island</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="nc">
+                                <label for="nc"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Oceania/With%20Shadow/NC@1x.png" alt="">
+                                </div>
+                                <label for="nc" class="filter__item-name">New Caledonia</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="nz">
+                                <label for="nz"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Oceania/With%20Shadow/NZ%20Copy@1x.png" alt="">
+                                </div>
+                                <label for="nz" class="filter__item-name">New Zealand</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="nf">
+                                <label for="nf"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Oceania/With%20Shadow/NF@1x.png" alt="">
+                                </div>
+                                <label for="nf" class="filter__item-name">Norfolk Island</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="vu">
+                                <label for="vu"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Oceania/With%20Shadow/VU%20Copy@1x.png" alt="">
+                                </div>
+                                <label for="vu" class="filter__item-name">Vanuatu</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="pn">
+                                <label for="pn"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Oceania/With%20Shadow/PN@1x.png" alt="">
+                                </div>
+                                <label for="pn" class="filter__item-name">Pitcairn Island</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="sb">
+                                <label for="sb"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Oceania/With%20Shadow/SB%20Copy@1x.png" alt="">
+                                </div>
+                                <label for="sb" class="filter__item-name">Solomon Islands</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="tk">
+                                <label for="tk"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Oceania/With%20Shadow/TK@1x.png" alt="">
+                                </div>
+                                <label for="tk" class="filter__item-name">Tokelau</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="to">
+                                <label for="to"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Oceania/With%20Shadow/TO%20Copy@1x.png" alt="">
+                                </div>
+                                <label for="to" class="filter__item-name">Tonga</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="wf">
+                                <label for="wf"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Oceania/With%20Shadow/FR%20Copy@1x.png" alt="">
+                                </div>
+                                <label for="wf" class="filter__item-name">Wallis and Futuna</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="ws">
+                                <label for="ws"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Oceania/With%20Shadow/WS%20Copy@1x.png" alt="">
+                                </div>
+                                <label for="ws" class="filter__item-name">Samoa</label>
+                            </div>
+                        </div>
+                        <div id="Americas" class="filter__tab-content">
+                            <div class="filter__item">
+                                <input type="checkbox" id="ag">
+                                <label for="ag"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Central%20America/With%20Shadow/AG%20Copy.png" alt="">
+                                </div>
+                                <label for="ag" class="filter__item-name">Antigua</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="pr">
+                                <label for="pr"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Central%20America/With%20Shadow/PR%20Copy.png" alt="">
+                                </div>
+                                <label for="pr" class="filter__item-name">Puerto Rico</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="gt">
+                                <label for="gt"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Central%20America/With%20Shadow/GT%20Copy.png" alt="">
+                                </div>
+                                <label for="gt" class="filter__item-name">Guatemala</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="bz">
+                                <label for="bz"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Central%20America/With%20Shadow/BZ%20Copy.png" alt="">
+                                </div>
+                                <label for="bz" class="filter__item-name">Belize</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="ls">
+                                <label for="ls"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Central%20America/With%20Shadow/LC%20Copy.png" alt="">
+                                </div>
+                                <label for="ls" class="filter__item-name">St. Lucia</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="hn">
+                                <label for="hn"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Central%20America/With%20Shadow/HN%20Copy.png" alt="">
+                                </div>
+                                <label for="hn" class="filter__item-name">Honduras</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="cn1">
+                                <label for="cn1"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/North%20America/With%20Shadow/CA%20Copy.png" alt="">
+                                </div>
+                                <label for="cn1" class="filter__item-name">Canada</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="usa">
+                                <label for="usa"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/North%20America/With%20Shadow/US%20Copy.png" alt="">
+                                </div>
+                                <label for="usa" class="filter__item-name">USA</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="sx">
+                                <label for="sx"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Central%20America/With%20Shadow/SX.png" alt="">
+                                </div>
+                                <label for="sx" class="filter__item-name">Sint Maarten</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="tc">
+                                <label for="tc"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Central%20America/With%20Shadow/TC%20Copy.png" alt="">
+                                </div>
+                                <label for="tc" class="filter__item-name">Anguilla</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="aw">
+                                <label for="aw"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Central%20America/With%20Shadow/AW.png" alt="">
+                                </div>
+                                <label for="aw" class="filter__item-name">Aruba</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="mx1">
+                                <label for="mx1"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/popular/MX-shadow.png" alt="">
+                                </div>
+                                <label for="mx1" class="filter__item-name">Mexico</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="bb">
+                                <label for="bb"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Central%20America/With%20Shadow/BB%20Copy.png" alt="">
+                                </div>
+                                <label for="bb" class="filter__item-name">Barbados</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="bm">
+                                <label for="bm"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Central%20America/With%20Shadow/BM%20Copy.png" alt="">
+                                </div>
+                                <label for="bm" class="filter__item-name">Bermuda</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="bs">
+                                <label for="bs"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Central%20America/With%20Shadow/BS%20Copy.png" alt="">
+                                </div>
+                                <label for="bs" class="filter__item-name">Bahamas</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="co">
+                                <label for="co"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/South%20America/With%20Shadow/CO%20Copy.png" alt="">
+                                </div>
+                                <label for="co" class="filter__item-name">Colombia</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="sr">
+                                <label for="sr"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/South%20America/With%20Shadow/SR%20Copy.png" alt="">
+                                </div>
+                                <label for="sr" class="filter__item-name">Suriname</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="cr">
+                                <label for="cr"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Central%20America/With%20Shadow/CR%20Copy.png" alt="">
+                                </div>
+                                <label for="cr" class="filter__item-name">Costa Rica</label>
+                            </div>
+                        </div>
+                        <div id="Europe" class="filter__tab-content">
+                            <div class="filter__item">
+                                <input type="checkbox" id="ax">
+                                <label for="ax"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/popular/AX-shadow.png" alt="">
+                                </div>
+                                <label for="ax" class="filter__item-name">Aland Islands</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="al">
+                                <label for="al"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Europe/WithShadow/AI%20Copy.png" alt="">
+                                </div>
+                                <label for="al" class="filter__item-name">Albania</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="ad">
+                                <label for="ad"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Europe/WithShadow/AD%20Copy.png" alt="">
+                                </div>
+                                <label for="ad" class="filter__item-name">Andorra</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="by">
+                                <label for="by"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Europe/WithShadow/BY%20Copy.png" alt="">
+                                </div>
+                                <label for="by" class="filter__item-name">Belarus</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="be">
+                                <label for="be"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Europe/WithShadow/BE%20Copy.png" alt="">
+                                </div>
+                                <label for="be" class="filter__item-name">Belgium</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="ba">
+                                <label for="ba"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Europe/WithShadow/BA%20Copy.png" alt="">
+                                </div>
+                                <label for="ba" class="filter__item-name">Bosnia</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="hr">
+                                <label for="hr"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Europe/WithShadow/HR%20Copy.png" alt="">
+                                </div>
+                                <label for="hr" class="filter__item-name">Croatia</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="cy">
+                                <label for="cy"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Europe/WithShadow/CY%20Copy.png" alt="">
+                                </div>
+                                <label for="cy" class="filter__item-name">Cyprus</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="cz">
+                                <label for="cz"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Europe/WithShadow/CZ%20Copy.png" alt="">
+                                </div>
+                                <label for="cz" class="filter__item-name">Czech Republic</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="ee">
+                                <label for="ee"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Europe/WithShadow/EE%20Copy.png" alt="">
+                                </div>
+                                <label for="ee" class="filter__item-name">Estonia</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="eu1">
+                                <label for="eu1"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Europe/WithShadow/EU%20Copy%202.png" alt="">
+                                </div>
+                                <label for="eu1" class="filter__item-name">European Union</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="fo">
+                                <label for="fo"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Europe/WithShadow/FO%20Copy.png" alt="">
+                                </div>
+                                <label for="fo" class="filter__item-name">Faroe Islands</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="fr1">
+                                <label for="fr1"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Europe/WithShadow/FR%20Copy.png" alt="">
+                                </div>
+                                <label for="fr1" class="filter__item-name">France</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="tf">
+                                <label for="tf"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Europe/WithShadow/TF%20Copy.png" alt="">
+                                </div>
+                                <label for="tf" class="filter__item-name">French Southern.</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="de1">
+                                <label for="de1"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Europe/WithShadow/DE%20Copy.png" alt="">
+                                </div>
+                                <label for="de1" class="filter__item-name">Germany</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="gr">
+                                <label for="gr"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Europe/WithShadow/GR%20Copy.png" alt="">
+                                </div>
+                                <label for="gr" class="filter__item-name">Greece</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="gl">
+                                <label for="gl"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Europe/WithShadow/GL%20Copy.png" alt="">
+                                </div>
+                                <label for="gl" class="filter__item-name">Greenland</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="gg">
+                                <label for="gg"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Europe/WithShadow/GG%20Copy.png" alt="">
+                                </div>
+                                <label for="gg" class="filter__item-name">Guernsey</label>
+                            </div>
+                        </div>
+                        <div id="Asia" class="filter__tab-content">
+                            <div class="filter__item filter__item__select-all">
+                                <input type="checkbox" id="sall33">
+                                <label for="sall33"></label>
+                                <label for="sall33" class="filter__item-name">Select All</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="pk">
+                                <label for="pk"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Asia/With%20Shadow/PK%20Copy.png" alt="">
+                                </div>
+                                <label for="pk" class="filter__item-name">Pakistan</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="kr">
+                                <label for="kr"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Asia/With%20Shadow/KR%20Copy.png" alt="">
+                                </div>
+                                <label for="kr" class="filter__item-name">South Korea</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="uz">
+                                <label for="uz"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Asia/With%20Shadow/UZ%20Copy.png" alt="">
+                                </div>
+                                <label for="uz" class="filter__item-name">Uzbekistan</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="in">
+                                <label for="in"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Asia/With%20Shadow/IN%20Copy.png" alt="">
+                                </div>
+                                <label for="in" class="filter__item-name">India</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="sg">
+                                <label for="sg"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Asia/With%20Shadow/SG%20Copy.png" alt="">
+                                </div>
+                                <label for="sg" class="filter__item-name">Singapore</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="mo">
+                                <label for="mo"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Asia/With%20Shadow/MO%20Copy.png" alt="">
+                                </div>
+                                <label for="mo" class="filter__item-name">Macau</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="th">
+                                <label for="th"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Asia/With%20Shadow/TH%20Copy.png" alt="">
+                                </div>
+                                <label for="th" class="filter__item-name">Thailand</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="kz">
+                                <label for="kz"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Asia/With%20Shadow/KZ%20Copy.png" alt="">
+                                </div>
+                                <label for="kz" class="filter__item-name">Kazakhstan</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="vn">
+                                <label for="vn"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Asia/With%20Shadow/VN%20Copy.png" alt="">
+                                </div>
+                                <label for="vn" class="filter__item-name">Vietnam</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="jp1">
+                                <label for="jp1"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Asia/With%20Shadow/JP%20Copy.png" alt="">
+                                </div>
+                                <label for="jp1" class="filter__item-name">Japan</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="la">
+                                <label for="la"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Asia/With%20Shadow/LA%20Copy.png" alt="">
+                                </div>
+                                <label for="la" class="filter__item-name">Laos</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="tj">
+                                <label for="tj"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Asia/With%20Shadow/TJ%20Copy.png" alt="">
+                                </div>
+                                <label for="tj" class="filter__item-name">Tajikistan</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="cn">
+                                <label for="cn"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Asia/With%20Shadow/CN%20Copy.png" alt="">
+                                </div>
+                                <label for="cn" class="filter__item-name">China</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="mn">
+                                <label for="mn"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Asia/With%20Shadow/MN%20Copy.png" alt="">
+                                </div>
+                                <label for="mn" class="filter__item-name">Mongolia</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="az">
+                                <label for="az"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Asia/With%20Shadow/AZ%20Copy.png" alt="">
+                                </div>
+                                <label for="az" class="filter__item-name">Azerbaijan</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="hk">
+                                <label for="hk"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Asia/With%20Shadow/HK%20Copy.pngg" alt="">
+                                </div>
+                                <label for="hk" class="filter__item-name">Hong Kong</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="tw">
+                                <label for="tw"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Asia/With%20Shadow/TW%20Copy.png" alt="">
+                                </div>
+                                <label for="tw" class="filter__item-name">Taiwan</label>
+                            </div>
+                            <div class="filter__item">
+                                <input type="checkbox" id="tm">
+                                <label for="tm"></label>
+                                <div class="filter__item-icon">
+                                    <img src="img/flags/Asia/With%20Shadow/TM%20Copy.png" alt="">
+                                </div>
+                                <label for="tm" class="filter__item-name">Turkmenistan</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter__filter-content">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="filter__name">Select Continent</div>
+                                <select name="continent" class="filter__select" id="continent">
+                                    <option value="">Popular</option>
+                                    <option value="">Oceania</option>
+                                    <option value="">Americas</option>
+                                    <option value="">Asia</option>
+                                    <option value="">Africa</option>
+                                </select>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="filter__name">Select country</div>
+                                <select name="countries" class="filter__select" id="countries">
+                                    <option value="">Brazil</option>
+                                    <option value="">Canada</option>
+                                    <option value="">Germany</option>
+                                    <option value="">Japan</option>
+                                    <option value="">France</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-6 col-sm-12">
+                                <div class="filter__name">Class Numbers</div>
+                                <div class="filter__options">
+                                    All classes
+                                </div>
+                                <div class="filter__all-classes-wrap">
+                                    <div class="filter__all-classes">
+                                        <div class="filter__class-item">
+                                            <input type="checkbox" id="1">
+                                            <label for="1"></label>
+                                            <label for="1" class="filter__class-name">1</label>
+                                        </div>
+                                        <div class="filter__class-item">
+                                            <input type="checkbox" id="2">
+                                            <label for="2"></label>
+                                            <label for="2" class="filter__class-name">2</label>
+                                        </div>
+                                        <div class="filter__class-item">
+                                            <input type="checkbox" id="3">
+                                            <label for="3"></label>
+                                            <label for="3" class="filter__class-name">3</label>
+                                        </div>
+                                        <div class="filter__class-item">
+                                            <input type="checkbox" id="4">
+                                            <label for="4"></label>
+                                            <label for="4" class="filter__class-name">4</label>
+                                        </div>
+                                        <div class="filter__class-item">
+                                            <input type="checkbox" id="5">
+                                            <label for="5"></label>
+                                            <label for="5" class="filter__class-name">5</label>
+                                        </div>
+                                        <div class="filter__class-item">
+                                            <input type="checkbox" id="6">
+                                            <label for="6"></label>
+                                            <label for="6" class="filter__class-name">6</label>
+                                        </div>
+                                        <div class="filter__class-item">
+                                            <input type="checkbox" id="7">
+                                            <label for="7"></label>
+                                            <label for="7" class="filter__class-name">7</label>
+                                        </div>
+                                        <div class="filter__class-item">
+                                            <input type="checkbox" id="8">
+                                            <label for="8"></label>
+                                            <label for="8" class="filter__class-name">8</label>
+                                        </div>
+                                        <div class="filter__class-item">
+                                            <input type="checkbox" id="9">
+                                            <label for="9"></label>
+                                            <label for="9" class="filter__class-name">9</label>
+                                        </div>
+                                        <div class="filter__class-item">
+                                            <input type="checkbox" id="10">
+                                            <label for="10"></label>
+                                            <label for="10" class="filter__class-name">10</label>
+                                        </div>
+                                        <div class="filter__class-item">
+                                            <input type="checkbox" id="11">
+                                            <label for="11"></label>
+                                            <label for="11" class="filter__class-name">11</label>
+                                        </div>
+                                        <div class="filter__class-item">
+                                            <input type="checkbox" id="12">
+                                            <label for="12"></label>
+                                            <label for="12" class="filter__class-name">12</label>
+                                        </div>
+                                        <div class="filter__class-item">
+                                            <input type="checkbox" id="13">
+                                            <label for="13"></label>
+                                            <label for="13" class="filter__class-name">13</label>
+                                        </div>
+                                        <div class="filter__class-item">
+                                            <input type="checkbox" id="14">
+                                            <label for="14"></label>
+                                            <label for="14" class="filter__class-name">14</label>
+                                        </div>
+                                        <div class="filter__class-item">
+                                            <input type="checkbox" id="15">
+                                            <label for="15"></label>
+                                            <label for="15" class="filter__class-name">15</label>
+                                        </div>
+                                        <div class="filter__class-item">
+                                            <input type="checkbox" id="16">
+                                            <label for="16"></label>
+                                            <label for="16" class="filter__class-name">16</label>
+                                        </div>
+                                        <div class="filter__class-item">
+                                            <input type="checkbox" id="17">
+                                            <label for="17"></label>
+                                            <label for="17" class="filter__class-name">17</label>
+                                        </div>
+                                        <div class="filter__class-item">
+                                            <input type="checkbox" id="18">
+                                            <label for="18"></label>
+                                            <label for="18" class="filter__class-name">18</label>
+                                        </div>
+                                        <div class="filter__class-item">
+                                            <input type="checkbox" id="19">
+                                            <label for="19"></label>
+                                            <label for="19" class="filter__class-name">19</label>
+                                        </div>
+                                        <div class="filter__class-item">
+                                            <input type="checkbox" id="20">
+                                            <label for="20"></label>
+                                            <label for="20" class="filter__class-name">20</label>
+                                        </div>
+                                        <div class="filter__class-item">
+                                            <input type="checkbox" id="21">
+                                            <label for="21"></label>
+                                            <label for="21" class="filter__class-name">21</label>
+                                        </div>
+                                        <div class="filter__class-item">
+                                            <input type="checkbox" id="22">
+                                            <label for="22"></label>
+                                            <label for="22" class="filter__class-name">22</label>
+                                        </div>
+                                        <div class="filter__class-item">
+                                            <input type="checkbox" id="23">
+                                            <label for="23"></label>
+                                            <label for="23" class="filter__class-name">23</label>
+                                        </div>
+                                        <div class="filter__class-item">
+                                            <input type="checkbox" id="24">
+                                            <label for="24"></label>
+                                            <label for="24" class="filter__class-name">24</label>
+                                        </div>
+                                        <div class="filter__class-item">
+                                            <input type="checkbox" id="25">
+                                            <label for="25"></label>
+                                            <label for="25" class="filter__class-name">25</label>
+                                        </div>
+                                        <div class="filter__class-item">
+                                            <input type="checkbox" id="26">
+                                            <label for="26"></label>
+                                            <label for="26" class="filter__class-name">26</label>
+                                        </div>
+                                        <div class="filter__class-item">
+                                            <input type="checkbox" id="27">
+                                            <label for="27"></label>
+                                            <label for="27" class="filter__class-name">27</label>
+                                        </div>
+                                        <div class="filter__class-item">
+                                            <input type="checkbox" id="28">
+                                            <label for="28"></label>
+                                            <label for="28" class="filter__class-name">28</label>
+                                        </div>
+                                        <div class="filter__class-item">
+                                            <input type="checkbox" id="29">
+                                            <label for="29"></label>
+                                            <label for="29" class="filter__class-name">29</label>
+                                        </div>
+                                        <div class="filter__class-item">
+                                            <input type="checkbox" id="30">
+                                            <label for="30"></label>
+                                            <label for="30" class="filter__class-name">30</label>
+                                        </div>
+                                        <div class="filter__class-item">
+                                            <input type="checkbox" id="31">
+                                            <label for="31"></label>
+                                            <label for="31" class="filter__class-name">31</label>
+                                        </div>
+                                        <div class="filter__class-item">
+                                            <input type="checkbox" id="32">
+                                            <label for="32"></label>
+                                            <label for="32" class="filter__class-name">32</label>
+                                        </div>
+                                        <div class="filter__class-item">
+                                            <input type="checkbox" id="33">
+                                            <label for="33"></label>
+                                            <label for="33" class="filter__class-name">33</label>
+                                        </div>
+                                        <div class="filter__class-item">
+                                            <input type="checkbox" id="34">
+                                            <label for="34"></label>
+                                            <label for="34" class="filter__class-name">34</label>
+                                        </div>
+                                        <div class="filter__class-item">
+                                            <input type="checkbox" id="35">
+                                            <label for="35"></label>
+                                            <label for="35" class="filter__class-name">35</label>
+                                        </div>
+                                        <div class="filter__class-item">
+                                            <input type="checkbox" id="36">
+                                            <label for="36"></label>
+                                            <label for="36" class="filter__class-name">36</label>
+                                        </div>
+                                        <div class="filter__class-item">
+                                            <input type="checkbox" id="37">
+                                            <label for="37"></label>
+                                            <label for="37" class="filter__class-name">37</label>
+                                        </div>
+                                        <div class="filter__class-item">
+                                            <input type="checkbox" id="38">
+                                            <label for="38"></label>
+                                            <label for="38" class="filter__class-name">38</label>
+                                        </div>
+                                        <div class="filter__class-item">
+                                            <input type="checkbox" id="39">
+                                            <label for="39"></label>
+                                            <label for="39" class="filter__class-name">39</label>
+                                        </div>
+                                        <div class="filter__class-item">
+                                            <input type="checkbox" id="40">
+                                            <label for="40"></label>
+                                            <label for="40" class="filter__class-name">40</label>
+                                        </div>
+                                        <div class="filter__class-item">
+                                            <input type="checkbox" id="41">
+                                            <label for="41"></label>
+                                            <label for="41" class="filter__class-name">41</label>
+                                        </div>
+                                        <div class="filter__class-item">
+                                            <input type="checkbox" id="42">
+                                            <label for="42"></label>
+                                            <label for="42" class="filter__class-name">42</label>
+                                        </div>
+                                        <div class="filter__class-item">
+                                            <input type="checkbox" id="43">
+                                            <label for="43"></label>
+                                            <label for="43" class="filter__class-name">43</label>
+                                        </div>
+                                        <div class="filter__class-item">
+                                            <input type="checkbox" id="44">
+                                            <label for="44"></label>
+                                            <label for="44" class="filter__class-name">44</label>
+                                        </div>
+                                        <div class="filter__class-item">
+                                            <input type="checkbox" id="45">
+                                            <label for="45"></label>
+                                            <label for="45" class="filter__class-name">45</label>
+                                        </div>
+                                        <div class="filter__class-item  filter__class-name__select-all">
+                                            <input type="checkbox" id="all">
+                                            <label for="all"></label>
+                                            <label for="all" class="filter__class-name">All Classes</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-12">
+                                <div class="filter__name">Trademark Status</div>
+                                <select name="status" class="filter__select" id="334">
+                                    <option value="">Activec</option>
+                                    <option value="">Active</option>
+                                    <option value="">Active</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3 col-sm-12">
+                                <div class="filter__name">Search Mode</div>
+                                <select name="status" class="filter__select" id="333">
+                                    <option value="">Normal Search</option>
+                                    <option value="">Normal Search</option>
+                                    <option value="">Normal Search</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+                    <a href="#" class="filter__find-all">Trademark Class Search</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <div class="faq-heading">
+                Frequently Asked Questions
+            </div>
+            <div class="faq-container">
+                <div class="container">
+                    <div class="faq-list">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="faq-list__item">
+                                    <div class="faq-list__toggle">
+                                        <img src="img/icons/plus-sign@1x.png" alt="">
+                                    </div>
+                                    <div class="faq-list__heading">
+                                        Why do I need to make a Trademark Search?
+                                    </div>
+                                    <div class="faq-list__description">
+                                        You have a product and you think you have a name for it, now how do you know if you can really use that name, it may happen that you are using a registered trademark name.
+                                        Many people begins using a name without knowing if they really can use the name, and they put up big marketing campaigns with names that later they find they cannot use. Searching for your trademark before you choose a name is a wise decision so you avoid investing time and energy in names that you cannot use.
+                                    </div>
+                                </div>
+                                <div class="faq-list__item">
+                                    <div class="faq-list__toggle">
+                                        <img src="img/icons/plus-sign@1x.png" alt="">
+                                    </div>
+                                    <div class="faq-list__heading">
+                                        How do I perform a Trademark Search?
+                                    </div>
+                                    <div class="faq-list__description">
+                                        First thing is to define the class you want to register, in the following link you will find a trademark class search engine where you put your product/service and it will tell you the class or classes you should register.<br>
+                                        After you have determined your class, then you must try different combination of your name, for example if you are searching for AMAZON, you may look for AMASON, HAMAZON, etc. Try different combination as much as possible.<br>
+                                        Trademark Search may be difficult and time consuming if you don’t have the expertise. Also there are several countries in which there are no online trademarks database and you have to go physically to Trademark Office and ask for list of trademarks.<br>
+                                        In order to facilitate this, our company provides a Trademark Comprehensive Study. The Study will inform you about the classes where your trademark should register, then it will list you similar trademarks and finally the Study will give you a recommendation about registration possibilities and use of your trademark. <br>
+                                        Click in the following link to order your Trademark Search Report for USA.<br>
+                                        For other countries, please go to International Trademarks and then select your country.
+                                    </div>
+                                </div>
+                                <div class="faq-list__item">
+                                    <div class="faq-list__toggle">
+                                        <img src="img/icons/plus-sign@1x.png" alt="">
+                                    </div>
+                                    <div  class="faq-list__heading">What happens if my Trademarks is already filed or registered?</div>
+
+                                </div>
+                                <div class="faq-list__item">
+                                    <div class="faq-list__toggle">
+                                        <img src="img/icons/plus-sign@1x.png" alt="">
+                                    </div>
+                                    <div  class="faq-list__heading">
+                                        What are Trademark Classes?
+                                    </div>
+                                    <div class="faq-list__description">
+                                        Trademarks are registered in classes. There are 45 classes, and these classes group all known products and services. You can register the same trademark if there are similar classes, for example you may register the trademark KING for computers in class 23, and you can also register the same trademark in class 24 for cosmetics.<br>
+                                        In general you cannot register trademarks that are too descriptive or generic for a service (For example, you cannot register the term “CAR” for cars). You cannot also register trademark that are too similar to others, for example you cannot register HAMASON for online book store. &nbsp;
+                                    </div>
+                                </div>
+                                <div class="faq-list__item">
+                                    <div class="faq-list__toggle">
+                                        <img src="img/icons/plus-sign@1x.png" alt="">
+                                    </div>
+                                    <div class="faq-list__heading" >
+                                        What can be registered as Trademark?
+                                    </div>
+                                    <div class="faq-list__description">
+                                        Distintiva<br>
+                                        Descriptiva
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="faq-list__item">
+                                    <div class="faq-list__toggle">
+                                        <img src="img/icons/plus-sign@1x.png" alt="">
+                                    </div>
+                                    <div class="faq-list__heading">
+                                        Do I need an Attorney to perform a Trademark Search?
+                                    </div>
+                                    <div class="faq-list__description">
+                                        If you are not experienced with Trademarks we suggest you request the help of a Trademark Attorney so you are sure that your trademark is properly filed. We offer the service "Trademark Comprehensive Study" that
+                                    </div>
+                                </div>
+                                <div class="faq-list__item">
+                                    <div class="faq-list__toggle">
+                                        <img src="img/icons/plus-sign@1x.png" alt="">
+                                    </div>
+                                    <div class="faq-list__heading">
+                                        What is the source of Trademark Information?
+                                    </div>
+                                    <div class="faq-list__description">
+                                        You must try to search for the government bodies that manage trademarks in the country you wish to register, not all countries have online trademark search engines, here are some links:<br>
+                                        USA Trademark Office: &nbsp;www.uspto.gov<br>
+                                        CANADA Trademark Office: &nbsp;www.ic.gc.ca<br>
+                                        EUROPE Trademark Office: www.oami.europa.eu<br>
+                                        Our website also provide free trademark search in following countries: United States, Australia, Benelux, Canada, Chile, European Union, France, Germany, Japan, United kingdom. Please go to International Trademark Search http://trademarksearch.marcaria.com/ &nbsp;
+                                    </div>
+                                </div>
+                                <div class="faq-list__item">
+                                    <div class="faq-list__toggle">
+                                        <img src="img/icons/plus-sign@1x.png" alt="">
+                                    </div>
+                                    <div class="faq-list__heading">
+                                        How long does the registration process takes?
+                                    </div>
+                                    <div class="faq-list__description">
+
+                                    </div>
+                                </div>
+                                <div class="faq-list__item">
+                                    <div class="faq-list__toggle">
+                                        <img src="img/icons/plus-sign@1x.png" alt="">
+                                    </div>
+                                    <div class="faq-list__heading">
+                                        What is the avantage for Trademark Registration?
+                                    </div>
+                                    <div class="faq-list__description">
+
+                                    </div>
+                                </div>
+                                <div class="faq-list__item">
+                                    <div class="faq-list__toggle">
+                                        <img src="img/icons/plus-sign@1x.png" alt="">
+                                    </div>
+                                    <div class="faq-list__heading">
+                                        How do I proceed with Trademark Registration?
+                                    </div>
+                                    <div class="faq-list__description">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-callback">
+                    <div class="row">
+                        <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
+                            <div class="footer-callback__content">
+                                <div class="footer-callback__text">
+                                    Questions?
+                                </div>
+                                <input class="footer-callback__button" type="button" value="Live Chat">
+                                <div class="footer-callback__phone">
+                                    +1.888.267.8592
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-menu">
+                    <div class="row">
+                        <div class="footer-menu__item col-md-3 col-sm-6">
+                            <div class="footer-menu__heading">
+                                Services
+                            </div>
+                            <ul class="footer-menu__list">
+                                <li><a href="#">Domain Registration</a></li>
+                                <li><a href="#">Trademark Registration</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-menu__item col-md-3 col-sm-6">
+                            <div class="footer-menu__heading">
+                                Tools
+                            </div>
+                            <ul class="footer-menu__list">
+                                <li><a href="#">Bulk Domain Search</a></li>
+                                <li><a href="#">Whois Domain</a></li>
+                                <li><a href="#">Trademark Search</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-menu__item col-md-3 col-sm-6">
+                            <div class="footer-menu__heading">
+                                Legal
+                            </div>
+                            <ul class="footer-menu__list">
+                                <li><a href="#">Terms of Service</a></li>
+                                <li><a href="">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-menu__item col-md-3 col-sm-6">
+                            <div class="footer-menu__heading">
+                                Follow Us
+                            </div>
+                            <ul class="footer-menu__list">
+                                <li>
+                                    <div class="footer__icon">
+                                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                                    </div>
+                                    <a href="#">Twitter</a></li>
+                                <li>
+                                    <div class="footer__icon">
+                                        <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                                    </div>
+                                    <a href="#">Facebook</a></li>
+                                <li>
+                                    <div class="footer__icon">
+                                        <i class="fa fa-google-plus" aria-hidden="true"></i>
+                                    </div>
+                                    <a href="#">Google Plus</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="footer-link__content">
+                                <div class="footer-link__item footer-link__item__resize">
+                                    <a href="#">
+                                        <img src="img/credit-cards/Icann.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="footer-link__item">
+                                    <a href="#">
+                                        <img src="img/credit-cards/Accredited%20Business.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="footer-link__item">
+                                    <a href="#">
+                                        <img src="img/credit-cards/Norton.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="footer-link__item">
+                                    <a href="#">
+                                        <img src="img/credit-cards/Truste.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="footer-link__content footer-link__content__bottom-line">
+                                <div class="footer-link__item">
+                                    <a href="#">
+                                        <img src="img/credit-cards/visa.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="footer-link__item">
+                                    <a href="#">
+                                        <img src="img/credit-cards/mastercard.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="footer-link__item">
+                                    <img src="img/credit-cards/discover.png" alt="">
+                                </div>
+                                <div class="footer-link__item">
+                                    <a href="#">
+                                        <img src="img/credit-cards/amex.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="footer-link__item">
+                                    <a href="#">
+                                        <img src="img/credit-cards/diners-club.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="footer-link__item">
+                                    <a href="#">
+                                        <img src="img/credit-cards/PayPal.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__copyright">
+                    All rights reserved Marcaria.com. Copyright &copy; 2001-2016
+                </div>
+            </div>
+        </footer>
+
+
+
+
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="app/js/vendor/jquery-1.12.0.min.js"><\/script>')</script>

@@ -1,0 +1,21 @@
+{
+  "name": "untitled",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "Alexander <jovellir@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/r4doshka/marcaria",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendors",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7"
+  }
+}

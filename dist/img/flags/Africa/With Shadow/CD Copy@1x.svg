@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="37px" height="28px" viewBox="0 0 37 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.1 (33804) - http://www.bohemiancoding.com/sketch -->
+    <title>CD Copy@1x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <rect id="path-2" x="0" y="0" width="28" height="20" rx="2"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="CD-Copy" filter="url(#filter-1)" transform="translate(4.736842, 2.000000)">
+            <mask id="mask-3" fill="white">
+                <use xlink:href="#path-2"></use>
+            </mask>
+            <use id="Mask" fill="#FFFFFF" xlink:href="#path-2"></use>
+            <rect id="Mask-Copy" fill="#158AFF" mask="url(#mask-3)" x="0" y="0" width="28" height="20" rx="2"></rect>
+            <polygon id="Rectangle-69-Copy" fill="#FDD216" mask="url(#mask-3)" transform="translate(13.317049, 10.417673) rotate(153.000000) translate(-13.317049, -10.417673) " points="-6.01628388 6.41767333 32.6503828 6.41767333 32.6503828 14.4176733 -6.01628388 14.4176733"></polygon>
+            <rect id="Rectangle-69" fill="#CE1120" mask="url(#mask-3)" transform="translate(13.684917, 10.174930) rotate(153.000000) translate(-13.684917, -10.174930) " x="-5.64841655" y="7.50826297" width="38.6666667" height="5.33333333"></rect>
+            <polygon id="Star-8" fill="#FDD216" mask="url(#mask-3)" points="4.66666667 5.96666672 2.70738249 7.36338998 3.43029315 5.06838878 1.49647828 3.63661002 3.90254581 3.61494453 4.66666667 1.33333333 5.43078753 3.61494453 7.83685505 3.63661002 5.90304019 5.06838878 6.62595084 7.36338998"></polygon>
+        </g>
+    </g>
+</svg>
