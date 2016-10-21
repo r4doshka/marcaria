@@ -578,6 +578,11 @@ img{
   }
 }
 
+@media screen and (min-width: 992px){
+  .filter__mobile-select{
+    display: none;
+  }
+}
 
 
 @media screen and (max-width: 1199px) {
