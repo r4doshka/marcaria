@@ -9,15 +9,89 @@ img{
   max-width: 100%;
 }
 
+.header__logo{
+  padding: 0 0 5px;
+}
+
 .header__container{
   background: #01309a;
   border-bottom: 3px solid #b2e712;
 }
 
+.main-page{
+  .breadcrumbs{
+    display: none;
+  }
+}
+
+.breadcrumbs{
+  position: absolute;
+  top:20px;
+  left:25px;
+  ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+  li{
+    &:last-child{
+      a{
+        cursor: default;
+      }
+    }
+  }
+  .breadcrumbs__icon{
+    display: block;
+    width: 20px;
+    position: relative;
+    top: -2px;
+  }
+
+  .breadcrumbs__item{
+    list-style: none;
+    line-height: 26px;
+    &:not(:first-child):before{
+      content: "\f105";
+      display: inline-block;
+      font: normal normal normal 14px/1 FontAwesome;
+      font-size: inherit;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      color: #fff;
+      margin: 0 0 0 5px;
+    }
+
+    .breadcrumbs__country-icon{
+      display: inline-block;
+      margin-left: 5px;
+      position: relative;
+      top: -2px;
+    }
+
+    a{
+      font-weight: bold;
+      font-size: 16px;
+      color: #fff;
+      &:hover,
+      &:focus,
+      &:active{
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+
+
 .header__header-menu{
   padding: 10px 0;
+  background: transparent;
+  transition: background 1s;
   &.header__header-menu__add-background{
     background: #021f54;
+    transition: background 0.5s;
   }
 
   .header__toggle{
@@ -43,7 +117,10 @@ img{
 }
 
 .header-info{
-  background: url("../img/icons/World-Wide.png") no-repeat;
+  background: url("../img/icons/WorldWide_Trademark.png") no-repeat 0 100%;
+  background-size: cover;
+  position: relative;
+
 }
 
 .header__nav{
@@ -134,6 +211,21 @@ img{
         display: none;
       }
     }
+    li.dropdown__current-item{
+      &:after{
+        content: "\f00c";
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        color: #fff;
+        font-size: 24px;
+        margin: 0 0 0 15px;
+        position: relative;
+        top: -2px;
+      }
+    }
   }
 
   .header__nav__country-flag{
@@ -144,9 +236,13 @@ img{
 
 .header-info{
   .header-info__content{
+    position: relative;
     padding: 55px 0 50px;
     background: #243a56;
-    background: rgba(1, 69, 156, 0.52);
+    background: rgba(1, 69, 156, 0.4);
+  }
+
+  .header-info__description{
     font-weight: bold;
     color: #fff;
     text-shadow: 0 2px 1px rgb(2, 2, 2);
@@ -162,10 +258,8 @@ img{
 
 
 .main-search{
-  padding: 30px 0 0;
+  padding: 0 0 50px;
   background: #d6d6d6;
-  position: relative;
-  top: 14px;
   border-radius: 10px;
 
 
@@ -221,12 +315,27 @@ img{
     text-align: center;
   }
 
+  .faq-list__show-more{
+    background: #0c59cf;
+    padding: 14px 0;
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 5px;
+  }
+
   .faq-list__item{
     position: relative;
-    padding-left: 30px;
+    padding-left: 25px;
     color: #444444;
 
   }
+
+
   .faq-list__toggle{
     position: absolute;
     top:3px;
@@ -247,6 +356,8 @@ img{
     font-size: 16px;
   }
 }
+
+
 
 .footer{
   padding: 20px 0;
@@ -363,7 +474,7 @@ img{
 
 
 .filter{
-  margin-top: 60px;
+  margin-top: 40px;
   .filter__item{
     display: flex;
     align-items: center;
@@ -379,6 +490,11 @@ img{
       }
     }
   }
+
+  .filter__continent-search__hide{
+    display: none;
+  }
+
 
   .filter__item-icon{
     margin-right: 10px;
@@ -454,6 +570,14 @@ img{
     border-top-right-radius: 10px;
   }
 
+  a {
+    padding: 5px 15px;
+    display: block;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+
 }
 
 .filter__filter-menu li.filter__filter-menu__current {
@@ -463,13 +587,6 @@ img{
   background: #a6ce2f;
 }
 
-.filter__filter-menu li a {
-  padding: 14px 25px;
-  display: block;
-  font-size: 22px;
-  color: #fff;
-  text-decoration: none;
-}
 
 .filter__filter-menu .filter__filter-menu__current a {
   font-weight: bold;
@@ -513,23 +630,25 @@ img{
   padding: 5px 0 5px 20px;
   background: #fff;
   color: #0e2a5c;
-  border: 2px solid #000;
+  border: 1px solid #000;
   border-radius: 3px;
+  cursor: pointer;
 }
 
 .filter__select{
   width: 100%;
   font-size: 20px;
+  height: 40px;
   padding: 5px 0 5px 7px;
   border-radius: 3px;
   -webkit-appearance: none;
   background: url(../img/icons/select-icon.png) no-repeat #fff 100% 0;
   background-size: contain;
-  border: 2px solid #000;
+  border: 1px solid #000;
 }
 
 .filter__options-active{
-  border: 2px solid #006ce5;
+  border: 1px solid #006ce5;
 }
 .filter__all-classes-wrap{
   display: none;
@@ -546,7 +665,7 @@ img{
   margin-top: 5px;
   padding: 15px 5px 15px 15px;
   border-radius: 3px;
-  border: 2px solid #006ce5;
+  border: 1px solid #006ce5;
   color: #444444;
   background: #fff;
   input[type=checkbox]+label{
@@ -578,12 +697,119 @@ img{
   }
 }
 
+/*europe*/
+.europe{
+  .header-info{
+    background: url('../img/continents_background/Europe.png') no-repeat;
+    background-size: cover;
+  }
+
+  #Europe{
+    display: block;
+  }
+}
+
+/*america*/
+.americas{
+  .header-info{
+    background: url('../img/continents_background/America.png') no-repeat;
+    background-size: cover;
+  }
+
+  #Americas{
+    display: block;
+  }
+}
+
+/*africa*/
+.african{
+  .header-info{
+    background: url('../img/continents_background/Africa.png') no-repeat;
+    background-size: cover;
+  }
+
+  #Africa{
+    display: block;
+  }
+}
+
+/*oceania*/
+.oceania{
+  .header-info{
+    background: url('../img/continents_background/Australia.png') no-repeat;
+    background-size: cover;
+  }
+
+  #Oceania{
+    display: block;
+  }
+}
+
+/*oceania*/
+.asia{
+  .header-info{
+    background: url('../img/continents_background/Japan.png') no-repeat;
+    background-size: cover;
+  }
+
+  #Asia{
+    display: block;
+  }
+}
+
+/*brazil*/
+.brazil{
+  .header-info{
+    background: url('../img/continents_background/Brazil.png') no-repeat;
+    background-size: cover;
+  }
+}
+
+/*canada*/
+.canada{
+  .header-info{
+    background: url('../img/continents_background/Canada.png') no-repeat;
+    background-size: cover;
+  }
+}
+
+/*usa*/
+.usa{
+  .header-info{
+    background: url('../img/continents_background/USA.png') no-repeat;
+    background-size: cover;
+  }
+}
+
+/*chile*/
+.chile{
+  .header-info{
+    background: url('../img/continents_background/Chile.png') no-repeat;
+    background-size: cover;
+  }
+}
+
 @media screen and (min-width: 992px){
-  .filter__mobile-select{
+  .filter__mobile-select,
+  .faq-list__show-more{
     display: none;
   }
 }
 
+@media screen and (max-width: 991px) {
+  .breadcrumbs{
+    display: none;
+  }
+  .faq-list__show-more{
+    display: block;
+  }
+
+  .faq-list__mobile-dropdown{
+    .faq-list__item{
+      display: none;
+    }
+  }
+}
 
 @media screen and (max-width: 1199px) {
   .filter__name{
@@ -611,6 +837,7 @@ img{
   }
 
 }
+
 @media (min-width: 768px) and (max-width: 991px){
   /*header*/
   .header-info {
@@ -633,7 +860,7 @@ img{
 
   /*filter*/
   .main-search{
-    padding: 30px 15px 15px;
+    padding: 0 15px 30px;
   }
 
   .filter{
