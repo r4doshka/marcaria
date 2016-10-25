@@ -20,7 +20,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4 ">
-                            <img src="img/icons/Full_Marcaria_Logo.jpg" alt="">
+                            <a href="/"><img src="img/icons/Full_Marcaria_Logo.jpg" alt=""></a>
                         </div>
                     </div>
                 </div>
@@ -136,50 +136,47 @@
             <div class="container">
                 <div class="filter__filter-container">
                     <div class="main-search">
-                        <div class="row">
-                            <div class="col-md-8 col-md-offset-1 col-sm-9 col-md-offset-0">
-                                <input class="main-search__search-field"  type="text" placeholder="Enter trademark term...">
-                            </div>
-                            <div class="col-md-2 col-sm-3">
-                                <div class="main-search__search">
-                                    <input class="main-search__search-button" type="submit" value="Search">
-                                    <div class="main-search__search-icon">
-                                        <img src="img/icons/Search@1x.png" alt="">
+                        <form action="">
+                            <div class="row">
+                                <div class="col-md-8 col-md-offset-1 col-sm-9 col-md-offset-0">
+                                    <input class="main-search__search-field"  type="text" placeholder="Enter trademark term...">
+                                </div>
+                                <div class="col-md-2 col-sm-3">
+                                    <div class="main-search__search">
+                                        <input class="main-search__search-button" type="submit" value="Search">
+                                        <div class="main-search__search-icon">
+                                            <img src="img/icons/Search@1x.png" alt="">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
                     <ul class="filter__filter-menu filter__filter-menu__hide">
-                        <li class="filter__filter-menu__current"><a href="#Popular">Popular</a></li>
-                        <li><a href="#Africa">Africa</a></li>
-                        <li><a href="#Asia">Asia</a></li>
-                        <li><a href="#Americas">Americas</a></li>
-                        <li><a href="#Europe">Europe</a></li>
-                        <li><a href="#Oceania">Oceania</a></li>
+                        <li class="filter__filter-menu__current"><a href="/">Popular</a></li>
+                        <li><a href="/africa.html">Africa</a></li>
+                        <li><a href="/asia.html">Asia</a></li>
+                        <li><a href="/american.html">Americas</a></li>
+                        <li><a href="/europe.html">Europe</a></li>
+                        <li><a href="/oceania.html">Oceania</a></li>
                     </ul>
                     <div class="filter__filter-content filter__filter-content__hide">
                         <div id="Popular" class="filter__tab-content">
-                            <div class="filter__item filter__item__select-all">
-                                <input type="checkbox" id="sall">
-                                <label for="sall"></label>
-                                <label for="sall" class="filter__item-name">Select All</label>
-                            </div>
                             <div class="filter__item">
                                 <input type="checkbox" id="br">
                                 <label for="br"></label>
                                 <div class="filter__item-icon">
                                     <img src="img/flags/popular/BR.png" alt="">
                                 </div>
-                                <label for="br" class="filter__item-name">Brazil</label>
+                                <a href="/brazil.html" class="filter__item-name">Brazil</a>
                             </div>
                             <div class="filter__item">
                                 <input type="checkbox" id="bx">
                                 <label for="bx"></label>
                                 <div class="filter__item-icon">
-                                    <img src="img/flags/popular/Benelux.png" alt="">
+                                    <img src="img/flags/South%20America/With_Shadow/CL%20Copy.png" alt="">
                                 </div>
-                                <label for="bx" class="filter__item-name">Benelux</label>
+                                <a href="/chile_case.html" class="filter__item-name">Chile</a>
                             </div>
                             <div class="filter__item">
                                 <input type="checkbox" id="eu">
@@ -187,7 +184,7 @@
                                 <div class="filter__item-icon">
                                     <img src="img/flags/popular/EU.png" alt="">
                                 </div>
-                                <label for="eu" class="filter__item-name">EU</label>
+                                <a href="#" class="filter__item-name">EU</a>
                             </div>
                             <div class="filter__item">
                                 <input type="checkbox" id="ca">
@@ -195,7 +192,7 @@
                                 <div class="filter__item-icon">
                                     <img src="img/flags/popular/CA-shadow.png" alt="">
                                 </div>
-                                <label for="ca" class="filter__item-name">Canada</label>
+                                <a href="/canada.html" class="filter__item-name">Canada</a>
                             </div>
                             <div class="filter__item">
                                 <input type="checkbox" id="de">
@@ -219,7 +216,7 @@
                                 <div class="filter__item-icon">
                                     <img src="img/flags/popular/US-shadow.png" alt="">
                                 </div>
-                                <label for="us" class="filter__item-name">United States</label>
+                                <a href="/usa.html" class="filter__item-name">United States</a>
                             </div>
                             <div class="filter__item">
                                 <input type="checkbox" id="jp">
@@ -286,7 +283,7 @@
                                 <label for="wipo" class="filter__item-name">WIPO</label>
                             </div>
                         </div>
-                        <div id="Africa" class="filter__tab-content">
+                        <div  class="filter__tab-content">
                             <div class="filter__item filter__item__select-all">
                                 <input type="checkbox" id="sall1">
                                 <label for="sall1"></label>
@@ -437,7 +434,7 @@
                                 <label for="yt" class="filter__item-name">.yt - Mayotte</label>
                             </div>
                         </div>
-                        <div id="Oceania" class="filter__tab-content">
+                        <div  class="filter__tab-content">
                             <div class="filter__item filter__item__select-all">
                                 <input type="checkbox" id="sall22">
                                 <label for="sall22"></label>
@@ -588,7 +585,7 @@
                                 <label for="ws" class="filter__item-name">Samoa</label>
                             </div>
                         </div>
-                        <div id="Americas" class="filter__tab-content">
+                        <div  class="filter__tab-content">
                             <div class="filter__item filter__item__select-all">
                                 <input type="checkbox" id="sall">
                                 <label for="sall"></label>
@@ -739,7 +736,7 @@
                                 <label for="cr" class="filter__item-name">Costa Rica</label>
                             </div>
                         </div>
-                        <div id="Europe" class="filter__tab-content">
+                        <div  class="filter__tab-content">
                             <div class="filter__item filter__item__select-all">
                                 <input type="checkbox" id="sall">
                                 <label for="sall"></label>
@@ -890,7 +887,7 @@
                                 <label for="gg" class="filter__item-name">Guernsey</label>
                             </div>
                         </div>
-                        <div id="Asia" class="filter__tab-content">
+                        <div  class="filter__tab-content">
                             <div class="filter__item filter__item__select-all">
                                 <input type="checkbox" id="sall33">
                                 <label for="sall33"></label>
@@ -1067,7 +1064,6 @@
                                     </select>
                                 </div>
                             </div>
-
                             <div class="col-md-6 col-sm-12">
                                 <div class="filter__name">Class Numbers</div>
                                 <div class="filter__options">
@@ -1325,7 +1321,6 @@
                                 </select>
                             </div>
                         </div>
-
                     </div>
                     <a href="#" class="filter__find-all">Trademark Class Search</a>
                 </div>

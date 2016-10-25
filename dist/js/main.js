@@ -33,8 +33,7 @@ $('.header__nav > ul > li.header__nav-item:not(.header__nav-item__search-icon, .
 
 /*tabs*/
 $(document).ready(function() {
-    $(".filter__filter-menu a").click(function(event) {
-        event.preventDefault();
+    $(".filter__filter-menu a").click(function() {
         $(this).parent().addClass("filter__filter-menu__current");
         $(this).parent().siblings().removeClass("filter__filter-menu__current");
         var tab = $(this).attr("href");
@@ -55,4 +54,13 @@ $('.filter__options ').click(function(){
 
 $('.breadcrumbs li:last-child a').click(function(e){
     e.preventDefault();
+});
+
+/*==========================================
+ for search result
+ * ==============================================*/
+
+$('.search-options__arrow-down, .search-result__arrow-up').click(function(){
+    $('.search-result__search-options, .search-result__dropdown-options').slideToggle();
+
 });
