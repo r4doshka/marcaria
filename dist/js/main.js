@@ -64,3 +64,17 @@ $('.search-options__arrow-down, .search-result__arrow-up').click(function(){
     $('.search-result__search-options, .search-result__dropdown-options').slideToggle();
 
 });
+
+$('.identical-result__view-detail').click(function(){
+    $(this).parents('.identical-result__item').find('.identical-result__value').not('.identical-result__trademark').slideToggle();
+
+});
+
+
+/*==========================================
+ for share
+ * ==============================================*/
+$('.found__share-text').click(function(e){
+    e.preventDefault();
+    $(this).siblings('.share-links').toggle("slide");
+});
