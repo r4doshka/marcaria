@@ -156,15 +156,30 @@ img{
       left: 25px;
       top:7px;
     }
-    &.header__nav-item__search-icon{
-      &:before{
-        content:'';
+
+    &.header__nav-item__search-icon,
+    &.header__nav-item__home-icon,
+    &.header__nav-item__away-link{
+      &:before {
+        content: '';
         display: inline-block;
         width: 30px;
         height: 30px;
+        cursor: pointer;
+      }
+    }
+
+    &.header__nav-item__search-icon{
+      &:before{
         background: url("../img/icons/class_search.png") no-repeat;
         background-size: contain;
-        cursor: pointer;
+      }
+    }
+
+    &.header__nav-item__home-icon{
+      &:before{
+        background: url("../img/icons/home.png") no-repeat;
+        background-size: contain;
       }
     }
 
@@ -173,13 +188,8 @@ img{
         font-style: italic;
       }
       &:before{
-        content:'';
-        display: inline-block;
-        width: 30px;
-        height: 30px;
         background: url("../img/icons/go_to_marcaria.png") no-repeat;
         background-size: contain;
-        cursor: pointer;
       }
     }
   }
@@ -265,7 +275,7 @@ img{
 
   .main-search__search-field{
     width: 100%;
-    padding-left: 15px;
+    padding: 15px 0 15px 15px;
     font-size: 30px;
     border:2px solid #606060;
     border-radius: 7px;
@@ -277,12 +287,13 @@ img{
 
   .main-search__search{
     position: relative;
+    margin-top: 9px;
   }
   .main-search__search-button{
 
-    padding: 8px 20px 9px 46px;
+    padding: 12px 20px 12px 46px;
     color: #fff;
-    font-size: 22px;
+    font-size: 24px;
     font-weight: bold;
     border:none;
     background: #2956bb;
@@ -293,20 +304,26 @@ img{
     display: inline-block;
     width: 24px;
     position: absolute;
-    top: 10px;
+    top: 16px;
     left: 15px;
     cursor: pointer;
   }
 }
 
 .faq{
-
+  margin-top: 100px;
   .faq-container{
     background: #f7f6f6;
     padding: 30px 0 60px;
     border-top:1px solid #ebebeb;
     border-bottom: 2px solid #b2e712;
   }
+
+  .faq-icon{
+    width: 35px;
+    display: inline-block;
+  }
+
   .faq-heading{
     margin-bottom: 30px;
     font-size: 32px;
@@ -509,50 +526,11 @@ img{
     position: relative;
     top: 2px;
   }
-
-  label{
-    margin-bottom: 0;
-  }
-
-  input[type=checkbox]{
-    display: none;
-  }
-  input[type=checkbox]{
-    &+label{
-      display: inline-block;
-      margin-right: 10px;
-      width: 24px;
-      height: 24px;
-      background: #fff;
-      border:1px solid #929292;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    &:checked{
-      &+label{
-        border-color: #01309a;
-        color: #006ce5;
-        &:before{
-          content: "\f00c";
-          display: inline-block;
-          font: normal normal normal 14px/1 FontAwesome;
-          font-size: inherit;
-          text-rendering: auto;
-          -webkit-font-smoothing: antialiased;
-          -moz-osx-font-smoothing: grayscale;
-          position: relative;
-          left: 4px;
-          top: 1px;
-        }
-      }
-    }
-  }
 }
 
 
 .filter__filter-container{
   padding: 40px;
-  margin-bottom: 100px;
   background: #d6d6d6;
   border-radius: 10px;
 }
@@ -668,9 +646,8 @@ img{
   border: 1px solid #006ce5;
   color: #444444;
   background: #fff;
-  input[type=checkbox]+label{
-    margin-right: 2px;
-  }
+
+
   .filter__class-item{
     align-items: center;
     display: flex;
@@ -694,6 +671,48 @@ img{
   text-decoration: underline;
   &:hover{
     color: #286ce5;
+  }
+}
+
+.filter__item,
+.filter__class-item,
+.class-item__content{
+  label{
+    margin-bottom: 0;
+  }
+
+  input[type=checkbox]{
+    display: none;
+  }
+  input[type=checkbox]{
+    &+label{
+      display: inline-block;
+      margin-right: 2px;
+      width: 24px;
+      height: 24px;
+      background: #fff;
+      border:1px solid #929292;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    &:checked{
+      &+label{
+        border-color: #01309a;
+        color: #006ce5;
+        &:before{
+          content: "\f00c";
+          display: inline-block;
+          font: normal normal normal 14px/1 FontAwesome;
+          font-size: inherit;
+          text-rendering: auto;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          position: relative;
+          left: 4px;
+          top: 1px;
+        }
+      }
+    }
   }
 }
 
@@ -833,9 +852,7 @@ img{
     padding-top: 5px;
   }
   .search-options__item{
-    margin-right: 15px;
-    line-height: 30px;
-    font-size: 16px;
+    margin-right: 15px; 
     &:not(:first-child, :last-child){
       &:after{
         content: '|';
@@ -844,6 +861,22 @@ img{
         top: -2px;
       }
     }
+  }
+
+  .search-options__item-value{
+    color: #000;
+    line-height: 30px;
+    font-size: 16px;
+    text-decoration: underline;
+    &:hover,
+    &:active,
+    &:focus{
+      color: #000;
+    }
+  }
+
+  .search-options__country-flag{
+    display: inline-block;
   }
 
   .search-result__dropdown-options{
@@ -867,6 +900,13 @@ img{
     display: flex;
     flex-flow:row wrap;
     align-items: flex-end;
+  }
+
+  .search-result__example{
+    text-align: right;
+    font-size: 18px;
+    color: #464646;
+    margin-top: 10px;
   }
 
 }
@@ -1116,6 +1156,44 @@ img{
 
 }
 
+/*class-result*/
+.search-result-classes{
+  .search-result-classes__heading{
+    margin-top: 80px;
+    color:#01309a;
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .search-result-classes__class-item{
+    margin-top: 40px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border:2px solid #6a8acb;
+  }
+  .class-item__heading  {
+    padding: 20px 30px 30px 40px;
+    background: #d4e3fc;
+    border-bottom: 1px solid #00329a;
+  }
+
+  .class-item__content{
+    padding: 20px 0 30px 40px;
+  }
+
+  .class-item__name{
+    color: #01309a;
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  .class-item__description{
+    font-size: 22px;
+    line-height: 26px;
+    color: #021f54;
+  }
+}
+
 
 .scrollbox {
   overflow: auto;
@@ -1333,7 +1411,6 @@ img{
   }
   .filter__filter-container{
     padding: 20px 15px;
-    margin-bottom: 50px;
   }
 
 
@@ -1431,7 +1508,6 @@ img{
   }
 
 
-
 }
 
 @media (min-width: 320px) and (max-width: 991px){
@@ -1505,6 +1581,10 @@ img{
       margin: 0 0 0 10px;
       order:1;
     }
+  }
+
+  .faq {
+    margin-top: 50px;
   }
 }
 
