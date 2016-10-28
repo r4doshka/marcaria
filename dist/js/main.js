@@ -21,12 +21,20 @@ $('.header__nav-item  a').click(function(e){
     }
 });
 
-$('.header__toggle').click(function(){
-    $(this).parent().toggleClass('header__header-menu__add-background');
+$('.header__toggle').click(function(e){
+    e.stopPropagation();
+    $(this).parent().toggleClass('header-menu__add-background');
     $(this).parent().find('.header__nav').slideToggle();
+
 });
 
+$('body').click(function(){
+    if($('.header__nav:visible')) {
+        $('.header__nav').slideUp();
+        $('.header__header-menu').removeClass('header-menu__add-background');
+    }
 
+});
 /*==========================================
  for Filter
  * ==============================================*/

@@ -89,7 +89,7 @@ img{
   padding: 10px 0;
   background: transparent;
   transition: background 1s;
-  &.header__header-menu__add-background{
+  &.header-menu__add-background{
     background: #021f54;
     transition: background 0.5s;
   }
@@ -1672,6 +1672,12 @@ img{
   .scroll-top{
     display: block;
   }
+
+  .main-page{
+    .filter__continent-search__hide{
+      display: block;
+    }
+  }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
@@ -1780,7 +1786,7 @@ img{
     padding: 20px 10px 0;
     .main-search__search{
       position: absolute;
-      top: -36px;
+      top: -45px;
       right: 16px;
     }
     .main-search__search-field{
@@ -1797,6 +1803,8 @@ img{
       left: 10px;
     }
   }
+
+
 
   /*faq*/
   .faq {
