@@ -1,9 +1,9 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title></title>
+    <title>Marcaria</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/font-awesome.css">
@@ -560,10 +560,13 @@
                     </a>
                 </div>
             </div>
-            <div class="found-identical__identical-result">
+            <div class="identical-result">
                 <div class="row">
                     <div class="identical-result__name identical-result__trademark  col-xs-12 col-md-3">
                         Trademark
+                    </div>
+                    <div class="col-xs-12 scroll-top">
+                        <img src="img/icons/up-arrow-key.png" alt="">
                     </div>
                     <div class="identical-result__name col-md-2">
                         Classes
@@ -578,8 +581,8 @@
                         Applicant
                     </div>
                 </div>
-                <div class="row identical-result__item-content scrollbox">
-                    <div class="identical-result__item">
+                <div class="row identical-result__item-content scrolling-box">
+                    <div class="identical-result__item ">
                         <div class="identical-result__value identical-result__trademark col-md-3 col-sm-12 col-xs-12">
                             <div class="identical-result__trademark-icon">
                                 <img src="img/icons/euipo-icon.png" alt="">
@@ -1070,9 +1073,10 @@
         $("[data-toggle='tooltip']").tooltip();
     });
 
-
-    $(document).ready(function() {
-        $('.scrollbox').enscroll();
+    $( document ).ready(function() {
+        $(".scroll-top").click(function() {
+            $(".scrolling-box").scrollTop(0);
+        })
     });
 </script>
 

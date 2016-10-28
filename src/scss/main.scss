@@ -675,8 +675,7 @@ img{
 }
 
 .filter__item,
-.filter__class-item,
-.class-item__content{
+.filter__class-item{
   label{
     margin-bottom: 0;
   }
@@ -1043,6 +1042,7 @@ img{
   .found__share-icon{
     width: 30px;
     margin-right: 5px;
+    cursor: pointer;
   }
   .found__share-text{
     display: inline-block;
@@ -1159,14 +1159,14 @@ img{
 /*class-result*/
 .search-result-classes{
   .search-result-classes__heading{
-    margin-top: 80px;
+    margin: 80px 0 30px;
     color:#01309a;
     font-size: 50px;
     text-align: center;
   }
 
-  .search-result-classes__class-item{
-    margin-top: 40px;
+  .class-item{
+    margin-bottom: 20px;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
     border:2px solid #6a8acb;
@@ -1179,6 +1179,9 @@ img{
 
   .class-item__content{
     padding: 20px 0 30px 40px;
+    max-height: 320px;
+    overflow-x: hidden;
+    overflow-y: scroll;
   }
 
   .class-item__name{
@@ -1192,24 +1195,78 @@ img{
     line-height: 26px;
     color: #021f54;
   }
+
 }
 
 
-.scrollbox {
-  overflow: auto;
-}
-.vertical-track {
-  width: 16px;
-  background-color: #fff;
-  border:1px solid  #a8c6fa;
-}
-.vertical-handle {
-  width: 16px;
-  background-color: #a8c6fa;
-  border-radius: 10px;
-}
+
+.checkbox-list{
+  max-height: 250px;
+
+    label{
+      margin-bottom: 0;
+      flex:0 1 90%;
+    }
+
+    input[type=checkbox]{
+      display: none;
+    }
+    input[type=checkbox]{
+      &+label{
+        display: inline-block;
+        margin-right: 10px;
+        width: 24px;
+        flex:0 1 24px;
+        height: 24px;
+        background: #fff;
+        border:1px solid #929292;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      &:checked{
+        &+label{
+          border-color: #01309a;
+          color: #006ce5;
+          &:before{
+            content: "\f00c";
+            display: inline-block;
+            font: normal normal normal 14px/1 FontAwesome;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            position: relative;
+            left: 3px;
+            top: -7px;
+            font-size: 17px;
+            line-height: 22px;
+          }
+        }
+      }
+    }
 
 
+  .checkbox-list__item{
+    margin-left: 60px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #021f54;
+    font-size: 24px;
+    label{
+      font-weight: normal;
+    }
+    &.check-all{
+      margin-left: 0;
+    }
+  }
+}
+
+.scroll-top{
+  display: none;
+  padding: 10px 0;
+  text-align: center;
+  background: #f7f6f6;
+}
 
 /*europe*/
 .europe{
@@ -1507,6 +1564,30 @@ img{
     }
   }
 
+  .search-result-classes {
+    .search-result-classes__heading{
+      font-size: 30px;
+      margin: 40px 0 20px;
+    }
+    .class-item__name{
+      font-size: 28px;
+    }
+    .class-item__heading{
+      padding: 20px 20px 30px;
+    }
+    .class-item__content{
+      padding: 20px 20px 30px;
+    }
+    .class-item__description{
+      font-size: 18px;
+    }
+  }
+
+  .checkbox-list {
+    .checkbox-list__item{
+      font-size: 16px;
+    }
+  }
 
 }
 
@@ -1533,7 +1614,8 @@ img{
     }
 
     .identical-result__item{
-      display: block;
+      display: flex;
+      flex-flow: row wrap;
       margin-bottom: 20px;
 
     }
@@ -1585,6 +1667,10 @@ img{
 
   .faq {
     margin-top: 50px;
+  }
+
+  .scroll-top{
+    display: block;
   }
 }
 
@@ -1856,6 +1942,52 @@ img{
   .search-progress {
     .search-progress__text{
       text-align: center;
+    }
+  }
+
+  .search-result-classes {
+    .search-result-classes__heading{
+      margin-top: 20px;
+      font-size: 24px;
+    }
+    .class-item__content{
+      max-height: 300px;
+    }
+  }
+
+  .class-item{
+    &:last-child{
+      margin-bottom: 50px;
+    }
+
+    .class-item__heading{
+      padding: 15px 15px 20px;
+    }
+
+    .class-item__name{
+      font-size: 25px;
+      text-align: center;
+    }
+    .class-item__description{
+      padding: 10px 15px 0;
+      font-size: 14px;
+      line-height: 16px;
+      border-top: 1px solid #01309a;
+    }
+
+    .class-item__content{
+      padding: 10px 10px 15px;
+    }
+  }
+  .checkbox-list {
+    .checkbox-list__item{
+      margin: 0 0 10px 20px;
+      font-size: 16px;
+      align-items: flex-start;
+    }
+    input[type=checkbox]:checked+label:before{
+      left:3px;
+      top:0;
     }
   }
 
