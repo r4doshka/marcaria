@@ -21,8 +21,11 @@ $('.header__nav-item  a').click(function(e){
     }
 });
 
-$('.header__toggle').click(function(e){
+$('.header__toggle, .header__nav').click(function(e){
     e.stopPropagation();
+});
+
+$('.header__toggle').click(function(e){
     $(this).parent().toggleClass('header-menu__add-background');
     $(this).parent().find('.header__nav').slideToggle();
 
@@ -33,8 +36,9 @@ $('body').click(function(){
         $('.header__nav').slideUp();
         $('.header__header-menu').removeClass('header-menu__add-background');
     }
-
 });
+
+
 /*==========================================
  for Filter
  * ==============================================*/
