@@ -1270,13 +1270,6 @@ img{
   }
 }
 
-.scroll-top{
-  display: none;
-  padding: 10px 0;
-  text-align: center;
-  background: #f7f6f6;
-}
-
 /*europe*/
 .europe{
   .header-info{
@@ -1905,7 +1898,7 @@ img{
   }
 
   .order{
-    padding: 30px 0 40px;
+    padding: 70px 0 40px;
 
     .order__order-item{
       margin: 0 0 20px;
@@ -2047,7 +2040,31 @@ img{
   .identical-result__item-content__mobile-layout{
     .bx-wrapper .bx-viewport{
       left: 0;
+      top:12px;
     }
+
+    .bx-wrapper .bx-controls-direction{
+      .bx-prev{
+        top: 0;
+        width: 100%;
+        left:0;
+        right: 0;
+        background: url(../img/icons/up-arrow-key.png) #f7f6f6 no-repeat 50%;
+        background-size: contain;
+
+      }
+
+      .bx-next{
+        bottom: -44px;
+        left:0;
+        right: 0;
+        width: 100%;
+        top: inherit;
+        background: url(../img/icons/down-arrow-key.png) #f7f6f6 no-repeat 50%;
+        background-size: contain;
+      }
+    }
+
   }
 
 }

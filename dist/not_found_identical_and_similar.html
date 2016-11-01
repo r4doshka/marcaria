@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
@@ -565,9 +566,6 @@
                     <div class="identical-result__name identical-result__trademark  col-xs-12 col-md-3">
                         Trademark
                     </div>
-                    <div class="col-xs-12 scroll-top">
-                        <img src="img/icons/up-arrow-key.png" alt="">
-                    </div>
                     <div class="identical-result__name col-md-2">
                         Classes
                     </div>
@@ -581,7 +579,7 @@
                         Applicant
                     </div>
                 </div>
-                <div class="row identical-result__item-content scrolling-box">
+                <div class="row identical-result__item-content identical-result__item-content__desktop-layout">
                     <div class="identical-result__item ">
                         <div class="identical-result__value identical-result__trademark col-md-3 col-sm-12 col-xs-12">
                             <div class="identical-result__trademark-icon">
@@ -749,178 +747,348 @@
                         </div>
                     </div>
                 </div>
+                <div class="row identical-result__item-content identical-result__item-content__mobile-layout">
+                    <div class="slider8">
+                        <div class="identical-result__item ">
+                            <div class="identical-result__value identical-result__trademark col-md-3 col-sm-12 col-xs-12">
+                                <div class="identical-result__trademark-icon">
+                                    <img src="img/icons/euipo-icon.png" alt="">
+                                </div>
+                                <div>European Intellectual</div>
+                                <div class="identical-result__view-detail">
+                                    view detail
+                                </div>
+                            </div>
+                            <div class="identical-result__value col-md-2 col-sm-12 col-xs-12">
+                                <div>34-35-37</div>
+                            </div>
+                            <div class="identical-result__value col-md-2 col-sm-12 col-xs-12">
+                                <div data-toggle="tooltip" data-placement="top" title="Application number">A: 4532345234</div>
+                                <div>R: 4532345234</div>
+                            </div>
+                            <div class="identical-result__value col-md-2 col-sm-12 col-xs-12">
+                                <div data-toggle="tooltip" data-placement="top" title="Application date">A: 10-10-2007</div>
+                                <div>R: 10-10-2009</div>
+                            </div>
+                            <div class="identical-result__value col-md-3 col-sm-12 col-xs-12">
+                                <div> European Intellectual</div>
+                                <div>Company Incorporated</div>
+                            </div>
+                        </div>
+
+                        <div class="identical-result__item">
+                            <div class="identical-result__value identical-result__trademark col-md-3 col-xs-12">
+                                <div class="identical-result__trademark-icon">
+                                    <img src="img/icons/vista_icon.png" alt="">
+                                </div>
+                                <div>FANTA ORANGE BLOOD</div>
+                                <div class="identical-result__view-detail">
+                                    view detail
+                                </div>
+                            </div>
+                            <div class="identical-result__value col-md-2 col-xs-12">
+                                32
+                            </div>
+                            <div class="identical-result__value col-md-2 col-xs-12">
+                                <div data-toggle="tooltip" data-placement="top" title="Application number"> A: 4532345234</div>
+                                <div>R:  Not yet</div>
+                            </div>
+                            <div class="identical-result__value col-md-2 col-xs-12">
+                                <div data-toggle="tooltip" data-placement="top" title="Application date">A: 10-10-2007</div>
+                                <div>R: Not yet</div>
+                            </div>
+                            <div class="identical-result__value col-md-3 col-xs-12">
+                                <div>THE COCA-COLA
+                                    COMPANY
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="identical-result__item">
+                            <div class="identical-result__value identical-result__trademark col-md-3 col-xs-12">
+                                <div class="identical-result__trademark-icon">
+                                    <img src="img/icons/fanta_z.png" alt="">
+                                </div>
+                                <div>FANTA ORANGE BLOOD</div>
+                                <div class="identical-result__view-detail">
+                                    view detail
+                                </div>
+                            </div>
+                            <div class="identical-result__value col-md-2 col-xs-12">
+                                32
+                            </div>
+                            <div class="identical-result__value col-md-2 col-xs-12">
+                                <div data-toggle="tooltip" data-placement="top" title="Application number"> A: 4532345234</div>
+                                <div>R:  Not yet</div>
+                            </div>
+                            <div class="identical-result__value col-md-2 col-xs-12">
+                                <div data-toggle="tooltip" data-placement="top" title="Application number">A: 10-10-2007</div>
+                                <div>R: Not yet</div>
+                            </div>
+                            <div class="identical-result__value col-md-3 col-xs-12">
+                                <div>THE COCA-COLA
+                                    COMPANY
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="identical-result__item">
+                            <div class="identical-result__value identical-result__trademark col-md-3 col-xs-12">
+                                <div class="identical-result__trademark-icon">
+                                    <img src="img/icons/fanta_sea.png" alt="">
+                                </div>
+                                <div>FANTA ORANGE BLOOD</div>
+                                <div class="identical-result__view-detail">
+                                    view detail
+                                </div>
+                            </div>
+                            <div class="identical-result__value col-md-2 col-xs-12">
+                                32
+                            </div>
+                            <div class="identical-result__value col-md-2 col-xs-12">
+                                <div> A: 4532345234</div>
+                                <div>R:  Not yet</div>
+                            </div>
+                            <div class="identical-result__value col-md-2 col-xs-12">
+                                <div>A: 10-10-2007</div>
+                                <div>R: Not yet</div>
+                            </div>
+                            <div class="identical-result__value col-md-3 col-xs-12">
+                                <div>THE COCA-COLA
+                                    COMPANY
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="identical-result__item">
+                            <div class="identical-result__value identical-result__trademark col-md-3 col-xs-12">
+                                <div class="identical-result__trademark-icon">
+                                    <img src="img/icons/fanta-icon.png" alt="">
+                                </div>
+                                <div>FANTA ORANGE BLOOD</div>
+                                <div class="identical-result__view-detail">
+                                    view detail
+                                </div>
+                            </div>
+                            <div class="identical-result__value col-md-2 col-xs-12">
+                                32
+                            </div>
+                            <div class="identical-result__value col-md-2 col-xs-12">
+                                <div> A: 4532345234</div>
+                                <div>R:  Not yet</div>
+                            </div>
+                            <div class="identical-result__value col-md-2 col-xs-12">
+                                <div>A: 10-10-2007</div>
+                                <div>R: Not yet</div>
+                            </div>
+                            <div class="identical-result__value col-md-3 col-xs-12">
+                                <div>THE COCA-COLA
+                                    COMPANY
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="identical-result__item">
+                            <div class="identical-result__value identical-result__trademark col-md-3 col-xs-12">
+                                <div class="identical-result__trademark-icon">
+                                    <img src="img/icons/fanta-icon.png" alt="">
+                                </div>
+                                <div>FANTA ORANGE BLOOD</div>
+                                <div class="identical-result__view-detail">
+                                    view detail
+                                </div>
+                            </div>
+                            <div class="identical-result__value col-md-2 col-xs-12">
+                                32
+                            </div>
+                            <div class="identical-result__value col-md-2 col-xs-12">
+                                <div> A: 4532345234</div>
+                                <div>R:  Not yet</div>
+                            </div>
+                            <div class="identical-result__value col-md-2 col-xs-12">
+                                <div>A: 10-10-2007</div>
+                                <div>R: Not yet</div>
+                            </div>
+                            <div class="identical-result__value col-md-3 col-xs-12">
+                                <div>THE COCA-COLA
+                                    COMPANY
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="found_download">
                 <a class="found_download-link" href="#">Download Results to CSV</a>
             </div>
         </div>
     </div>
-
-    <section class="order">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-6">
-                    <div class="order__order-item">
-                        <div class="order-item__country-flag">
-                            <img src="img/flags/South%20America/With_Shadow/BR-shadow.png" alt="">
-                        </div>
-                        <div class="order-item__heading">
-                            Trademark Comprehensive Study
-                        </div>
-                        <div class="order-item__description">
-                            Report contains trademark search analysis plus an Attorney Opinion about registration probabilities in <b>Brazil</b>
-                        </div>
-                        <a href="#" class="order-item__action-button">
-                            Order
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-6">
-                    <div class="order__order-item">
-                        <div class="order-item__country-flag">
-                            <img src="img/flags/South%20America/With_Shadow/BR-shadow.png" alt="">
-                        </div>
-                        <div class="order-item__heading">
-                            Chile Trademark Registration
-                        </div>
-                        <div class="order-item__description">
-                            If you are sure about your registration probabilities in <b>Brazil</b>, start now the registration process.
-                        </div>
-                        <a href="#" class="order-item__action-button">
-                            Order
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="available-domain container">
-        <div class="available-domain__heading">
-            Available Domains that you might be interested
-        </div>
-        <div class="available-domain__country-name">
-            <div class="country-name__icon">
-                <img src="img/flags/South%20America/With_Shadow/BR-shadow_blue.png" alt="">
-            </div>
-            Brazilian Domain <span class="available-domain__country-name__mobile-hide">Names</span>
-        </div>
-        <div class="available-domain__items-container ">
-            <div class="col-md-6 available-domain__item">
-                <button class="available-domain__register-button">
-                    Register
-                </button>
-                <div class="available-domain__domain-name">
-                    redcine.com.br
-                </div>
-            </div>
-            <div class="col-md-6 available-domain__item">
-                <button class="available-domain__register-button">
-                    Register
-                </button>
-                <div class="available-domain__domain-name">
-                    redcine.com.br
-                </div>
-            </div>
-            <div class="col-md-6 available-domain__item">
-                <button class="available-domain__register-button">
-                    Register
-                </button>
-                <div class="available-domain__domain-name">
-                    redcine.com.br
-                </div>
-            </div>
-            <div class="col-md-6 available-domain__item">
-                <button class="available-domain__register-button">
-                    Register
-                </button>
-                <div class="available-domain__domain-name">
-                    redcine.com.br
-                </div>
-            </div>
-            <div class="col-md-6 available-domain__item">
-                <button class="available-domain__register-button">
-                    Register
-                </button>
-                <div class="available-domain__domain-name">
-                    redcine.com.br
-                </div>
-            </div>
-            <div class="col-md-6 available-domain__item">
-                <button class="available-domain__register-button">
-                    Register
-                </button>
-                <div class="available-domain__domain-name">
-                    redcine.com.br
-                </div>
-            </div>
-            <div class="col-md-6 available-domain__item">
-                <button class="available-domain__register-button">
-                    Register
-                </button>
-                <div class="available-domain__domain-name">
-                    redcine.com.br
-                </div>
-            </div>
-            <div class="col-md-6 available-domain__item">
-                <button class="available-domain__register-button">
-                    Register
-                </button>
-                <div class="available-domain__domain-name">
-                    redcine.com.br
-                </div>
-            </div>
-            <div class="col-md-6 available-domain__item">
-                <button class="available-domain__register-button">
-                    Register
-                </button>
-                <div class="available-domain__domain-name">
-                    redcine.com.br
-                </div>
-            </div>
-            <div class="col-md-6 available-domain__item">
-                <button class="available-domain__register-button">
-                    Register
-                </button>
-                <div class="available-domain__domain-name">
-                    redcine.com.br
-                </div>
-            </div>
-            <div class="col-md-6 available-domain__item">
-                <button class="available-domain__register-button">
-                    Register
-                </button>
-                <div class="available-domain__domain-name">
-                    redcine.com.br
-                </div>
-            </div>
-            <div class="col-md-6 available-domain__item">
-                <button class="available-domain__register-button">
-                    Register
-                </button>
-                <div class="available-domain__domain-name">
-                    redcine.com.br
-                </div>
-            </div>
-            <div class="col-md-6 available-domain__item">
-                <button class="available-domain__register-button">
-                    Register
-                </button>
-                <div class="available-domain__domain-name">
-                    redcine.com.br
-                </div>
-            </div>
-            <div class="col-md-6 available-domain__item">
-                <button class="available-domain__register-button">
-                    Register
-                </button>
-                <div class="available-domain__domain-name">
-                    redcine.com.br
-                </div>
-            </div>
-        </div>
-    </section>
 </section>
+<section class="order">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6">
+                <div class="order__order-item">
+                    <div class="order-item__country-flag">
+                        <img src="img/flags/South%20America/With_Shadow/BR-shadow.png" alt="">
+                    </div>
+                    <div class="order-item__heading">
+                        Trademark Comprehensive Study
+                    </div>
+                    <div class="order-item__description">
+                        Report contains trademark search analysis plus an Attorney Opinion about registration probabilities in <b>Brazil</b>
+                    </div>
+                    <a href="#" class="order-item__action-button">
+                        Order
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+                <div class="order__order-item">
+                    <div class="order-item__country-flag">
+                        <img src="img/flags/South%20America/With_Shadow/BR-shadow.png" alt="">
+                    </div>
+                    <div class="order-item__heading">
+                        Chile Trademark Registration
+                    </div>
+                    <div class="order-item__description">
+                        If you are sure about your registration probabilities in <b>Brazil</b>, start now the registration process.
+                    </div>
+                    <a href="#" class="order-item__action-button">
+                        Order
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="available-domain container">
+    <div class="available-domain__heading">
+        Available Domains that you might be interested
+    </div>
+    <div class="available-domain__country-name">
+        <div class="country-name__icon">
+            <img src="img/flags/South%20America/With_Shadow/BR-shadow_blue.png" alt="">
+        </div>
+        Brazilian Domain <span class="available-domain__country-name__mobile-hide">Names</span>
+    </div>
+    <div class="available-domain__items-container ">
+        <div class="col-md-6 available-domain__item">
+            <button class="available-domain__register-button">
+                Register
+            </button>
+            <div class="available-domain__domain-name">
+                redcine.com.br
+            </div>
+        </div>
+        <div class="col-md-6 available-domain__item">
+            <button class="available-domain__register-button">
+                Register
+            </button>
+            <div class="available-domain__domain-name">
+                redcine.com.br
+            </div>
+        </div>
+        <div class="col-md-6 available-domain__item">
+            <button class="available-domain__register-button">
+                Register
+            </button>
+            <div class="available-domain__domain-name">
+                redcine.com.br
+            </div>
+        </div>
+        <div class="col-md-6 available-domain__item">
+            <button class="available-domain__register-button">
+                Register
+            </button>
+            <div class="available-domain__domain-name">
+                redcine.com.br
+            </div>
+        </div>
+        <div class="col-md-6 available-domain__item">
+            <button class="available-domain__register-button">
+                Register
+            </button>
+            <div class="available-domain__domain-name">
+                redcine.com.br
+            </div>
+        </div>
+        <div class="col-md-6 available-domain__item">
+            <button class="available-domain__register-button">
+                Register
+            </button>
+            <div class="available-domain__domain-name">
+                redcine.com.br
+            </div>
+        </div>
+        <div class="col-md-6 available-domain__item">
+            <button class="available-domain__register-button">
+                Register
+            </button>
+            <div class="available-domain__domain-name">
+                redcine.com.br
+            </div>
+        </div>
+        <div class="col-md-6 available-domain__item">
+            <button class="available-domain__register-button">
+                Register
+            </button>
+            <div class="available-domain__domain-name">
+                redcine.com.br
+            </div>
+        </div>
+        <div class="col-md-6 available-domain__item">
+            <button class="available-domain__register-button">
+                Register
+            </button>
+            <div class="available-domain__domain-name">
+                redcine.com.br
+            </div>
+        </div>
+        <div class="col-md-6 available-domain__item">
+            <button class="available-domain__register-button">
+                Register
+            </button>
+            <div class="available-domain__domain-name">
+                redcine.com.br
+            </div>
+        </div>
+        <div class="col-md-6 available-domain__item">
+            <button class="available-domain__register-button">
+                Register
+            </button>
+            <div class="available-domain__domain-name">
+                redcine.com.br
+            </div>
+        </div>
+        <div class="col-md-6 available-domain__item">
+            <button class="available-domain__register-button">
+                Register
+            </button>
+            <div class="available-domain__domain-name">
+                redcine.com.br
+            </div>
+        </div>
+        <div class="col-md-6 available-domain__item">
+            <button class="available-domain__register-button">
+                Register
+            </button>
+            <div class="available-domain__domain-name">
+                redcine.com.br
+            </div>
+        </div>
+        <div class="col-md-6 available-domain__item">
+            <button class="available-domain__register-button">
+                Register
+            </button>
+            <div class="available-domain__domain-name">
+                redcine.com.br
+            </div>
+        </div>
+    </div>
+</section>
+
 
 <footer class="footer">
     <div class="container">
@@ -1066,17 +1234,21 @@
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
 <script src="js/bootstrap/bootstrap.js"></script>
-
+<script src="js/jquery.bxslider.js"></script>
 
 <script>
     $(function () {
         $("[data-toggle='tooltip']").tooltip();
     });
 
-    $( document ).ready(function() {
-        $(".scroll-top").click(function() {
-            $(".scrolling-box").scrollTop(0);
-        })
+    $(document).ready(function(){
+        $('.slider8').bxSlider({
+            mode: 'vertical',
+            slideWidth: 320,
+            minSlides: 3,
+            slideMargin:20,
+            pager:false
+        });
     });
 </script>
 
