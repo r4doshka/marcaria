@@ -210,21 +210,25 @@
             </div>
             <div class="row">
                 <div class="col-md-11 col-md-offset-1 col-sm-offset-1 col-sm-9 col-xs-10 col-xs-offset-2">
+
                     <div class="search-result__search-options">
                         <div class="search-options__item search-options__arrow-down">
                             <img src="img/icons/download_arrow_with.png" alt="">
                         </div>
                         <div class="search-options__item">
-                            Country:Brazil
+                            <div class="search-options__country-flag">
+                                <img src="img/flags/South%20America/BR%20Copy.png" alt="">
+                            </div>
+                            <a href="#" class="search-options__item-value">Brazil</a>
                         </div>
                         <div class="search-options__item">
-                            Class:23-34
+                            <a href="#" class="search-options__item-value">23-34</a>
                         </div>
                         <div class="search-options__item">
-                            Status:Active
+                            <a href="#" class="search-options__item-value">Active</a>
                         </div>
                         <div class="search-options__item">
-                            Strategy: Normal Search
+                            <a href="#" class="search-options__item-value">Normal Search</a>
                         </div>
                     </div>
                 </div>
@@ -526,6 +530,31 @@
             <div class="found-identical__heading">
                 Found <b>2</b> Trademarks matching Applicant
             </div>
+            <div class="found__share">
+                <div class="found__share-icon">
+                    <img src="img/icons/sharing_interface.png" alt="">
+                </div>
+                <a href="#" class="found__share-text">
+                    Share
+                </a>
+                <div class="share-links">
+                    <a href="#" class="share-links_item">
+                        <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                    </a>
+
+                    <a href="#" class="share-links_item">
+                        <img src="img/icons/twitter.png" alt="">
+                    </a>
+
+                    <a href="#" class="share-links_item">
+                        <img src="img/icons/linkedin.png" alt="">
+                    </a>
+
+                    <a href="#" class="share-links_item">
+                        <img src="img/icons/google-plus.png" alt="">
+                    </a>
+                </div>
+            </div>
             <div class="found-identical__identical-result">
                 <div class="row">
                     <div class="identical-result__name identical-result__trademark col-md-3 col-xs-12">
@@ -600,39 +629,8 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="found__share">
-                        <div class="found__share-icon">
-                            <img src="img/icons/sharing_interface.png" alt="">
-                        </div>
-                        <a href="#" class="found__share-text">
-                            Share
-                        </a>
-                        <div class="share-links">
-                            <a href="#" class="share-links_item">
-                                <i class="fa fa-facebook-official" aria-hidden="true"></i>
-                            </a>
-
-                            <a href="#" class="share-links_item">
-                                <img src="img/icons/twitter.png" alt="">
-                            </a>
-
-                            <a href="#" class="share-links_item">
-                                <img src="img/icons/linkedin.png" alt="">
-                            </a>
-
-                            <a href="#" class="share-links_item">
-                                <img src="img/icons/google-plus.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="found_download">
-                        <a class="found_download-link" href="#">Download Results to CSV</a>
-                    </div>
-                </div>
+            <div class="found_download">
+                <a class="found_download-link" href="#">Download Results to CSV</a>
             </div>
 
 
@@ -953,11 +951,6 @@
 <script>
     $(function () {
         $("[data-toggle='tooltip']").tooltip();
-    });
-
-
-    $(document).ready(function() {
-        $('.scrollbox').enscroll();
     });
 </script>
 
