@@ -1930,11 +1930,12 @@ img{
     .search-result__search{
       position: absolute;
       right: 15px;
-      top: 1px;
+      top: 0;
     }
     .search-result__search-button{
       padding: 10px 24px 10px 40px;
       font-size: 16px;
+      height:38px;
     }
 
     .search-result__search-icon{
@@ -1954,6 +1955,7 @@ img{
     .search-result__search-field{
       font-size: 16px;
       padding: 10px 120px 10px 5px;
+      height: 40px;
     }
 
     .search-options__item{
