@@ -92,3 +92,7 @@ $('.found__share-text, .found__share-icon').click(function(e){
 $('.cart .cart-icon').on('click', function(){
     $('.cart-content').slideToggle();
 });
+
+$('.select-panel__item').on('click', function(){
+   $(this).siblings('.select-panel__dropdown').slideToggle();
+});
