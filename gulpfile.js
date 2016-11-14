@@ -47,7 +47,7 @@ gulp.task('img', function() {
 
 gulp.task('watch', ['browser-sync','cssnano'], function() {
     gulp.watch('src/scss/**/*.scss', ['sass']); // Наблюдение за sass файлами
-    gulp.watch('dist/*.html', browserSync.reload); // Наблюдение за HTML файлами в корне проекта
+    gulp.watch('dist/**/*.html', browserSync.reload); // Наблюдение за HTML файлами в корне проекта
     gulp.watch('dist/js/**/*.js', browserSync.reload); // Наблюдение за JS файлами в папке js
     // Наблюдение за другими типами файлов
 });

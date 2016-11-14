@@ -347,11 +347,10 @@ img{
   }
 
   .faq-heading{
-    margin-bottom: 30px;
-    font-size: 32px;
+    margin-bottom: 10px;
+    font-size: 28px;
     font-weight: bold;
-    color: #01309a;
-    text-align: center;
+    color: #444444;
   }
 
   .faq-list__show-more{
@@ -371,9 +370,7 @@ img{
     position: relative;
     padding-left: 25px;
     color: #444444;
-
   }
-
 
   .faq-list__toggle{
     position: absolute;
@@ -555,6 +552,9 @@ img{
   padding: 40px;
   background: #d6d6d6;
   border-radius: 10px;
+  -webkit-box-shadow: 0 0 5px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0 0 5px 1px rgba(0,0,0,0.75);
+  box-shadow: 0 0 5px 1px rgba(0,0,0,0.75);
 }
 
 .filter__filter-menu  {
@@ -1384,6 +1384,9 @@ img{
   }
 }
 
+/*=============
+second site
+==============*/
 
 /*horizontal-menu*/
 
@@ -1507,6 +1510,8 @@ img{
 .available-elements{
   display: flex;
   flex-flow: row wrap;
+  position: relative;
+  top: -40px;
   .available-elements__header{
     flex:1 1 100%;
     font-size: 16px;
@@ -1679,7 +1684,7 @@ img{
     top:28px;
     left:0;
     width: 120px;
-    height: 100px;
+    height: 90px;
     background:url(../img/icons/North_America.png) no-repeat;
     background-size: contain;
     &.continent--active{
@@ -2278,6 +2283,172 @@ img{
     margin-top: -30px;
   }
 }
+
+/*search_domains*/
+.main-search{
+  .text-uppercase{
+    font-size: 38px;
+    color: #021f54;
+    font-weight: 700;
+    text-align: center;
+  }
+  &.main-search--small{
+    .main-search__search-field{
+      padding: 8px 0 8px 15px;
+      font-size: 26px;
+      color: #211f54;
+      &::-webkit-input-placeholder {color:#211f54;}
+      &::-moz-placeholder          {color:#211f54;}
+      &:-moz-placeholder           {color:#211f54;}
+      &:-ms-input-placeholder      {color:#211f54;}
+    }
+    .main-search__search{
+      margin: 0;
+    }
+    .main-search__search-button{
+      padding: 10px 20px 11px 46px;
+    }
+    .btn-link{
+      float: right;
+      margin-top: 15px;
+      font-size: 20px;
+      font-weight: 700;
+      color: #033076;
+      text-decoration: underline;
+    }
+  }
+}
+
+.list-with-icon{
+  &.list-with-icon--icon-top{
+    margin: 0 0 50px;
+    .list-with-icon__item{
+      flex-flow: row wrap;
+      margin: 0;
+    }
+    .list-with-icon__icon{
+      img{
+        height: 110px;
+      }
+      margin: 0 auto 15px;
+    }
+    .list-with-icon__title{
+      text-align: center;
+      font-size: 26px;
+      line-height: 28px;
+    }
+  }
+}
+.card-list{
+  .card-list__card-item{
+    padding: 10px 15px;
+    border-radius: 5px;
+    background: #ebebeb;
+    border:1px solid #d6d6d6;
+  }
+
+  .card-item__icon{
+    display: inline-block;
+    margin-bottom: 25px;
+    img{
+      width: 70px;
+    }
+  }
+
+  .card-item__name{
+    float: right;
+    font-size: 20px;
+    font-weight: 700;
+    color:#606060;
+  }
+
+  .card-item__description{
+    display: flex;
+    align-items: center;
+  }
+
+  .card-item__text{
+    margin-right: 10px;
+    font-size: 16px;
+  }
+
+  .btn-link{
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 700;
+    background: #929292;
+    border-radius: 5px;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+
+  .card-group{
+    margin-bottom: 60px;
+  }
+
+  .top-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+/*account-menu*/
+.account-menu{
+  position: relative;
+  float: right;
+  margin-right: 20px;
+  .account-menu__dropdown{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 20px;
+    width: 200px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    border: 2px solid #3d8af7;
+    z-index: 6;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.75);
+    text-align: left;
+  }
+
+  .account-menu__menu-context{
+    color:#01309a;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .dropdow-item__title{
+    color: #01309a;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .dropdow-item__icon{
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .dropdow-item{
+    margin-bottom: 25px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+
+  .account-menu__user-name{
+    color:#01309a;
+    font-weight: bold;
+    display: block;
+    text-decoration: underline;
+  }
+}
+
+
 
 @media screen and (min-width: 992px){
   .filter__mobile-select,

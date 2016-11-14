@@ -59,13 +59,37 @@
                             </div>
                         </div>
                     </div>
-                    <div class="login-panel">
-                        <a href="#" class="personal action-button">
+                    <div class="account-menu">
+                        <a href="#" class="personal action-button hidden">
                             <span class="personal-icon">
-                                <img src="img/icons/account_white.png" alt="">
+                                <img src="../img/icons/account_white.png" alt="">
                             </span>
                             My Account
                         </a>
+                        <div class="account-menu__menu-context">
+                            Hello:
+                            <a href="#" class="account-menu__user-name">
+                                Franjavier
+                            </a>
+                            <div class="account-menu__dropdown">
+                                <div class="dropdow-item">
+                                    <div class="dropdow-item__icon">
+                                        <img src="../img/icons/Account.png" alt="">
+                                    </div>
+                                    <a href="#" class="dropdow-item__title">
+                                        My Account
+                                    </a>
+                                </div>
+                                <div class="dropdow-item">
+                                    <div class="dropdow-item__icon">
+                                        <img src="../img/icons/log-out.png" alt="">
+                                    </div>
+                                    <a href="#" class="dropdow-item__title">
+                                        Log Out
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -815,7 +839,6 @@
 <script src="js/plugins.js"></script>
 <script src="js/owl.carousel.js"></script>
 <script src="js/main.js"></script>
-
 <script>
     $('.owl-carousel').owlCarousel({
         loop: true,

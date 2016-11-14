@@ -96,3 +96,16 @@ $('.cart .cart-icon').on('click', function(){
 $('.select-panel__item').on('click', function(){
    $(this).siblings('.select-panel__dropdown').slideToggle();
 });
+
+/*==========================================
+ for account panel
+ * ==============================================*/
+$('.account-menu__user-name').on('click', function(){
+    $('.account-menu__dropdown').slideToggle();
+});
+
+$(document).ready(function(){
+    var dividend = $('.account-menu__menu-context').width();
+    var leftIndent = -100+(dividend/2);
+    $('.account-menu .account-menu__dropdown').css('left', leftIndent);
+});
