@@ -2551,6 +2551,25 @@ second site
 .advantages{
   margin-top: 50px;
 }
+@media screen and (max-width: 1199px){
+  .horizontal-menu {
+    a{
+      font-size: 16px;
+    }
+  }
+  .tabs__content {
+    .horizontal-menu {
+      a{
+        font-size: 16px;
+      }
+    }
+  }
+  .select-panel{
+    .select-panel__item{
+      padding: 10px 0;
+    }
+  }
+}
 
 @media screen and (min-width: 992px){
   .filter__mobile-select,
