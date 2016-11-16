@@ -109,3 +109,11 @@ $(document).ready(function(){
     var leftIndent = -100+(dividend/2);
     $('.account-menu .account-menu__dropdown').css('left', leftIndent);
 });
+
+/*=======*/
+if (Modernizr.mq('(max-width: 767px)')) {
+    $('.our-advantages .list-with-icon__title').on('click', function () {
+        $(this).siblings('.list-with-icon__text').slideToggle();
+
+    });
+}

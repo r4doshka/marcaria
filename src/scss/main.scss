@@ -1520,6 +1520,7 @@ second site
     background: #01309a;
     color: #fff;
     font-weight: bold;
+    display: inline-block;
   }
 }
 
@@ -1685,6 +1686,15 @@ second site
     font-size: 16px;
     line-height: 16px;
     color: #444444;
+  }
+
+  &.all-services{
+    .list-with-icon__icon{
+      flex:0 1 60px;
+    }
+    .list-with-icon__description{
+      flex:0 1 auto;
+    }
   }
 }
 
@@ -1995,6 +2005,13 @@ second site
     display: flex;
     align-items: center;
     padding: 15px 0;
+    margin-left: 15px;
+  }
+
+  &:first-child{
+    .select-panel__item{
+      margin-left: 0;
+    }
   }
   .select-panel__item-name{
     display: inline-block;
@@ -2078,7 +2095,7 @@ second site
 
 .header-select{
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 
@@ -2131,6 +2148,9 @@ second site
     font-size: 28px;
     color: #222222;
     font-weight: bold;
+  }
+  .mobile-case{
+    display: none;
   }
   .service-item__item-description{
     margin-bottom: 24px;
@@ -2344,6 +2364,15 @@ second site
     }
   }
 }
+
+.our-advantages{
+  .list-with-icon__icon{
+    img{
+      max-width: 80px;
+    }
+  }
+}
+
 .card-list{
   .card-list__card-item{
     padding: 10px 15px;
@@ -2569,35 +2598,13 @@ second site
       padding: 10px 0;
     }
   }
-}
-
-@media screen and (min-width: 992px){
-  .filter__mobile-select,
-  .faq-list__show-more,
-  .search-result__mobile-option__show,
-  .identical-result__view-detail{
-    display: none;
+  .select-panel__dropdown{
+    top:45px;
   }
 }
-
-@media screen and (max-width: 991px) {
-  .search-result__mobile-option--hide,
-  .login-panel{
-    display: none;
-  }
-  .faq-list__show-more,
-  .search-result__mobile-option{
-    display: block;
-  }
-
-
-  .faq-list__mobile-dropdown{
-    .faq-list__item{
-      display: none;
-    }
-  }
-  .search-result__dropdown-options{
-    margin-top: 20px;
+@media screen and (max-width: 1368px) {
+  .our-clients-container {
+    margin: 40px 40px 60px;
   }
 }
 
@@ -2625,12 +2632,300 @@ second site
       }
     }
   }
+}
 
+@media screen and (min-width: 992px){
+  .filter__mobile-select,
+  .faq-list__show-more,
+  .search-result__mobile-option__show,
+  .identical-result__view-detail{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .search-result__mobile-option--hide,
+  .login-panel{
+    display: none;
+  }
+  .faq-list__show-more,
+  .search-result__mobile-option{
+    display: block;
+  }
+
+  .faq-list__mobile-dropdown{
+    .faq-list__item{
+      display: none;
+    }
+  }
+  .search-result__dropdown-options{
+    margin-top: 20px;
+  }
+
+  .card-list{
+    .card-item__description{
+      flex-flow: row wrap;
+    }
+    .card-item__text{
+      margin-bottom: 20px;
+    }
+    .btn-link{
+      width: 100%;
+      padding: 10px 0;
+      text-align: center;
+    }
+    .card-item__name{
+      font-size: 16px;
+    }
+    .card-item__icon{
+      img{
+        width: 50px;
+      }
+    }
+    .card-group{
+      margin-bottom: 20px;
+    }
+  }
+
+  .content {
+    margin: 30px 0 50px;
+  }
+
+  .faq {
+    .faq-heading{
+      font-size: 20px;
+    }
+    .faq-list__heading{
+      font-size: 16px;
+    }
+    .faq-list__description{
+      font-size: 14px;
+    }
+  }
+
+  .list-with-icon {
+    &.list-with-icon--icon-top{
+      .list-with-icon__icon{
+        img{
+          height: 70px;
+        }
+      }
+      .list-with-icon__title{
+        font-size: 20px;
+      }
+      .list-with-icon__text{
+        font-size: 14px;
+        text-align: center;
+      }
+    }
+  }
+
+  .faq-list__table-dropdown{
+    .faq-list__show-more{
+      display: none;
+    }
+  }
+
+  .our-clients-container{
+    margin: 40px 40px 100px;
+  }
+
+  .owl-next,
+  .owl-prev{
+    width: 20px;
+    height: 30px;
+    margin-top: -15px;
+  }
+
+  .owl-next{
+    right: -65px;
+  }
+
+  .owl-prev{
+    left: -65px;
+  }
+
+  .service{
+    .service-item__item-description{
+      line-height: 24px;
+    }
+  }
+
+  .main-banner{
+    .header{
+      font-size: 38px;
+    }
+    .remark{
+      font-size: 18px;
+    }
+  }
 }
 
 @media screen and (max-width: 767px){
   .breadcrumbs{
     display: none;
+  }
+  .faq-list__table-dropdown{
+    .faq-list__show-more{
+      display: block;
+    }
+  }
+
+  .default-header{
+    font-size: 20px;
+  }
+
+  .content{
+    margin: 30px 0;
+    padding: 30px 0;
+  }
+
+  .list-with-icon{
+    &.list-with-icon--icon-top{
+      margin-bottom: 0;
+      .list-with-icon__item{
+        flex-flow: column nowrap;
+        margin-bottom:30px;
+      }
+    }
+
+    .list-with-icon__item{
+      flex-flow: row wrap;
+      justify-content: center;
+    }
+
+    .list-with-icon__icon{
+      height: 90px;
+      margin: 0 0 20px 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .list-with-icon__description{
+      width: 100%;
+    }
+
+    .list-with-icon__text{
+      display: none;
+    }
+  }
+
+  .card-list{
+    .card-group{
+      margin-bottom: 0;
+    }
+    .card-list__card-item{
+      margin-bottom: 20px;
+    }
+    .card-item__description{
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+    .btn-link{
+      width: auto;
+      padding: 10px 20px;
+    }
+  }
+
+  .our-clients-container{
+    margin: 40px;
+    .our-clients__item{
+      padding: 0 5px;
+    }
+  }
+
+  .account-menu{
+    display: none;
+  }
+
+  .our-advantages{
+    .list-with-icon__title{
+      position: relative;
+      padding-right: 10px;
+      &:before{
+        content: "\f0d7";
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        position: absolute;
+        right: 0;
+        top:0;
+      }
+    }
+  }
+
+  .service{
+    .desktop-case{
+      display: none;
+    }
+    .mobile-case{
+      display: block;
+    }
+    .service-item__item-title{
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    .service-item__item-image{
+      margin-bottom: 10px;
+    }
+    .service-item__item-description{
+      text-align: left;
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: 400;
+    }
+    .action_button{
+      padding: 10px;
+      font-size: 18px;
+    }
+  }
+
+  .reviews{
+    .review-item__content{
+      padding: 30px 10px;
+    }
+    .review-item__date{
+      display: none;
+    }
+    .review-item__description{
+      margin: 0;
+      font-size: 16px;
+    }
+    .review-item__user-icon{
+      padding: 0 5px 0 0;
+    }
+    .review-item__user-name{
+      font-size: 14px;
+    }
+    .review-item__vote{
+      img{
+        width: 120px;
+      }
+    }
+  }
+
+  .main-banner{
+    padding: 100px 15px 20px;
+    .header{
+      top:0;
+      font-size: 24px;
+      color: #021f54;
+    }
+    .remark{
+      margin-top: 0;
+      font-size: 13px;
+      line-height: 20px;
+    }
+    .img-wrap{
+      img{
+        height: 160px;
+      }
+    }
   }
 }
 
