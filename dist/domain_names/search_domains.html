@@ -418,15 +418,15 @@
     <div class="container">
         <div class="filter__filter-container">
             <div class="main-search main-search--small">
-                <div class="row">
-                    <div class="col-md-2 text-uppercase">
+                <div class="row ">
+                    <div class="col-md-2 col-sm-2 text-uppercase">
                         WWW.
                     </div>
-                    <div class="col-md-8 col-sm-9">
+                    <div class="col-md-8 col-sm-10">
                         <input class="main-search__search-field" type="text" placeholder="Enter your domain here...">
                         <a href="" class="btn-link"> Bulk Search</a>
                     </div>
-                    <div class="col-md-2 col-sm-3">
+                    <div class="col-md-2">
                         <div class="main-search__search">
                             <input class="main-search__search-button" type="submit" value="Search">
                             <div class="main-search__search-icon">
@@ -761,7 +761,7 @@
                 </div>
             </div>
             <div class="default-tabs">
-                <ul class="filter__filter-menu filter__filter-menu--hide">
+                <ul class="filter__filter-menu">
                     <li class="filter__filter-menu--current filter__filter-menu--first">
                         <a href="#popular">Popular ccTLDs*</a>
                     </li>
@@ -781,7 +781,7 @@
                         <a href="#Africa">Africa</a>
                     </li>
                 </ul>
-                <div class="filter__filter-content filter__filter-content--hide">
+                <div class="filter__filter-content">
                     <div id="popular" class="filter__tab-content">
                         <div class="filter__item filter__item__select-all">
                             <input type="checkbox" id="sall33">
@@ -1726,15 +1726,15 @@
             </div>
             <div class="tabs-with-slider">
                 <div class="row">
-                    <div class="col-md-3">
-                        <ul class="filter__filter-menu filter__filter-menu--hide">
+                    <div class="col-md-3 col-sm-4">
+                        <ul class="filter__filter-menu">
                             <li class="filter__filter-menu--current filter__filter-menu--first">
                                 <a href="#Popular1">Popular gTLDs*</a>
                             </li>
                         </ul>
                     </div>
-                    <div class="col-md-9 menu-slider">
-                        <ul class="filter__filter-menu filter__filter-menu--hide owl-carousel">
+                    <div class="col-md-9 col-sm-8 menu-slider">
+                        <ul class="filter__filter-menu owl-carousel">
                             <li>
                                 <a href="#Adult">Adult</a>
                             </li>
@@ -1768,7 +1768,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="filter__filter-content filter__filter-content--hide">
+                <div class="filter__filter-content">
                     <div id="Popular1" class="filter__tab-content">
                         <div class="filter__item filter__item__select-all">
                             <input type="checkbox" id="1sall">
@@ -3248,7 +3248,15 @@
         loop: true,
         items: 5,
         nav:true,
-        navText: [,]
+        navText: [,],
+        responsive:{
+            0 : {
+                items : 2
+            },
+            768 : {
+                items : 3
+            }
+        }
 
     });
 </script>

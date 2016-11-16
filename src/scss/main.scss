@@ -2759,6 +2759,30 @@ second site
       font-size: 18px;
     }
   }
+
+  .main-search.main-search--small{
+    position: relative;
+    .main-search__search{
+      position: absolute;
+      top: 0;
+      right: 16px;
+    }
+    .main-search__search-button {
+      padding: 3px 10px 2px 40px;
+    }
+    .text-uppercase{
+      font-size: 24px;
+      margin-top: 5px;
+    }
+    .main-search__search-field {
+      padding: 4px 0 4px 15px;
+      font-size: 20px;
+    }
+    .main-search__search-icon{
+      width: 20px;
+      top:10px;
+    }
+  }
 }
 
 @media screen and (max-width: 767px){
@@ -2805,6 +2829,10 @@ second site
       width: 100%;
     }
 
+
+  }
+
+  .our-advantages{
     .list-with-icon__text{
       display: none;
     }
@@ -2968,10 +2996,24 @@ second site
 
   .filter{
     margin-top: 20px;
-
     .filter__select,
     .filter__options{
       margin-bottom: 20px;
+    }
+
+    .filter__item-name{
+      font-size:15px;
+    }
+
+    .filter__filter-content{
+      padding: 15px 15px 35px;
+    }
+    .filter__filter-menu {
+      position: relative;
+      a{
+        padding: 5px 10px;
+        font-size: 16px;
+      }
     }
   }
 
@@ -2988,7 +3030,6 @@ second site
   .filter__filter-container{
     padding: 20px 15px;
   }
-
 
 
   /*tutorial*/
@@ -3108,6 +3149,15 @@ second site
   .checkbox-list {
     .checkbox-list__item{
       font-size: 16px;
+    }
+  }
+
+  .menu-slider {
+    .owl-prev,
+    .owl-next{
+      top: 7px;
+      margin-top: 0;
+      height: 25px;
     }
   }
 
