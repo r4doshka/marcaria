@@ -328,12 +328,12 @@
                                         <a href="#">Support</a>
                                         <ul class="header__nav__dropdown">
                                             <li>
-                                                <a href="../../support/domain-support.html">Domain Support</a>
+                                                <a href="../support/domain-support.html">Domain Support</a>
                                             </li>
                                             <li>
-                                                <a href="../../support/hosting-support.html">Hosting Support</a></li>
+                                                <a href="../support/hosting-support.html">Hosting Support</a></li>
                                             <li>
-                                                <a href="../../support/trademark-support.html">Trademark Support</a>
+                                                <a href="../support/trademark-support.html">Trademark Support</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -424,7 +424,8 @@
                     </div>
                     <div class="col-md-8 col-sm-10">
                         <input class="main-search__search-field" type="text" placeholder="Enter your domain here...">
-                        <a href="" class="btn-link"> Bulk Search</a>
+                        <textarea class="main-search__search-field" name="text" rows="4" placeholder=""></textarea>
+                        <a href="" class="btn-link bulk-search"> Bulk Search</a>
                     </div>
                     <div class="col-md-2">
                         <div class="main-search__search">
@@ -3258,6 +3259,15 @@
             }
         }
 
+    });
+
+    $(document).ready(function() {
+        $('textarea.main-search__search-field').attr("placeholder","Domain 1\nDomain 2\nDomain 3\nDomain 4");
+        $('.btn-link.bulk-search').on('click', function(e){
+            (e).preventDefault();
+            $('textarea.main-search__search-field').slideToggle();
+            $('input.main-search__search-field').toggleClass('hidden');
+        });
     });
 </script>
 </body>

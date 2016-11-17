@@ -1481,10 +1481,10 @@ second site
     -webkit-box-shadow: 0 2px 5px 1px rgba(0,0,0,0.75);
     -moz-box-shadow: 0 2px 5px 1px rgba(0,0,0,0.75);
     box-shadow: 0 2px 5px 1px rgba(0,0,0,0.75);
-    &.hosting-plans{
+    &.middle-size{
       .product-list__logo{
         img{
-          height: 100px;
+          height: 120px;
         }
       }
       .product-list__title{
@@ -1597,7 +1597,7 @@ second site
     margin-right: 10px;
     img{
       width: 20px;
-      height: 20px;
+      max-height: 20px;
     }
   }
 }
@@ -1639,6 +1639,11 @@ second site
       color: #cbd371;
     }
   }
+}
+
+.middle-align{
+  display: flex;
+  justify-content: center;
 }
 
 .hosting-plans{
@@ -2317,11 +2322,20 @@ second site
     font-weight: 700;
     text-align: center;
   }
+  textarea.main-search__search-field{
+    display: none;
+    &:focus::-webkit-input-placeholder {color: transparent}
+    &:focus::-moz-placeholder          {color: transparent}
+    &:focus:-moz-placeholder           {color: transparent}
+    &:focus:-ms-input-placeholder      {color: transparent}
+    overflow-y: hidden;
+  }
   &.main-search--small{
     .main-search__search-field{
       padding: 8px 0 8px 15px;
       font-size: 26px;
       color: #211f54;
+      resize: none;
       &::-webkit-input-placeholder {color:#211f54;}
       &::-moz-placeholder          {color:#211f54;}
       &:-moz-placeholder           {color:#211f54;}
