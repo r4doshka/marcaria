@@ -276,7 +276,7 @@ img{
     text-align: center;
   }
   .header-info__heading{
-    font-size: 52px;
+    font-size: 60px;
   }
   .header-info__text{
     font-size: 32px;
@@ -1406,6 +1406,18 @@ second site
   }
 }
 
+.header-info-countries{
+  position: relative;
+  text-align: center;
+  .header-info__content{
+    margin: 55px 0 50px;
+    padding: 0 20px 40px;
+    display: inline-block;
+  }
+  .breadcrumbs__item a{
+    text-decoration: underline;
+  }
+}
 
 /*horizontal-menu*/
 
@@ -1460,7 +1472,7 @@ second site
 
 .tabs__content{
   display: none;
-  &.first-tab{
+  &.current-tab{
     display: block;
   }
 
@@ -1914,6 +1926,8 @@ second site
   }
 }
 
+/*cart*/
+
 .cart{
   float: right;
   position: relative;
@@ -2004,7 +2018,7 @@ second site
   align-items: center;
 }
 
-
+/*select-panel*/
 
 .select-panel{
   position: relative;
@@ -2098,8 +2112,6 @@ second site
   }
 }
 
-
-
 .header-select{
   display: flex;
   justify-content: flex-end;
@@ -2148,7 +2160,7 @@ second site
 }
 
 
-
+/*service*/
 .service{
   .service-item{
     text-align: center;
@@ -2467,13 +2479,6 @@ second site
   }
 }
 
-.filter__filter-menu{
-  .filter__filter-menu--first{
-    float: left;
-  }
-}
-
-
 /*account-menu*/
 .account-menu{
   position: relative;
@@ -2590,6 +2595,13 @@ second site
   }
 }
 
+
+.filter__filter-menu{
+  .filter__filter-menu--first{
+    float: left;
+  }
+}
+
 .menu-slider{
   .filter__filter-menu {
     padding: 0 60px;
@@ -2618,6 +2630,8 @@ second site
 .advantages{
   margin-top: 50px;
 }
+
+
 @media screen and (max-width: 1199px){
   .horizontal-menu {
     a{
@@ -2640,6 +2654,7 @@ second site
     top:45px;
   }
 }
+
 @media screen and (max-width: 1368px) {
   .our-clients-container {
     margin: 40px 40px 60px;

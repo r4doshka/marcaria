@@ -185,7 +185,7 @@
             </div>
             <div class="tabs">
                 <div class="container">
-                    <div class="tabs__content first-tab">
+                    <div class="tabs__content current-tab">
                         <ul class="horizontal-menu">
                             <li class="horizontal-menu__item horizontal-menu__item--active">
                                 <a href="search_domains.html">Search Domains</a>
@@ -3211,38 +3211,6 @@
 <script src="../js/main.js"></script>
 <script src="../js/bootstrap/tooltip.js"></script>
 <script>
-    $(document).ready(function() {
-        $('.filter__filter-content').each(function(){
-           $(this).children().filter(':first').css("display", "block") ;
-        });
-
-        $(".default-tabs .filter__filter-menu a").click(function(event) {
-            event.preventDefault();
-            $(this).parent().addClass("filter__filter-menu--current");
-            $(this).parent().siblings().removeClass("filter__filter-menu--current");
-            var tab = $(this).attr("href");
-            var $tabContent = $(this).parents('.default-tabs').find('.filter__tab-content');
-            $tabContent.not(tab).css("display", "none");
-            $(tab).fadeIn();
-        });
-
-
-        $(".tabs-with-slider .filter__filter-menu a").click(function(event) {
-            event.preventDefault();
-            $('.tabs-with-slider .filter__filter-menu--current').removeClass("filter__filter-menu--current");
-            $(this).parent().addClass("filter__filter-menu--current");
-            var tab = $(this).attr("href");
-            var $tabContent = $(this).parents('.tabs-with-slider').find('.filter__filter-content');
-            console.log($tabContent);
-            $tabContent.find('.filter__tab-content').not(tab).css("display", "none");
-            $(tab).fadeIn();
-        });
-    });
-
-    $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
-    });
-
     $('.owl-carousel').owlCarousel({
         loop: true,
         items: 5,
@@ -3259,14 +3227,10 @@
 
     });
 
-    $(document).ready(function() {
-        $('textarea.main-search__search-field').attr("placeholder","Domain 1\nDomain 2\nDomain 3\nDomain 4");
-        $('.btn-link.bulk-search').on('click', function(e){
-            (e).preventDefault();
-            $('textarea.main-search__search-field').slideToggle();
-            $('input.main-search__search-field').toggleClass('hidden');
-        });
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
     });
+
 </script>
 </body>
 </html>
