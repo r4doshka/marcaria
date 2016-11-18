@@ -14,11 +14,6 @@ img{
   color:#fff;
   font-weight: bold;
 }
-
-.header__logo{
-  padding: 0 0 5px;
-}
-
 .header__container{
   background: #01309a;
   border-bottom: 3px solid #b2e712;
@@ -1389,7 +1384,7 @@ img{
 .default-header{
   text-align: center;
   font-weight: bold;
-  font-size: 34px;
+  font-size: 45px;
   color: #00329a;
   text-shadow: 0 2px 3px rgba(150, 150, 150, 1);
 }
@@ -1404,6 +1399,13 @@ img{
 /*=============
 second site
 ==============*/
+.header-logo{
+  margin-bottom: 5px;
+  img{
+    max-height: 75px;
+  }
+}
+
 
 /*horizontal-menu*/
 
@@ -2115,8 +2117,8 @@ second site
     right: 0;
     top:50px;
     margin-bottom: 20px;
-    font-size: 56px;
-    line-height: 58px;
+    font-size: 60px;
+    line-height: 62px;
     font-weight: bold;
     color: #023376;
     text-align: center;
@@ -2124,8 +2126,8 @@ second site
   .remark{
     margin-top: 30px;
     text-align: center;
-    font-size: 24px;
-    line-height: 38px;
+    font-size: 30px;
+    line-height: 34px;
     font-weight: bold;
     color: #023376;
   }
@@ -2133,7 +2135,16 @@ second site
   .img-wrap{
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
+    img{
+      height: 440px;
+    }
+    .group-img{
+      width: 360px;
+      height: 220px;
+    }
   }
+
 }
 
 
@@ -2220,14 +2231,15 @@ second site
   }
   .review-item__title{
     margin-bottom: 15px;
-    font-size: 20px;
+    font-size: 23px;
     color: #021f54;
     font-weight: bold;
     text-align: center;
   }
   .review-item__description{
     margin-bottom: 20px;
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 24px;
     color:#021f54;
     font-style: oblique;
   }
@@ -2270,6 +2282,10 @@ second site
     &:focus{
       outline: none;
     }
+  }
+
+  .reviews-indent{
+    padding: 0 50px;
   }
 }
 
@@ -2382,9 +2398,17 @@ second site
 .our-advantages{
   .list-with-icon__icon{
     img{
-      max-width: 80px;
+      max-width: 120px;
     }
   }
+  .list-with-icon__text{
+    font-size: 19px;
+  }
+
+  .list-with-icon__title{
+    font-size: 27px;
+  }
+
 }
 
 .card-list{
