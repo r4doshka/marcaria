@@ -280,15 +280,18 @@ img{
   }
   .header-info__text{
     font-size: 32px;
+    font-weight: 400;
   }
 }
 
 
 .main-search{
   padding: 0 0 50px;
-  background: #d6d6d6;
+  //background: #d6d6d6;
   border-radius: 10px;
-
+  &.main-search--small{
+    padding: 0 0 20px;
+  }
 
   .main-search__search-field{
     width: 100%;
@@ -550,6 +553,9 @@ img{
   -webkit-box-shadow: 0 0 5px 1px rgba(0,0,0,0.75);
   -moz-box-shadow: 0 0 5px 1px rgba(0,0,0,0.75);
   box-shadow: 0 0 5px 1px rgba(0,0,0,0.75);
+  &.background-color{
+    background: #e6e6e6;
+  }
 }
 
 .filter__filter-menu  {
@@ -1414,6 +1420,15 @@ second site
     padding: 0 20px 40px;
     display: inline-block;
   }
+
+  .header-info__country{
+    margin: 55px 0 50px;
+    padding: 0 20px 40px;
+    display: inline-block;
+    background: #243a56;
+    background: rgba(0, 0, 0, 0.1);
+  }
+
   .breadcrumbs__item a{
     text-decoration: underline;
   }
@@ -2632,6 +2647,106 @@ second site
 }
 
 
+.context-remark{
+  padding: 5px 10px;
+  background: #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  .link{
+    color:#1464f6;
+    text-decoration: underline;
+    font-weight: 700;
+  }
+}
+
+
+/*checkbox-list*/
+.checkbox-list{
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 20px;
+  .checkbox-list__checkbox-item{
+    display: flex;
+    min-width: 95px;
+    align-items: center;
+    margin: 0 10px 10px 0;
+    padding: 8px 12px;
+    background: #fff;
+    border:2px solid #1464f6;
+    border-radius: 8px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  .checkbox-list__checkbox-group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    input[type=checkbox]{
+      display: none;
+      &:checked + .pseudo-checkbox{
+        &:before{
+          content: "\f00c";
+          display: inline-block;
+          font: normal normal normal 14px/1 FontAwesome;
+          font-size: inherit;
+          text-rendering: auto;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          color: #000;
+          position: static;
+        }
+      }
+    }
+    .pseudo-checkbox{
+      width: 20px;
+      height: 20px;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #000;
+      border-radius: 3px;
+      background: #fff;
+      cursor: pointer;
+    }
+  }
+  .checkbox-list__text{
+    margin: 0;
+    font-weight: 400;
+  }
+}
+/*element-box*/
+.element-box{
+  margin-bottom: 10px;
+  padding: 20px 90px;
+  background: #d6d6d6;
+  border-radius: 5px;
+  .element-box__title{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .element-item__icon{
+    display: inline-block;
+    width: 28px;
+    margin-right: 10px;
+  }
+  .element-item__name{
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+}
+
+
+@media screen and (max-width: 1368px) {
+  .our-clients-container {
+    margin: 40px 40px 60px;
+  }
+}
+
 @media screen and (max-width: 1199px){
   .horizontal-menu {
     a{
@@ -2653,15 +2768,6 @@ second site
   .select-panel__dropdown{
     top:45px;
   }
-}
-
-@media screen and (max-width: 1368px) {
-  .our-clients-container {
-    margin: 40px 40px 60px;
-  }
-}
-
-@media screen and (max-width: 1199px) {
   .filter__name{
     font-size: 20px;
   }
@@ -2685,6 +2791,19 @@ second site
       }
     }
   }
+
+  .header-info {
+    .header-info__heading{
+      font-size: 50px;
+    }
+  }
+
+  .header-info-countries {
+    .header-info__content{
+      display: block;
+    }
+  }
+
 }
 
 @media screen and (min-width: 992px){
@@ -2698,7 +2817,8 @@ second site
 
 @media screen and (max-width: 991px) {
   .search-result__mobile-option--hide,
-  .login-panel{
+  .login-panel,
+  .breadcrumbs{
     display: none;
   }
   .faq-list__show-more,
@@ -3028,7 +3148,7 @@ second site
     }
     .header-info__content{
       margin: 10px 0;
-      padding: 40px 0;
+      padding: 20px 0;
       text-shadow: 0 3px 3px #020202;
     }
 
@@ -3039,6 +3159,14 @@ second site
   .dropdown-menu__top{
     .dropdown-menu__toggle{
       padding: 5px ;
+    }
+  }
+
+  .header-info-countries {
+    .header-info__country{
+      display: block;
+      margin: 20px 0;
+      padding: 15px 20px;
     }
   }
 
@@ -3212,6 +3340,14 @@ second site
       margin-top: 0;
       height: 25px;
     }
+  }
+
+  .element-box{
+    padding: 20px 40px;
+  }
+
+  .context-remark{
+    font-size: 12px;
   }
 
 }
@@ -3400,6 +3536,12 @@ second site
       left: -275px;
     }
   }
+
+  .element-box{
+    .element-box--mobile-right{
+      text-align: right;
+    }
+  }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
@@ -3427,7 +3569,6 @@ second site
       font-size: 18px;
     }
   }
-
   .header__header-menu{
     .dropdown-menu__toggle{
       .toggle__icon{
@@ -3438,12 +3579,9 @@ second site
       display: none;
     }
   }
-
-
-
   .header-info {
     .header-info__heading{
-      font-size: 25px;
+      font-size: 18px;
       margin-bottom: 5px;
       img{
         display: none;
@@ -3454,10 +3592,18 @@ second site
       margin: 10px 0;
     }
     .header-info__text{
-      font-size: 18px;
+      font-size: 14px;
       font-weight: 400;
     }
   }
+
+  .header-info-countries{
+    .header-info__country{
+      margin: 10px 0;
+      padding: 0 20px 0;
+    }
+  }
+
 
   /*filter*/
   .filter{
@@ -3504,7 +3650,7 @@ second site
     }
   }
 
-
+/*main-search*/
   .main-search{
     padding: 20px 10px 0;
     .main-search__search{
@@ -3527,7 +3673,29 @@ second site
     }
   }
 
+  .main-search.main-search--small{
+    .main-search__search {
+      position: absolute;
+      top: -38px;
+      right: 16px;
+    }
+    .main-search__search-button {
+      font-size: 14px;
+      padding: 8px 14px 9px 30px;
+    }
+    .main-search__search-icon {
+      top: 8px;
+      left: 12px;
+    }
+    .text-uppercase{
+      display: none;
+    }
 
+    .btn-link{
+      font-weight: 400;
+      font-size: 18px;
+    }
+  }
 
   /*faq*/
   .faq {
@@ -3784,5 +3952,36 @@ second site
       padding: 15px 0 20px;
       justify-content: center;
     }
+  }
+
+  /*element-box*/
+  .element-box{
+    padding: 30px 10px;
+    .element-box__title{
+      font-size: 12px;
+    }
+    .element-item__name{
+      font-size: 12px;
+    }
+  }
+
+
+  .checkbox-list--mobile-hide,
+  .bulk-search--mobile-hide,
+  .context-remark--mobile-hide{
+    display: none;
+  }
+  .advantages {
+    &.advantages--mobile-hide {
+      display: none;
+    }
+  }
+
+  .main-search__search-field{
+    font-size: 12px;
+    &::-webkit-input-placeholder {font-size:12px;}
+    &::-moz-placeholder          {font-size:12px;}/* Firefox 19+ */
+    &:-moz-placeholder           {font-size:12px;}/* Firefox 18- */
+    &:-ms-input-placeholder  {font-size:12px;}
   }
 }
