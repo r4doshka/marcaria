@@ -7099,7 +7099,7 @@ second site
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
   position: relative;
-  top: -40px; }
+  top: -20px; }
   .available-elements .available-elements__header {
     -webkit-box-flex: 1;
     -webkit-flex: 1 1 100%;
@@ -7274,13 +7274,15 @@ second site
 .world-map {
   position: relative; }
   .world-map img {
-    opacity: 0.2; }
+    opacity: 0.2;
+    height: 300px;
+    width: 100%; }
   .world-map .continent-item {
     cursor: pointer; }
   .world-map .north_america {
     position: absolute;
-    top: 28px;
-    left: 0;
+    top: 10px;
+    left: 50px;
     width: 120px;
     height: 90px;
     background: url(../img/icons/North_America.png) no-repeat;
@@ -7296,8 +7298,8 @@ second site
       background-size: contain; }
   .world-map .central_america {
     position: absolute;
-    left: 130px;
-    top: 90px;
+    left: 150px;
+    top: 100px;
     width: 120px;
     height: 100px;
     background: url(../img/icons/Central_America.png) no-repeat;
@@ -7313,8 +7315,8 @@ second site
       background-size: contain; }
   .world-map .south_america {
     position: absolute;
-    left: 53px;
-    top: 230px;
+    left: 80px;
+    top: 205px;
     width: 120px;
     height: 100px;
     background: url(../img/icons/South_America.png) no-repeat;
@@ -7347,8 +7349,8 @@ second site
       background-size: contain; }
   .world-map .africa {
     position: absolute;
-    left: 310px;
-    top: 160px;
+    left: 330px;
+    top: 120px;
     width: 120px;
     height: 100px;
     background: url(../img/icons/Africa.png) no-repeat;
@@ -7364,8 +7366,8 @@ second site
       background-size: contain; }
   .world-map .asia {
     position: absolute;
-    left: 500px;
-    top: 55px;
+    left: 490px;
+    top: 50px;
     width: 120px;
     height: 100px;
     background: url(../img/icons/Asia.png) no-repeat;
@@ -7381,7 +7383,7 @@ second site
       background-size: contain; }
   .world-map .oceania {
     position: absolute;
-    right: -10px;
+    right: 0;
     bottom: 50px;
     width: 120px;
     height: 100px;
