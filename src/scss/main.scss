@@ -2847,7 +2847,13 @@ domain select  start
     margin-top: 10px;
     display: flex;
     align-items: center;
+    &.products-list__products-item--empty{
+      margin: 10px 0 40px 0;
+      padding: 0 0 0 30px;
+      font-size: 18px;
+    }
   }
+
   .products-list__heading{
     font-weight: 700;
     font-size: 25px;
@@ -2888,7 +2894,7 @@ domain select  start
   }
 
   .add-to-cart{
-    margin-top: 30px;
+    margin-top: 20px;
   }
   .context-remark{
     position: absolute;
@@ -2982,10 +2988,40 @@ domain select  start
 
 .card-panel{
   padding: 20px 25px;
+  .card-panel__content{
+    max-height: 290px;
+    margin: 0 0 30px;
+    overflow-y: scroll;
+  }
   .card-panel--empty{
     text-align: right;
     color: #01309a;
     font-size: 21px;
+  }
+  .card-panel__item{
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #01309a;
+  }
+  .card-panel__item-description{
+    display: inline-block;
+    margin:0 25px 0 60px;
+  }
+  .card-panel__item-price{
+    display: inline-block;
+    margin: 0 5px 0 0 ;
+  }
+  .card-panel__discard-button{
+    display: inline-block;
+    position: relative;
+    top: -2px;
+    width: 18px;
+    height: 18px;
+    line-height: 15px;
+    text-align: center;
+    border-radius: 50%;
+    background: #ebebeb;
+    cursor: pointer;
   }
   .card-panel__total-price{
     display: inline-block;
@@ -2996,6 +3032,13 @@ domain select  start
     font-size: 24px;
     font-weight: 700;
     border-top:2px solid #0844a4;
+  }
+  .card-panel__remove{
+    position: relative;
+    top: 18px;
+    font-size: 12px;
+    color: #006ce5;
+    text-decoration: underline;
   }
 }
 
@@ -3028,6 +3071,67 @@ domain select  start
   text-decoration: underline;
 }
 
+.btn-next{
+  display: inline-block;
+  float: right;
+  padding: 6px 40px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  border:none;
+  border-radius: 5px;
+  background: #0d58cf;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.75);
+}
+
+.modal-text{
+  .modal-dialog{
+    width: 500px;
+    margin: auto;
+    border: 2px solid #006ce5;
+  }
+  .modal-content{
+    padding: 20px 25px;
+    color: #0c59cf;
+    border-radius: 0;
+    text-align: center;
+  }
+  .modal-text__description{
+    margin-bottom: 30px;
+    font-size: 16px;
+    text-align: left;
+  }
+  .modal-text__header{
+    margin: 0 0 20px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #01309a;
+    text-align: center;
+  }
+
+  .simple-list{
+    margin-bottom: 30px;
+    .simple-list__title{
+      margin-bottom: 10px;
+      font-size: 16px;
+      font-weight: 700;
+    }
+    .simple-list__item{
+      font-size: 14px;
+      color: #0c59cf;
+      text-align: left;
+      &:before{
+        display: none;
+      }
+    }
+  }
+  .btn-next{
+    background: #3d8af7;
+    float: none;
+    font-size: 15px;
+    box-shadow: none;
+  }
+}
 /*=============
 domain select  end
 ===============*/
@@ -3248,10 +3352,6 @@ domain select  end
       top:10px;
     }
   }
-  .mobile-order{
-    display: flex;
-    flex-flow: row wrap;
-  }
 }
 
 @media screen and (max-width: 767px){
@@ -3449,7 +3549,7 @@ domain select  end
     .add-to-cart{
       width: 150px;
       display: block;
-      margin: 30px auto 0;
+      margin: 20px auto 0;
     }
   }
 
@@ -4182,7 +4282,7 @@ domain select  end
     }
     .search-result__search-field{
       font-size: 16px;
-      padding: 10px 120px 10px 5px;
+      padding: 10px 90px 10px 5px;
       height: 40px;
     }
 
@@ -4337,5 +4437,16 @@ domain select  end
 
   .bulk-search-field{
     font-size: 16px;
+  }
+
+  .modal-text{
+    .modal-dialog {
+      width: 290px;
+    }
+    .simple-list{
+      .simple-list__title{
+        text-align: left;
+      }
+    }
   }
 }
