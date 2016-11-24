@@ -160,9 +160,15 @@ $(document).ready(function() {
  for bulk search
  * ==============================================*/
 
-$('.bulk-search-field').attr("placeholder","Domain 1\nDomain 2\nDomain 3\nDomain 4");
-$('.btn-link.bulk-search').on('click', function(e){
+$('.bulk-search-field, .main-search__search-field.bulk-case').attr("placeholder","Domain 1\nDomain 2\nDomain 3\nDomain 4");
+
+$('.search-result .btn-link.bulk-search').on('click', function(e){
     $(this).toggleClass('hidden').siblings().toggleClass('hidden');
     (e).preventDefault();
     $('.bulk-case, .single-case, .button-single-case, .button-bulk-case').toggleClass('hidden');
+});
+
+$('.main-search .btn-link.bulk-search').on('click', function(e){
+    (e).preventDefault();
+    $('.bulk-case, .single-case').toggleClass('hidden');
 });
