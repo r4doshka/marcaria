@@ -160,9 +160,9 @@ $(document).ready(function() {
  for bulk search
  * ==============================================*/
 
-$('textarea.main-search__search-field').attr("placeholder","Domain 1\nDomain 2\nDomain 3\nDomain 4");
+$('.bulk-search-field').attr("placeholder","Domain 1\nDomain 2\nDomain 3\nDomain 4");
 $('.btn-link.bulk-search').on('click', function(e){
+    $(this).toggleClass('hidden').siblings().toggleClass('hidden');
     (e).preventDefault();
-    $('textarea.main-search__search-field').slideToggle();
-    $('input.main-search__search-field').toggleClass('hidden');
+    $('.bulk-case, .single-case, .button-single-case, .button-bulk-case').toggleClass('hidden');
 });
