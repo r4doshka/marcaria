@@ -117,9 +117,9 @@ if (Modernizr.mq('(max-width: 767px)')) {
 
     });
 }
-if (Modernizr.mq('(max-width: 991px)')) {
+if (Modernizr.mq('(max-width: 767px)')) {
     $(document).ready(function(){
-        $('.main-search__search input').attr('value', '');
+        $('.main-search--small .main-search__search input').attr('value', '');
     });
 }
 
