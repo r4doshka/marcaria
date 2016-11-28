@@ -1,5 +1,6 @@
 @import "../../vendors/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 body{
+  width: 100%;
   font-family: Helvetica, 'sans-serif';
   font-size: 14px;
   color: #000;
@@ -396,7 +397,7 @@ img{
 .footer{
   padding: 20px 0;
   background: #021f54;
-  
+
   .footer__copyright{
     font-size: 18px;
     text-align: center;
@@ -812,7 +813,7 @@ img{
     padding-top: 5px;
   }
   .search-options__item{
-    margin-right: 15px; 
+    margin-right: 15px;
     &:not(:first-child, :last-child){
       &:after{
         content: '|';
@@ -882,12 +883,12 @@ img{
     line-height: 35px;
     background: #0c59cf;
   }
-  
+
   .search-progress__text{
     font-size: 26px;
     color: #0c59cf;
   }
-  
+
 }
 
 /*tutorial*/
@@ -1238,46 +1239,46 @@ img{
 }
 .checkbox-list{
 
-    label{
-      margin-bottom: 0;
-      flex:0 1 90%;
-    }
+  label{
+    margin-bottom: 0;
+    flex:0 1 90%;
+  }
 
-    input[type=checkbox]{
-      display: none;
+  input[type=checkbox]{
+    display: none;
+  }
+  input[type=checkbox]{
+    &+label{
+      display: inline-block;
+      margin-right: 10px;
+      width: 24px;
+      flex:0 1 24px;
+      height: 24px;
+      background: #fff;
+      border:1px solid #929292;
+      border-radius: 5px;
+      cursor: pointer;
     }
-    input[type=checkbox]{
+    &:checked{
       &+label{
-        display: inline-block;
-        margin-right: 10px;
-        width: 24px;
-        flex:0 1 24px;
-        height: 24px;
-        background: #fff;
-        border:1px solid #929292;
-        border-radius: 5px;
-        cursor: pointer;
-      }
-      &:checked{
-        &+label{
-          border-color: #01309a;
-          color: #006ce5;
-          &:before{
-            content: "\f00c";
-            display: inline-block;
-            font: normal normal normal 14px/1 FontAwesome;
-            text-rendering: auto;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            position: relative;
-            left: 3px;
-            top: -7px;
-            font-size: 17px;
-            line-height: 22px;
-          }
+        border-color: #01309a;
+        color: #006ce5;
+        &:before{
+          content: "\f00c";
+          display: inline-block;
+          font: normal normal normal 14px/1 FontAwesome;
+          text-rendering: auto;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          position: relative;
+          left: 3px;
+          top: -7px;
+          font-size: 17px;
+          line-height: 22px;
         }
       }
     }
+  }
 
 
   .checkbox-list__item{
@@ -1464,7 +1465,7 @@ second site
   }
 
   .tab-controls--active{
-   border-bottom: none;
+    border-bottom: none;
     a{
       border: 3px solid #3c88f6;
       border-bottom: none;
@@ -1899,7 +1900,7 @@ second site
   }
   .list-with-icon__icon{
     flex: 0 1 40px;
-    }
+  }
   .list-with-icon__description{
     flex: 0 1 80%;
   }
@@ -1958,9 +1959,9 @@ second site
       background-size: contain;
     }
     &.cart-icon--added{
-       background:url(../img/icons/shopping-cart_blue_red.png) no-repeat;
-       background-size: contain;
-     }
+      background:url(../img/icons/shopping-cart_blue_red.png) no-repeat;
+      background-size: contain;
+    }
     &.cart-icon--saved{
       background:url(../img/icons/shopping-cart_light_blue.png) no-repeat;
       background-size: contain;
@@ -2137,13 +2138,9 @@ second site
 
 .main-banner{
   position: relative;
-  padding: 50px 0;
+  margin-bottom: 140px;
   .header{
-    position: absolute;
-    left: 0;
-    right: 0;
-    top:50px;
-    margin-bottom: 20px;
+    margin:40px 0 20px;
     font-size: 60px;
     line-height: 62px;
     font-weight: bold;
@@ -2160,18 +2157,19 @@ second site
   }
 
   .img-wrap{
+    position: absolute;
+    top:140px;
+    left: 0;
+    right: 0;
+    z-index: -1;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    img{
-      height: 440px;
-    }
+    transition: all 0.5s;
     .group-img{
-      width: 360px;
-      height: 220px;
+      max-height: 300px;
     }
   }
-
 }
 
 
@@ -2181,9 +2179,9 @@ second site
     text-align: center;
   }
   .service-item__item-image{
-      img{
-        width: 260px;
-      }
+    img{
+      width: 260px;
+    }
     margin-bottom: 40px;
   }
   .service-item__item-title{
@@ -2425,6 +2423,7 @@ second site
 
   .list-with-icon__title{
     font-size: 27px;
+    line-height: 30px;
   }
 
 }
@@ -2717,6 +2716,8 @@ second site
   .checkbox-list__text{
     margin: 0;
     font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
     &.checkbox-list__text--left-indent{
       margin-left: 40px;
     }
@@ -2835,6 +2836,16 @@ domain select  start
     position: relative;
     top:6px;
     margin-left: 5px;
+  }
+  .tooltip-inner{
+    max-width: 300px;
+    background: #fff;
+    border:1px solid #89b5f7;
+  }
+  .tooltip.bottom .tooltip-arrow{
+    border-bottom-color: #fff;
+    top:-9px;
+    border-width: 0 10px 15px;
   }
   .content-box__header{
     display: flex;
@@ -3116,6 +3127,18 @@ domain select  start
     margin: auto;
     border: 2px solid #006ce5;
   }
+
+  &.modal-terms{
+    .modal-dialog{
+      width: 660px;
+    }
+
+    .modal-text__description{
+      max-height: 180px;
+      padding-right: 20px;
+      overflow-y: scroll;
+    }
+  }
   .modal-content{
     padding: 20px 25px;
     color: #0c59cf;
@@ -3126,6 +3149,7 @@ domain select  start
     margin-bottom: 30px;
     font-size: 16px;
     text-align: left;
+    line-height: 1.3;
   }
   .modal-text__header{
     margin: 0 0 20px;
@@ -3258,7 +3282,7 @@ domain configurations  start
 
 .helper{
   &.helper--color-blue{
-      fill: #3d8af7;
+    fill: #3d8af7;
   }
 }
 
@@ -3272,6 +3296,7 @@ domain configurations  start
   input[type=radio]+.pseudo-radio{
     width: 18px;
     height: 18px;
+    flex:0 0 18px;
     margin-right: 15px;
     border-radius: 50%;
     border:1px solid #5096f8;
@@ -3295,23 +3320,46 @@ domain configurations  start
     color: #01309a;
     cursor: pointer;
     font-weight: 400;
+    &.radio-checkbox-group__text--large{
+      font-size: 25px;
+      font-weight: 700;
+      color: #0c59cf;
+    }
   }
 
 }
 
 .default-select{
-    padding: 3px;
-    color: #01309a;
-    border:1px solid #3359ae;
-    border-radius: 5px;
-    font-size: 21px;
+  padding: 3px;
+  color: #01309a;
+  border:1px solid #3359ae;
+  border-radius: 5px;
+  font-size: 21px;
 }
 
 .radio-list{
   padding: 40px 0;
+  .radio-list__inner{
+    padding: 15px 30px;
+  }
   .radio-list__item{
     display: flex;
     flex-flow: row wrap;
+    &.radio-list__item--inactive{
+      .radio-checkbox-group__text{
+        color: #acc9fa;
+        font-weight: 500;
+      }
+      .simple-list__item{
+        color: #acc9fa;
+        font-weight: 500;
+      }
+      .default-select{
+        color: #acc9fa;
+        font-weight: 500;
+        border-color: #acc9fa;
+      }
+    }
     .radio-checkbox-group{
       margin-right: 40px;
     }
@@ -3326,7 +3374,16 @@ domain configurations  start
     width: 50%;
     float: left;
   }
+}
 
+.radio-list__inner{
+  .info-form{
+    padding: 15px 30px;
+    margin-bottom: 0;
+    .info-form__name{
+      font-size: 19px;
+    }
+  }
 }
 
 .about-info{
@@ -3348,14 +3405,103 @@ domain configurations  start
     padding: 5px;
     border-radius: 5px;
     border:1px solid #4d85dc;
+    &.validation-error{
+      border-color: #e61610;
+      &:focus,
+      &:active{
+        outline: none;
+      }
+    }
   }
   .btn-next{
     background: #3d8af7;
-    font-size: 15px;
+    font-size: 19px;
+    box-shadow: none;
+  }
+
+  .error-description{
+    line-height: 38px;
+  }
+}
+
+.error-description{
+  display: block;
+  font-size: 16px;
+  color: #e61610
+}
+
+
+.modal-open{
+  text-decoration: underline;
+  color: #01309a;
+}
+
+.indent-bottom{
+  margin-bottom: 50px;
+  padding: 10px 15px;
+  overflow: hidden;
+}
+
+.info-form{
+  margin-bottom: 60px;
+  .info-form__name{
+    display: block;
+    color: #0c59cf;
+    font-size: 23px;
+    font-weight: bold;
+  }
+  .info-form__field{
+    height: 40px;
+    border:1px solid #0c59cf;
+  }
+
+  .default-select{
+    min-width: 270px;
+    height: 40px;
+  }
+  .btn-next{
+    margin-top: 38px;
+    background: #3d8af7;
+    font-size: 19px;
+    -webkit-box-shadow: none;
     box-shadow: none;
   }
 }
 
+.domain-privacy{
+  .radio-list{
+    padding: 40px 0 0 0;
+  }
+  .radio-list__item{
+    padding-left: 50px;
+  }
+  .products-list .products-list__products-item{
+    font-size: 17px;
+  }
+}
+
+.add-btn{
+  font-size: 14px;
+  text-decoration: underline;
+  &:before{
+    content: "\f055";
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-right: 10px;
+  }
+}
+
+.action-button-center{
+  overflow: hidden;
+  text-align: center;
+  .btn-next{
+    float: none;
+  }
+}
 
 /*=============
 domain configurations  end
@@ -3423,7 +3569,6 @@ domain configurations  end
       display: block;
     }
   }
-
 }
 
 @media screen and (min-width: 992px){
@@ -3551,6 +3696,7 @@ domain configurations  end
     }
     .remark{
       font-size: 18px;
+      margin-top: 0;
     }
   }
 
@@ -3754,6 +3900,14 @@ domain configurations  end
   .element-box{
     .element-box--mobile-right{
       text-align: right;
+    }
+  }
+
+  .checkbox-list {
+    .checkbox-list__checkbox-group {
+      .pseudo-checkbox.pseudo-checkbox--large{
+        left: 0;
+      }
     }
   }
 }
@@ -4012,6 +4166,9 @@ domain configurations  end
     }
 
     .list-with-icon__icon{
+      img{
+        height: 90px;
+      }
       height: 90px;
       margin: 0 0 20px 0;
       display: flex;
@@ -4074,7 +4231,7 @@ domain configurations  end
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         position: absolute;
-        right: 0;
+        right: -10px;
         top:0;
       }
     }
@@ -4131,21 +4288,19 @@ domain configurations  end
   }
 
   .main-banner{
-    padding: 100px 15px 20px;
+    transition: all 0.5s;
     .header{
-      top:0;
-      font-size: 24px;
+      margin-top: 0;
+      font-size: 20px;
       color: #021f54;
     }
-    .remark{
+    .img-wrap{
+      top:110px;
+    }
+    .remark {
       margin-top: 0;
       font-size: 13px;
-      line-height: 20px;
-    }
-    .img-wrap{
-      img{
-        height: 160px;
-      }
+      line-height: 24px;
     }
   }
 
@@ -4157,6 +4312,7 @@ domain configurations  end
       flex-flow: row wrap;
       padding-bottom: 30px;
       border-bottom: 1px solid #e0e0e0;
+      font-size: 16px;
     }
     .square-box,
     .busy{
@@ -4300,7 +4456,7 @@ domain configurations  end
     }
   }
 
-/*main-search*/
+  /*main-search*/
   .main-search{
     padding: 20px 10px 0;
     .main-search__search-field{
@@ -4652,11 +4808,83 @@ domain configurations  end
     .modal-dialog {
       width: 290px;
     }
+    &.modal-terms{
+      .modal-dialog {
+        width: 290px;
+      }
+      .modal-text__description{
+        padding-right: 0;
+      }
+    }
     .simple-list{
       .simple-list__title{
         text-align: left;
       }
     }
   }
-}
 
+  .progress-step-bar{
+    margin: 20px 0;
+    .progress-step-bar__item-name{
+      font-size: 11px;
+    }
+  }
+
+  .content-box{
+    .content-box__header.content-box__header--auto-height{
+      padding: 5px;
+      font-size: 16px;
+    }
+    .helper{
+      top:0;
+    }
+  }
+
+  .radio-list {
+    padding: 20px 0;
+    .radio-list__item{
+      margin:0 0 20px 0;
+      .default-select{
+        font-size: 16px;
+      }
+      .radio-checkbox-group{
+        margin-right: 0;
+      }
+    }
+    .simple-list{
+      padding: 0 0 0 20px;
+    }
+    .simple-list__item{
+      width: 100%;
+      margin-bottom: 5px;
+      float: none;
+    }
+  }
+
+  .radio-checkbox-group {
+    align-items: flex-start;
+    .radio-checkbox-group__text{
+      font-size: 16px;
+    }
+  }
+
+  .about-info{
+    .about-info__title{
+      font-size: 16px;
+    }
+    .about-info__name{
+      font-size: 14px;
+    }
+  }
+  .error-description{
+    text-align: right;
+  }
+
+  .info-form{
+    padding: 0 15px;
+    .default-select{
+      max-width: 100%;
+      margin: 0;
+    }
+  }
+}

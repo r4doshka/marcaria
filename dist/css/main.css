@@ -5802,6 +5802,7 @@ button.close {
     display: none !important; } }
 
 body {
+  width: 100%;
   font-family: Helvetica, 'sans-serif';
   font-size: 14px;
   color: #000; }
@@ -7627,13 +7628,9 @@ second site
 /*home page*/
 .main-banner {
   position: relative;
-  padding: 50px 0; }
+  margin-bottom: 140px; }
   .main-banner .header {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 50px;
-    margin-bottom: 20px;
+    margin: 40px 0 20px;
     font-size: 60px;
     line-height: 62px;
     font-weight: bold;
@@ -7647,6 +7644,11 @@ second site
     font-weight: bold;
     color: #023376; }
   .main-banner .img-wrap {
+    position: absolute;
+    top: 140px;
+    left: 0;
+    right: 0;
+    z-index: -1;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -7658,12 +7660,11 @@ second site
     -webkit-box-align: end;
     -webkit-align-items: flex-end;
         -ms-flex-align: end;
-            align-items: flex-end; }
-    .main-banner .img-wrap img {
-      height: 440px; }
+            align-items: flex-end;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s; }
     .main-banner .img-wrap .group-img {
-      width: 360px;
-      height: 220px; }
+      max-height: 300px; }
 
 /*service*/
 .service .service-item {
@@ -7892,7 +7893,8 @@ second site
   font-size: 19px; }
 
 .our-advantages .list-with-icon__title {
-  font-size: 27px; }
+  font-size: 27px;
+  line-height: 30px; }
 
 .card-list .card-list__card-item {
   padding: 10px 15px;
@@ -8180,7 +8182,9 @@ second site
 
 .checkbox-list .checkbox-list__text {
   margin: 0;
-  font-weight: 400; }
+  font-weight: 400;
+  overflow: hidden;
+  text-overflow: ellipsis; }
   .checkbox-list .checkbox-list__text.checkbox-list__text--left-indent {
     margin-left: 40px; }
 
@@ -8316,6 +8320,14 @@ domain select  start
     position: relative;
     top: 6px;
     margin-left: 5px; }
+  .content-box .tooltip-inner {
+    max-width: 300px;
+    background: #fff;
+    border: 1px solid #89b5f7; }
+  .content-box .tooltip.bottom .tooltip-arrow {
+    border-bottom-color: #fff;
+    top: -9px;
+    border-width: 0 10px 15px; }
   .content-box .content-box__header {
     display: -webkit-box;
     display: -webkit-flex;
@@ -8591,6 +8603,14 @@ domain select  start
   margin: auto;
   border: 2px solid #006ce5; }
 
+.modal-text.modal-terms .modal-dialog {
+  width: 660px; }
+
+.modal-text.modal-terms .modal-text__description {
+  max-height: 180px;
+  padding-right: 20px;
+  overflow-y: scroll; }
+
 .modal-text .modal-content {
   padding: 20px 25px;
   color: #0c59cf;
@@ -8601,7 +8621,8 @@ domain select  start
 .modal-text .modal-text__description {
   margin-bottom: 30px;
   font-size: 16px;
-  text-align: left; }
+  text-align: left;
+  line-height: 1.3; }
 
 .modal-text .modal-text__header {
   margin: 0 0 20px;
@@ -8743,6 +8764,10 @@ domain configurations  start
   .radio-checkbox-group input[type=radio] + .pseudo-radio {
     width: 18px;
     height: 18px;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 18px;
+        -ms-flex: 0 0 18px;
+            flex: 0 0 18px;
     margin-right: 15px;
     -webkit-border-radius: 50%;
             border-radius: 50%;
@@ -8774,6 +8799,10 @@ domain configurations  start
     color: #01309a;
     cursor: pointer;
     font-weight: 400; }
+    .radio-checkbox-group .radio-checkbox-group__text.radio-checkbox-group__text--large {
+      font-size: 25px;
+      font-weight: 700;
+      color: #0c59cf; }
 
 .default-select {
   padding: 3px;
@@ -8785,6 +8814,8 @@ domain configurations  start
 
 .radio-list {
   padding: 40px 0; }
+  .radio-list .radio-list__inner {
+    padding: 15px 30px; }
   .radio-list .radio-list__item {
     display: -webkit-box;
     display: -webkit-flex;
@@ -8793,6 +8824,16 @@ domain configurations  start
     -webkit-flex-flow: row wrap;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap; }
+    .radio-list .radio-list__item.radio-list__item--inactive .radio-checkbox-group__text {
+      color: #acc9fa;
+      font-weight: 500; }
+    .radio-list .radio-list__item.radio-list__item--inactive .simple-list__item {
+      color: #acc9fa;
+      font-weight: 500; }
+    .radio-list .radio-list__item.radio-list__item--inactive .default-select {
+      color: #acc9fa;
+      font-weight: 500;
+      border-color: #acc9fa; }
     .radio-list .radio-list__item .radio-checkbox-group {
       margin-right: 40px; }
   .radio-list .simple-list {
@@ -8806,6 +8847,12 @@ domain configurations  start
   .radio-list .simple-list__item {
     width: 50%;
     float: left; }
+
+.radio-list__inner .info-form {
+  padding: 15px 30px;
+  margin-bottom: 0; }
+  .radio-list__inner .info-form .info-form__name {
+    font-size: 19px; }
 
 .about-info {
   padding: 20px 0; }
@@ -8825,11 +8872,79 @@ domain configurations  start
     -webkit-border-radius: 5px;
             border-radius: 5px;
     border: 1px solid #4d85dc; }
+    .about-info .about-info__input.validation-error {
+      border-color: #e61610; }
+      .about-info .about-info__input.validation-error:focus, .about-info .about-info__input.validation-error:active {
+        outline: none; }
   .about-info .btn-next {
     background: #3d8af7;
-    font-size: 15px;
+    font-size: 19px;
     -webkit-box-shadow: none;
             box-shadow: none; }
+  .about-info .error-description {
+    line-height: 38px; }
+
+.error-description {
+  display: block;
+  font-size: 16px;
+  color: #e61610; }
+
+.modal-open {
+  text-decoration: underline;
+  color: #01309a; }
+
+.indent-bottom {
+  margin-bottom: 50px;
+  padding: 10px 15px;
+  overflow: hidden; }
+
+.info-form {
+  margin-bottom: 60px; }
+  .info-form .info-form__name {
+    display: block;
+    color: #0c59cf;
+    font-size: 23px;
+    font-weight: bold; }
+  .info-form .info-form__field {
+    height: 40px;
+    border: 1px solid #0c59cf; }
+  .info-form .default-select {
+    min-width: 270px;
+    height: 40px; }
+  .info-form .btn-next {
+    margin-top: 38px;
+    background: #3d8af7;
+    font-size: 19px;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+
+.domain-privacy .radio-list {
+  padding: 40px 0 0 0; }
+
+.domain-privacy .radio-list__item {
+  padding-left: 50px; }
+
+.domain-privacy .products-list .products-list__products-item {
+  font-size: 17px; }
+
+.add-btn {
+  font-size: 14px;
+  text-decoration: underline; }
+  .add-btn:before {
+    content: "\f055";
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-right: 10px; }
+
+.action-button-center {
+  overflow: hidden;
+  text-align: center; }
+  .action-button-center .btn-next {
+    float: none; }
 
 /*=============
 domain configurations  end
@@ -8930,7 +9045,8 @@ domain configurations  end
   .main-banner .header {
     font-size: 38px; }
   .main-banner .remark {
-    font-size: 18px; }
+    font-size: 18px;
+    margin-top: 0; }
   .main-search.main-search--small {
     position: relative; }
     .main-search.main-search--small .main-search__search-button {
@@ -9069,7 +9185,9 @@ domain configurations  end
   .cart .cart-content {
     left: -275px; }
   .element-box .element-box--mobile-right {
-    text-align: right; } }
+    text-align: right; }
+  .checkbox-list .checkbox-list__checkbox-group .pseudo-checkbox.pseudo-checkbox--large {
+    left: 0; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
   /*breadcrumbs*/
@@ -9238,6 +9356,8 @@ domain configurations  end
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
+    .list-with-icon .list-with-icon__icon img {
+      height: 90px; }
   .list-with-icon .list-with-icon__description {
     width: 100%; }
   .our-advantages .list-with-icon__text {
@@ -9283,7 +9403,7 @@ domain configurations  end
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       position: absolute;
-      right: 0;
+      right: -10px;
       top: 0; }
   .service .desktop-case {
     display: none; }
@@ -9316,17 +9436,18 @@ domain configurations  end
   .reviews .review-item__vote img {
     width: 120px; }
   .main-banner {
-    padding: 100px 15px 20px; }
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s; }
     .main-banner .header {
-      top: 0;
-      font-size: 24px;
+      margin-top: 0;
+      font-size: 20px;
       color: #021f54; }
+    .main-banner .img-wrap {
+      top: 110px; }
     .main-banner .remark {
       margin-top: 0;
       font-size: 13px;
-      line-height: 20px; }
-    .main-banner .img-wrap img {
-      height: 160px; }
+      line-height: 24px; }
   .products-list .products-list__heading {
     display: none; }
   .products-list .products-list__products-item {
@@ -9334,7 +9455,8 @@ domain configurations  end
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
     padding-bottom: 30px;
-    border-bottom: 1px solid #e0e0e0; }
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 16px; }
   .products-list .square-box,
   .products-list .busy {
     -webkit-box-pack: end;
@@ -9645,5 +9767,50 @@ domain configurations  end
     font-size: 16px; }
   .modal-text .modal-dialog {
     width: 290px; }
+  .modal-text.modal-terms .modal-dialog {
+    width: 290px; }
+  .modal-text.modal-terms .modal-text__description {
+    padding-right: 0; }
   .modal-text .simple-list .simple-list__title {
-    text-align: left; } }
+    text-align: left; }
+  .progress-step-bar {
+    margin: 20px 0; }
+    .progress-step-bar .progress-step-bar__item-name {
+      font-size: 11px; }
+  .content-box .content-box__header.content-box__header--auto-height {
+    padding: 5px;
+    font-size: 16px; }
+  .content-box .helper {
+    top: 0; }
+  .radio-list {
+    padding: 20px 0; }
+    .radio-list .radio-list__item {
+      margin: 0 0 20px 0; }
+      .radio-list .radio-list__item .default-select {
+        font-size: 16px; }
+      .radio-list .radio-list__item .radio-checkbox-group {
+        margin-right: 0; }
+    .radio-list .simple-list {
+      padding: 0 0 0 20px; }
+    .radio-list .simple-list__item {
+      width: 100%;
+      margin-bottom: 5px;
+      float: none; }
+  .radio-checkbox-group {
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .radio-checkbox-group .radio-checkbox-group__text {
+      font-size: 16px; }
+  .about-info .about-info__title {
+    font-size: 16px; }
+  .about-info .about-info__name {
+    font-size: 14px; }
+  .error-description {
+    text-align: right; }
+  .info-form {
+    padding: 0 15px; }
+    .info-form .default-select {
+      max-width: 100%;
+      margin: 0; } }

@@ -386,16 +386,20 @@
 </header>
 <section class="container main-banner ">
     <div class="header">
-        Welcom to Marcaria.com
+        Welcome to Marcaria.com
         <div class="remark">
             World Provider of International Domain Name<br>and Trademark Registration
         </div>
     </div>
 
     <div class="img-wrap">
-        <img src="img/icons/woman.png" alt="">
-        <img class="group-img" src="img/icons/grupoBlurred.png" alt="">
-        <img src="img/icons/man.png" alt="">
+        <div>
+            <img src="img/icons/woman.png" alt="">
+        </div>
+
+        <div><img class="group-img" src="img/icons/grupoBlurred.png" alt=""></div>
+
+        <div><img src="img/icons/man.png" alt=""></div>
     </div>
 </section>
 <section class="service">
@@ -455,7 +459,7 @@
         <div class="container">
             <div class=" list-with-icon">
                 <div class="row">
-                    <div class="list-with-icon__item col-md-6 col-xs-6">
+                    <div class="list-with-icon__item col-md-6 col-xs-12">
                         <div class="list-with-icon__icon">
                             <img src="img/icons/PersonlizadSupport.png" alt="">
                         </div>
@@ -468,7 +472,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="list-with-icon__item col-md-6 col-xs-6">
+                    <div class="list-with-icon__item col-md-6 col-xs-12">
                         <div class="list-with-icon__icon">
                             <img src="img/icons/Experience.png" alt="">
                         </div>
@@ -483,7 +487,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="list-with-icon__item col-md-6 col-xs-6">
+                    <div class="list-with-icon__item col-md-6 col-xs-12">
                         <div class="list-with-icon__icon">
                             <img src="img/icons/Communications.png" alt="">
                         </div>
@@ -496,7 +500,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="list-with-icon__item col-md-6 col-xs-6">
+                    <div class="list-with-icon__item col-md-6 col-xs-12">
                         <div class="list-with-icon__icon">
                             <img src="img/icons/Process.png" alt="">
                         </div>
@@ -511,7 +515,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="list-with-icon__item col-md-6 col-xs-6">
+                    <div class="list-with-icon__item col-md-6 col-xs-12">
                         <div class="list-with-icon__icon">
                             <img src="img/icons/technology.png" alt="">
                         </div>
@@ -524,7 +528,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="list-with-icon__item col-md-6 col-xs-6">
+                    <div class="list-with-icon__item col-md-6 col-xs-12">
                         <div class="list-with-icon__icon">
                             <img src="img/icons/Certifications.png" alt="">
                         </div>
@@ -861,6 +865,16 @@
             }
         }
     });
+
+
+        $(document).ready(function(){
+            setInterval(function(){
+                var maxHeight = $('.main-banner .img-wrap').height();
+                $('.main-banner').css('height', maxHeight);
+                console.log(1)
+            }, 1000);
+        });
+
 </script>
 </body>
 </html>
