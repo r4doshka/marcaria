@@ -1824,10 +1824,31 @@ second site
       background-size: contain;
     }
   }
+  .middle-east{
+    position: absolute;
+    left: 390px;
+    top: 100px;
+    width: 120px;
+    height: 100px;
+    background:url(../img/icons/Middle_East_grey.png) no-repeat;
+    background-size: contain;
+    &.continent--active{
+      background:url(../img/icons/Middle_East_green.png) no-repeat;
+      background-size: contain;
+    }
+    &.with-flags{
+      background:url(../img/icons/Middle_East_with-flags.png) no-repeat;
+      background-size: contain;
+    }
+    &.with-flags--active{
+      background:url(../img/icons/Middle_East_with-flags_green.png) no-repeat;
+      background-size: contain;
+    }
+  }
   .africa{
     position: absolute;
-    left: 330px;
-    top: 120px;
+    left: 270px;
+    top: 135px;
     width: 120px;
     height: 100px;
     background:url(../img/icons/Africa.png) no-repeat;
