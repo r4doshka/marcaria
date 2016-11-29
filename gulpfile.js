@@ -13,7 +13,7 @@ var gulp = require('gulp'), // Подключаем Gulp
 gulp.task('sass', function(){ // Создаем таск Sass
     return gulp.src('src/scss/**/*.scss') // Берем источник
         .pipe(sass()) // Преобразуем Sass в CSS посредством gulp-sass
-        .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы
+        .pipe(autoprefixer(['last 5 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы
         // .pipe(cssnano()) // Сжимаем
         .pipe(gulp.dest('dist/css')) // Выгружаем результата в папку app/css
         .pipe(browserSync.reload({stream: true})) // Обновляем CSS на странице при изменении

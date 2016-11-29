@@ -3060,16 +3060,6 @@ domain select  start
     background: #ebebeb;
     cursor: pointer;
   }
-  .card-panel__total-price{
-    display: inline-block;
-    float: right;
-    padding: 0 0 0 15px;
-    margin: 10px 0 0;
-    color: #0844a4;
-    font-size: 24px;
-    font-weight: 700;
-    border-top:2px solid #0844a4;
-  }
   .card-panel__remove{
     position: relative;
     top: 18px;
@@ -3077,6 +3067,17 @@ domain select  start
     color: #006ce5;
     text-decoration: underline;
   }
+}
+
+.total-price{
+  display: inline-block;
+  float: right;
+  padding: 0 0 0 15px;
+  margin: 10px 0 0;
+  color: #0844a4;
+  font-size: 24px;
+  font-weight: 700;
+  border-top:2px solid #0844a4;
 }
 
 .order-2{
@@ -3405,13 +3406,6 @@ domain configurations  start
     padding: 5px;
     border-radius: 5px;
     border:1px solid #4d85dc;
-    &.validation-error{
-      border-color: #e61610;
-      &:focus,
-      &:active{
-        outline: none;
-      }
-    }
   }
   .btn-next{
     background: #3d8af7;
@@ -3430,6 +3424,16 @@ domain configurations  start
   color: #e61610
 }
 
+.validation-error{
+  border-color: #e61610 !important;
+  &:focus,
+  &:active{
+    outline: none;
+  }
+}
+.error-description__term-error{
+  margin: 10px 0 0 40px;
+}
 
 .modal-open{
   text-decoration: underline;
@@ -3454,16 +3458,19 @@ domain configurations  start
     height: 40px;
     border:1px solid #0c59cf;
   }
+  .info-form__field--active{
+    border:1px solid #b2e712;
+  }
 
   .default-select{
-    min-width: 270px;
+    min-width: 260px;
     height: 40px;
   }
   .btn-next{
     margin-top: 38px;
     background: #3d8af7;
     font-size: 19px;
-    -webkit-box-shadow: none;
+    float: none;
     box-shadow: none;
   }
 }
@@ -3500,6 +3507,36 @@ domain configurations  start
   text-align: center;
   .btn-next{
     float: none;
+  }
+}
+
+.check-order{
+  margin:30px 60px;
+  padding: 15px 20px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 10px 0 rgba(214,214,214,1);
+  -moz-box-shadow: 0 0 10px 0 rgba(214,214,214,1);
+  box-shadow: 0 0 10px 0 rgba(214,214,214,1);
+  .check-order__title{
+    margin-bottom: 10px;
+    color:#01309a;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .check-order__element{
+    margin-bottom: 5px;
+    color: #01309a;
+    font-size: 21px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  .check-order__inner-wrap{
+    padding-left: 60px;
+  }
+  .total-price{
+    width: 130px;
+    padding: 0;
   }
 }
 
@@ -4859,12 +4896,22 @@ domain configurations  end
       margin-bottom: 5px;
       float: none;
     }
+    .radio-list__inner{
+      display: none;
+    }
   }
 
   .radio-checkbox-group {
     align-items: flex-start;
     .radio-checkbox-group__text{
       font-size: 16px;
+      &.radio-checkbox-group__text--large{
+        font-size: 18px;
+        line-height: 20px;
+      }
+    }
+    input[type=radio] + .pseudo-radio{
+      margin-right: 5px;
     }
   }
 
@@ -4886,5 +4933,22 @@ domain configurations  end
       max-width: 100%;
       margin: 0;
     }
+    .info-form__name{
+      font-size: 20px;
+    }
+  }
+
+  .domain-privacy {
+    .radio-list__item{
+      padding: 0;
+    }
+    .products-list{
+      display: none;
+    }
+  }
+
+  .error-description__term-error{
+    margin: 10px 0 0 0;
+    text-align: center;
   }
 }
