@@ -7871,6 +7871,11 @@ second site
     color: #1464f6;
     text-decoration: underline;
     font-weight: 700; }
+  .context-remark.context-remark--before {
+    font-size: 13px;
+    text-align: right;
+    position: relative;
+    bottom: -30px; }
 
 /*checkbox-list*/
 .country-domains .checkbox-list {
@@ -8132,6 +8137,11 @@ domain select  start
         -ms-flex: 1 1 100%;
             flex: 1 1 100%; }
 
+.discount {
+  display: inline-block;
+  color: #e61610;
+  font-size: 14px; }
+
 .products-list {
   padding: 20px 15px;
   background: #fff; }
@@ -8157,10 +8167,6 @@ domain select  start
       font-size: 25px;
       color: #0c59d8;
       font-weight: 700; }
-  .products-list .products-list__discount {
-    display: inline-block;
-    color: #e61610;
-    font-size: 14px; }
   .products-list .products-list__products-item--available {
     color: #a6ce2f;
     font-size: 18px; }
@@ -8429,7 +8435,7 @@ domain configurations  start
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 60px 0; }
+  margin: 60px 0 30px; }
   .progress-step-bar .progress-step-bar__item {
     width: 25%; }
     .progress-step-bar .progress-step-bar__item.progress-step-bar__item--first, .progress-step-bar .progress-step-bar__item.progress-step-bar__item--last {
@@ -8710,26 +8716,109 @@ domain configurations  start
     float: none; }
 
 .check-order {
+  position: relative;
   margin: 30px 60px;
   padding: 15px 20px;
   border-radius: 5px;
+  color: #01309a;
+  font-size: 21px;
   box-shadow: 0 0 10px 0 #d6d6d6; }
   .check-order .check-order__title {
     margin-bottom: 10px;
     color: #01309a;
     font-size: 25px;
     font-weight: bold; }
-  .check-order .check-order__element {
-    margin-bottom: 5px;
-    color: #01309a;
-    font-size: 21px; }
-    .check-order .check-order__element:last-child {
-      margin-bottom: 0; }
   .check-order .check-order__inner-wrap {
     padding-left: 60px; }
   .check-order .total-price {
     width: 130px;
     padding: 0; }
+  .check-order .discount {
+    margin-left: 10px; }
+  .check-order .default-select {
+    width: 80px;
+    font-size: 16px;
+    margin-bottom: 5px; }
+  .check-order .context-remark {
+    display: inline-block;
+    font-size: 14px; }
+
+.edit-button {
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  width: 28px;
+  height: 28px;
+  border: none;
+  background: url(../img/icons/pencil-edit.png) no-repeat;
+  background-size: cover; }
+  .edit-button:focus, .edit-button:hover {
+    outline: none; }
+
+.btn-small {
+  padding: 5px 30px;
+  border: none;
+  box-shadow: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  background: #c0c0c0;
+  border-radius: 5px; }
+  .btn-small.btn-small-paint {
+    background: #3d8af7; }
+  .btn-small:focus, .btn-small:hover {
+    outline: none; }
+
+.payments-options {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  padding: 30px 80px;
+  background: #fff; }
+  .payments-options .payments-options__item {
+    margin: 0 30px 20px 0; }
+    .payments-options .payments-options__item:last-child {
+      margin: 0; }
+  .payments-options .image-list {
+    margin-left: 30px; }
+  .payments-options .context-remark {
+    margin-left: 25px;
+    color: #01309a;
+    font-size: 14px; }
+
+.image-list .image-list__item {
+  display: inline-block;
+  width: 55px;
+  margin-right: 5px; }
+
+.checkout {
+  padding: 30px 40px;
+  font-size: 23px;
+  font-weight: 700;
+  color: #01309a; }
+  .checkout .checkout-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .checkout .checkout-item--discount {
+    font-size: 17px; }
+  .checkout .total-price {
+    font-size: 30px; }
+  .checkout .btn-next {
+    margin-top: 5px; }
 
 /*=============
 domain configurations  end
@@ -8758,7 +8847,16 @@ domain configurations  end
   .header-info .header-info__heading {
     font-size: 50px; }
   .header-info-countries .header-info__content {
-    display: block; } }
+    display: block; }
+  .checkout {
+    padding: 20px;
+    font-size: 18px; }
+    .checkout .checkout-item {
+      margin-bottom: 10px; }
+    .checkout .checkout-item--discount {
+      font-size: 14px; }
+    .checkout .total-price {
+      font-size: 20px; } }
 
 @media screen and (min-width: 992px) {
   .filter__mobile-select,
@@ -8972,7 +9070,45 @@ domain configurations  end
   .element-box .element-box--mobile-right {
     text-align: right; }
   .checkbox-list .checkbox-list__checkbox-group .pseudo-checkbox.pseudo-checkbox--large {
-    left: 0; } }
+    left: 0; }
+  /*check-order*/
+  .check-order .edit-control-panel {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap; }
+  .check-order .context-remark {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    padding-left: 0; }
+  .check-order .btn-small {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-right: 10px; }
+  .check-order .edit-button {
+    bottom: auto;
+    left: auto;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px; }
+  .radio-list.payments-options {
+    padding: 20px; }
+  .image-list .image-list__item {
+    width: 40px; } }
+
+@media (min-width: 768px) {
+  .mobile-layout {
+    display: none; }
+  .desktop-layout {
+    display: block; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
   /*breadcrumbs*/
@@ -9103,9 +9239,41 @@ domain configurations  end
   .element-box {
     padding: 20px 40px; }
   .context-remark {
-    font-size: 12px; } }
+    font-size: 12px; }
+  /*check-order*/
+  .check-order {
+    margin: 30px;
+    font-size: 16px; }
+    .check-order .check-order__title {
+      font-size: 20px; }
+    .check-order .check-order__inner-wrap {
+      padding-left: 40px; }
+    .check-order .edit-control-panel {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-flow: row wrap;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap; }
+    .check-order .context-remark {
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 0 100%;
+          -ms-flex: 0 0 100%;
+              flex: 0 0 100%;
+      padding-left: 0; }
+    .check-order .btn-small {
+      -webkit-box-ordinal-group: 2;
+      -webkit-order: 1;
+          -ms-flex-order: 1;
+              order: 1;
+      margin-right: 10px; } }
 
 @media (max-width: 767px) {
+  .mobile-layout {
+    display: block; }
+  .desktop-layout {
+    display: none; }
   .breadcrumbs {
     display: none; }
   .faq-list__table-dropdown .faq-list__show-more {
@@ -9613,4 +9781,26 @@ domain configurations  end
     display: none; }
   .error-description__term-error {
     margin: 10px 0 0 0;
-    text-align: center; } }
+    text-align: center; }
+  /*check-order*/
+  .check-order {
+    margin: 15px 10px;
+    padding: 10px; }
+    .check-order .check-order__title {
+      font-size: 18px;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+    .check-order .check-order__inner-wrap {
+      padding-left: 8px;
+      font-size: 14px; }
+    .check-order .total-price {
+      padding-top: 10px;
+      font-size: 16px; }
+  .payments-options .image-list {
+    margin-left: 30px; }
+  .payments-options .payments-options__item {
+    margin-right: 0; }
+  .radio-list.payments-options {
+    padding: 15px; }
+  .image-list .image-list__item {
+    width: 35px; } }

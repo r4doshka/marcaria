@@ -172,3 +172,7 @@ $('.main-search .btn-link.bulk-search').on('click', function(e){
     (e).preventDefault();
     $('.bulk-case, .single-case').toggleClass('hidden');
 });
+
+$('.check-order .edit-button, .check-order .btn-small').click(function(){
+    $(this).parents('.check-order').find('.edit-button, .edit-control-panel, .default-select, .check-order__description').toggleClass('hidden');
+});
