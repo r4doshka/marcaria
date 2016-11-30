@@ -1524,6 +1524,11 @@ second site
     img{
       height: 160px;
     }
+    &.product-list__logo--large{
+      img{
+        height: 180px;
+      }
+    }
   }
   .product-list__info{
     margin: 20px 0;
