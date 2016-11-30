@@ -3664,11 +3664,99 @@ domain configurations  start
   }
 }
 
-
 /*=============
 domain configurations  end
 ===============*/
 
+/*=============
+card-payment  start
+===============*/
+.card-payment{
+  padding: 0 80px 0 50px;
+  margin: 40px 0 70px;
+  border-right: 1px solid #c0c0c0;
+  .card-payment__name{
+    display: block;
+    color: #0c59cf;
+    font-size: 23px;
+  }
+  .form-group{
+    margin-bottom: 25px;
+  }
+  .form-control{
+    height: 40px;
+    border:1px solid #01309a;
+    font-size: 18px;
+  }
+  .card-number-field{
+    width: 80%;
+    background: url('../img/icons/credit-card.png') no-repeat 2% 50%;
+    background-size: 38px;
+    padding-left: 50px;
+  }
+  .cvc-cod-field{
+    width: 100px;
+    display: inline-block;
+  }
+  .checkout{
+    margin: 10px 0 10px 0 ;
+    padding: 10px 0;
+    display: inline-block;
+    border-top: 1px solid #01309a;
+    border-bottom: 1px solid #01309a;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .checkout-item__name{
+    margin-right: 70px;
+  }
+  .checkout-item{
+    margin-bottom: 10px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  .total-price{
+    float: left;
+    margin: 0 0 10px 0;
+    padding: 0;
+    border:none;
+    font-size: 22px;
+  }
+  .btn-next{
+    float: left;
+  }
+
+  .card-payment__header{
+    font-size: 25px;
+    font-weight: 700;
+    color: #01309a;
+  }
+
+  .image{
+    display: inline-block;
+    width: 55px;
+    margin-left: 5px;
+  }
+
+  .image-list{
+    margin: 40px 0 0 0;
+    .context-remark{
+      font-size: 12px;
+      margin: 10px 0;
+    }
+    .image-list__item--large{
+      width: 120px;
+    }
+  }
+  .image-list__item{
+    width: 40px;
+  }
+}
+
+/*=============
+card-payment  end
+===============*/
 @media screen and (max-width: 1368px) {
   .our-clients-container {
     margin: 40px 40px 60px;

@@ -8842,6 +8842,74 @@ domain configurations  start
 /*=============
 domain configurations  end
 ===============*/
+/*=============
+card-payment  start
+===============*/
+.card-payment {
+  padding: 0 80px 0 50px;
+  margin: 40px 0 70px;
+  border-right: 1px solid #c0c0c0; }
+  .card-payment .card-payment__name {
+    display: block;
+    color: #0c59cf;
+    font-size: 23px; }
+  .card-payment .form-group {
+    margin-bottom: 25px; }
+  .card-payment .form-control {
+    height: 40px;
+    border: 1px solid #01309a;
+    font-size: 18px; }
+  .card-payment .card-number-field {
+    width: 80%;
+    background: url("../img/icons/credit-card.png") no-repeat 2% 50%;
+    background-size: 38px;
+    padding-left: 50px; }
+  .card-payment .cvc-cod-field {
+    width: 100px;
+    display: inline-block; }
+  .card-payment .checkout {
+    margin: 10px 0 10px 0;
+    padding: 10px 0;
+    display: inline-block;
+    border-top: 1px solid #01309a;
+    border-bottom: 1px solid #01309a;
+    font-size: 16px;
+    font-weight: 400; }
+  .card-payment .checkout-item__name {
+    margin-right: 70px; }
+  .card-payment .checkout-item {
+    margin-bottom: 10px; }
+    .card-payment .checkout-item:last-child {
+      margin-bottom: 0; }
+  .card-payment .total-price {
+    float: left;
+    margin: 0 0 10px 0;
+    padding: 0;
+    border: none;
+    font-size: 22px; }
+  .card-payment .btn-next {
+    float: left; }
+  .card-payment .card-payment__header {
+    font-size: 25px;
+    font-weight: 700;
+    color: #01309a; }
+  .card-payment .image {
+    display: inline-block;
+    width: 55px;
+    margin-left: 5px; }
+  .card-payment .image-list {
+    margin: 40px 0 0 0; }
+    .card-payment .image-list .context-remark {
+      font-size: 12px;
+      margin: 10px 0; }
+    .card-payment .image-list .image-list__item--large {
+      width: 120px; }
+  .card-payment .image-list__item {
+    width: 40px; }
+
+/*=============
+card-payment  end
+===============*/
 @media screen and (max-width: 1368px) {
   .our-clients-container {
     margin: 40px 40px 60px; } }
