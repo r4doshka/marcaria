@@ -866,12 +866,14 @@
         }
     });
 
+    $(document).ready(function(){
+        var maxHeight = $('.main-banner .img-wrap').height();
+        $('.main-banner').css('height', maxHeight);
+    });
     $(window).resize(function() {
         var maxHeight = $('.main-banner .img-wrap').height();
         $('.main-banner').css('height', maxHeight);
     });
-
-
 </script>
 </body>
 </html>
