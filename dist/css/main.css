@@ -5870,7 +5870,7 @@ img {
   padding: 0 0 50px;
   border-radius: 10px; }
   .main-search.main-search--small {
-    padding: 0 0 20px; }
+    padding: 0 0 10px; }
   .main-search .main-search__search-field {
     width: 100%;
     padding: 15px 0 15px 15px;
@@ -5953,6 +5953,7 @@ img {
     font-size: 16px; }
 
 .footer {
+  border-top: 2px solid #a6ce2f;
   padding: 20px 0;
   background: #021f54; }
   .footer .footer__copyright {
@@ -7920,7 +7921,7 @@ second site
   margin: 0 10px 10px 0;
   padding: 8px 12px;
   background: #fff;
-  border: 2px solid #1464f6;
+  border: 2px solid #8f8f8f;
   border-radius: 8px; }
   .checkbox-list .checkbox-list__checkbox-item:last-child {
     margin-right: 0; }
@@ -8007,6 +8008,12 @@ second site
     display: inline-block;
     margin-bottom: 5px;
     font-size: 16px; }
+
+/*blockquote-list*/
+.blockquote-list .blockquote-list__item {
+  margin-bottom: 20px; }
+  .blockquote-list .blockquote-list__item:last-child {
+    margin: 0; }
 
 /*=============
 user login  start
