@@ -851,29 +851,34 @@
 <script src="js/owl.carousel.js"></script>
 <script src="js/main.js"></script>
 <script>
-    $('.owl-carousel').owlCarousel({
-        loop: true,
-        items: 7,
-        nav:true,
-        navText: [,],
-        responsive:{
-            0 : {
-                items : 2
-            },
-            768 : {
-                items : 5
-            }
-        }
-    });
+    (function ($) {
+        $(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                items: 7,
+                nav:true,
+                navText: [,],
+                responsive:{
+                    0 : {
+                        items : 2
+                    },
+                    768 : {
+                        items : 5
+                    }
+                }
+            });
 
-    $(document).ready(function(){
-        var maxHeight = $('.main-banner .img-wrap').height();
-        $('.main-banner').css('height', maxHeight);
-    });
-    $(window).resize(function() {
-        var maxHeight = $('.main-banner .img-wrap').height();
-        $('.main-banner').css('height', maxHeight);
-    });
+            var maxHeight = $('.main-banner .img-wrap').height();
+            $('.main-banner').css('height', maxHeight);
+
+
+            $(window).resize(function() {
+                var maxHeight = $('.main-banner .img-wrap').height();
+                $('.main-banner').css('height', maxHeight);
+            });
+        })
+    })(jQuery);
+
 </script>
 </body>
 </html>
