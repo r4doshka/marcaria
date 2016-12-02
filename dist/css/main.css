@@ -8010,10 +8010,12 @@ second site
     font-size: 16px; }
 
 /*blockquote-list*/
-.blockquote-list .blockquote-list__item {
-  margin-bottom: 20px; }
-  .blockquote-list .blockquote-list__item:last-child {
-    margin: 0; }
+.blockquote-list {
+  display: none; }
+  .blockquote-list .blockquote-list__item {
+    margin-bottom: 20px; }
+    .blockquote-list .blockquote-list__item:last-child {
+      margin: 0; }
 
 /*=============
 user login  start
@@ -8922,6 +8924,7 @@ card-payment  start
     border: none;
     font-size: 22px; }
   .card-payment .btn-next {
+    margin-top: 30px;
     float: left; }
   .card-payment .card-payment__header {
     font-size: 25px;
@@ -8932,12 +8935,13 @@ card-payment  start
     width: 55px;
     margin-left: 5px; }
   .card-payment .image-list {
-    margin: 40px 0 0 0; }
+    margin: 0; }
     .card-payment .image-list .context-remark {
       font-size: 12px;
       margin: 10px 0; }
     .card-payment .image-list .image-list__item--large {
-      width: 120px; }
+      width: 120px;
+      margin-top: 50px; }
   .card-payment .image-list__item {
     width: 40px; }
 
