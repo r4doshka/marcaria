@@ -7,6 +7,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/jquery.bxslider.css">
     <link rel="stylesheet" href="../css/main.css">
     <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
@@ -15,7 +16,7 @@
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
 <![endif]-->
-<header class="header main-page">
+<header class="header">
     <div class="container">
         <div class="row vertical-alignment">
             <div class="col-md-4 col-sm-4 col-xs-4 header-logo">
@@ -288,12 +289,12 @@
                                     <li class="header__nav-item"><a href="#">About US</a>
                                         <ul class="header__nav__dropdown">
                                             <li>
-                                                <a href="../../about/our-company.html">Our Company</a>
+                                                <a href="../about/our-company.html">Our Company</a>
                                             </li>
                                             <li>
-                                                <a href="../../about/accreditations.html">Accreditations</a></li>
+                                                <a href="../about/accreditations.html">Accreditations</a></li>
                                             <li>
-                                                <a href="../../about/customer-reviews.html">Customer Reviews</a>
+                                                <a href="../about/customer-reviews.html">Customer Reviews</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -301,12 +302,12 @@
                                         <a href="#">Support</a>
                                         <ul class="header__nav__dropdown">
                                             <li>
-                                                <a href="../../support/domain-support.html">Domain Support</a>
+                                                <a href="../support/domain-support.html">Domain Support</a>
                                             </li>
                                             <li>
-                                                <a href="../../support/hosting-support.html">Hosting Support</a></li>
+                                                <a href="../support/hosting-support.html">Hosting Support</a></li>
                                             <li>
-                                                <a href="../../support/trademark-support.html">Trademark Support</a>
+                                                <a href="../support/trademark-support.html">Trademark Support</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -360,27 +361,839 @@
     </div>
 
 </header>
-<div class="header-info">
-    <div class="container header-info-countries">
-        <div class="breadcrumbs">
+<div class="container">
+    <div class="text-container">
+        <div class="breadcrumbs breadcrumbs--theme-dark">
             <nav>
                 <ul>
                     <li class="breadcrumbs__item">
-                        <a href="../index2.html" class="breadcrumbs__icon"><img src="../img/icons/khome.png" alt=""></a>
+                        <a href="../index2.html" class="breadcrumbs__icon">
+                            <img src="../img/icons/khome.png" alt="">
+                        </a>
                     </li>
                     <li class="breadcrumbs__item">
                         <a href="search_domains.html">Search Domains</a>
                     </li>
                     <li class="breadcrumbs__item">
-                        <a href="search_domains.html"> Extension Prices</a>
+                        <a href="north_america.html">Extension Prices</a>
                     </li>
                 </ul>
             </nav>
         </div>
-        Domain Extension Prices
-        We offer over 900 domain extensions. This includes country code TLDs (ccTLDs), generic TLDs, and new domain extensions. Below you can search your desired extension using our search engine, or just browse by extension letter. If you know your extension you can immediately start your domain search
+        <div class="text-container__header">
+            Domain Extension Prices
+        </div>
+        <div class="text-container__content">
+            We offer over 900 domain extensions. This includes country code TLDs (ccTLDs), generic TLDs, and new domain extensions. Below you can search your desired extension using our search engine, or just browse by extension letter. If you know your extension you can immediately <a href="#">start your domain search</a>
+        </div>
     </div>
 </div>
+<div class="content extensions-search">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1">
+                <section class="search-result">
+                    <form >
+                        <div class="row">
+                            <div class="col-md-4 col-sm-2">
+                                <div class="search-result__title">
+                                    Extension:
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-7 col-xs-12">
+                                <input class="search-result__search-field" type="text" placeholder="ie. .com">
+                            </div>
+                            <div class="col-md-4 col-sm-3 ol-xs-2">
+                                <div class="search-result__search">
+                                    <input class="search-result__search-button" type="submit" value="Search">
+                                    <div class="search-result__search-icon">
+                                        <img src="../img/icons/Search@1x.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="checkbox-list">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4">
+                            <div class="checkbox-list__checkbox-item">
+                                <div class="checkbox-list__checkbox-group">
+                                    <input type="checkbox" id="123" checked="">
+                                    <label for="123" class="pseudo-checkbox">
+                                    </label>
+                                </div>
+                                <label for="123" class="checkbox-list__text">
+                                    North America
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="checkbox-list__checkbox-item">
+                                <div class="checkbox-list__checkbox-group">
+                                    <input type="checkbox" id="1234" checked="">
+                                    <label for="1234" class="pseudo-checkbox">
+                                    </label>
+                                </div>
+                                <label for="1234" class="checkbox-list__text">
+                                    Europe
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="checkbox-list__checkbox-item">
+                                <div class="checkbox-list__checkbox-group">
+                                    <input type="checkbox" id="5123" checked="">
+                                    <label for="5123" class="pseudo-checkbox">
+                                    </label>
+                                </div>
+                                <label for="5123" class="checkbox-list__text">
+                                    Africa
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="checkbox-list__checkbox-item">
+                                <div class="checkbox-list__checkbox-group">
+                                    <input type="checkbox" id="33123" checked="">
+                                    <label for="33123" class="pseudo-checkbox">
+                                    </label>
+                                </div>
+                                <label for="33123" class="checkbox-list__text">
+                                    Central America
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="checkbox-list__checkbox-item">
+                                <div class="checkbox-list__checkbox-group">
+                                    <input type="checkbox" id="441234" checked="">
+                                    <label for="441234" class="pseudo-checkbox">
+                                    </label>
+                                </div>
+                                <label for="441234" class="checkbox-list__text">
+                                    Asia
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="checkbox-list__checkbox-item">
+                                <div class="checkbox-list__checkbox-group">
+                                    <input type="checkbox" id="1235123" checked="">
+                                    <label for="1235123" class="pseudo-checkbox">
+                                    </label>
+                                </div>
+                                <label for="1235123" class="checkbox-list__text">
+                                    Alternative
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="checkbox-list__checkbox-item">
+                                <div class="checkbox-list__checkbox-group">
+                                    <input type="checkbox" id="654" checked="">
+                                    <label for="654" class="pseudo-checkbox">
+                                    </label>
+                                </div>
+                                <label for="654" class="checkbox-list__text">
+                                    South America
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="checkbox-list__checkbox-item">
+                                <div class="checkbox-list__checkbox-group">
+                                    <input type="checkbox" id="876" checked="">
+                                    <label for="876" class="pseudo-checkbox">
+                                    </label>
+                                </div>
+                                <label for="876" class="checkbox-list__text">
+                                    Oceania
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="checkbox-list__checkbox-item">
+                                <div class="checkbox-list__checkbox-group">
+                                    <input type="checkbox" id="12345" checked="">
+                                    <label for="12345" class="pseudo-checkbox">
+                                    </label>
+                                </div>
+                                <label for="12345" class="checkbox-list__text">
+                                    New gTLDs
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="data-table">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="data-table_header">
+                    A   B   C   D   E   F   G   H   I   J   K   L   M    N   O   P   Q   R   S  T   U    V   W   X   Y   Z
+                </div>
+            </div>
+        </div>
+        <div class="row desktop-layout">
+            <div class="col-md-12">
+                <div class="data-table__title">
+                    <div class="row">
+                        <div class="col-sm-4 data-table_cell data-table_cell_mobile-show">
+                            Extension / Country
+                        </div>
+                        <div class="col-md-2 col-sm-2 data-table_cell data-table_cell_mobile-hide">
+                            <div class="arrow-down">
+
+                            </div>
+                            Extension
+                        </div>
+                        <div class="col-md-2 col-sm-2 data-table_cell data-table_cell_mobile-hide">
+                            <div class="arrow-down">
+
+                            </div>
+                            Country
+                        </div>
+                        <div class="col-md-3 col-sm-2 data-table_cell">
+                            <div class="arrow-down">
+
+                            </div>
+                            Category
+                        </div>
+                        <div class="col-md-1 col-sm-2 data-table_cell">
+                            <div class="arrow-down">
+
+                            </div>
+                            Price*
+                        </div>
+                        <div class="col-md-2 col-sm-2 data-table_cell">
+                            <div class="arrow-down">
+
+                            </div>
+                            Min Years**
+                        </div>
+                        <div class="col-md-2 col-sm-2 data-table_cell">
+                            <div class="arrow-down">
+
+                            </div>
+                            Requirements
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 desktop-layout">
+                <div class="data-table__item">
+                    <div class="row">
+                        <div class="col-sm-4 data-table_cell data-table_cell_mobile-show">
+                            <div class="data-table__item-icon">
+                                <img src="../img/flags/Europe/EU%20Copy.png" alt="">
+                            </div>
+                            .CA - Canada
+                        </div>
+                        <div class="col-md-2  col-sm-2  data-table_cell data-table_cell_mobile-hide">
+                            <div class="data-table__item-icon">
+                                <img src="../img/flags/Europe/EU%20Copy.png" alt="">
+                            </div>
+                            .CA
+                        </div>
+                        <div class="col-md-2 col-sm-2 data-table_cell data-table_cell_mobile-hide">
+                            Canada
+                        </div>
+                        <div class="col-md-3 col-sm-2 data-table_cell">
+                            North America
+                        </div>
+                        <div class="col-md-1 col-sm-2 data-table_cell">
+                            $ 45
+                        </div>
+                        <div class="col-md-2 col-sm-2 data-table_cell">
+                            1
+                        </div>
+                        <div class="col-md-2 col-sm-2 data-table_cell">
+                            Yes
+                            <div class="helper" title="" data-toggle="tooltip" data-placement="bottom" data-original-title="For some extensions, the domain owner needs to fulfill certain requirements, such ushaving a physical address in the domain country, be a citizen, have a company registered in the domain country, etc.
+
+If the requirements are not met, we offer a Trustee Service. In this case the domain will be registered to the name of one of our sister companies or local agents and will then be made available to the client.">
+                                <svg height="24" viewBox="0 0 24 24" width="30" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                    <path fill="#a6ce2f" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="data-table__item">
+                    <div class="row">
+                        <div class="col-sm-4 data-table_cell data-table_cell_mobile-show">
+                            <div class="data-table__item-icon">
+                                <img src="../img/flags/Europe/UK.png" alt="">
+                            </div>
+                            .US - United States
+                        </div>
+                        <div class="col-md-2 col-sm-2 data-table_cell data-table_cell_mobile-hide">
+                            <div class="data-table__item-icon">
+                                <img src="../img/flags/Europe/UK.png" alt="">
+                            </div>
+                            .UK
+                        </div>
+                        <div class="col-md-2 col-sm-2 data-table_cell data-table_cell_mobile-hide">
+                            England
+                        </div>
+                        <div class="col-md-3 col-sm-2 data-table_cell">
+                            North America
+                        </div>
+                        <div class="col-md-1 col-sm-2 data-table_cell">
+                            $ 45
+                        </div>
+                        <div class="col-md-2 col-sm-2 data-table_cell">
+                            1
+                        </div>
+                        <div class="col-md-2 col-sm-2 data-table_cell">
+                            No
+                        </div>
+                    </div>
+                </div>
+                <div class="data-table__item">
+                    <div class="row">
+                        <div class="col-sm-4 data-table_cell data-table_cell_mobile-show">
+                            <div class="data-table__item-icon">
+                                <img src="../img/flags/North%20America/US%20Copy.png" alt="">
+                            </div>
+                            .MX - Mexico
+                        </div>
+                        <div class="col-md-2 col-sm-2 data-table_cell data-table_cell_mobile-hide">
+                            <div class="data-table__item-icon">
+                                <img src="../img/flags/North%20America/US%20Copy.png" alt="">
+                            </div>
+                            .US
+                        </div>
+                        <div class="col-md-2 col-sm-2 data-table_cell data-table_cell_mobile-hide">
+                            United States
+                        </div>
+                        <div class="col-md-3 col-sm-2 data-table_cell">
+                            North America
+                        </div>
+                        <div class="col-md-1 col-sm-2 data-table_cell">
+                            $ 45
+                        </div>
+                        <div class="col-md-2 col-sm-2 data-table_cell">
+                            1
+                        </div>
+                        <div class="col-md-2 col-sm-2 data-table_cell">
+                            No
+                        </div>
+                    </div>
+                </div>
+                <div class="data-table__item">
+                    <div class="row">
+                        <div class="col-sm-4 data-table_cell data-table_cell_mobile-show">
+                            <div class="data-table__item-icon">
+                                <img src="../img/flags/Europe/EU%20Copy.png" alt="">
+                            </div>
+                            .CA - Canada
+                        </div>
+                        <div class="col-md-2  col-sm-2  data-table_cell data-table_cell_mobile-hide">
+                            <div class="data-table__item-icon">
+                                <img src="../img/flags/Europe/EU%20Copy.png" alt="">
+                            </div>
+                            .CA
+                        </div>
+                        <div class="col-md-2 col-sm-2 data-table_cell data-table_cell_mobile-hide">
+                            Canada
+                        </div>
+                        <div class="col-md-3 col-sm-2 data-table_cell">
+                            North America
+                        </div>
+                        <div class="col-md-1 col-sm-2 data-table_cell">
+                            $ 45
+                        </div>
+                        <div class="col-md-2 col-sm-2 data-table_cell">
+                            1
+                        </div>
+                        <div class="col-md-2 col-sm-2 data-table_cell">
+                            Yes
+                            <div class="helper" title="" data-toggle="tooltip" data-placement="bottom" data-original-title="For some extensions, the domain owner needs to fulfill certain requirements, such ushaving a physical address in the domain country, be a citizen, have a company registered in the domain country, etc.
+
+If the requirements are not met, we offer a Trustee Service. In this case the domain will be registered to the name of one of our sister companies or local agents and will then be made available to the client.">
+                                <svg height="24" viewBox="0 0 24 24" width="30" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                    <path fill="#a6ce2f" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="data-table__item">
+                    <div class="row">
+                        <div class="col-sm-4 data-table_cell data-table_cell_mobile-show">
+                            <div class="data-table__item-icon">
+                                <img src="../img/flags/Europe/UK.png" alt="">
+                            </div>
+                            .US - United States
+                        </div>
+                        <div class="col-md-2 col-sm-2 data-table_cell data-table_cell_mobile-hide">
+                            <div class="data-table__item-icon">
+                                <img src="../img/flags/Europe/UK.png" alt="">
+                            </div>
+                            .UK
+                        </div>
+                        <div class="col-md-2 col-sm-2 data-table_cell data-table_cell_mobile-hide">
+                            England
+                        </div>
+                        <div class="col-md-3 col-sm-2 data-table_cell">
+                            North America
+                        </div>
+                        <div class="col-md-1 col-sm-2 data-table_cell">
+                            $ 45
+                        </div>
+                        <div class="col-md-2 col-sm-2 data-table_cell">
+                            1
+                        </div>
+                        <div class="col-md-2 col-sm-2 data-table_cell">
+                            No
+                        </div>
+                    </div>
+                </div>
+                <div class="data-table__item">
+                    <div class="row">
+                        <div class="col-sm-4 data-table_cell data-table_cell_mobile-show">
+                            <div class="data-table__item-icon">
+                                <img src="../img/flags/North%20America/US%20Copy.png" alt="">
+                            </div>
+                            .MX - Mexico
+                        </div>
+                        <div class="col-md-2 col-sm-2 data-table_cell data-table_cell_mobile-hide">
+                            <div class="data-table__item-icon">
+                                <img src="../img/flags/North%20America/US%20Copy.png" alt="">
+                            </div>
+                            .US
+                        </div>
+                        <div class="col-md-2 col-sm-2 data-table_cell data-table_cell_mobile-hide">
+                            United States
+                        </div>
+                        <div class="col-md-3 col-sm-2 data-table_cell">
+                            North America
+                        </div>
+                        <div class="col-md-1 col-sm-2 data-table_cell">
+                            $ 45
+                        </div>
+                        <div class="col-md-2 col-sm-2 data-table_cell">
+                            1
+                        </div>
+                        <div class="col-md-2 col-sm-2 data-table_cell">
+                            No
+                        </div>
+                    </div>
+                </div>
+                <div class="data-table__item">
+                    <div class="row">
+                        <div class="col-sm-4 data-table_cell data-table_cell_mobile-show">
+                            <div class="data-table__item-icon">
+                                <img src="../img/flags/Europe/EU%20Copy.png" alt="">
+                            </div>
+                            .CA - Canada
+                        </div>
+                        <div class="col-md-2  col-sm-2  data-table_cell data-table_cell_mobile-hide">
+                            <div class="data-table__item-icon">
+                                <img src="../img/flags/Europe/EU%20Copy.png" alt="">
+                            </div>
+                            .CA
+                        </div>
+                        <div class="col-md-2 col-sm-2 data-table_cell data-table_cell_mobile-hide">
+                            Canada
+                        </div>
+                        <div class="col-md-3 col-sm-2 data-table_cell">
+                            North America
+                        </div>
+                        <div class="col-md-1 col-sm-2 data-table_cell">
+                            $ 45
+                        </div>
+                        <div class="col-md-2 col-sm-2 data-table_cell">
+                            1
+                        </div>
+                        <div class="col-md-2 col-sm-2 data-table_cell">
+                            Yes
+                            <div class="helper" title="" data-toggle="tooltip" data-placement="bottom" data-original-title="For some extensions, the domain owner needs to fulfill certain requirements, such ushaving a physical address in the domain country, be a citizen, have a company registered in the domain country, etc.
+
+If the requirements are not met, we offer a Trustee Service. In this case the domain will be registered to the name of one of our sister companies or local agents and will then be made available to the client.">
+                                <svg height="24" viewBox="0 0 24 24" width="30" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                    <path fill="#a6ce2f" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="data-table__item">
+                    <div class="row">
+                        <div class="col-sm-4 data-table_cell data-table_cell_mobile-show">
+                            <div class="data-table__item-icon">
+                                <img src="../img/flags/Europe/UK.png" alt="">
+                            </div>
+                            .US - United States
+                        </div>
+                        <div class="col-md-2 col-sm-2 data-table_cell data-table_cell_mobile-hide">
+                            <div class="data-table__item-icon">
+                                <img src="../img/flags/Europe/UK.png" alt="">
+                            </div>
+                            .UK
+                        </div>
+                        <div class="col-md-2 col-sm-2 data-table_cell data-table_cell_mobile-hide">
+                            England
+                        </div>
+                        <div class="col-md-3 col-sm-2 data-table_cell">
+                            North America
+                        </div>
+                        <div class="col-md-1 col-sm-2 data-table_cell">
+                            $ 45
+                        </div>
+                        <div class="col-md-2 col-sm-2 data-table_cell">
+                            1
+                        </div>
+                        <div class="col-md-2 col-sm-2 data-table_cell">
+                            No
+                        </div>
+                    </div>
+                </div>
+                <div class="data-table__item">
+                    <div class="row">
+                        <div class="col-sm-4 data-table_cell data-table_cell_mobile-show">
+                            <div class="data-table__item-icon">
+                                <img src="../img/flags/North%20America/US%20Copy.png" alt="">
+                            </div>
+                            .MX - Mexico
+                        </div>
+                        <div class="col-md-2 col-sm-2 data-table_cell data-table_cell_mobile-hide">
+                            <div class="data-table__item-icon">
+                                <img src="../img/flags/North%20America/US%20Copy.png" alt="">
+                            </div>
+                            .US
+                        </div>
+                        <div class="col-md-2 col-sm-2 data-table_cell data-table_cell_mobile-hide">
+                            United States
+                        </div>
+                        <div class="col-md-3 col-sm-2 data-table_cell">
+                            North America
+                        </div>
+                        <div class="col-md-1 col-sm-2 data-table_cell">
+                            $ 45
+                        </div>
+                        <div class="col-md-2 col-sm-2 data-table_cell">
+                            1
+                        </div>
+                        <div class="col-md-2 col-sm-2 data-table_cell">
+                            No
+                        </div>
+                    </div>
+                </div>
+                <div class="data-table__item">
+                    <div class="row">
+                        <div class="col-sm-4 data-table_cell data-table_cell_mobile-show">
+                            <div class="data-table__item-icon">
+                                <img src="../img/flags/Europe/EU%20Copy.png" alt="">
+                            </div>
+                            .CA - Canada
+                        </div>
+                        <div class="col-md-2  col-sm-2  data-table_cell data-table_cell_mobile-hide">
+                            <div class="data-table__item-icon">
+                                <img src="../img/flags/Europe/EU%20Copy.png" alt="">
+                            </div>
+                            .CA
+                        </div>
+                        <div class="col-md-2 col-sm-2 data-table_cell data-table_cell_mobile-hide">
+                            Canada
+                        </div>
+                        <div class="col-md-3 col-sm-2 data-table_cell">
+                            North America
+                        </div>
+                        <div class="col-md-1 col-sm-2 data-table_cell">
+                            $ 45
+                        </div>
+                        <div class="col-md-2 col-sm-2 data-table_cell">
+                            1
+                        </div>
+                        <div class="col-md-2 col-sm-2 data-table_cell">
+                            Yes
+                            <div class="helper" title="" data-toggle="tooltip" data-placement="bottom" data-original-title="For some extensions, the domain owner needs to fulfill certain requirements, such ushaving a physical address in the domain country, be a citizen, have a company registered in the domain country, etc.
+
+If the requirements are not met, we offer a Trustee Service. In this case the domain will be registered to the name of one of our sister companies or local agents and will then be made available to the client.">
+                                <svg height="24" viewBox="0 0 24 24" width="30" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                    <path fill="#a6ce2f" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="data-table__item">
+                    <div class="row">
+                        <div class="col-sm-4 data-table_cell data-table_cell_mobile-show">
+                            <div class="data-table__item-icon">
+                                <img src="../img/flags/Europe/UK.png" alt="">
+                            </div>
+                            .US - United States
+                        </div>
+                        <div class="col-md-2 col-sm-2 data-table_cell data-table_cell_mobile-hide">
+                            <div class="data-table__item-icon">
+                                <img src="../img/flags/Europe/UK.png" alt="">
+                            </div>
+                            .UK
+                        </div>
+                        <div class="col-md-2 col-sm-2 data-table_cell data-table_cell_mobile-hide">
+                            England
+                        </div>
+                        <div class="col-md-3 col-sm-2 data-table_cell">
+                            North America
+                        </div>
+                        <div class="col-md-1 col-sm-2 data-table_cell">
+                            $ 45
+                        </div>
+                        <div class="col-md-2 col-sm-2 data-table_cell">
+                            1
+                        </div>
+                        <div class="col-md-2 col-sm-2 data-table_cell">
+                            No
+                        </div>
+                    </div>
+                </div>
+                <div class="data-table__item">
+                    <div class="row">
+                        <div class="col-sm-4 data-table_cell data-table_cell_mobile-show">
+                            <div class="data-table__item-icon">
+                                <img src="../img/flags/North%20America/US%20Copy.png" alt="">
+                            </div>
+                            .MX - Mexico
+                        </div>
+                        <div class="col-md-2 col-sm-2 data-table_cell data-table_cell_mobile-hide">
+                            <div class="data-table__item-icon">
+                                <img src="../img/flags/North%20America/US%20Copy.png" alt="">
+                            </div>
+                            .US
+                        </div>
+                        <div class="col-md-2 col-sm-2 data-table_cell data-table_cell_mobile-hide">
+                            United States
+                        </div>
+                        <div class="col-md-3 col-sm-2 data-table_cell">
+                            North America
+                        </div>
+                        <div class="col-md-1 col-sm-2 data-table_cell">
+                            $ 45
+                        </div>
+                        <div class="col-md-2 col-sm-2 data-table_cell">
+                            1
+                        </div>
+                        <div class="col-md-2 col-sm-2 data-table_cell">
+                            No
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 product-card mobile-layout">
+                <div class="slider8 ">
+                    <div class="product-card__item">
+                        <div>
+                            <div class="data-table__item-icon">
+                                <img src="../img/flags/Europe/EU%20Copy.png" alt="">
+                            </div>
+                            .CA - Canada
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 align-right">Category:</div>
+                            <div class="col-xs-6 align-left">North America</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 align-right"> Price*:</div>
+                            <div class="col-xs-6 align-left">$ 45</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 align-right"> Min Years**:</div>
+                            <div class="col-xs-6 align-left">1</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 align-right">  Requirements:</div>
+                            <div class="col-xs-6 align-left">Yes <div class="helper" title="" data-toggle="tooltip" data-placement="bottom" data-original-title="For some extensions, the domain owner needs to fulfill certain requirements, such ushaving a physical address in the domain country, be a citizen, have a company registered in the domain country, etc. If the requirements are not met, we offer a Trustee Service. In this case the domain will be registered to the name of one of our sister companies or local agents and will then be made available to the client.">
+                                <svg height="24" viewBox="0 0 24 24" width="30" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                    <path fill="#a6ce2f" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"></path>
+                                </svg>
+                            </div></div>
+                        </div>
+                    </div>
+                    <div class="product-card__item">
+                        <div>
+                            <div class="data-table__item-icon">
+                                <img src="../img/flags/Europe/UK.png" alt="">
+                            </div>
+                            .US - United States
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 align-right">Category:</div>
+                            <div class="col-xs-6 align-left">North America</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 align-right"> Price*:</div>
+                            <div class="col-xs-6 align-left">$ 25</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 align-right"> Min Years**:</div>
+                            <div class="col-xs-6 align-left">2</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 align-right">  Requirements:</div>
+                            <div class="col-xs-6 align-left">No</div>
+                        </div>
+                    </div>
+                    <div class="product-card__item">
+                        <div>
+                            <div class="data-table__item-icon">
+                                <img src="../img/flags/Europe/EU%20Copy.png" alt="">
+                            </div>
+                            .CA - Canada
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 align-right">Category:</div>
+                            <div class="col-xs-6 align-left">North America</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 align-right"> Price*:</div>
+                            <div class="col-xs-6 align-left">$ 45</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 align-right"> Min Years**:</div>
+                            <div class="col-xs-6 align-left">1</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 align-right">  Requirements:</div>
+                            <div class="col-xs-6 align-left">Yes</div>
+                        </div>
+                    </div>
+                    <div class="product-card__item">
+                        <div>
+                            <div class="data-table__item-icon">
+                                <img src="../img/flags/Europe/EU%20Copy.png" alt="">
+                            </div>
+                            .CA - Canada
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 align-right">Category:</div>
+                            <div class="col-xs-6 align-left">North America</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 align-right"> Price*:</div>
+                            <div class="col-xs-6 align-left">$ 45</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 align-right"> Min Years**:</div>
+                            <div class="col-xs-6 align-left">1</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 align-right">  Requirements:</div>
+                            <div class="col-xs-6 align-left">Yes</div>
+                        </div>
+                    </div>
+                    <div class="product-card__item">
+                        <div>
+                            <div class="data-table__item-icon">
+                                <img src="../img/flags/Europe/UK.png" alt="">
+                            </div>
+                            .US - United States
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 align-right">Category:</div>
+                            <div class="col-xs-6 align-left">North America</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 align-right"> Price*:</div>
+                            <div class="col-xs-6 align-left">$ 25</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 align-right"> Min Years**:</div>
+                            <div class="col-xs-6 align-left">2</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 align-right">  Requirements:</div>
+                            <div class="col-xs-6 align-left">No</div>
+                        </div>
+                    </div>
+                    <div class="product-card__item">
+                        <div>
+                            <div class="data-table__item-icon">
+                                <img src="../img/flags/Europe/EU%20Copy.png" alt="">
+                            </div>
+                            .CA - Canada
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 align-right">Category:</div>
+                            <div class="col-xs-6 align-left">North America</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 align-right"> Price*:</div>
+                            <div class="col-xs-6 align-left">$ 45</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 align-right"> Min Years**:</div>
+                            <div class="col-xs-6 align-left">1</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 align-right">  Requirements:</div>
+                            <div class="col-xs-6 align-left">Yes</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="context-remark">*Price per Year</div>
+        <div class="context-remark">**Minimal amount of years that the extension support</div>
+    </div>
+</div>
+<div class="container">
+    <ul class="pagination">
+        <li class="pagination_item pagination_item_arrow-left">
+            <a href="#"></a>
+        </li>
+        <li class="pagination_item">
+            <a href="#">1</a>
+        </li>
+        <li class="pagination_item">
+            <a href="#">2</a>
+        </li>
+        <li class="pagination_item">
+            <a href="#">3</a>
+        </li>
+        <li class="pagination_item">
+            <a href="#">4</a>
+        </li>
+        <li class="pagination_item">
+            <a href="#">5</a>
+        </li>
+        <li class="pagination_item">
+            <a href="#">6</a>
+        </li>
+        <li class="pagination_item">
+            <a href="#">7</a>
+        </li>
+        <li class="pagination_item">
+            <a href="#">8</a>
+        </li>
+        <li class="pagination_item">
+            <a href="#">9</a>
+        </li>
+        <li class="pagination_item pagination_item_arrow-right" >
+            <a href="#"></a>
+        </li>
+    </ul>
+</div>
+
+
 <footer class="footer">
     <div class="container">
         <div class="footer-callback">
@@ -520,9 +1333,25 @@
     </div>
 </footer>
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-<script>window.jQuery || document.write('<script src="app/js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+<script>window.jQuery || document.write('<script src="dist/js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+<script src="../js/bootstrap/tooltip.js"></script>
+<script src="../js/jquery.bxslider.js"></script>
 <script src="../js/plugins.js"></script>
 <script src="../js/main.js"></script>
+<script>
+    $(function () {
+        $("[data-toggle='tooltip']").tooltip();
+    });
 
+    $(document).ready(function(){
+        $('.slider8').bxSlider({
+            mode: 'vertical',
+            slideWidth: 320,
+            minSlides: 3,
+            slideMargin:20,
+            pager:false
+        });
+    });
+</script>
 </body>
 </html>
