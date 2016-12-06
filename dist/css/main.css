@@ -5586,6 +5586,10 @@ img {
     margin: 0; }
   .breadcrumbs li:last-child a {
     cursor: default; }
+  .breadcrumbs.breadcrumbs_shadowed {
+    background: rgba(0, 0, 0, 0.1);
+    left: 15px;
+    padding: 0 20px; }
   .breadcrumbs .breadcrumbs__icon {
     display: block;
     width: 20px;
@@ -5792,6 +5796,9 @@ img {
   box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.75); }
   .search-wrap .remark {
     margin-top: 10px; }
+  .search-wrap.search-wrap_light {
+    padding: 20px;
+    background: #ebebeb; }
 
 .main-search {
   padding: 0 0 50px;
@@ -5820,7 +5827,7 @@ img {
   .main-search .main-search__search-button {
     padding: 12px 20px 12px 46px;
     color: #fff;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     border: none;
     background: #2956bb;
@@ -5829,7 +5836,7 @@ img {
     display: inline-block;
     width: 24px;
     position: absolute;
-    top: 16px;
+    top: 12px;
     left: 15px;
     cursor: pointer; }
 
@@ -5874,6 +5881,8 @@ img {
     font-size: 20px;
     font-weight: bold;
     cursor: pointer; }
+    .faq .faq-list__heading.faq-list__heading_small-size {
+      font-size: 16px; }
   .faq .faq-list__description {
     display: none;
     margin-bottom: 20px;
@@ -6660,6 +6669,11 @@ img {
   background: url("../img/continents_background/middle-east.png") no-repeat;
   background-size: cover; }
 
+.header-info.header-info__hosting {
+  margin-bottom: 80px;
+  background: url("../img/continents_background/hostng-bg.jpg") no-repeat;
+  background-size: cover; }
+
 .header-info.header-info__oceania {
   background: url("../img/continents_background/oceania.png") no-repeat;
   background-size: cover; }
@@ -7013,6 +7027,32 @@ second site
   font-size: 24px;
   color: #006ce5;
   text-decoration: underline; }
+
+.hosting-plans .icon {
+  width: 80px;
+  margin: 0 0 10px 0; }
+
+.hosting-plans .simple-list {
+  margin: 0 0 20px 0; }
+  .hosting-plans .simple-list .simple-list__title {
+    margin: 0 0 20px 0;
+    font-size: 30px;
+    color: #444444;
+    font-weight: 700; }
+  .hosting-plans .simple-list .simple-list__item {
+    color: #444444; }
+
+.hosting-plans .remark.remark__left {
+  padding: 0; }
+
+.hosting-plans .link.link__left {
+  padding: 0; }
+
+.hosting-plans .hosting-plans__price {
+  margin: 0 0 10px 0;
+  color: #444444;
+  font-size: 25px;
+  font-weight: 700; }
 
 .list-with-icon {
   margin-top: 30px; }
@@ -8104,6 +8144,19 @@ domain select  start
   margin: 30px 0;
   border-radius: 5px;
   box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.25); }
+  .content-box .content-box__body_request-form {
+    padding: 50px 100px; }
+    .content-box .content-box__body_request-form .col-form-label {
+      color: #021f54;
+      font-size: 20px;
+      font-weight: 400; }
+    .content-box .content-box__body_request-form .form-group {
+      margin-bottom: 30px; }
+    .content-box .content-box__body_request-form .form-control {
+      height: 30px;
+      border: 1px solid #0c59cf; }
+    .content-box .content-box__body_request-form .btn-next {
+      float: left; }
   .content-box .helper {
     position: relative;
     top: 6px;
@@ -8138,6 +8191,8 @@ domain select  start
     color: #01309a;
     text-align: center;
     background: #d4e3fc; }
+    .content-box .content-box__header.content-box__header_indent {
+      padding: 10px 0; }
     .content-box .content-box__header.content-box__header--auto-height {
       height: auto; }
   .content-box .content-box_header-context {
@@ -8147,6 +8202,8 @@ domain select  start
     -webkit-flex: 1 1 100%;
         -ms-flex: 1 1 100%;
             flex: 1 1 100%; }
+  .content-box.request-form {
+    box-shadow: 0 0 2px 1px #0c59cf; }
 
 .discount {
   display: inline-block;
@@ -9895,6 +9952,8 @@ card-payment  end
       left: 10px; }
   .main-search.main-search--small .main-search__search {
     top: 2px; }
+  .main-search.main-search--small .main-search__search-field {
+    font-size: 16px; }
   .main-search.main-search--small .main-search__search-button {
     font-size: 14px;
     padding: 8px 14px 9px 30px; }
@@ -10081,13 +10140,13 @@ card-payment  end
     /* Firefox 19+ */
     /* Firefox 18- */ }
     .main-search__search-field::-webkit-input-placeholder {
-      font-size: 12px; }
+      font-size: 16px; }
     .main-search__search-field::-moz-placeholder {
-      font-size: 12px; }
+      font-size: 16px; }
     .main-search__search-field:-moz-placeholder {
-      font-size: 12px; }
+      font-size: 16px; }
     .main-search__search-field:-ms-input-placeholder {
-      font-size: 12px; }
+      font-size: 16px; }
   .bulk-search-field {
     font-size: 16px; }
   .modal-text .modal-dialog {
