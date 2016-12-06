@@ -5784,6 +5784,15 @@ img {
   font-size: 32px;
   font-weight: 400; }
 
+.search-wrap {
+  margin: 20px 0 0 0;
+  padding: 40px;
+  background: #d6d6d6;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.75); }
+  .search-wrap .remark {
+    margin-top: 10px; }
+
 .main-search {
   padding: 0 0 50px;
   border-radius: 10px; }
@@ -5869,6 +5878,8 @@ img {
     display: none;
     margin-bottom: 20px;
     font-size: 16px; }
+  .faq.faq--desktop-hide {
+    display: none; }
 
 .footer {
   border-top: 2px solid #a6ce2f;
@@ -6645,6 +6656,29 @@ img {
   .checkbox-list .checkbox-list__item.check-all {
     margin-left: 0; }
 
+.header-info.header-info__middle-east {
+  background: url("../img/continents_background/middle-east.png") no-repeat;
+  background-size: cover; }
+
+.header-info.header-info__oceania {
+  background: url("../img/continents_background/oceania.png") no-repeat;
+  background-size: cover; }
+
+.header-info.header-info__south-america {
+  background: url("../img/continents_background/south_america.png") no-repeat;
+  background-size: cover; }
+
+.header-info.header-info__central-america {
+  background: url("../img/continents_background/central-america.png") no-repeat;
+  background-size: cover; }
+
+.header-info.header-info__all-services {
+  background: url("../img/icons/all-services.jpg") no-repeat;
+  background-size: cover; }
+  .header-info.header-info__all-services .header-info__content {
+    margin-bottom: 75px;
+    padding: 20px 40px; }
+
 /*europe*/
 .europe .header-info {
   background: url("../img/continents_background/Europe.png") no-repeat;
@@ -6713,6 +6747,8 @@ img {
   margin: 30px 0 100px;
   padding: 50px 0 30px;
   background: #f7f6f6; }
+  .content.content--desktop-hide {
+    display: none; }
 
 /*=============
 second site
@@ -6730,13 +6766,16 @@ second site
     padding: 0 20px 40px;
     display: inline-block; }
   .header-info-countries .header-info__country {
-    margin: 55px 0 50px;
+    margin: 55px auto 50px;
     padding: 0 20px 40px;
     display: inline-block;
     background: #243a56;
     background: rgba(0, 0, 0, 0.1); }
   .header-info-countries .breadcrumbs__item a {
     text-decoration: underline; }
+
+.header-info--desktop-hide {
+  display: none; }
 
 /*horizontal-menu*/
 .horizontal-menu {
@@ -9091,7 +9130,8 @@ card-payment  end
   .search-result__mobile-option--hide,
   .login-panel,
   .breadcrumbs,
-  .pagination {
+  .pagination,
+  .product-list--mobile-hide {
     display: none; }
   .faq-list__show-more,
   .search-result__mobile-option {
@@ -9118,6 +9158,8 @@ card-payment  end
     margin-bottom: 20px; }
   .content {
     margin: 30px 0 50px; }
+    .content.content--desktop-hide {
+      display: block; }
   .faq {
     margin-top: 50px; }
     .faq .faq-heading {
@@ -9126,6 +9168,8 @@ card-payment  end
       font-size: 16px; }
     .faq .faq-list__description {
       font-size: 14px; }
+    .faq.faq--desktop-hide {
+      display: block; }
   .list-with-icon.list-with-icon--icon-top .list-with-icon__icon img {
     height: 70px; }
   .list-with-icon.list-with-icon--icon-top .list-with-icon__title {
@@ -9166,6 +9210,13 @@ card-payment  end
     .main-search.main-search--small .main-search__search-icon {
       width: 20px;
       top: 10px; }
+  .search-wrap {
+    padding: 20px; }
+    .search-wrap .main-search .main-search__search-icon {
+      display: none; }
+    .search-wrap .main-search .main-search__search-button {
+      font-size: 16px;
+      padding: 10px; }
   .mobile-menu {
     display: block; }
     .mobile-menu .dropdown-menu {
@@ -9416,7 +9467,9 @@ card-payment  end
               flex: 0 0 20%; }
   .header__nav .header__nav-item.header__nav-item__home-icon:before {
     width: 20px;
-    top: 8px; } }
+    top: 8px; }
+  .header-info--desktop-hide {
+    display: block; } }
 
 @media (min-width: 768px) {
   .mobile-layout {
@@ -10185,4 +10238,11 @@ card-payment  end
   .card-list.card-list_flexbox .top-inner {
     -webkit-flex-flow: row wrap;
         -ms-flex-flow: row wrap;
-            flex-flow: row wrap; } }
+            flex-flow: row wrap; }
+  .search-wrap .main-search .main-search__search-icon {
+    display: block; }
+  .search-wrap .main-search .main-search__search-button {
+    text-indent: -999999px; }
+  .header-info.header-info__all-services .header-info__content {
+    margin-bottom: 60px;
+    padding: 10px; } }

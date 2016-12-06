@@ -298,6 +298,17 @@ img{
   }
 }
 
+.search-wrap{
+  margin: 20px 0 0 0;
+  padding: 40px;
+  background: #d6d6d6;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.75);
+  .remark{
+    margin-top: 10px;
+  }
+}
+
 
 .main-search{
   padding: 0 0 50px;
@@ -402,6 +413,9 @@ img{
     display: none;
     margin-bottom: 20px;
     font-size: 16px;
+  }
+  &.faq--desktop-hide{
+    display: none;
   }
 }
 
@@ -1313,6 +1327,46 @@ img{
   }
 }
 
+
+.header-info {
+  &.header-info__middle-east{
+    background: url('../img/continents_background/middle-east.png') no-repeat;
+    background-size: cover;
+  }
+}
+
+.header-info {
+  &.header-info__oceania{
+    background: url('../img/continents_background/oceania.png') no-repeat;
+    background-size: cover;
+  }
+}
+
+.header-info {
+  &.header-info__south-america {
+    background: url('../img/continents_background/south_america.png') no-repeat;
+    background-size: cover;
+  }
+}
+.header-info {
+  &.header-info__central-america{
+    background: url('../img/continents_background/central-america.png') no-repeat;
+    background-size: cover;
+  }
+}
+
+.header-info{
+  &.header-info__all-services{
+    background: url('../img/icons/all-services.jpg') no-repeat;
+    background-size: cover;
+    .header-info__content{
+      margin-bottom: 75px;
+      padding: 20px 40px;
+    }
+  }
+}
+
+
 /*europe*/
 .europe{
   .header-info{
@@ -1414,6 +1468,9 @@ img{
   margin: 30px 0 100px;
   padding: 50px 0 30px;
   background: #f7f6f6;
+  &.content--desktop-hide{
+    display: none;
+  }
 }
 
 
@@ -1437,7 +1494,7 @@ second site
   }
 
   .header-info__country{
-    margin: 55px 0 50px;
+    margin: 55px auto 50px;
     padding: 0 20px 40px;
     display: inline-block;
     background: #243a56;
@@ -1447,6 +1504,10 @@ second site
   .breadcrumbs__item a{
     text-decoration: underline;
   }
+}
+
+.header-info--desktop-hide{
+  display: none;
 }
 
 /*horizontal-menu*/
@@ -1571,6 +1632,7 @@ second site
     font-weight: bold;
     display: inline-block;
   }
+
 }
 
 
@@ -2514,7 +2576,6 @@ second site
       text-decoration: none;
     }
   }
-
   .card-group{
     margin-bottom: 60px;
   }
@@ -4137,9 +4198,12 @@ card-payment  end
   .search-result__mobile-option--hide,
   .login-panel,
   .breadcrumbs,
-  .pagination{
+  .pagination,
+  .product-list--mobile-hide{
     display: none;
   }
+
+
   .faq-list__show-more,
   .search-result__mobile-option{
     display: block;
@@ -4181,6 +4245,9 @@ card-payment  end
 
   .content {
     margin: 30px 0 50px;
+    &.content--desktop-hide{
+      display: block;
+    }
   }
 
   .faq {
@@ -4193,6 +4260,9 @@ card-payment  end
     }
     .faq-list__description{
       font-size: 14px;
+    }
+    &.faq--desktop-hide{
+      display: block;
     }
   }
 
@@ -4272,6 +4342,20 @@ card-payment  end
       top:10px;
     }
   }
+
+  .search-wrap{
+    padding: 20px;
+    .main-search{
+      .main-search__search-icon{
+        display: none;
+      }
+      .main-search__search-button{
+        font-size: 16px;
+        padding: 10px;
+      }
+    }
+  }
+
   .mobile-menu{
     display: block;
     .dropdown-menu{
@@ -4605,6 +4689,10 @@ card-payment  end
         top:8px;
       }
     }
+  }
+
+  .header-info--desktop-hide{
+    display: block;
   }
 
 }
@@ -5772,12 +5860,29 @@ card-payment  end
       flex: 0 0 100%;
       text-align: center;
     }
-
-
     .card-item__description,
     .top-inner{
       flex-flow: row wrap;
     }
   }
 
+  .search-wrap{
+    .main-search{
+      .main-search__search-icon{
+        display: block;
+      }
+      .main-search__search-button{
+        text-indent: -999999px;
+      }
+    }
+  }
+
+  .header-info{
+    &.header-info__all-services{
+      .header-info__content{
+        margin-bottom: 60px;
+        padding: 10px;
+      }
+    }
+  }
 }
