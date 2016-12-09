@@ -5777,6 +5777,8 @@ img {
   padding: 55px 0 50px;
   background: #243a56;
   background: rgba(1, 69, 156, 0.4); }
+  .header-info .header-info__content.header-info__content--bg-transparent {
+    background: transparent; }
 
 .header-info .header-info__icon {
   position: absolute;
@@ -5799,7 +5801,7 @@ img {
   font-size: 60px; }
 
 .header-info .header-info__text {
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 400; }
 
 .search-wrap {
@@ -6074,6 +6076,8 @@ img {
   border: 1px solid #606060;
   border-radius: 10px;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.75); }
+  .filter__filter-content.filter__filter-content--small-size {
+    padding: 25px 70px 35px; }
   .filter__filter-content .remark {
     position: absolute;
     bottom: 5px;
@@ -6679,6 +6683,12 @@ img {
   .checkbox-list .checkbox-list__item.check-all {
     margin-left: 0; }
 
+.header-info.sunrise {
+  background: url("../img/icons/sunrise_bg.jpg") no-repeat;
+  background-size: cover; }
+  .header-info.sunrise .header-info__content {
+    background: none; }
+
 .header-info.header-info__middle-east {
   background: url("../img/continents_background/middle-east.png") no-repeat;
   background-size: cover; }
@@ -6769,18 +6779,24 @@ img {
   background-size: cover; }
 
 .default-header {
+  margin: 50px 0 0;
   text-align: center;
   font-weight: bold;
   font-size: 45px;
   color: #00329a;
   text-shadow: 0 2px 3px #969696; }
+  .default-header .defaul-header__icon {
+    width: 60px;
+    display: inline-block; }
 
 .content {
-  margin: 30px 0 100px;
+  margin: 30px 0 50px;
   padding: 50px 0 30px;
   background: #f7f6f6; }
   .content.content--desktop-hide {
     display: none; }
+  .content.content--small-indent {
+    padding: 25px 0; }
 
 /*=============
 second site
@@ -8093,6 +8109,13 @@ second site
     margin-bottom: 20px; }
     .blockquote-list .blockquote-list__item:last-child {
       margin: 0; }
+  .blockquote-list.blockquote-list--colored {
+    display: block;
+    padding: 28px 26px;
+    background: #e6e6e6;
+    border-radius: 10px; }
+    .blockquote-list.blockquote-list--colored .blockquote-list__item {
+      font-size: 20px; }
 
 /*=============
 user login  start
@@ -9038,6 +9061,8 @@ card-payment  start
       margin-top: 50px; }
   .card-payment .image-list__item {
     width: 40px; }
+  .card-payment .remark {
+    margin-top: 15px; }
 
 /*=============
 card-payment  end
@@ -9215,6 +9240,39 @@ card-payment  end
   height: 3px;
   background: #b2e712; }
 
+/*simple table start*/
+.simple-table {
+  color: #606060; }
+  .simple-table .simple-table__header {
+    border-bottom: 1px solid #fff;
+    background: #d6d6d6;
+    font-size: 34px;
+    font-weight: 700; }
+    .simple-table .simple-table__header .simple-table__cell {
+      padding: 25px 5px; }
+      .simple-table .simple-table__header .simple-table__cell:after {
+        content: "\f107";
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale; }
+  .simple-table .simple-table__item {
+    border-bottom: 1px solid #fff;
+    font-size: 20px; }
+    .simple-table .simple-table__item .simple-table__cell {
+      padding: 7px 5px; }
+    .simple-table .simple-table__item:nth-child(even) {
+      background: #f7f6f6; }
+    .simple-table .simple-table__item:nth-child(odd) {
+      background: #ebebeb; }
+  .simple-table .simple-table__cell {
+    border-right: 1px solid #fff; }
+
+/*simple table end*/
+/*blockquote start*/
+/*blockquote end*/
 @media screen and (max-width: 1368px) {
   .our-clients-container {
     margin: 40px 40px 60px; } }
@@ -9268,7 +9326,8 @@ card-payment  end
   .search-result__mobile-option--hide,
   .login-panel,
   .breadcrumbs,
-  .pagination {
+  .pagination,
+  .mobile-hide {
     display: none; }
   .faq-list__show-more,
   .search-result__mobile-option {
@@ -9728,7 +9787,9 @@ card-payment  end
       -webkit-order: 1;
           -ms-flex-order: 1;
               order: 1;
-      margin-right: 10px; } }
+      margin-right: 10px; }
+  .default-header {
+    font-size: 30px; } }
 
 @media (max-width: 767px) {
   .mobile-layout {
@@ -9742,7 +9803,7 @@ card-payment  end
   .faq-list__table-dropdown .faq-list__show-more {
     display: block; }
   .default-header {
-    font-size: 20px; }
+    font-size: 30px; }
   .content {
     margin: 30px 0;
     padding: 30px 0; }
@@ -9927,7 +9988,7 @@ card-payment  end
   .header__header-menu .header__label {
     display: none; }
   .header-info .header-info__heading {
-    font-size: 18px;
+    font-size: 17px;
     margin-bottom: 5px; }
     .header-info .header-info__heading img {
       display: none; }
@@ -9944,7 +10005,10 @@ card-payment  end
   .filter {
     margin-top: 20px; }
     .filter .filter__find-all {
-      font-size: 20px; }
+      font-size: 20px;
+      margin-top: 20px;
+      display: block;
+      padding-left: 15px; }
   .filter__filter-container {
     margin-bottom: 40px;
     padding: 10px; }
@@ -9956,7 +10020,9 @@ card-payment  end
     box-shadow: none;
     border: none; }
   .filter__tab-content {
-    display: none !important; }
+    display: none; }
+  .filter__filter-content {
+    display: none; }
   .filter__name {
     margin-top: 30px; }
   .filter__all-classes-wrap {
@@ -10345,4 +10411,40 @@ card-payment  end
     margin-bottom: 60px;
     padding: 10px; }
   .request-form_body .btn-next {
-    width: 100%; } }
+    width: 100%; }
+  .hosting-plans .icon {
+    margin: 0 auto 10px; }
+  .hosting-plans .simple-list .simple-list__title {
+    font-size: 20px;
+    text-align: center; }
+  .hosting-plans .simple-list {
+    display: inline-block;
+    text-align: left; }
+  .select-plan {
+    text-align: center;
+    margin-bottom: 30px; }
+    .select-plan:last-child {
+      margin-bottom: 0; }
+    .select-plan .simple-list {
+      padding-left: 15px; }
+      .select-plan .simple-list .simple-list__item {
+        font-size: 14px; }
+    .select-plan .remark {
+      text-align: center;
+      font-size: 16px; }
+    .select-plan .link {
+      text-align: center;
+      font-size: 16px; }
+    .select-plan .order-button {
+      display: inline-block; }
+    .select-plan .hosting-plans .icon {
+      margin-bottom: 30px; }
+    .select-plan .hosting-plans__price {
+      font-size: 20px; }
+  .header-info.header-info__hosting {
+    margin-bottom: 50px; }
+  .blockquote-list.blockquote-list--colored {
+    padding: 20px 10px;
+    margin: 0 10px; }
+    .blockquote-list.blockquote-list--colored .blockquote-list__item {
+      font-size: 14px; } }

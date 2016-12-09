@@ -291,6 +291,9 @@ img{
     padding: 55px 0 50px;
     background: #243a56;
     background: rgba(1, 69, 156, 0.4);
+    &.header-info__content--bg-transparent{
+      background: transparent;
+    }
   }
 
   .header-info__icon{
@@ -317,7 +320,7 @@ img{
     font-size: 60px;
   }
   .header-info__text{
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 400;
   }
 }
@@ -658,7 +661,9 @@ img{
   -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.75);
   -moz-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.75);
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.75);
-
+  &.filter__filter-content--small-size{
+    padding: 25px 70px 35px;
+  }
   .remark{
     position: absolute;
     bottom:5px;
@@ -1359,41 +1364,39 @@ img{
 }
 
 .header-info {
+  &.sunrise{
+    background: url('../img/icons/sunrise_bg.jpg') no-repeat;
+    background-size: cover;
+    .header-info__content{
+      background: none;
+    }
+  }
   &.header-info__middle-east{
     background: url('../img/continents_background/middle-east.png') no-repeat;
     background-size: cover;
   }
-}
 
-.header-info {
   &.header-info__hosting{
     margin-bottom: 80px;
     background: url('../img/continents_background/hostng-bg.jpg') no-repeat;
     background-size: cover;
   }
-}
 
-.header-info {
   &.header-info__oceania{
     background: url('../img/continents_background/oceania.png') no-repeat;
     background-size: cover;
   }
-}
 
-.header-info {
   &.header-info__south-america {
     background: url('../img/continents_background/south_america.png') no-repeat;
     background-size: cover;
   }
-}
-.header-info {
+
   &.header-info__central-america{
     background: url('../img/continents_background/central-america.png') no-repeat;
     background-size: cover;
   }
-}
 
-.header-info{
   &.header-info__all-services{
     background: url('../img/icons/all-services.jpg') no-repeat;
     background-size: cover;
@@ -1500,19 +1503,27 @@ img{
 
 
 .default-header{
+  margin: 50px 0 0;
   text-align: center;
   font-weight: bold;
   font-size: 45px;
   color: #00329a;
   text-shadow: 0 2px 3px rgba(150, 150, 150, 1);
+  .defaul-header__icon{
+    width: 60px;
+    display: inline-block;
+  }
 }
 
 .content{
-  margin: 30px 0 100px;
+  margin: 30px 0 50px;
   padding: 50px 0 30px;
   background: #f7f6f6;
   &.content--desktop-hide{
     display: none;
+  }
+  &.content--small-indent{
+    padding: 25px 0;
   }
 }
 
@@ -2971,6 +2982,15 @@ second site
       margin: 0;
     }
   }
+  &.blockquote-list--colored{
+    display: block;
+    padding: 28px 26px;
+    background: #e6e6e6;
+    border-radius: 10px;
+    .blockquote-list__item{
+      font-size:20px;
+    }
+  }
 }
 
 /*=============
@@ -4013,6 +4033,10 @@ card-payment  start
   .image-list__item{
     width: 40px;
   }
+
+  .remark{
+    margin-top: 15px;
+  }
 }
 
 
@@ -4228,6 +4252,53 @@ card-payment  end
   background: #b2e712;
 }
 
+/*simple table start*/
+.simple-table{
+  color: #606060;
+  .simple-table__header{
+    border-bottom:1px solid #fff;
+    .simple-table__cell{
+      &:after{
+        content: "\f107";
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      padding: 25px 5px;
+    }
+    background: #d6d6d6;
+    font-size: 34px;
+    font-weight: 700;
+  }
+  .simple-table__item{
+    border-bottom:1px solid #fff;
+    .simple-table__cell{
+      padding: 7px 5px;
+    }
+    font-size: 20px;
+
+    &:nth-child(even){
+      background: #f7f6f6;
+    }
+    &:nth-child(odd){
+      background: #ebebeb;
+    }
+  }
+
+
+  .simple-table__cell{
+    border-right:1px solid #fff;
+  }
+}
+/*simple table end*/
+
+/*blockquote start*/
+.blockquote-list{}
+/*blockquote end*/
+
 @media screen and (max-width: 1368px) {
   .our-clients-container {
     margin: 40px 40px 60px;
@@ -4334,7 +4405,8 @@ card-payment  end
   .search-result__mobile-option--hide,
   .login-panel,
   .breadcrumbs,
-  .pagination{
+  .pagination,
+  .mobile-hide{
     display: none;
   }
 
@@ -5072,6 +5144,9 @@ card-payment  end
     }
   }
 
+  .default-header{
+    font-size: 30px;
+  }
 
 }
 
@@ -5097,7 +5172,7 @@ card-payment  end
   }
 
   .default-header{
-    font-size: 20px;
+    font-size: 30px;
   }
   .content{
     margin: 30px 0;
@@ -5341,7 +5416,7 @@ card-payment  end
   }
   .header-info {
     .header-info__heading{
-      font-size: 18px;
+      font-size: 17px;
       margin-bottom: 5px;
       img{
         display: none;
@@ -5371,6 +5446,9 @@ card-payment  end
 
     .filter__find-all{
       font-size: 20px;
+      margin-top: 20px;
+      display: block;
+      padding-left: 15px;
     }
   }
   .filter__filter-container{
@@ -5389,7 +5467,11 @@ card-payment  end
   }
 
   .filter__tab-content{
-    display: none !important;
+    display: none;
+  }
+
+  .filter__filter-content{
+    display: none;
   }
 
   .filter__name{
@@ -6022,4 +6104,71 @@ card-payment  end
       width: 100%;
     }
   }
+
+  .hosting-plans{
+     .icon{
+       margin: 0 auto 10px;
+     }
+    .simple-list{
+      .simple-list__title{
+        font-size: 20px;
+        text-align: center;
+      }
+    }
+  }
+
+  .hosting-plans{
+    .simple-list{
+      display: inline-block;
+      text-align: left;
+    }
+  }
+
+  .select-plan{
+    text-align: center;
+    margin-bottom: 30px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+   .simple-list{
+     padding-left: 15px;
+     .simple-list__item{
+       font-size: 14px;
+     }
+   }
+    .remark{
+      text-align: center;
+      font-size: 16px;
+    }
+    .link{
+      text-align: center;
+      font-size: 16px;
+    }
+    .order-button{
+      display: inline-block;
+    }
+    .hosting-plans{
+      .icon{
+        margin-bottom: 30px;
+      }
+    }
+    .hosting-plans__price{
+      font-size: 20px;
+    }
+  }
+
+  .header-info.header-info__hosting{
+    margin-bottom: 50px;
+  }
+
+  .blockquote-list.blockquote-list--colored{
+    padding: 20px 10px;
+    margin: 0 10px;
+    .blockquote-list__item{
+      font-size: 14px;
+    }
+
+
+  }
+
 }
