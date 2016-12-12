@@ -3054,6 +3054,32 @@ user login  start
       &:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
     }
   }
+
+  .login-form-error{
+    svg{
+      fill:#ff3823;
+    }
+    .form-icon{
+      position: absolute;
+      top: 8px;
+      right: 5px;
+    }
+    .form-control{
+      &::-webkit-input-placeholder {color:#ff3823;}
+      &::-moz-placeholder          {color:#ff3823;}
+      &:-moz-placeholder           {color:#ff3823;}
+      &:-ms-input-placeholder      {ocolor:#ff3823;}
+    }
+
+  }
+  .error-description{
+    margin-top: 5px;
+  }
+
+  .form-group{
+    position: relative;
+  }
+
   .action-button{
     width: 100%;
     height: 40px;
@@ -3738,6 +3764,7 @@ domain configurations  start
 
 .validation-error{
   border-color: #e61610 !important;
+  color: #e61610 !important;
   &:focus,
   &:active{
     outline: none;
@@ -4295,9 +4322,8 @@ card-payment  end
 }
 /*simple table end*/
 
-/*blockquote start*/
-.blockquote-list{}
-/*blockquote end*/
+
+
 
 @media screen and (max-width: 1368px) {
   .our-clients-container {
@@ -4887,6 +4913,22 @@ card-payment  end
   .card-list.card-list_flexbox{
     .card-item__name{
       font-size: 18px;
+    }
+  }
+
+  .form.content-box {
+    .form__form-body{
+      padding: 40px ;
+    }
+    .simple-list {
+      margin-bottom: 30px;
+      padding: 0 40px 0 55px;
+    }
+    .image-list{
+      margin: 40px 0 0;
+    }
+    .image-list__item{
+      max-width: 65px;
     }
   }
 }
@@ -6167,8 +6209,21 @@ card-payment  end
     .blockquote-list__item{
       font-size: 14px;
     }
-
-
   }
 
+  .form.content-box {
+    margin: 20px 0 20px;
+    .form__form-body{
+      padding: 20px ;
+    }
+    .simple-list {
+      margin-bottom: 30px;
+      padding: 0 20px 0 35px;
+    }
+
+    .image-list__item{
+      max-width: 100px;
+      margin: 0 5px 10px 0;
+    }
+  }
 }
