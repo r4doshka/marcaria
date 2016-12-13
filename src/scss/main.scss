@@ -25,6 +25,13 @@ img{
   }
 }
 
+button{
+  &:active,
+  &:focus{
+    outline: none;
+  }
+}
+
 .breadcrumbs{
   position: absolute;
   top:20px;
@@ -3458,6 +3465,12 @@ domain select  start
   border-radius: 5px;
   background: #0d58cf;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.75);
+  &.btn-next--grey{
+    background: #c0c0c0;
+  }
+  &.btn-next--blue{
+    background: #3d8af7;
+  }
 }
 
 .modal-text{
@@ -4323,7 +4336,85 @@ card-payment  end
 /*simple table end*/
 
 
+/*password recover start*/
 
+.password-recover{
+  .modal-dialog{
+    width: 560px;
+  }
+  .content-box{
+    border: 1px solid #01309a;
+    box-shadow: none;
+  }
+  .content-box__header{
+    padding: 0 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 1px solid #01309a;
+  }
+  .content-box_header-context{
+    font-size: 16px;
+    color: #01309a;
+  }
+
+  .form{
+    padding: 15px 15px 0;
+  }
+
+  .form-group{
+    font-size: 20px;
+  }
+  
+  .form-control{
+    border-color: #0c59cf;
+  }
+
+  .form__inner-bottom{
+    padding: 15px;
+    background: #f7f6f6;
+  }
+
+  .btn-next{
+    padding: 6px 20px;
+    font-size: 15px;
+    box-shadow: none;
+  }
+  .btn-next--grey{
+    margin-right: 20px;
+  }
+
+  .content-box__header{
+    color: #0c59cf;
+  }
+
+  .success-message{
+    padding: 60px 30px 55px;
+    text-align: center;
+    .btn-next{
+      margin: 30px 0 0 ;
+      display: inline-block;
+      float: none;
+    }
+  }
+}
+/*password recover end*/
+
+.reload-icon{
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  background: url("../img/icons/recycle-sign.png") no-repeat;
+  background-size: cover;
+  &:active,
+  &:focus{
+    outline:none;
+  }
+}
 
 @media screen and (max-width: 1368px) {
   .our-clients-container {
@@ -6225,5 +6316,22 @@ card-payment  end
       max-width: 100px;
       margin: 0 5px 10px 0;
     }
+  }
+
+  .password-recover{
+    .modal-dialog{
+      width: 100%;
+      margin: 0;
+    }
+    .error-description{
+      text-align: left;
+    }
+    .content-box__header{
+      height: auto;
+    }
+  }
+  .form-control.grey-bg{
+    background: #d6d6d6;
+    font-size: 22px;
   }
 }

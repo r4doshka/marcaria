@@ -255,7 +255,7 @@
                                 <input type="text" class="form-control" placeholder="Password">
                             </div>
 
-                            <a href="#" class="form__link">Lost your password?</a>
+                            <a href="" data-toggle="modal" data-target="#myModal" class="form__link">Lost your password?</a>
                             <button class="action-button">Login</button>
                         </div>
                     </div>
@@ -356,7 +356,7 @@
                                     Please enter your Password
                                 </div>
                             </div>
-                            <a href="#" class="form__link">Lost your password?</a>
+                            <a href="#" data-toggle="modal" data-target="#myModal1"  class="form__link">Lost your password?</a>
                             <button class="action-button">Login</button>
                         </div>
                     </div>
@@ -515,7 +515,7 @@
         </div>
     </div>
 </section>
-<button class="btn-next" data-toggle="modal" data-target="#myModal">Continue</button>
+
 <footer class="footer">
     <div class="container">
         <div class="footer-callback">
@@ -655,7 +655,7 @@
     </div>
 </footer>
 
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+<div class="modal fade password-recover" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content content-box">
             <div class="content-box__header">
@@ -664,55 +664,59 @@
                     Please enter your email address, and we will send you instructions on how to reset your password.
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="modal-text__header">
-                        Domain Search Error
+            <form class="form">
+                <div class="row form-group">
+                    <div class="col-md-8 col-sm-8">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" class="form-control">
+                        <div class="error-description">
+                            This email is not found in our systems.
+                        </div>
                     </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-md-4 col-sm-4 col-xs-8">
+                        <label for="captcha">Captcha</label>
+                        <button class="reload-icon"></button>
+                        <input type="text" id="captcha" class="form-control grey-bg" disabled placeholder="895452349">
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-8">
+                        <label for="enter">Enter Captcha</label>
+                        <input type="text" id="enter" class="form-control">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-md-8 col-md-offset-4 col-sm-8 col-sm-offset-4">
+                        <div class="error-description">
+                            Captcha code does not match, please try again
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 form__inner-bottom">
+                        <button class="btn-next btn-next--blue">Confirm</button>
+                        <button class="btn-next btn-next--grey">Cancel</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade password-recover" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content content-box">
+            <div class="content-box__header">
+                Recover Password
+            </div>
+            <div class="success-message">
+                Thank you, please check your email account, we have sent you instructions on how to reset your password.
+                <div class="middle-align">
+                    <button class="btn-next">Close</button>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="modal-text__description">
-                        The following domain name(s) cannot be searched, please edit your search and try again:
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                    <div class="simple-list">
-                        <div class="simple-list__title">
-                            Domain
-                        </div>
-                        <div class="simple-list__item">
-                            bluédomains.fr
-                        </div>
-                        <div class="simple-list__item">
-                            ñandú.pr
-                        </div>
-                        <div class="simple-list__item">
-                            pokers.vengala
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                    <div class="simple-list">
-                        <div class="simple-list__title">
-                            Error
-                        </div>
-                        <div class="simple-list__item">
-                            Character(s) not supported: é
-                        </div>
-                        <div class="simple-list__item">
-                            Character(s) not supported: ñú
-                        </div>
-                        <div class="simple-list__item">
-                            Extension not supported
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button class="btn-next">OK</button>
+
         </div>
     </div>
 </div>
