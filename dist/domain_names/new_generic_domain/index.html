@@ -7,6 +7,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../../css/font-awesome.css">
+    <link rel="stylesheet" href="../../css/flags-with-shadow-icon.css">
     <link rel="stylesheet" href="../../css/main.css">
     <script src="../../js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
@@ -133,24 +134,21 @@
                                         <div class="select-panel__item-name" >
                                             Francais
                                         </div>
-                                        <div class="select-panel__item-icon">
-                                            <img src="../../img/flags/popular/FR-shadow.png" alt="">
+                                        <div class="select-panel__item-icon flag-shadowed flag-shadowed-FR">
                                         </div>
                                     </div>
                                     <div class="select-panel__dropdown-item" >
                                         <div class="select-panel__item-name">
                                             Espanol
                                         </div>
-                                        <div class="select-panel__item-icon">
-                                            <img src="../../img/flags/popular/ES-shadow.png" alt="">
+                                        <div class="select-panel__item-icon flag-shadowed flag-shadowed-ES-shadow">
                                         </div>
                                     </div>
                                     <div class="select-panel__dropdown-item" >
                                         <div class="select-panel__item-name">
                                             Portugues
                                         </div>
-                                        <div class="select-panel__item-icon">
-                                            <img src="../../img/flags/Europe/WithShadow/PT%20Copy.png" alt="">
+                                        <div class="select-panel__item-icon flag-shadowed flag-shadowed-PT">
                                         </div>
                                     </div>
                                 </div>
@@ -337,16 +335,15 @@
                                             <a href="#">Language</a>
                                             <ul class="header__nav__dropdown">
                                                 <li >
-                                                            <span class="header__nav__country-flag">
-                                                                <img src="../../img/flags/popular/UK.png" alt="">
-                                                            </span>
+                                                        <span class="header__nav__country-flag flag-shadowed flag-shadowed-UK">
+                                                        </span>
                                                     <a href="#">English</a>
                                                 </li>
                                                 <li>
-                                                            <span class="header__nav__country-flag">
-                                                                <img src="../../img/flags/popular/ES.png" alt="">
-                                                            </span>
-                                                    <a href="#">Spanish</a></li>
+                                                        <span class="header__nav__country-flag flag-shadowed flag-shadowed-ES-shadow">
+                                                        </span>
+                                                    <a href="#">Spanish</a>
+                                                </li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -379,16 +376,6 @@
                 </button>
             </div>
             <div class="col-md-8">
-                <div class="extension-list">
-                    <select name="" id="">
-                        <option value="">--Extension list--</option>
-                        <option value="">Canada</option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                    </select>
-                </div>
                 <div class="domains-list">
                     <div class="domains-list__item">
                         <div class="domains-list__icon">
@@ -711,18 +698,5 @@
 <script>window.jQuery || document.write('<script src="app/js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
 <script src="../../js/plugins.js"></script>
 <script src="../../js/main.js"></script>
-<script>
-    $(document).ready(function(){
-        $(".tab-controls .horizontal-menu__item a").click(function() {
-            $(this).parent().addClass("tab-controls--active");
-            $(this).parent().siblings().removeClass("tab-controls--active");
-        });
-
-        $('.horizontal-menu__item').click(function() {
-            $(this).addClass("horizontal-menu__item--active");
-            $(this).siblings().removeClass("horizontal-menu__item--active");
-        });
-    });
-</script>
 </body>
 </html>

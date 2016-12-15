@@ -117,11 +117,6 @@ if (Modernizr.mq('(max-width: 767px)')) {
 
     });
 }
-if (Modernizr.mq('(max-width: 767px)')) {
-    $(document).ready(function(){
-        $('.main-search--small .main-search__search input').attr('value', '');
-    });
-}
 
 /*==========================================
  for tabs

@@ -7,6 +7,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/flags-with-shadow-icon.css">
     <link rel="stylesheet" href="../css/main.css">
     <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
@@ -132,24 +133,21 @@
                                         <div class="select-panel__item-name" >
                                             Francais
                                         </div>
-                                        <div class="select-panel__item-icon">
-                                            <img src="../img/flags/popular/FR-shadow.png" alt="">
+                                        <div class="select-panel__item-icon flag-shadowed flag-shadowed-FR">
                                         </div>
                                     </div>
                                     <div class="select-panel__dropdown-item" >
                                         <div class="select-panel__item-name">
                                             Espanol
                                         </div>
-                                        <div class="select-panel__item-icon">
-                                            <img src="../img/flags/popular/ES-shadow.png" alt="">
+                                        <div class="select-panel__item-icon flag-shadowed flag-shadowed-ES-shadow">
                                         </div>
                                     </div>
                                     <div class="select-panel__dropdown-item" >
                                         <div class="select-panel__item-name">
                                             Portugues
                                         </div>
-                                        <div class="select-panel__item-icon">
-                                            <img src="../img/flags/Europe/WithShadow/PT%20Copy.png" alt="">
+                                        <div class="select-panel__item-icon flag-shadowed flag-shadowed-PT">
                                         </div>
                                     </div>
                                 </div>
@@ -185,16 +183,16 @@
                                 <a href="#">Trademark Registration</a>
                             </li>
                             <li class="horizontal-menu__item">
-                                <a href="international_trademarks/index.html">International Trademarks</a>
+                                <a href="../trademarks/international_trademarks/index.html">International Trademarks</a>
                             </li>
                             <li class="horizontal-menu__item  horizontal-menu__item--active">
-                                <a href="trademark_tools.html">Trademark Tools</a>
+                                <a href="../trademarks/trademark_tools.html">Trademark Tools</a>
                             </li>
                             <li class="horizontal-menu__item">
-                                <a href="trademark_renewal.html">Trademark Renewal</a>
+                                <a href="../trademarks/trademark_renewal.html">Trademark Renewal</a>
                             </li>
                             <li class="horizontal-menu__item">
-                                <a href="all_services.html">All Services</a>
+                                <a href="../trademarks/all_services.html">All Services</a>
                             </li>
                         </ul>
                     </div>
@@ -269,7 +267,7 @@
                                             <a href="#">New Generic Domains</a>
                                             <ul class="header__nav__dropdown">
                                                 <li>
-                                                    <a href="domain_names/new_generic_domain/health.html">Health</a>
+                                                    <a href="../domain_names/new_generic_domain/health.html">Health</a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -349,16 +347,15 @@
                                             <a href="#">Language</a>
                                             <ul class="header__nav__dropdown">
                                                 <li >
-                                                            <span class="header__nav__country-flag">
-                                                                <img src="../img/flags/popular/UK.png" alt="">
-                                                            </span>
+                                                        <span class="header__nav__country-flag flag-shadowed flag-shadowed-UK">
+                                                        </span>
                                                     <a href="#">English</a>
                                                 </li>
                                                 <li>
-                                                            <span class="header__nav__country-flag">
-                                                                <img src="../img/flags/popular/ES.png" alt="">
-                                                            </span>
-                                                    <a href="#">Spanish</a></li>
+                                                        <span class="header__nav__country-flag flag-shadowed flag-shadowed-ES-shadow">
+                                                        </span>
+                                                    <a href="#">Spanish</a>
+                                                </li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -515,13 +512,5 @@
 <script>window.jQuery || document.write('<script src="../../js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
 <script src="../js/plugins.js"></script>
 <script src="../js/main.js"></script>
-<script>
-    $(document).ready(function(){
-        $(".tab-controls .horizontal-menu__item a").click(function() {
-            $(this).parent().addClass("tab-controls--active");
-            $(this).parent().siblings().removeClass("tab-controls--active");
-        });
-    });
-</script>
 </body>
 </html>

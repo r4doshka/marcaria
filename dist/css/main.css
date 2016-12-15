@@ -5564,7 +5564,8 @@ img {
 .action-button {
   background: #021f54;
   color: #fff;
-  font-weight: bold; }
+  font-weight: bold;
+  border: none; }
 
 .header__container {
   background: #01309a;
@@ -5595,13 +5596,28 @@ button:active, button:focus {
     left: 15px;
     padding: 0 20px; }
   .breadcrumbs .breadcrumbs__icon {
-    display: block;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
     width: 20px;
     position: relative;
-    top: -2px; }
+    top: -2px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .breadcrumbs .breadcrumbs__item {
     list-style: none;
-    line-height: 26px; }
+    line-height: 30px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
     .breadcrumbs .breadcrumbs__item:not(:first-child):before {
       content: "\f105";
       display: inline-block;
@@ -5611,12 +5627,12 @@ button:active, button:focus {
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       color: #fff;
-      margin: 0 0 0 5px; }
+      margin: 0 5px 0 5px; }
     .breadcrumbs .breadcrumbs__item .breadcrumbs__country-icon {
       display: inline-block;
       margin-left: 5px;
       position: relative;
-      top: -2px; }
+      top: 0; }
   .breadcrumbs a {
     font-weight: bold;
     font-size: 16px;
@@ -5630,6 +5646,9 @@ button:active, button:focus {
     color: #021f54; }
   .breadcrumbs.breadcrumbs--theme-dark a {
     color: #021f54; }
+
+.wrap-box {
+  padding: 50px 0; }
 
 .dropdown-menu {
   padding: 10px 0;
@@ -6022,21 +6041,36 @@ button:active, button:focus {
     float: left; }
     .filter .filter__item.filter__item__select-all {
       width: 100%;
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      position: relative;
+      top: 2px; }
       .filter .filter__item.filter__item__select-all .filter__item-name {
-        font-weight: bold; }
+        font-weight: bold;
+        margin-left: 5px;
+        display: inline-block; }
   .filter .filter__continent-search--hide {
     display: none; }
   .filter .filter__item-icon {
     margin-right: 10px;
-    width: 24px; }
+    width: 36px;
+    height: 28px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   .filter .filter__item-name {
     font-size: 18px;
     color: #444444;
     font-weight: 500;
-    cursor: pointer;
-    position: relative;
-    top: 2px; }
+    cursor: pointer; }
 
 .filter__filter-container {
   padding: 40px;
@@ -6201,6 +6235,8 @@ button:active, button:focus {
 
 .filter__item input[type=checkbox] + label,
 .filter__class-item input[type=checkbox] + label {
+  position: relative;
+  top: -2px;
   display: inline-block;
   margin-right: 2px;
   width: 24px;
@@ -6297,7 +6333,9 @@ button:active, button:focus {
     .search-result .search-options__item-value:hover, .search-result .search-options__item-value:active, .search-result .search-options__item-value:focus {
       color: #000; }
   .search-result .search-options__country-flag {
-    display: inline-block; }
+    display: inline-block;
+    position: relative;
+    top: 4px; }
   .search-result .search-result__dropdown-options {
     position: relative;
     display: none; }
@@ -6378,7 +6416,11 @@ button:active, button:focus {
     border: 2px solid #8098cd;
     border-radius: 5px; }
   .order .order-item__country-flag {
-    margin: 0 0 20px; }
+    width: 90px;
+    margin: 0 auto 20px; }
+  .order .order-item__country-flag--big {
+    width: 116px;
+    margin: 0 auto 20px; }
   .order .order-item__heading {
     color: #006ce5;
     font-size: 28px;
@@ -6558,12 +6600,24 @@ button:active, button:focus {
     color: #01309a;
     margin-bottom: 30px; }
   .available-domain .available-domain__country-name {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     border: 1px solid #00329a;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     padding: 15px 0;
     text-align: center;
-    background: #006ce5;
+    background: #3863e1;
     font-size: 26px;
     font-weight: 700;
     color: #fff; }
@@ -7007,7 +7061,8 @@ second site
   font-size: 16px;
   font-weight: 700;
   color: #fff;
-  border-radius: 5px; }
+  border-radius: 5px;
+  border: none; }
 
 .advantages-list {
   text-align: left;
@@ -7456,7 +7511,7 @@ second site
     margin: 0;
     position: absolute;
     right: 10px;
-    top: 18px; }
+    top: 14px; }
   .select-panel__dropdown.currency-select .select-panel__item-icon {
     position: static;
     margin-right: 10px; }
@@ -7712,7 +7767,11 @@ second site
   margin: 0; }
 
 .main-search.main-search--small .main-search__search-button {
-  padding: 10px 20px 11px 46px; }
+  padding: 0 20px 0 46px;
+  line-height: 57px; }
+
+.main-search.main-search--small .main-search__search-icon {
+  top: 16px; }
 
 .list-with-icon.list-with-icon--icon-top {
   margin: 0 0 50px; }
@@ -8098,12 +8157,21 @@ second site
     margin-bottom: 10px; }
   .element-box .element-item__icon {
     display: inline-block;
-    width: 28px;
+    width: 36px;
     margin-right: 10px; }
   .element-box .element-item__name {
     display: inline-block;
-    margin-bottom: 5px;
+    line-height: 28px;
     font-size: 16px; }
+  .element-box .element-box__element-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
 
 /*blockquote-list*/
 .blockquote-list {
@@ -8124,7 +8192,7 @@ second site
 user login  start
 ===============*/
 .form.content-box {
-  margin: 80px 0 100px; }
+  margin: 0; }
   .form.content-box .form__form-body {
     padding: 41px 0 120px; }
   .form.content-box .simple-list {
@@ -9032,6 +9100,11 @@ domain configurations  end
 /*=============
 card-payment  start
 ===============*/
+.icon-field {
+  background: url("../img/icons/credit-card.png") no-repeat 2% 50%;
+  background-size: 38px;
+  padding-left: 50px; }
+
 .card-payment {
   padding: 0 80px 0 50px;
   margin: 40px 0 70px;
@@ -9040,17 +9113,14 @@ card-payment  start
     display: block;
     color: #0c59cf;
     font-size: 23px; }
+  .card-payment .icon-field {
+    width: 80%; }
   .card-payment .form-group {
     margin-bottom: 25px; }
   .card-payment .form-control {
     height: 40px;
     border: 1px solid #01309a;
     font-size: 18px; }
-  .card-payment .card-number-field {
-    width: 80%;
-    background: url("../img/icons/credit-card.png") no-repeat 2% 50%;
-    background-size: 38px;
-    padding-left: 50px; }
   .card-payment .cvc-cod-field {
     width: 100px;
     display: inline-block; }
@@ -9184,7 +9254,8 @@ card-payment  end
     border: 1px solid #75a9f9; }
   .data-table .data-table__item-icon {
     display: inline-block;
-    margin: 0 15px 0 0; }
+    margin: 0 15px 0 0;
+    vertical-align: middle; }
   .data-table .helper {
     display: inline-block;
     vertical-align: middle;
@@ -9370,6 +9441,32 @@ card-payment  end
   .reload-icon:active, .reload-icon:focus {
     outline: none; }
 
+/*sign up start start*/
+.form .form-control {
+  border-color: #0c59cf; }
+
+.form .form-control__active-green {
+  border-color: #b2e712; }
+
+.sign-up-form {
+  padding: 60px 120px 60px 80px; }
+  .sign-up-form .col-form-label {
+    color: #0c59cf;
+    font-size: 23px; }
+  .sign-up-form .form-control {
+    height: 42px;
+    color: #01309a;
+    font-size: 16px; }
+  .sign-up-form .icon-field {
+    background: url("../img/flags/South%20America/With_Shadow/cl-shadow.png") no-repeat 10px 50%; }
+
+/*sign up start end*/
+.flexbox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
 @media screen and (max-width: 1368px) {
   .our-clients-container {
     margin: 40px 40px 60px; } }
@@ -9489,7 +9586,8 @@ card-payment  end
   .main-search.main-search--small {
     position: relative; }
     .main-search.main-search--small .main-search__search-button {
-      padding: 3px 20px 2px 40px; }
+      padding: 6px 20px 6px 40px;
+      line-height: inherit; }
     .main-search.main-search--small .text-uppercase, .main-search.main-search--small .initialism {
       font-size: 24px;
       margin-top: 5px; }
@@ -9553,7 +9651,7 @@ card-payment  end
       .mobile-menu .header__nav .header__nav__country-flag {
         position: relative;
         left: -20px;
-        top: -1px;
+        top: 1px;
         margin-right: 0; }
         .mobile-menu .header__nav .header__nav__country-flag img {
           width: 20px; }
@@ -10162,14 +10260,15 @@ card-payment  end
       top: 7px;
       left: 10px; }
   .main-search.main-search--small .main-search__search {
-    top: 2px; }
+    top: 1px; }
   .main-search.main-search--small .main-search__search-field {
     font-size: 16px; }
   .main-search.main-search--small .main-search__search-button {
     font-size: 14px;
-    padding: 8px 14px 9px 30px; }
+    padding: 7px 14px 8px 30px;
+    text-indent: -99999px; }
   .main-search.main-search--small .main-search__search-icon {
-    top: 8px;
+    top: 7px;
     left: 12px; }
   .main-search.main-search--small .text-uppercase, .main-search.main-search--small .initialism {
     display: none; }

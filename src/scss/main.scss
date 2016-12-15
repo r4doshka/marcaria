@@ -14,6 +14,7 @@ img{
   background: #021f54;
   color:#fff;
   font-weight: bold;
+  border: none;
 }
 .header__container{
   background: #01309a;
@@ -56,16 +57,18 @@ button{
   }
 
   .breadcrumbs__icon{
-    display: block;
-   // background: url('../img/icons/');
+    display: flex;
     width: 20px;
     position: relative;
     top: -2px;
+    align-items: center;
   }
 
   .breadcrumbs__item{
     list-style: none;
-    line-height: 26px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
     &:not(:first-child):before{
       content: "\f105";
       display: inline-block;
@@ -75,14 +78,14 @@ button{
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       color: #fff;
-      margin: 0 0 0 5px;
+      margin: 0 5px 0 5px;
     }
 
     .breadcrumbs__country-icon{
       display: inline-block;
       margin-left: 5px;
       position: relative;
-      top: -2px;
+      top: 0;
     }   
   }
 
@@ -111,11 +114,11 @@ button{
       color: #021f54;
     }
   }
-  
-  
 }
 
-
+.wrap-box{
+  padding: 50px 0;
+}
 
 .dropdown-menu{
   padding: 10px 0;
@@ -125,7 +128,6 @@ button{
     background: #021f54;
     transition: background 0.5s;
   }
-
   .dropdown-menu__toggle{
     display: flex;
     flex-flow: row nowrap;
@@ -137,7 +139,6 @@ button{
       width: 45px;
     }
   }
-
   .header__label{
     margin-left: 15px;
     font-size: 24px;
@@ -145,14 +146,12 @@ button{
     color: #fff;
     font-weight: bold;
   }
-
 }
 
 .header-info{
   background: url("../img/icons/WorldWide_Trademark.png") no-repeat 0 100%;
   background-size: cover;
   position: relative;
-
 }
 
 .header__nav{
@@ -586,9 +585,13 @@ button{
     &.filter__item__select-all{
       width: 100%;
       margin-bottom: 10px;
+      position: relative;
+      top: 2px;
 
       .filter__item-name{
         font-weight: bold;
+        margin-left: 5px;
+        display: inline-block;
       }
     }
   }
@@ -600,7 +603,11 @@ button{
 
   .filter__item-icon{
     margin-right: 10px;
-    width: 24px;
+    width: 36px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .filter__item-name{
@@ -608,8 +615,6 @@ button{
     color: #444444;
     font-weight: 500;
     cursor: pointer;
-    position: relative;
-    top: 2px;
   }
 }
 
@@ -783,6 +788,8 @@ button{
   }
   input[type=checkbox]{
     &+label{
+      position: relative;
+      top:-2px;
       display: inline-block;
       margin-right: 2px;
       width: 24px;
@@ -907,6 +914,8 @@ button{
 
   .search-options__country-flag{
     display: inline-block;
+    position: relative;
+    top: 4px;
   }
 
   .search-result__dropdown-options{
@@ -1014,7 +1023,13 @@ button{
     border-radius: 5px;
   }
   .order-item__country-flag{
-    margin: 0 0 20px;
+    width: 90px;
+    margin: 0 auto 20px;
+  }
+
+  .order-item__country-flag--big{
+    width: 116px;
+    margin: 0 auto 20px;
   }
   .order-item__heading{
     color: #006ce5;
@@ -1222,12 +1237,15 @@ button{
     margin-bottom: 30px;
   }
   .available-domain__country-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 1px solid #00329a;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     padding:15px 0;
     text-align: center;
-    background: #006ce5;
+    background: #3863e1;
     font-size: 26px;
     font-weight: 700;
     color: #fff;
@@ -1779,6 +1797,7 @@ second site
   font-weight: 700;
   color: #fff;
   border-radius: 5px;
+  border:none;
 }
 
 .advantages-list{
@@ -2301,7 +2320,7 @@ second site
     margin: 0;
     position: absolute;
     right: 10px;
-    top:18px;
+    top:14px;
   }
 
   &.currency-select{
@@ -2576,7 +2595,11 @@ second site
       margin: 0;
     }
     .main-search__search-button{
-      padding: 10px 20px 11px 46px;
+      padding: 0 20px 0 46px;
+      line-height: 57px;
+    }
+    .main-search__search-icon{
+      top: 16px;
     }
   }
 }
@@ -2970,13 +2993,17 @@ second site
   }
   .element-item__icon{
     display: inline-block;
-    width: 28px;
+    width: 36px;
     margin-right: 10px;
   }
   .element-item__name{
     display: inline-block;
-    margin-bottom: 5px;
+    line-height: 28px;
     font-size: 16px;
+  }
+  .element-box__element-item{
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -3005,7 +3032,7 @@ user login  start
 ===============*/
 
 .form.content-box{
-  margin: 80px 0 100px;
+  margin:0;
 
   .form__form-body{
     padding: 41px 0 120px;
@@ -3990,6 +4017,12 @@ domain configurations  end
 /*=============
 card-payment  start
 ===============*/
+.icon-field{
+  background: url('../img/icons/credit-card.png') no-repeat 2% 50%;
+  background-size: 38px;
+  padding-left: 50px;
+}
+
 .card-payment{
   padding: 0 80px 0 50px;
   margin: 40px 0 70px;
@@ -3999,6 +4032,9 @@ card-payment  start
     color: #0c59cf;
     font-size: 23px;
   }
+  .icon-field{
+    width: 80%;
+  }
   .form-group{
     margin-bottom: 25px;
   }
@@ -4006,12 +4042,6 @@ card-payment  start
     height: 40px;
     border:1px solid #01309a;
     font-size: 18px;
-  }
-  .card-number-field{
-    width: 80%;
-    background: url('../img/icons/credit-card.png') no-repeat 2% 50%;
-    background-size: 38px;
-    padding-left: 50px;
   }
   .cvc-cod-field{
     width: 100px;
@@ -4181,6 +4211,7 @@ card-payment  end
     .data-table__item-icon{
       display: inline-block;
       margin: 0 15px 0 0;
+      vertical-align: middle;
     }
     .helper{
       display: inline-block;
@@ -4416,6 +4447,38 @@ card-payment  end
   }
 }
 
+/*sign up start start*/
+.form{
+  .form-control{
+    border-color:#0c59cf;
+  }
+  .form-control__active-green{
+    border-color: #b2e712;
+  }
+}
+.sign-up-form{
+  padding: 60px 120px 60px 80px;
+  .col-form-label{
+    color:#0c59cf;
+    font-size: 23px;
+  }
+  .form-control{
+    height: 42px;
+    color: #01309a;
+    font-size: 16px;
+  }
+  .icon-field{
+    background: url('../img/flags/South%20America/With_Shadow/cl-shadow.png') no-repeat 10px 50%;
+
+  }
+}
+
+/*sign up start end*/
+
+.flexbox{
+  display: flex;
+}
+
 @media screen and (max-width: 1368px) {
   .our-clients-container {
     margin: 40px 40px 60px;
@@ -4645,7 +4708,9 @@ card-payment  end
   .main-search.main-search--small{
     position: relative;
     .main-search__search-button {
-      padding: 3px 20px 2px 40px;
+      padding: 6px 20px 6px 40px;
+      line-height: inherit;
+
     }
     .text-uppercase{
       font-size: 24px;
@@ -4739,7 +4804,7 @@ card-payment  end
       .header__nav__country-flag{
         position: relative;
         left: -20px;
-        top: -1px;
+        top: 1px;
         margin-right: 0;
         img{
           width: 20px;
@@ -5650,7 +5715,7 @@ card-payment  end
 
   .main-search.main-search--small{
     .main-search__search{
-      top: 2px;
+      top: 1px;
     }
 
     .main-search__search-field{
@@ -5659,10 +5724,11 @@ card-payment  end
 
     .main-search__search-button {
       font-size: 14px;
-      padding: 8px 14px 9px 30px;
+      padding: 7px 14px 8px 30px;
+      text-indent: -99999px;
     }
     .main-search__search-icon {
-      top: 8px;
+      top: 7px;
       left: 12px;
     }
     .text-uppercase{
