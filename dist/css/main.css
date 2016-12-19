@@ -10402,6 +10402,8 @@ card-payment  end
         width: 100%; }
       .filter.filter--mobile-layout .filter__filter-menu a {
         font-size: 18px; }
+      .filter.filter--mobile-layout .default-tabs {
+        margin: 30px 0 0 0; }
   .filter__filter-container {
     margin-bottom: 40px;
     padding: 10px; }
