@@ -3144,6 +3144,15 @@ user login  start
     font-size: 16px;
     color: #01309a;
     position: relative;
+    &.simple-list__item--error-icon{
+      &:before{
+        content: "\f00d";
+        color: #ff3823;
+        font-size: 20px;
+        left: -20px;
+        top: 0;
+      }
+    }
     &:before{
       content: "\f111";
       position: absolute;
@@ -3220,6 +3229,10 @@ domain select  start
     background: #d4e3fc;
     &.content-box__header--auto-height{
       height: auto;
+    }
+    &.content-box__form-header{
+      height: auto;
+      padding: 25px 0;
     }
   }
 
@@ -3656,6 +3669,12 @@ domain configurations  start
     .progress-step-bar__item-name{
       margin-right: -90%;
     }
+  }
+}
+.helper-wrap{
+  .helper{
+    display: inline-block;
+    top:0;
   }
 }
 
@@ -4467,17 +4486,158 @@ card-payment  end
     color: #01309a;
     font-size: 16px;
   }
-  .icon-field{
-    background: url('../img/flags/South%20America/With_Shadow/cl-shadow.png') no-repeat 10px 50%;
 
+  .float-field-icon{
+    position: absolute;
+    top: 8px;
+    left: 10px;
+  }
+
+  .group-wrap{
+    position: relative;
+    color: #75a9f9;
+    .form-control{
+      padding-left: 120px;
+      color: #75a9f9;
+      &::-webkit-input-placeholder {color:#75a9f9;}
+      &::-moz-placeholder          {color:#75a9f9;}/* Firefox 19+ */
+      &:-moz-placeholder           {color:#75a9f9;}/* Firefox 18- */
+      &:-ms-input-placeholder      {color:#75a9f9;}
+    }
+  }
+
+  .image-list{
+    margin-top: 40px;
+    .image-list__item{
+      width: 100px;
+    }
+  }
+
+  .btn-next{
+    margin: 40px 0 0 0;
+  }
+}
+
+.custom-checkbox{
+  align-items: center;
+  input[type=checkbox]{
+    display: none;
+    & +  label{
+      display: inline-block;
+      margin:0 10px 0 0;
+      flex: 0 1 20px;
+      height: 20px;
+      background: #fff;
+      border: 1px solid #0c59cf;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    &:checked + label:before{
+        content: "\f00c";
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        color: #0c59cf;
+    }
+  }
+  label{
+    margin: 0;
+    cursor: pointer;
+    font-weight: 400;
+    text-align: center;
+    color: #0c59cf;
+  }
+}
+
+.link-underline{
+  color: #0c59cf;
+  text-decoration: underline;
+}
+
+.float-field{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 42px;
+  width: 115px;
+  &:after{
+    content: "\f0d7";
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top:4px;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 35px;
+    color: #0844a4;
+  }
+  .float-field-select{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-indent: 50px;
+    z-index: 2;
+    height: 100%;
+    border: none;
+    background: none;
+    -moz-appearance: none;
+    -webkit-appearance:none;
+    &:active,
+    &:focus{
+      outline: none;
+    }
+    &::-ms-expand {
+      display: none;
+    }
   }
 }
 
 /*sign up start end*/
 
+/*note start*/
+.note{
+  padding: 10px 0 20px ;
+  border: 1px solid #b2e712;
+  border-radius: 5px;
+  text-align: center;
+  .note__title{
+    margin-bottom: 10px;
+    font-size: 21px;
+    color: #a6ce2f;
+    &.note__title--error{
+      color: #ff3823;
+      font-weight: 700;
+    }
+  }
+  .simple-list{
+    display: inline-block;
+    text-align: left;
+    .simple-list__item{
+      color: #0c59cf;
+    }
+  }
+}
+/*note end*/
+
+.header-inner{
+  padding: 15px;
+  background: #d4e3fc;
+  color:#01309a;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
 .flexbox{
   display: flex;
 }
+
 
 @media screen and (max-width: 1368px) {
   .our-clients-container {
@@ -4566,6 +4726,16 @@ card-payment  end
       }
     }
   }
+
+  .note{
+    padding: 10px 20px 20px;
+  }
+
+  .simple-list{
+    .simple-list__item{
+      font-size: 14px;
+    }
+  }
 }
 
 @media screen and (min-width: 992px){
@@ -4573,8 +4743,9 @@ card-payment  end
   .faq-list__show-more,
   .search-result__mobile-option__show,
   .identical-result__view-detail,
-  .data-table_cell_mobile-show{
-    display: none;
+  .data-table_cell_mobile-show,
+  .desktop-hide{
+    display: none !important;
   }
   .data-table_cell_mobile-hide{
     display: block;
@@ -5087,9 +5258,40 @@ card-payment  end
       max-width: 65px;
     }
   }
+
+  .sign-up-form {
+    .image-list{
+      margin: 20px 0;
+    }
+    .col-form-label{
+      font-size: 18px;
+    }
+
+    .simple-list{
+      .simple-list__item{
+        &.simple-list__item--error-icon{
+          &:before{
+            font-size: 16px;
+            left: -16px;
+            top: 4px;
+          }
+        }
+      }
+    }
+
+  }
+
+  .note{
+    .simple-list{
+      .simple-list__item{
+        font-size: 18px;
+      }
+    }
+  }
+
 }
 
-@media (min-width: 768px) {
+@media screen and  (min-width: 768px) {
   .mobile-layout {
     display: none;
   }
@@ -5346,11 +5548,21 @@ card-payment  end
     font-size: 30px;
   }
 
+  .sign-up-form{
+    padding: 50px 20px 70px;
+    .image-list .image-list__item{
+      margin-right: 25px;
+    }
+  }
 }
 
-@media (max-width: 767px) {
+@media screen and  (max-width: 767px) {
   .mobile-layout{
     display: block;
+  }
+  .mobile-flexbox{
+    display: flex;
+    flex-flow: row wrap;
   }
   .desktop-layout{
     display: none;
@@ -5576,6 +5788,17 @@ card-payment  end
   .content-box{
     .content-box__header{
       font-size: 22px;
+      &.content-box__header--helper-inner{
+        padding: 10px 0;
+        font-size: 24px;
+        height: auto;
+        .helper{
+          display: inline-block;
+        }
+      }
+      &.content-box__form-header{
+        padding: 20px;
+      }
     }
   }
 
@@ -6400,4 +6623,47 @@ card-payment  end
     background: #d6d6d6;
     font-size: 22px;
   }
+  /*sign up form*/
+  .sign-up-form{
+    padding: 34px 15px 60px;
+    .note{
+      margin-bottom: 20px;
+    }
+    .custom-checkbox{
+      font-size: 14px;
+    }
+    .simple-list{
+      .simple-list__item{
+        &.simple-list__item--error-icon{
+          &:before{
+            top: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .note{
+    .note__title{
+      font-size: 14px;
+    }
+    .simple-list{
+      .simple-list__item{
+        font-size: 14px;
+        font-weight: 700;
+        &:before{
+          left: -10px;
+        }
+      }
+    }
+  }
+
+  .helper-wrap{
+    margin-bottom: 5px;
+  }
+
+  .wrap-box{
+    padding: 10px 0;
+  }
+
 }
