@@ -10387,6 +10387,21 @@ card-payment  end
       margin-top: 20px;
       display: block;
       padding-left: 15px; }
+    .filter.filter--mobile-layout {
+      padding: 0;
+      background: transparent;
+      box-shadow: none; }
+      .filter.filter--mobile-layout .filter__filter-menu {
+        display: block; }
+      .filter.filter--mobile-layout .filter__filter-content {
+        display: block;
+        padding: 20px;
+        box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.75);
+        background-color: #ebebeb; }
+      .filter.filter--mobile-layout .filter__item {
+        width: 100%; }
+      .filter.filter--mobile-layout .filter__filter-menu a {
+        font-size: 18px; }
   .filter__filter-container {
     margin-bottom: 40px;
     padding: 10px; }

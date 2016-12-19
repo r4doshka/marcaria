@@ -5871,6 +5871,26 @@ card-payment  end
       display: block;
       padding-left: 15px;
     }
+    &.filter--mobile-layout{
+      padding: 0;
+      background: transparent;
+      box-shadow: none;
+      .filter__filter-menu{
+        display: block;
+      }
+      .filter__filter-content{
+        display: block;
+        padding: 20px;
+        box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.75);
+        background-color: #ebebeb;
+      }
+       .filter__item{
+         width: 100%;
+       }
+      .filter__filter-menu a{
+        font-size: 18px;
+      }
+    }
   }
   .filter__filter-container{
     margin-bottom: 40px;
