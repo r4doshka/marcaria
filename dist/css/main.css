@@ -6048,6 +6048,8 @@ button:active, button:focus {
         font-weight: bold;
         margin-left: 5px;
         display: inline-block; }
+  .filter .domain-icon {
+    margin: 0 5px; }
   .filter .filter__continent-search--hide {
     display: none; }
   .filter .filter__item-icon {
@@ -11026,4 +11028,45 @@ card-payment  end
   .control-buttons .btn-next {
     width: 100%;
     margin-bottom: 20px;
-    font-size: 17px; } }
+    font-size: 17px; }
+  /*filter slider start*/
+  .mobile-slider .filter__item input[type=checkbox] + label {
+    top: -1px;
+    margin-right: 10px; }
+  .mobile-slider .filter__item .filter__item-name {
+    margin-left: 10px; }
+  .mobile-slider .tooltip {
+    width: 260px;
+    left: 0 !important; }
+  .mobile-slider .filter__filter-menu {
+    padding: 0; }
+    .mobile-slider .filter__filter-menu li {
+      border-bottom: 0; }
+  .mobile-slider.filter .filter__filter-content {
+    border-top-left-radius: 0;
+    box-shadow: none;
+    border: 2px solid rgba(0, 0, 0, 0.75); }
+  .mobile-slider .filter__item.filter__item__select-all {
+    margin-bottom: 5px; }
+  .mobile-slider .slick-prev {
+    top: 16px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    background: url(../img/icons/up-arrow-key.png) #f0f0f0 no-repeat 50%;
+    background-size: contain;
+    display: block;
+    border: none;
+    text-indent: -999999px; }
+  .mobile-slider .slick-next {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    top: inherit;
+    background: url(../img/icons/down-arrow-key.png) #f0f0f0 no-repeat 50%;
+    background-size: contain;
+    display: block;
+    border: none;
+    text-indent: -999999px; }
+  /*filter slider end*/ }

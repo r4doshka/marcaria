@@ -596,6 +596,10 @@ button{
     }
   }
 
+  .domain-icon{
+    margin:0 5px;
+  }
+
   .filter__continent-search--hide{
     display: none;
   }
@@ -4736,6 +4740,8 @@ card-payment  end
 }
 
 /*order details end*/
+
+
 @media screen and (max-width: 1368px) {
   .our-clients-container {
     margin: 40px 40px 60px;
@@ -6874,6 +6880,65 @@ card-payment  end
       margin-bottom: 20px;
       font-size: 17px;
     }
-
   }
+
+  /*filter slider start*/
+  .mobile-slider{
+    .filter__item {
+      input[type=checkbox] + label{
+        top:-1px;
+        margin-right: 10px;
+      }
+      .filter__item-name{
+        margin-left: 10px;
+      }
+    }
+
+    .tooltip{
+      width: 260px;
+      left: 0 !important;
+    }
+    .filter__filter-menu{
+      padding: 0;
+      li{
+        border-bottom: 0;
+      }
+    }
+    &.filter{
+      .filter__filter-content{
+        border-top-left-radius: 0;
+        box-shadow: none;
+        border:2px solid rgba(0, 0, 0, 0.75);
+      }
+    }
+    .filter__item.filter__item__select-all{
+      margin-bottom: 5px;
+    }
+
+    .slick-prev{
+      top: 16px;
+      width: 100%;
+      left:0;
+      right: 0;
+      background: url(../img/icons/up-arrow-key.png) #f0f0f0 no-repeat 50%;
+      background-size: contain;
+      display: block;
+      border: none;
+      text-indent: -999999px;
+    }
+
+    .slick-next{
+      bottom: 0;
+      left:0;
+      right: 0;
+      width: 100%;
+      top: inherit;
+      background: url(../img/icons/down-arrow-key.png) #f0f0f0 no-repeat 50%;
+      background-size: contain;
+      display: block;
+      border: none;
+      text-indent: -999999px;
+    }
+  }
+  /*filter slider end*/
 }
