@@ -124,9 +124,11 @@ if (Modernizr.mq('(max-width: 767px)')) {
 
 $(document).ready(function() {
     $('.filter__filter-content').each(function(){
-        $(this).children().filter(':first').css("display", "block") ;
+        $(this).children().not('.filter__box').filter(':first').css("display", "block") ;
     });
 
+
+    /*for domain search page*/
     $(".default-tabs .filter__filter-menu a").click(function(event) {
         event.preventDefault();
         $(this).parent().addClass("filter__filter-menu--current");
@@ -149,6 +151,7 @@ $(document).ready(function() {
         $(tab).fadeIn();
     });
 });
+/*for domain search page*/
 
 
 /*==========================================

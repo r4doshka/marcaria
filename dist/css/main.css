@@ -6054,8 +6054,6 @@ button:active, button:focus {
     display: none; }
   .filter .filter__item-icon {
     margin-right: 10px;
-    width: 36px;
-    height: 28px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -6073,6 +6071,16 @@ button:active, button:focus {
     color: #444444;
     font-weight: 500;
     cursor: pointer; }
+  .filter .filter__box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    overflow: hidden;
+    margin-bottom: 30px; }
 
 .filter__filter-container {
   padding: 40px;
@@ -6775,6 +6783,12 @@ button:active, button:focus {
   background-size: cover; }
   .header-info.sunrise .header-info__content {
     background: none; }
+
+.header-info.holiday_travel {
+  background: url("../img/categories/Holiday_Travel.jpg") no-repeat;
+  background-size: cover; }
+  .header-info.holiday_travel .header-info__country {
+    background: rgba(16, 102, 239, 0.33); }
 
 .header-info.header-info__middle-east {
   background: url("../img/continents_background/middle-east.png") no-repeat;
@@ -9707,6 +9721,26 @@ card-payment  end
   font-weight: bold; }
 
 /*order details end*/
+/*vertical menu start*/
+.vertical-menu {
+  padding: 0;
+  margin: 0; }
+  .vertical-menu .vertical-menu__item {
+    padding: 3px 0 3px 35px;
+    list-style: none;
+    background: #021f54;
+    border-bottom: 1px solid #fff; }
+    .vertical-menu .vertical-menu__item:last-child {
+      border-bottom: none; }
+    .vertical-menu .vertical-menu__item a {
+      font-size: 19px;
+      color: #fff;
+      font-weight: 500;
+      cursor: pointer; }
+      .vertical-menu .vertical-menu__item a:hover {
+        text-decoration: none; }
+
+/*vertical menu end*/
 @media screen and (max-width: 1368px) {
   .our-clients-container {
     margin: 40px 40px 60px; } }
@@ -10097,7 +10131,9 @@ card-payment  end
   .description-list .description-list__item {
     font-size: 18px; }
   .control-buttons .btn-next {
-    padding: 6px 20px; } }
+    padding: 6px 20px; }
+  .filter__box .filter__item {
+    width: 50%; } }
 
 @media screen and (min-width: 768px) {
   .mobile-layout {
@@ -11069,4 +11105,8 @@ card-payment  end
     display: block;
     border: none;
     text-indent: -999999px; }
-  /*filter slider end*/ }
+  /*filter slider end*/
+  .search-mobile-wrap {
+    margin: 15px 0;
+    padding: 10px 15px 10px;
+    background: #f7f6f6; } }

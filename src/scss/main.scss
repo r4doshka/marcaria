@@ -607,8 +607,6 @@ button{
 
   .filter__item-icon{
     margin-right: 10px;
-    width: 36px;
-    height: 28px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -620,7 +618,16 @@ button{
     font-weight: 500;
     cursor: pointer;
   }
+
+  .filter__box{
+    display: flex;
+    flex-flow:row wrap;
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+
 }
+
 
 
 .filter__filter-container{
@@ -1408,6 +1415,13 @@ button{
     background-size: cover;
     .header-info__content{
       background: none;
+    }
+  }
+  &.holiday_travel{
+    background: url('../img/categories/Holiday_Travel.jpg') no-repeat;
+    background-size: cover;
+    .header-info__country{
+      background: rgba(16, 102, 239, 0.33);
     }
   }
   &.header-info__middle-east{
@@ -4741,6 +4755,31 @@ card-payment  end
 
 /*order details end*/
 
+/*vertical menu start*/
+
+.vertical-menu{
+  padding: 0;
+  margin: 0;
+  .vertical-menu__item{
+    padding: 3px 0 3px 35px;
+    list-style: none;
+    background: #021f54;
+    border-bottom:1px solid #fff;
+    &:last-child{
+      border-bottom: none;
+    }
+    a{
+      font-size: 19px;
+      color: #fff;
+      font-weight: 500;
+      cursor: pointer;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+  }
+}
+/*vertical menu end*/
 
 @media screen and (max-width: 1368px) {
   .our-clients-container {
@@ -5427,6 +5466,12 @@ card-payment  end
   .control-buttons{
     .btn-next{
       padding: 6px 20px;
+    }
+  }
+
+  .filter__box{
+    .filter__item{
+      width: 50%;
     }
   }
 }
@@ -6941,4 +6986,10 @@ card-payment  end
     }
   }
   /*filter slider end*/
+
+  .search-mobile-wrap{
+    margin: 15px 0;
+    padding: 10px 15px 10px;
+    background: #f7f6f6;
+  }
 }
