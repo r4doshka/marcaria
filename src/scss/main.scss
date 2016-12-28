@@ -601,7 +601,9 @@ button{
       }
     }
   }
-
+  &.filter--mobile-layout{
+    display: none;
+  }
   .domain-icon{
     margin:0 5px;
   }
@@ -6215,18 +6217,11 @@ card-payment  end
     }
   }
 
-
   /*filter*/
   .filter{
     margin-top: 20px;
-
-    .filter__find-all{
-      font-size: 20px;
-      margin-top: 20px;
-      display: block;
-      padding-left: 15px;
-    }
     &.filter--mobile-layout{
+      display: block;
       padding: 0;
       background: transparent;
       box-shadow: none;
@@ -6239,9 +6234,9 @@ card-payment  end
         box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.75);
         background-color: #ebebeb;
       }
-       .filter__item{
-         width: 100%;
-       }
+      .filter__item{
+        width: 100%;
+      }
       .filter__filter-menu a{
         font-size: 18px;
       }
@@ -6249,6 +6244,13 @@ card-payment  end
         margin: 30px 0 0 0;
       }
     }
+    .filter__find-all{
+      font-size: 20px;
+      margin-top: 20px;
+      display: block;
+      padding-left: 15px;
+    }
+
   }
   .filter__filter-container{
     margin-bottom: 40px;
