@@ -51,7 +51,7 @@ button{
     }
   }
   &.breadcrumbs_shadowed{
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(16, 102, 239, 0.2);
     left: 15px;
     padding: 0 20px;
   }
@@ -152,6 +152,12 @@ button{
   background: url("../img/icons/WorldWide_Trademark.png") no-repeat 0 100%;
   background-size: cover;
   position: relative;
+
+  &.header-info__all-services{
+    .header-info__text{
+      margin: 40px 0 60px;
+    }
+  }
 }
 
 .header__nav{
@@ -653,6 +659,11 @@ button{
     border: 2px solid #606060;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+  }
+  .owl-stage-outer{
+    li{
+      float: none;
+    }
   }
 
   a {
@@ -1414,7 +1425,7 @@ button{
     background: url('../img/icons/sunrise_bg.jpg') no-repeat;
     background-size: cover;
     .header-info__content{
-      background: none;
+
     }
   }
   &.holiday_travel{
@@ -1451,7 +1462,7 @@ button{
   }
 
   &.header-info__all-services{
-    background: url('../img/icons/all-services.jpg') no-repeat;
+    background: url('../img/categories/all-services.jpg') no-repeat;
     background-size: cover;
     .header-info__content{
       margin: 20px 0 120px;
@@ -1606,7 +1617,7 @@ second site
     padding: 0 20px 40px;
     display: inline-block;
     background: #243a56;
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(16, 102, 239, 0.2);
   }
 
   .breadcrumbs__item a{
@@ -2653,6 +2664,31 @@ second site
   }
 }
 
+.domain-stage{
+  .list-with-icon--icon-top{
+    .list-with-icon__item{
+      flex-flow: row wrap;
+    }
+    .list-with-icon__icon{
+      margin: 0 0 20px 0;
+      height: 60px;
+      img{
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+    .list-with-icon__title{
+      text-align: left;
+      font-size: 22px;
+      line-height: 30px;
+      color: #606060;
+    }
+    .btn-next{
+      margin: 40px 0 0 0;
+    }
+  }
+}
+
 .our-advantages{
   .list-with-icon__icon{
     img{
@@ -2888,13 +2924,13 @@ second site
 
 .menu-slider{
   .filter__filter-menu {
-    padding: 0 60px;
+    padding: 0 58px;
     li{
-      float: none;
       text-align: center;
     }
     a{
       font-weight: 400;
+      padding: 5px 0;
     }
   }
   .owl-prev{
@@ -2910,6 +2946,7 @@ second site
     top: 35px;
   }
 }
+
 
 .advantages{
   margin-top: 50px;
@@ -4408,10 +4445,11 @@ card-payment  end
       background: #ebebeb;
     }
   }
-
-
   .simple-table__cell{
     border-right:1px solid #fff;
+    &:last-child{
+      border-right:0;
+    }
   }
 }
 /*simple table end*/
@@ -4669,6 +4707,10 @@ card-payment  end
   display: flex;
 }
 
+.align-items-bot{
+  align-items: flex-end;
+}
+
 /*order details start*/
 .order-details{
   .content-box__header{
@@ -4781,6 +4823,105 @@ card-payment  end
 }
 /*vertical menu end*/
 
+.new-note{
+  font-size: 18px;
+  color: #e61610;
+}
+
+
+.slick-prev{
+  display: inline-block;
+  border: none;
+  text-indent: -9999999px;
+  position: absolute;
+  left: 0;
+  background: url(../img/icons/Arrow_left.png) no-repeat transparent;
+  background-size: cover;
+  width: 20px;
+  height: 35px;
+  top: 3px;
+}
+
+.slick-next{
+  display: inline-block;
+  border: none;
+  text-indent: -9999999px;
+  position: absolute;
+  right: 0;
+  background: url(../img/icons/Arrow_right.png) no-repeat transparent;
+  background-size: cover;
+  width: 20px;
+  height: 35px;
+  top: 3px;
+}
+
+.vertical-slider{
+  .slick-prev{
+  position: static;
+    background: url(../img/icons/up-arrow-key.png) #f0f0f0 no-repeat 50%;
+    background-size: contain;
+    width: 100%;
+  }
+
+  .slick-next{
+    position: static;
+    background: url(../img/icons/down-arrow-key.png) #f0f0f0 no-repeat 50%;
+    background-size: contain;
+    width: 100%;
+  }
+}
+
+
+.slick-slide{
+  a{
+    &:focus{
+      outline: none;
+    }
+  }
+}
+
+.arrows-large{
+  .slick-prev{
+    background: url(../img/icons/up-arrow-key.png) #a8c6fa no-repeat 50%;
+    background-size: 40px;
+  }
+
+  .slick-next{
+    background: url(../img/icons/down-arrow-key.png) #a8c6fa no-repeat 50%;
+    background-size: 40px;
+  }
+
+  .slick-arrow{
+    padding: 25px 0;
+  }
+}
+
+.info-box{
+  .info-box__item {
+    padding: 30px 0;
+    color: #444444;
+    font-size: 19px;
+    line-height: 30px;
+    &:nth-child(odd){
+      border-top: 2px solid #d4e3fc;
+      border-bottom: 2px solid #d4e3fc;
+    }
+  }
+
+  .slick-arrow{
+    position: relative;
+    z-index: 99;
+  }
+
+  .slick-prev{
+    top: 8px;
+  }
+
+  .slick-next{
+    bottom: 8px;
+  }
+}
+
 @media screen and (max-width: 1368px) {
   .our-clients-container {
     margin: 40px 40px 60px;
@@ -4876,6 +5017,12 @@ card-payment  end
   .simple-list{
     .simple-list__item{
       font-size: 14px;
+    }
+  }
+
+  .simple-table{
+    .simple-table__header{
+      font-size: 20px;
     }
   }
 }
@@ -5474,6 +5621,29 @@ card-payment  end
       width: 50%;
     }
   }
+
+  .domain-stage{
+    .list-with-icon--icon-top{
+      margin: 0;
+      .list-with-icon__item{
+        justify-content: center;
+        margin: 0 0 20px 0;
+      }
+      .list-with-icon__icon{
+        margin: 0 auto 20px;
+      }
+      .list-with-icon__title{
+        text-align: center;
+      }
+    }
+  }
+
+  .simple-table{
+    .simple-table__item{
+      font-size: 16px;
+    }
+  }
+
 }
 
 @media screen and  (min-width: 768px) {
@@ -6659,6 +6829,7 @@ card-payment  end
   }
   .product-card{
     .product-card__item{
+      position: relative;
       padding: 20px 0;
       &:nth-child(odd){
         background: #f2f2f2;
@@ -6929,6 +7100,7 @@ card-payment  end
 
   /*filter slider start*/
   .mobile-slider{
+    display: block;
     .filter__item {
       input[type=checkbox] + label{
         top:-1px;
@@ -6947,6 +7119,8 @@ card-payment  end
       padding: 0;
       li{
         border-bottom: 0;
+        width: 150px;
+        display: inline-block;
       }
     }
     &.filter{
@@ -6961,10 +7135,8 @@ card-payment  end
     }
 
     .slick-prev{
-      top: 16px;
+      position: static;
       width: 100%;
-      left:0;
-      right: 0;
       background: url(../img/icons/up-arrow-key.png) #f0f0f0 no-repeat 50%;
       background-size: contain;
       display: block;
@@ -6973,9 +7145,7 @@ card-payment  end
     }
 
     .slick-next{
-      bottom: 0;
-      left:0;
-      right: 0;
+      position: static;
       width: 100%;
       top: inherit;
       background: url(../img/icons/down-arrow-key.png) #f0f0f0 no-repeat 50%;
@@ -6983,6 +7153,11 @@ card-payment  end
       display: block;
       border: none;
       text-indent: -999999px;
+    }
+
+    .owl-prev{
+      right: 400px;
+      left: auto;
     }
   }
   /*filter slider end*/
@@ -6992,4 +7167,13 @@ card-payment  end
     padding: 10px 15px 10px;
     background: #f7f6f6;
   }
+
+  .domain-stage {
+    .list-with-icon--icon-top {
+      .list-with-icon__item {
+        align-items: center;
+      }
+    }
+  }
+
 }

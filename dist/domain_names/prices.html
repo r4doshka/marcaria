@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/font-awesome.css">
-    <link rel="stylesheet" href="../css/jquery.bxslider.css">
+    <link rel="stylesheet" href="../css/slick.css">
     <link rel="stylesheet" href="../css/flags-with-shadow-icon.css">
     <link rel="stylesheet" href="../css/main.css">
     <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
@@ -977,7 +977,7 @@ If the requirements are not met, we offer a Trustee Service. In this case the do
                     </div>
                 </div>
             </div>
-            <div class="col-xs-12 product-card mobile-layout">
+            <div class="col-xs-12 product-card mobile-layout vertical-slider">
                 <div class="slider8 ">
                     <div class="product-card__item">
                         <div>
@@ -1307,7 +1307,7 @@ If the requirements are not met, we offer a Trustee Service. In this case the do
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script>window.jQuery || document.write('<script src="dist/js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
 <script src="../js/bootstrap/tooltip.js"></script>
-<script src="../js/jquery.bxslider.js"></script>
+<script src="../js/slick.min.js"></script>
 <script src="../js/plugins.js"></script>
 <script src="../js/main.js"></script>
 <script>
@@ -1316,12 +1316,11 @@ If the requirements are not met, we offer a Trustee Service. In this case the do
     });
 
     $(document).ready(function(){
-        $('.slider8').bxSlider({
-            mode: 'vertical',
-            slideWidth: 320,
-            minSlides: 3,
-            slideMargin:20,
-            pager:false
+
+        $('.slider8').slick({
+            vertical:true,
+            slidesToShow: 3,
+            slidesToScroll: 3
         });
     });
 </script>

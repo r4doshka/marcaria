@@ -146,7 +146,6 @@ $(document).ready(function() {
         $(this).parent().addClass("filter__filter-menu--current");
         var tab = $(this).attr("href");
         var $tabContent = $(this).parents('.tabs-with-slider').find('.filter__filter-content');
-        console.log($tabContent);
         $tabContent.find('.filter__tab-content').not(tab).css("display", "none");
         $(tab).fadeIn();
     });
