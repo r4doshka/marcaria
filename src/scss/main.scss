@@ -4694,6 +4694,10 @@ card-payment  end
   border: 1px solid #b2e712;
   border-radius: 5px;
   text-align: center;
+  .note-icon{
+    display: inline-block;
+    vertical-align: middle;
+  }
   .note__title{
     margin-bottom: 10px;
     font-size: 21px;
