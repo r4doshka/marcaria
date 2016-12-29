@@ -51,7 +51,7 @@ button{
     }
   }
   &.breadcrumbs_shadowed{
-    background: rgba(16, 102, 239, 0.2);
+    background: rgba(0, 0, 0, 0.2);
     left: 15px;
     padding: 0 20px;
   }
@@ -407,6 +407,10 @@ button{
     border-bottom: 2px solid #b2e712;
   }
 
+  .content{
+    background: #ebebeb;
+  }
+
   .faq-icon{
     width: 35px;
     display: inline-block;
@@ -601,9 +605,7 @@ button{
       }
     }
   }
-  &.filter--mobile-layout{
-    display: none;
-  }
+
   .domain-icon{
     margin:0 5px;
   }
@@ -1446,6 +1448,18 @@ button{
     margin-bottom: 80px;
     background: url('../img/continents_background/hosting-bg.png') no-repeat;
     background-size: cover;
+    .header-info__country{
+      background: rgba(0, 0, 0, 0.2);
+      margin: 0;
+    }
+    .header-info__heading{
+      background: rgba(0, 0, 0, 0.2);
+      display: inline-block;
+      margin: 70px 0 0 0;
+      padding: 0 50px;
+      color: #fff;
+      font-weight: bold;
+    }
   }
 
   &.header-info__oceania{
@@ -2881,6 +2895,9 @@ second site
     display: none;
     left:-5px !important;
     border-right-color: #fff !important;
+  }
+  &.filter-desktop-hide{
+    display: none;
   }
 }
 
@@ -4924,6 +4941,7 @@ card-payment  end
   }
 }
 
+
 @media screen and (max-width: 1368px) {
   .our-clients-container {
     margin: 40px 40px 60px;
@@ -6220,6 +6238,9 @@ card-payment  end
   /*filter*/
   .filter{
     margin-top: 20px;
+    &.filter-desktop-hide{
+      display: block;
+    }
     &.filter--mobile-layout{
       display: block;
       padding: 0;

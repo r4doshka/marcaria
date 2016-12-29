@@ -5592,7 +5592,7 @@ button:active, button:focus {
   .breadcrumbs li:last-child a {
     cursor: default; }
   .breadcrumbs.breadcrumbs_shadowed {
-    background: rgba(16, 102, 239, 0.2);
+    background: rgba(0, 0, 0, 0.2);
     left: 15px;
     padding: 0 20px; }
   .breadcrumbs .breadcrumbs__icon {
@@ -5887,6 +5887,8 @@ button:active, button:focus {
     padding: 30px 0 60px;
     border-top: 1px solid #ebebeb;
     border-bottom: 2px solid #b2e712; }
+  .faq .content {
+    background: #ebebeb; }
   .faq .faq-icon {
     width: 35px;
     display: inline-block; }
@@ -6050,8 +6052,6 @@ button:active, button:focus {
         font-weight: bold;
         margin-left: 5px;
         display: inline-block; }
-  .filter.filter--mobile-layout {
-    display: none; }
   .filter .domain-icon {
     margin: 0 5px; }
   .filter .filter__continent-search--hide {
@@ -6802,6 +6802,16 @@ button:active, button:focus {
   margin-bottom: 80px;
   background: url("../img/continents_background/hosting-bg.png") no-repeat;
   background-size: cover; }
+  .header-info.header-info__hosting .header-info__country {
+    background: rgba(0, 0, 0, 0.2);
+    margin: 0; }
+  .header-info.header-info__hosting .header-info__heading {
+    background: rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    margin: 70px 0 0 0;
+    padding: 0 50px;
+    color: #fff;
+    font-weight: bold; }
 
 .header-info.header-info__oceania {
   background: url("../img/continents_background/oceania.png") no-repeat;
@@ -8051,6 +8061,9 @@ second site
   display: none;
   left: -5px !important;
   border-right-color: #fff !important; }
+
+.filter.filter-desktop-hide {
+  display: none; }
 
 .selected-list {
   height: 90px;
@@ -10657,6 +10670,8 @@ card-payment  end
   /*filter*/
   .filter {
     margin-top: 20px; }
+    .filter.filter-desktop-hide {
+      display: block; }
     .filter.filter--mobile-layout {
       display: block;
       padding: 0;
