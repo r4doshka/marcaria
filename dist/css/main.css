@@ -6923,14 +6923,13 @@ second site
 
 .header-info-countries {
   position: relative;
-  text-align: center; }
+  text-align: center;
+  padding: 50px 0; }
   .header-info-countries .header-info__content {
-    margin: 55px 0 50px;
     padding: 0 20px 40px;
     display: inline-block; }
   .header-info-countries .header-info__country {
     position: relative;
-    margin: 55px auto 50px;
     padding: 0 20px 40px;
     display: inline-block;
     background: #243a56;
@@ -9833,6 +9832,9 @@ card-payment  end
 .slick-slide a:focus {
   outline: none; }
 
+.slick-slide:focus {
+  outline: none; }
+
 .arrows-large .slick-prev {
   background: url(../img/icons/up-arrow-key.png) #a8c6fa no-repeat 50%;
   background-size: 40px; }
@@ -9862,6 +9864,9 @@ card-payment  end
 
 .info-box .slick-next {
   bottom: 8px; }
+
+.slickslider-horizontal {
+  margin: 0 50px; }
 
 @media screen and (max-width: 1368px) {
   .our-clients-container {
@@ -10271,7 +10276,9 @@ card-payment  end
     .domain-stage .list-with-icon--icon-top .list-with-icon__title {
       text-align: center; }
   .simple-table .simple-table__item {
-    font-size: 16px; } }
+    font-size: 16px; }
+  .header-info-countries {
+    padding: 0; } }
 
 @media screen and (min-width: 768px) {
   .mobile-layout {
@@ -10442,7 +10449,11 @@ card-payment  end
   .sign-up-form {
     padding: 50px 20px 70px; }
     .sign-up-form .image-list .image-list__item {
-      margin-right: 25px; } }
+      margin-right: 25px; }
+  .menu-slider .filter__filter-menu {
+    padding: 0 28px; }
+  .slickslider-horizontal {
+    margin: 0; } }
 
 @media screen and (max-width: 767px) {
   .mobile-layout {
@@ -11224,6 +11235,8 @@ card-payment  end
         border-bottom: 0;
         width: 150px;
         display: inline-block; }
+      .mobile-slider .filter__filter-menu .auto-width {
+        width: auto; }
     .mobile-slider.filter .filter__filter-content {
       border-top-left-radius: 0;
       box-shadow: none;

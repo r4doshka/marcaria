@@ -7,8 +7,9 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/font-awesome.css">
-    <link rel="stylesheet" href="../css/owl.carousel.css">
+    <link rel="stylesheet" href="../css/slick.css">
     <link rel="stylesheet" href="../css/flags-with-shadow-icon.css">
+    <link rel="stylesheet" href="../css/domain-icons-sprite.css">
     <link rel="stylesheet" href="../css/main.css">
     <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
@@ -413,6 +414,7 @@
         </div>
     </div>
 </header>
+
 <section class="filter europe">
     <div class="container">
         <div class="filter__filter-container">
@@ -446,7 +448,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="selected-list">
+                <div class="selected-list mobile-hide">
                     <div class="selected-list__selected-item">
                         <div class="selected-item__title">
                             .pk
@@ -1639,7 +1641,7 @@
                 </div>
             </div>
             <div class="tabs-with-slider">
-                <div class="row">
+                <div class="row flexbox align-items-bot">
                     <div class="col-md-3 col-sm-4">
                         <ul class="filter__filter-menu">
                             <li class="filter__filter-menu--current filter__filter-menu--first">
@@ -1648,7 +1650,7 @@
                         </ul>
                     </div>
                     <div class="col-md-9 col-sm-8 menu-slider">
-                        <ul class="filter__filter-menu owl-carousel">
+                        <ul class="filter__filter-menu slickslider-horizontal">
                             <li>
                                 <a href="#Adult">Adult</a>
                             </li>
@@ -1685,632 +1687,580 @@
                 <div class="filter__filter-content">
                     <div id="Popular1" class="filter__tab-content">
                         <div class="filter__item filter__item__select-all">
-                            <input type="checkbox" id="1sall">
-                            <label for="1sall"></label>
-                            <label for="1sall" class="filter__item-name">Select All</label>
+                            <input type="checkbox" id="selectall">
+                            <label for="selectall"></label>
+                            <label for="selectall" class="filter__item-name">Select All</label>
                         </div>
                         <div class="filter__item">
-                            <input type="checkbox" id="br">
-                            <label for="br"></label>
-                            <div class="filter__item-icon flag-shadowed-br_shadow-2 flag-shadowed">
+                            <input type="checkbox" id="agency">
+                            <label for="agency" class="pseudo-checkbox"></label>
+                            <div class="domain-icon domain-icon-gtld-agency">
                             </div>
-                            <a href="" class="filter__item-name">Brazil</a>
+                            <div class="filter__item-name">.agency</div>
                         </div>
                         <div class="filter__item">
-                            <input type="checkbox" id="bx">
-                            <label for="bx"></label>
-                            <div class="filter__item-icon flag-shadowed-cl-shadow flag-shadowed">
-
+                            <input type="checkbox" id="associates">
+                            <label for="associates" class="pseudo-checkbox"></label>
+                            <div class="domain-icon domain-icon-gtld-associates">
                             </div>
-                            <a href="" class="filter__item-name">Chile</a>
+                            <div class="filter__item-name">.associates</div>
                         </div>
                         <div class="filter__item">
-                            <input type="checkbox" id="eu">
-                            <label for="eu"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-EU">
-
+                            <input type="checkbox" id="auction">
+                            <label for="auction" class="pseudo-checkbox"></label>
+                            <div class="domain-icon domain-icon-gtld-auction">
                             </div>
-                            <a href="#" class="filter__item-name">EU</a>
+                            <div class="filter__item-name">.auction</div>
                         </div>
                         <div class="filter__item">
-                            <input type="checkbox" id="ca">
-                            <label for="ca"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-CA-shadow">
-
+                            <input type="checkbox" id="autos">
+                            <label for="autos" class="pseudo-checkbox"></label>
+                            <div class="domain-icon domain-icon-gtld-auto">
                             </div>
-                            <a href="" class="filter__item-name">Canada</a>
+                            <div class="filter__item-name">.autos</div>
                         </div>
                         <div class="filter__item">
-                            <input type="checkbox" id="de">
-                            <label for="de"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-DE-shadow">
-
+                            <input type="checkbox" id="businessa">
+                            <label for="businessa" class="pseudo-checkbox"></label>
+                            <div class="domain-icon domain-icon-gtld-business">
                             </div>
-                            <a href="#" class="filter__item-name">Germany</a>
+                            <div class="filter__item-name">.business</div>
                         </div>
                         <div class="filter__item">
-                            <input type="checkbox" id="fr2">
-                            <label for="fr2"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-FR">
-
+                            <input type="checkbox" id="cab">
+                            <label for="cab" class="pseudo-checkbox"></label>
+                            <div class="domain-icon domain-icon-gtld-cab">
                             </div>
-                            <a href="#" class="filter__item-name">France</a>
+                            <div class="filter__item-name">.cab</div>
                         </div>
                         <div class="filter__item">
-                            <input type="checkbox" id="us">
-                            <label for="us"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-US-shadow">
-
+                            <input type="checkbox" id="cards">
+                            <label for="cards" class="pseudo-checkbox"></label>
+                            <div class="domain-icon domain-icon-gtld-cards">
                             </div>
-                            <a href="" class="filter__item-name">United States</a>
+                            <div class="filter__item-name">.cards</div>
                         </div>
                         <div class="filter__item">
-                            <input type="checkbox" id="jp">
-                            <label for="jp"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-JP">
-
+                            <input type="checkbox" id="cleaning">
+                            <label for="cleaning" class="pseudo-checkbox"></label>
+                            <div class="domain-icon domain-icon-gtld-cleaning">
                             </div>
-                            <a href="#" class="filter__item-name">Japan</a>
+                            <div class="filter__item-name">.cleaning</div>
                         </div>
                         <div class="filter__item">
-                            <input type="checkbox" id="mx">
-                            <label for="mx"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-MX">
-
+                            <input type="checkbox" id="deals">
+                            <label for="deals" class="pseudo-checkbox"></label>
+                            <div class="domain-icon domain-icon-gtld-deals">
                             </div>
-                            <a href="#" class="filter__item-name">Mexico</a>
+                            <div class="filter__item-name">.deals</div>
                         </div>
                         <div class="filter__item">
-                            <input type="checkbox" id="rf">
-                            <label for="rf"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-RU">
-
+                            <input type="checkbox" id="delivery">
+                            <label for="delivery" class="pseudo-checkbox"></label>
+                            <div class="domain-icon domain-icon-GTLD-delivery">
                             </div>
-                            <a href="#" class="filter__item-name">Russian Federation</a>
+                            <div class="filter__item-name">.delivery</div>
                         </div>
                         <div class="filter__item">
-                            <input type="checkbox" id="sp">
-                            <label for="sp"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-ES-shadow">
-
+                            <input type="checkbox" id="diamonds">
+                            <label for="diamonds" class="pseudo-checkbox"></label>
+                            <div class="domain-icon domain-icon-gtld-diamonds">
                             </div>
-                            <a href="#" class="filter__item-name">Spain</a>
+                            <div class="filter__item-name">.diamonds</div>
                         </div>
                         <div class="filter__item">
-                            <input type="checkbox" id="ch">
-                            <label for="ch"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-CH">
-
+                            <input type="checkbox" id="direct">
+                            <label for="direct" class="pseudo-checkbox"></label>
+                            <div class="domain-icon domain-icon-gtld-direct">
                             </div>
-                            <a href="#" class="filter__item-name">Switzerland</a>
+                            <div class="filter__item-name">.direct</div>
                         </div>
                         <div class="filter__item">
-                            <input type="checkbox" id="fr">
-                            <label for="fr"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-FR">
-
+                            <input type="checkbox" id="energy">
+                            <label for="energy" class="pseudo-checkbox"></label>
+                            <div class="domain-icon domain-icon-gtld-direct">
                             </div>
-                            <a href="#" class="filter__item-name">France</a>
+                            <div class="filter__item-name">.energy</div>
                         </div>
                         <div class="filter__item">
-                            <input type="checkbox" id="uk">
-                            <label for="uk"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-UK">
-
+                            <input type="checkbox" id="express">
+                            <label for="express" class="pseudo-checkbox"></label>
+                            <div class="domain-icon domain-icon-gtld-express">
                             </div>
-                            <a href="#" class="filter__item-name">United Kingdom</a>
+                            <div class="filter__item-name">.express</div>
                         </div>
                         <div class="filter__item">
-                            <input type="checkbox" id="wipo">
-                            <label for="wipo"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-WIPO">
-
+                            <input type="checkbox" id="farm">
+                            <label for="farm" class="pseudo-checkbox"></label>
+                            <div class="domain-icon domain-icon-gtld-farm">
                             </div>
-                            <a href="#"  class="filter__item-name">WIPO</a>
+                            <div class="filter__item-name">.farm</div>
                         </div>
                     </div>
                     <div id="Adult" class="filter__tab-content">
                         <div class="filter__item filter__item__select-all">
-                            <input type="checkbox" id="1sall">
-                            <label for="1sall"></label>
-                            <label for="1sall" class="filter__item-name">Select All</label>
+                            <input type="checkbox" id="1selectall">
+                            <label for="1selectall"></label>
+                            <label for="1selectall" class="filter__item-name">Select All</label>
                         </div>
                         <div class="filter__item">
-                            <input type="checkbox" id="br">
-                            <label for="br"></label>
-                            <div class="filter__item-icon flag-shadowed-br_shadow-2 flag-shadowed">
+                            <input type="checkbox" id="actor">
+                            <label for="actor"></label>
+                            <div class="domain-icon domain-icon-gtld-actor">
                             </div>
-                            <a href="" class="filter__item-name">Brazil</a>
+                            <div class="filter__item-name">.actor</div>
                         </div>
                         <div class="filter__item">
-                            <input type="checkbox" id="bx">
-                            <label for="bx"></label>
-                            <div class="filter__item-icon flag-shadowed-cl-shadow flag-shadowed">
+                            <input type="checkbox" id="film">
+                            <label for="film"></label>
+                            <div class="domain-icon domain-icon-gtld-film">
+                            </div>
+                            <div class="filter__item-name">.film</div>
+                        </div>
+                        <div class="filter__item">
+                            <input type="checkbox" id="photo">
+                            <label for="photo"></label>
+                            <div class="domain-icon domain-icon-gtld-photo">
+                            </div>
+                            <div class="filter__item-name">.photo</div>
+                            <div class="helper" title="" data-toggle="tooltip" data-placement="right" data-original-title="For the extension .Thailand that represents the country of Thailand, only nationals or residents of this country are allowed to register. In case you are not able to meet this requirement. we can offer you a Trustee Service.">
+                                <svg fill="#a6ce2f" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="filter__item">
+                            <input type="checkbox" id="pics">
+                            <label for="pics"></label>
+                            <div class="domain-icon domain-icon-gtld-pics">
+                            </div>
+                            <a href="#" class="filter__item-name">.pics</a>
+                            <div class="helper" title="" data-toggle="tooltip" data-placement="right" data-original-title="For the extension .Thailand that represents the country of Thailand, only nationals or residents of this country are allowed to register. In case you are not able to meet this requirement. we can offer you a Trustee Service.">
+                                <svg fill="#a6ce2f" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="filter__item">
+                            <input type="checkbox" id="archi">
+                            <label for="archi"></label>
+                            <div class="domain-icon domain-icon-gtld-archi">
+                            </div>
+                            <a href="#" class="filter__item-name">.archi</a>
+                            <div class="helper" title="" data-toggle="tooltip" data-placement="right" data-original-title="For the extension .Thailand that represents the country of Thailand, only nationals or residents of this country are allowed to register. In case you are not able to meet this requirement. we can offer you a Trustee Service.">
+                                <svg fill="#a6ce2f" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="filter__item">
+                            <input type="checkbox" id="graphics">
+                            <label for="graphics"></label>
+                            <div class="domain-icon domain-icon-gtld-graphics">
+                            </div>
+                            <a href="#" class="filter__item-name">.graphics</a>
+                            <div class="helper" title="" data-toggle="tooltip" data-placement="right" data-original-title="For the extension .Thailand that represents the country of Thailand, only nationals or residents of this country are allowed to register. In case you are not able to meet this requirement. we can offer you a Trustee Service.">
+                                <svg fill="#a6ce2f" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="filter__item">
+                            <input type="checkbox" id="photography">
+                            <label for="photography"></label>
+                            <div class="domain-icon domain-icon-gtld-photography">
+                            </div>
+                            <a href="#" class="filter__item-name">.photography</a>
+                        </div>
+                        <div class="filter__item">
+                            <input type="checkbox" id="pictures">
+                            <label for="pictures"></label>
+                            <div class="domain-icon domain-icon-gtld-pictures">
+                            </div>
+                            <a href="#" class="filter__item-name">.pictures</a>
+                        </div>
+                        <div class="filter__item">
+                            <input type="checkbox" id="audio">
+                            <label for="audio"></label>
+                            <div class="domain-icon domain-icon-gtld-audio">
+                            </div>
+                            <a href="#" class="filter__item-name">.audio</a>
+                        </div>
+                        <div class="filter__item">
+                            <input type="checkbox" id="ink">
+                            <label for="ink"></label>
+                            <div class="domain-icon domain-icon-gtld-ink">
+                            </div>
+                            <a href="#" class="filter__item-name">.ink</a>
+                        </div>
+                        <div class="filter__item">
+                            <input type="checkbox" id="photos">
+                            <label for="photos"></label>
+                            <div class="domain-icon domain-icon-gtld-photos">
+                            </div>
+                            <a href="#" class="filter__item-name">.ink</a>
+                        </div>
+                        <div class="filter__item">
+                            <input type="checkbox" id="productions">
+                            <label for="productions"></label>
+                            <div class="domain-icon domain-icon-gtld-productions">
+                            </div>
+                            <a href="#" class="filter__item-name">.productions</a>
+                        </div>
+                        <div class="filter__item">
+                            <input type="checkbox" id="camera">
+                            <label for="camera"></label>
+                            <div class="domain-icon domain-icon-gtld-camera">
+                            </div>
+                            <a href="#" class="filter__item-name">.camera</a>
+                        </div>
+                        <div class="filter__item">
+                            <input type="checkbox" id="lighting">
+                            <label for="lighting"></label>
+                            <div class="domain-icon domain-icon-gtld-lighting">
+                            </div>
+                            <a href="#" class="filter__item-name">.lighting</a>
+                        </div>
+                        <div class="filter__item">
+                            <input type="checkbox" id="media">
+                            <label for="media"></label>
+                            <div class="domain-icon domain-icon-gtld-media">
+                            </div>
+                            <a href="#" class="filter__item-name">.media</a>
+                        </div>
+                        <div class="filter__item">
+                            <input type="checkbox" id="design">
+                            <label for="design"></label>
+                            <div class="domain-icon domain-icon-gtld-design">
+                            </div>
+                            <a href="#" class="filter__item-name">.design</a>
+                        </div>
+                        <div class="filter__item">
+                            <input type="checkbox" id="fashion">
+                            <label for="fashion"></label>
+                            <div class="domain-icon domain-icon-gtld-fashion">
+                            </div>
+                            <a href="#" class="filter__item-name">.fasion</a>
+                        </div>
+                        <div class="filter__item">
+                            <input type="checkbox" id="movie">
+                            <label for="movie"></label>
+                            <div class="domain-icon domain-icon-gtld-movie">
+                            </div>
+                            <a href="#" class="filter__item-name">.movie</a>
+                        </div>
 
-                            </div>
-                            <a href="" class="filter__item-name">Chile</a>
-                        </div>
-                        <div class="filter__item">
-                            <input type="checkbox" id="eu">
-                            <label for="eu"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-EU">
-
-                            </div>
-                            <a href="#" class="filter__item-name">EU</a>
-                        </div>
-                        <div class="filter__item">
-                            <input type="checkbox" id="ca">
-                            <label for="ca"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-CA-shadow">
-
-                            </div>
-                            <a href="" class="filter__item-name">Canada</a>
-                        </div>
-                        <div class="filter__item">
-                            <input type="checkbox" id="de">
-                            <label for="de"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-DE-shadow">
-
-                            </div>
-                            <a href="#" class="filter__item-name">Germany</a>
-                        </div>
-                        <div class="filter__item">
-                            <input type="checkbox" id="fr2">
-                            <label for="fr2"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-FR">
-
-                            </div>
-                            <a href="#" class="filter__item-name">France</a>
-                        </div>
-                        <div class="filter__item">
-                            <input type="checkbox" id="us">
-                            <label for="us"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-US-shadow">
-
-                            </div>
-                            <a href="" class="filter__item-name">United States</a>
-                        </div>
-                        <div class="filter__item">
-                            <input type="checkbox" id="jp">
-                            <label for="jp"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-JP">
-
-                            </div>
-                            <a href="#" class="filter__item-name">Japan</a>
-                        </div>
-                        <div class="filter__item">
-                            <input type="checkbox" id="mx">
-                            <label for="mx"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-MX">
-
-                            </div>
-                            <a href="#" class="filter__item-name">Mexico</a>
-                        </div>
-                        <div class="filter__item">
-                            <input type="checkbox" id="rf">
-                            <label for="rf"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-RU">
-
-                            </div>
-                            <a href="#" class="filter__item-name">Russian Federation</a>
-                        </div>
-                        <div class="filter__item">
-                            <input type="checkbox" id="sp">
-                            <label for="sp"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-ES-shadow">
-
-                            </div>
-                            <a href="#" class="filter__item-name">Spain</a>
-                        </div>
-                        <div class="filter__item">
-                            <input type="checkbox" id="ch">
-                            <label for="ch"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-CH">
-
-                            </div>
-                            <a href="#" class="filter__item-name">Switzerland</a>
-                        </div>
-                        <div class="filter__item">
-                            <input type="checkbox" id="fr">
-                            <label for="fr"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-FR">
-
-                            </div>
-                            <a href="#" class="filter__item-name">France</a>
-                        </div>
-                        <div class="filter__item">
-                            <input type="checkbox" id="uk">
-                            <label for="uk"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-UK">
-
-                            </div>
-                            <a href="#" class="filter__item-name">United Kingdom</a>
-                        </div>
-                        <div class="filter__item">
-                            <input type="checkbox" id="wipo">
-                            <label for="wipo"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-WIPO">
-
-                            </div>
-                            <a href="#"  class="filter__item-name">WIPO</a>
-                        </div>
                     </div>
                     <div id="Art" class="filter__tab-content">
                         <div class="filter__item filter__item__select-all">
-                            <input type="checkbox" id="1sall">
-                            <label for="1sall"></label>
-                            <label for="1sall" class="filter__item-name">Select All</label>
+                            <input type="checkbox" id="selectalle">
+                            <label for="selectalle"></label>
+                            <label for="selectalle" class="filter__item-name">Select All</label>
                         </div>
                         <div class="filter__item">
-                            <input type="checkbox" id="br">
-                            <label for="br"></label>
-                            <div class="filter__item-icon flag-shadowed-br_shadow-2 flag-shadowed">
+                            <input type="checkbox" id="feedback">
+                            <label for="feedback" class="pseudo-checkbox"></label>
+                            <div class="domain-icon domain-icon-gtld-feedback">
                             </div>
-                            <a href="" class="filter__item-name">Brazil</a>
+                            <div class="filter__item-name">.feedback</div>
                         </div>
                         <div class="filter__item">
-                            <input type="checkbox" id="bx">
-                            <label for="bx"></label>
-                            <div class="filter__item-icon flag-shadowed-cl-shadow flag-shadowed">
-
+                            <input type="checkbox" id="flowers">
+                            <label for="flowers" class="pseudo-checkbox"></label>
+                            <div class="domain-icon domain-icon-GTLD-flowers">
                             </div>
-                            <a href="" class="filter__item-name">Chile</a>
+                            <div class="filter__item-name">.flowers</div>
                         </div>
                         <div class="filter__item">
-                            <input type="checkbox" id="eu">
-                            <label for="eu"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-EU">
-
+                            <input type="checkbox" id="forsale">
+                            <label for="forsale" class="pseudo-checkbox"></label>
+                            <div class="domain-icon domain-icon-gtld-forsale">
                             </div>
-                            <a href="#" class="filter__item-name">EU</a>
+                            <div class="filter__item-name">.forsale</div>
                         </div>
                         <div class="filter__item">
-                            <input type="checkbox" id="ca">
-                            <label for="ca"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-CA-shadow">
-
+                            <input type="checkbox" id="glass">
+                            <label for="glass" class="pseudo-checkbox"></label>
+                            <div class="domain-icon domain-icon-gtld-glass">
                             </div>
-                            <a href="" class="filter__item-name">Canada</a>
+                            <div class="filter__item-name">.glass</div>
                         </div>
                         <div class="filter__item">
-                            <input type="checkbox" id="de">
-                            <label for="de"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-DE-shadow">
-
+                            <input type="checkbox" id="guide">
+                            <label for="guide" class="pseudo-checkbox"></label>
+                            <div class="domain-icon domain-icon-gtld-guide">
                             </div>
-                            <a href="#" class="filter__item-name">Germany</a>
+                            <div class="filter__item-name">.guide</div>
                         </div>
                         <div class="filter__item">
-                            <input type="checkbox" id="fr2">
-                            <label for="fr2"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-FR">
-
+                            <input type="checkbox" id="holdings">
+                            <label for="holdings" class="pseudo-checkbox"></label>
+                            <div class="domain-icon domain-icon-gtld-holdings">
                             </div>
-                            <a href="#" class="filter__item-name">France</a>
+                            <div class="filter__item-name">.holdings</div>
                         </div>
                         <div class="filter__item">
-                            <input type="checkbox" id="us">
-                            <label for="us"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-US-shadow">
-
+                            <input type="checkbox" id="insurance">
+                            <label for="insurance" class="pseudo-checkbox"></label>
+                            <div class="domain-icon domain-icon-gtld-insurance">
                             </div>
-                            <a href="" class="filter__item-name">United States</a>
+                            <div class="filter__item-name">.insurance</div>
                         </div>
                         <div class="filter__item">
-                            <input type="checkbox" id="jp">
-                            <label for="jp"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-JP">
-
+                            <input type="checkbox" id="limo">
+                            <label for="limo" class="pseudo-checkbox"></label>
+                            <div class="domain-icon domain-icon-gtld-limo">
                             </div>
-                            <a href="#" class="filter__item-name">Japan</a>
+                            <div class="filter__item-name">.limo</div>
                         </div>
                         <div class="filter__item">
-                            <input type="checkbox" id="mx">
-                            <label for="mx"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-MX">
-
+                            <input type="checkbox" id="motorcycles">
+                            <label for="motorcycles" class="pseudo-checkbox"></label>
+                            <div class="domain-icon domain-icon-gtld-insurance">
                             </div>
-                            <a href="#" class="filter__item-name">Mexico</a>
+                            <div class="filter__item-name">.motorcycles</div>
                         </div>
                         <div class="filter__item">
-                            <input type="checkbox" id="rf">
-                            <label for="rf"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-RU">
-
+                            <input type="checkbox" id="protections">
+                            <label for="protections" class="pseudo-checkbox"></label>
+                            <div class="domain-icon domain-icon-gtld-insurance">
                             </div>
-                            <a href="#" class="filter__item-name">Russian Federation</a>
+                            <div class="filter__item-name">.protections</div>
                         </div>
                         <div class="filter__item">
-                            <input type="checkbox" id="sp">
-                            <label for="sp"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-ES-shadow">
-
+                            <input type="checkbox" id="reit">
+                            <label for="reit" class="pseudo-checkbox"></label>
+                            <div class="domain-icon domain-icon-gtld-reit">
                             </div>
-                            <a href="#" class="filter__item-name">Spain</a>
+                            <div class="filter__item-name">.reit</div>
                         </div>
                         <div class="filter__item">
-                            <input type="checkbox" id="ch">
-                            <label for="ch"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-CH">
-
+                            <input type="checkbox" id="report">
+                            <label for="report" class="pseudo-checkbox"></label>
+                            <div class="domain-icon domain-icon-gtld-report">
                             </div>
-                            <a href="#" class="filter__item-name">Switzerland</a>
+                            <div class="filter__item-name">.report</div>
                         </div>
                         <div class="filter__item">
-                            <input type="checkbox" id="fr">
-                            <label for="fr"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-FR">
-
+                            <input type="checkbox" id="sale">
+                            <label for="sale" class="pseudo-checkbox"></label>
+                            <div class="domain-icon domain-icon-gtld-sale">
                             </div>
-                            <a href="#" class="filter__item-name">France</a>
+                            <div class="filter__item-name">.sale</div>
                         </div>
                         <div class="filter__item">
-                            <input type="checkbox" id="uk">
-                            <label for="uk"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-UK">
-
+                            <input type="checkbox" id="salon">
+                            <label for="salon" class="pseudo-checkbox"></label>
+                            <div class="domain-icon domain-icon-gtld-salon">
                             </div>
-                            <a href="#" class="filter__item-name">United Kingdom</a>
+                            <div class="filter__item-name">.salon</div>
                         </div>
                         <div class="filter__item">
-                            <input type="checkbox" id="wipo">
-                            <label for="wipo"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-WIPO">
-
+                            <input type="checkbox" id="sarl">
+                            <label for="sarl" class="pseudo-checkbox"></label>
+                            <div class="domain-icon domain-icon-gtld-sarl">
                             </div>
-                            <a href="#"  class="filter__item-name">WIPO</a>
+                            <div class="filter__item-name">.sarl</div>
+                        </div>
+                        <div class="filter__item">
+                            <input type="checkbox" id="security">
+                            <label for="security" class="pseudo-checkbox"></label>
+                            <div class="domain-icon domain-icon-gtld_security">
+                            </div>
+                            <div class="filter__item-name">.security</div>
                         </div>
                     </div>
                     <div id="Business" class="filter__tab-content">
                         <div class="filter__item filter__item__select-all">
-                            <input type="checkbox" id="1sall">
-                            <label for="1sall"></label>
-                            <label for="1sall" class="filter__item-name">Select All</label>
+                            <input type="checkbox" id="selectall7">
+                            <label for="selectall7"></label>
+                            <label for="selectall7" class="filter__item-name">Select All</label>
                         </div>
                         <div class="filter__item">
-                            <input type="checkbox" id="br">
-                            <label for="br"></label>
-                            <div class="filter__item-icon flag-shadowed-br_shadow-2 flag-shadowed">
+                            <input type="checkbox" id="solar">
+                            <label for="solar" class="pseudo-checkbox"></label>
+                            <div class="domain-icon domain-icon-gtld-solar">
                             </div>
-                            <a href="" class="filter__item-name">Brazil</a>
+                            <div class="filter__item-name">.solar</div>
                         </div>
                         <div class="filter__item">
-                            <input type="checkbox" id="bx">
-                            <label for="bx"></label>
-                            <div class="filter__item-icon flag-shadowed-cl-shadow flag-shadowed">
-
+                            <input type="checkbox" id="solutions">
+                            <label for="solutions" class="pseudo-checkbox"></label>
+                            <div class="domain-icon domain-icon-gtld-solutions">
                             </div>
-                            <a href="" class="filter__item-name">Chile</a>
+                            <div class="filter__item-name">.solutions</div>
                         </div>
                         <div class="filter__item">
-                            <input type="checkbox" id="eu">
-                            <label for="eu"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-EU">
-
+                            <input type="checkbox" id="support">
+                            <label for="support" class="pseudo-checkbox"></label>
+                            <div class="domain-icon domain-icon-gtld-support">
                             </div>
-                            <a href="#" class="filter__item-name">EU</a>
+                            <div class="filter__item-name">.support</div>
                         </div>
                         <div class="filter__item">
-                            <input type="checkbox" id="ca">
-                            <label for="ca"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-CA-shadow">
-
+                            <input type="checkbox" id="taxi">
+                            <label for="taxi" class="pseudo-checkbox"></label>
+                            <div class="domain-icon domain-icon-gtld-taxi">
                             </div>
-                            <a href="" class="filter__item-name">Canada</a>
+                            <div class="filter__item-name">.taxi</div>
                         </div>
                         <div class="filter__item">
-                            <input type="checkbox" id="de">
-                            <label for="de"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-DE-shadow">
-
+                            <input type="checkbox" id="toys">
+                            <label for="toys" class="pseudo-checkbox"></label>
+                            <div class="domain-icon domain-icon-gtld-toys">
                             </div>
-                            <a href="#" class="filter__item-name">Germany</a>
+                            <div class="filter__item-name">.toys</div>
                         </div>
                         <div class="filter__item">
-                            <input type="checkbox" id="fr2">
-                            <label for="fr2"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-FR">
-
+                            <input type="checkbox" id="trade">
+                            <label for="trade" class="pseudo-checkbox"></label>
+                            <div class="domain-icon domain-icon-gtld-trade">
                             </div>
-                            <a href="#" class="filter__item-name">France</a>
+                            <div class="filter__item-name">.trade</div>
                         </div>
                         <div class="filter__item">
-                            <input type="checkbox" id="us">
-                            <label for="us"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-US-shadow">
-
+                            <input type="checkbox" id="trading">
+                            <label for="trading" class="pseudo-checkbox"></label>
+                            <div class="domain-icon domain-icon-gtld-trading">
                             </div>
-                            <a href="" class="filter__item-name">United States</a>
+                            <div class="filter__item-name">.trading</div>
                         </div>
                         <div class="filter__item">
-                            <input type="checkbox" id="jp">
-                            <label for="jp"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-JP">
-
+                            <input type="checkbox" id="vision">
+                            <label for="vision" class="pseudo-checkbox"></label>
+                            <div class="domain-icon domain-icon-gtld-vision">
                             </div>
-                            <a href="#" class="filter__item-name">Japan</a>
+                            <div class="filter__item-name">.vision</div>
                         </div>
                         <div class="filter__item">
-                            <input type="checkbox" id="mx">
-                            <label for="mx"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-MX">
-
+                            <input type="checkbox" id="watch">
+                            <label for="watch" class="pseudo-checkbox"></label>
+                            <div class="domain-icon domain-icon-gtld-watch">
                             </div>
-                            <a href="#" class="filter__item-name">Mexico</a>
-                        </div>
-                        <div class="filter__item">
-                            <input type="checkbox" id="rf">
-                            <label for="rf"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-RU">
-
-                            </div>
-                            <a href="#" class="filter__item-name">Russian Federation</a>
-                        </div>
-                        <div class="filter__item">
-                            <input type="checkbox" id="sp">
-                            <label for="sp"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-ES-shadow">
-
-                            </div>
-                            <a href="#" class="filter__item-name">Spain</a>
-                        </div>
-                        <div class="filter__item">
-                            <input type="checkbox" id="ch">
-                            <label for="ch"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-CH">
-
-                            </div>
-                            <a href="#" class="filter__item-name">Switzerland</a>
-                        </div>
-                        <div class="filter__item">
-                            <input type="checkbox" id="fr">
-                            <label for="fr"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-FR">
-
-                            </div>
-                            <a href="#" class="filter__item-name">France</a>
-                        </div>
-                        <div class="filter__item">
-                            <input type="checkbox" id="uk">
-                            <label for="uk"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-UK">
-
-                            </div>
-                            <a href="#" class="filter__item-name">United Kingdom</a>
-                        </div>
-                        <div class="filter__item">
-                            <input type="checkbox" id="wipo">
-                            <label for="wipo"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-WIPO">
-
-                            </div>
-                            <a href="#"  class="filter__item-name">WIPO</a>
+                            <div class="filter__item-name">.watch</div>
                         </div>
                     </div>
                     <div id="Clothes" class="filter__tab-content">
                         <div class="filter__item filter__item__select-all">
-                            <input type="checkbox" id="1sall">
-                            <label for="1sall"></label>
-                            <label for="1sall" class="filter__item-name">Select All</label>
+                            <input type="checkbox" id="selall">
+                            <label for="selall"></label>
+                            <div class="filter__item-name">Select All</div>
                         </div>
                         <div class="filter__item">
-                            <input type="checkbox" id="br">
-                            <label for="br"></label>
-                            <div class="filter__item-icon flag-shadowed-br_shadow-2 flag-shadowed">
+                            <input type="checkbox" id="blackfriday">
+                            <label for="blackfriday"></label>
+                            <div class="domain-icon domain-icon-gtld-blackfriday">
                             </div>
-                            <a href="" class="filter__item-name">Brazil</a>
+                            <div class="filter__item-name">.blackfriday</div>
                         </div>
                         <div class="filter__item">
-                            <input type="checkbox" id="bx">
-                            <label for="bx"></label>
-                            <div class="filter__item-icon flag-shadowed-cl-shadow flag-shadowed">
-
+                            <input type="checkbox" id="boutique">
+                            <label for="boutique"></label>
+                            <div class="domain-icon domain-icon-gtld-boutique">
                             </div>
-                            <a href="" class="filter__item-name">Chile</a>
+                            <div class="filter__item-name">.boutique</div>
                         </div>
                         <div class="filter__item">
-                            <input type="checkbox" id="eu">
-                            <label for="eu"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-EU">
-
+                            <input type="checkbox" id="cheap">
+                            <label for="cheap"></label>
+                            <div class="domain-icon domain-icon-gtld-cheap">
                             </div>
-                            <a href="#" class="filter__item-name">EU</a>
+                            <div class="filter__item-name">.cheap</div>
                         </div>
                         <div class="filter__item">
-                            <input type="checkbox" id="ca">
-                            <label for="ca"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-CA-shadow">
-
+                            <input type="checkbox" id="clothing">
+                            <label for="clothing"></label>
+                            <div class="domain-icon domain-icon-gtld-clothing">
                             </div>
-                            <a href="" class="filter__item-name">Canada</a>
+                            <div class="filter__item-name">.clothing</div>
                         </div>
                         <div class="filter__item">
-                            <input type="checkbox" id="de">
-                            <label for="de"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-DE-shadow">
-
+                            <input type="checkbox" id="coupons">
+                            <label for="coupons"></label>
+                            <div class="domain-icon domain-icon-gtld-coupons">
                             </div>
-                            <a href="#" class="filter__item-name">Germany</a>
+                            <div class="filter__item-name">.coupons</div>
                         </div>
                         <div class="filter__item">
-                            <input type="checkbox" id="fr2">
-                            <label for="fr2"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-FR">
-
+                            <input type="checkbox" id="discount">
+                            <label for="discount"></label>
+                            <div class="domain-icon domain-icon-gtld-discount">
                             </div>
-                            <a href="#" class="filter__item-name">France</a>
+                            <div class="filter__item-name">.discount</div>
                         </div>
                         <div class="filter__item">
-                            <input type="checkbox" id="us">
-                            <label for="us"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-US-shadow">
-
+                            <input type="checkbox" id="fashion22">
+                            <label for="fashion22"></label>
+                            <div class="domain-icon domain-icon-gtld-fashion">
                             </div>
-                            <a href="" class="filter__item-name">United States</a>
+                            <div class="filter__item-name">.fashion</div>
                         </div>
                         <div class="filter__item">
-                            <input type="checkbox" id="jp">
-                            <label for="jp"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-JP">
-
+                            <input type="checkbox" id="gift">
+                            <label for="gift"></label>
+                            <div class="domain-icon domain-icon-gtld-gift">
                             </div>
-                            <a href="#" class="filter__item-name">Japan</a>
+                            <div class="filter__item-name">.gift</div>
                         </div>
                         <div class="filter__item">
-                            <input type="checkbox" id="mx">
-                            <label for="mx"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-MX">
-
+                            <input type="checkbox" id="jewerly">
+                            <label for="jewerly"></label>
+                            <div class="domain-icon domain-icon-gtld-jewelry">
                             </div>
-                            <a href="#" class="filter__item-name">Mexico</a>
+                            <div class="filter__item-name">.jewerly</div>
                         </div>
                         <div class="filter__item">
-                            <input type="checkbox" id="rf">
-                            <label for="rf"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-RU">
-
+                            <input type="checkbox" id="kaufen">
+                            <label for="kaufen"></label>
+                            <div class="domain-icon domain-icon-gtld-kaufen">
                             </div>
-                            <a href="#" class="filter__item-name">Russian Federation</a>
+                            <div class="filter__item-name">.kaufen</div>
                         </div>
                         <div class="filter__item">
-                            <input type="checkbox" id="sp">
-                            <label for="sp"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-ES-shadow">
-
+                            <input type="checkbox" id="luxury">
+                            <label for="luxury"></label>
+                            <div class="domain-icon domain-icon-gtld-luxury">
                             </div>
-                            <a href="#" class="filter__item-name">Spain</a>
+                            <div class="filter__item-name">.luxury</div>
                         </div>
                         <div class="filter__item">
-                            <input type="checkbox" id="ch">
-                            <label for="ch"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-CH">
-
+                            <input type="checkbox" id="promo">
+                            <label for="promo"></label>
+                            <div class="domain-icon domain-icon-gtld-promo">
                             </div>
-                            <a href="#" class="filter__item-name">Switzerland</a>
+                            <div class="filter__item-name">.promo</div>
                         </div>
                         <div class="filter__item">
-                            <input type="checkbox" id="fr">
-                            <label for="fr"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-FR">
-
+                            <input type="checkbox" id="qpon">
+                            <label for="qpon"></label>
+                            <div class="domain-icon domain-icon-gtld-qpon">
                             </div>
-                            <a href="#" class="filter__item-name">France</a>
+                            <div class="filter__item-name">.qpon</div>
                         </div>
                         <div class="filter__item">
-                            <input type="checkbox" id="uk">
-                            <label for="uk"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-UK">
-
+                            <input type="checkbox" id="rich">
+                            <label for="rich"></label>
+                            <div class="domain-icon domain-icon-gtld-rich">
                             </div>
-                            <a href="#" class="filter__item-name">United Kingdom</a>
+                            <div class="filter__item-name">.rich</div>
                         </div>
                         <div class="filter__item">
-                            <input type="checkbox" id="wipo">
-                            <label for="wipo"></label>
-                            <div class="filter__item-icon flag-shadowed flag-shadowed-WIPO">
-
+                            <input type="checkbox" id="shoes">
+                            <label for="shoes"></label>
+                            <div class="domain-icon domain-icon-gtld-shoes">
                             </div>
-                            <a href="#"  class="filter__item-name">WIPO</a>
+                            <div class="filter__item-name">.shoes</div>
+                        </div>
+                        <div class="filter__item">
+                            <input type="checkbox" id="store">
+                            <label for="store"></label>
+                            <div class="domain-icon domain-icon-gtld-store">
+                            </div>
+                            <div class="filter__item-name">.store</div>
                         </div>
                     </div>
                     <div id="Community" class="filter__tab-content">
@@ -2448,6 +2398,577 @@
         </div>
     </div>
 </section>
+
+<section class="filter filter--mobile-layout mobile-slider filter-desktop-hide">
+    <div class="container">
+        <ul class="filter__filter-menu">
+            <li class="filter__filter-menu--first auto-width">
+                <a href="javascript:;">Popular ccTLDs*</a>
+            </li>
+        </ul>
+        <div class="filter__filter-content ">
+            <div class="filter__tab-content">
+                <div class="mobile-layout">
+                    <div class="slickslider-simple">
+                        <div class="filter__item filter__item__select-all">
+                            <input type="checkbox" id="all6">
+                            <label for="all6" class="pseudo-checkbox"></label>
+                            <label for="all6" class="filter__item-name">Select All</label>
+                        </div>
+                        <div class="filter__item">
+                            <input type="checkbox" id="pe">
+                            <label for="pe" class="pseudo-checkbox"></label>
+                            <div class="flag-shadowed flag-shadowed-KR">
+                            </div>
+                            <div  class="filter__item-name">.pe - South Korea</div>
+                        </div>
+                        <div class="filter__item">
+                            <input type="checkbox" id="sg4">
+                            <label for="sg4" class="pseudo-checkbox"></label>
+                            <div class="flag-shadowed flag-shadowed-SG">
+                            </div>
+                            <div  class="filter__item-name">.sg - Singapore</div>
+                        </div>
+                        <div class="filter__item">
+                            <input type="checkbox" id="kz4">
+                            <label for="kz4" class="pseudo-checkbox"></label>
+                            <div class="flag-shadowed flag-shadowed-KZ">
+                            </div>
+                            <div  class="filter__item-name">.kz - Kazakhstan</div>
+                        </div>
+                        <div class="filter__item">
+                            <input type="checkbox" id="la4">
+                            <label for="la4" class="pseudo-checkbox"></label>
+                            <div class="flag-shadowed flag-shadowed-LA">
+                            </div>
+                            <div  class="filter__item-name">.la - Laos</div>
+                            <div class="helper" title="" data-toggle="tooltip" data-placement="top" data-original-title="For the extension .Thailand that represents the country of Thailand, only nationals or residents of this country are allowed to register">
+                                <svg fill="#a6ce2f" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="filter__item">
+                            <input type="checkbox" id="mn6">
+                            <label for="mn6" class="pseudo-checkbox"></label>
+                            <div class="flag-shadowed flag-shadowed-MN">
+                            </div>
+                            <div  class="filter__item-name">.mn - Mongolia</div>
+                            <div class="helper" title="" data-toggle="tooltip" data-placement="top" data-original-title="For the extension .Thailand that represents the country of Thailand, only nationals or residents of this country are allowed to register. ">
+                                <svg fill="#a6ce2f" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="filter__item">
+                            <input type="checkbox" id="kz34">
+                            <label for="kz34" class="pseudo-checkbox"></label>
+                            <div class="flag-shadowed flag-shadowed-KZ">
+                            </div>
+                            <div  class="filter__item-name">.kz - Kazakhstan</div>
+                        </div>
+                        <div class="filter__item">
+                            <input type="checkbox" id="la44">
+                            <label for="la44" class="pseudo-checkbox"></label>
+                            <div class="flag-shadowed flag-shadowed-LA">
+                            </div>
+                            <div  class="filter__item-name">.la - Laos</div>
+                            <div class="helper" title="" data-toggle="tooltip" data-placement="top" data-original-title="For the extension .Thailand that represents the country of Thailand, only nationals or residents of this country are allowed to register">
+                                <svg fill="#a6ce2f" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="filter filter--mobile-layout mobile-slider filter-desktop-hide">
+    <div class="container">
+        <div class="tabs-with-slider">
+            <div class="row">
+                <div class="col-md-9 col-sm-8 menu-slider">
+                    <ul class="filter__filter-menu slickslider-horizontal">
+                        <li data-extensions="Aland Andorra Belarus Belgium Bosnia Croatia Cyprus">
+                            <a href="#adilt1">Europe</a>
+                        </li>
+                        <li data-extensions="Pakistan Thailand Uzbekistan India Singapore Macao Japan">
+                            <a href="#adilt1">Asia</a>
+                        </li>
+                        <li data-extensions="Burkina Congo Cameroon Egypt Guinea Congo Ghana">
+                            <a href="#adilt1">Africa</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="filter__filter-content ">
+                <div id="adilt1" class="filter__tab-content">
+                    <div class="mobile-layout">
+                        <div class="slickslider">
+                            <div class="filter__item filter__item__select-all">
+                                <input type="checkbox" id="saal">
+                                <label for="saal" class="pseudo-checkbox"></label>
+                                <label for="saal" class="filter__item-name">Select All</label>
+                            </div>
+                            <div class="filter__item Pakistan">
+                                <input type="checkbox" id="pk1">
+                                <label for="pk1"></label>
+                                <div class="filter__item-icon flag-shadowed flag-shadowed-PK">
+                                </div>
+                                <a href="#" class="filter__item-name">.pk - Pakistan</a>
+                            </div>
+                            <div class="filter__item Thailand">
+                                <input type="checkbox" id="th8">
+                                <label for="th8"></label>
+                                <div class="filter__item-icon flag-shadowed flag-shadowed-TH">
+                                </div>
+                                <a href="#" class="filter__item-name">.in.th - Thailand</a>
+                            </div>
+                            <div class="filter__item Uzbekistan">
+                                <input type="checkbox" id="uz0">
+                                <label for="uz0"></label>
+                                <div class="filter__item-icon flag-shadowed flag-shadowed-UZ">
+                                </div>
+                                <a href="#" class="filter__item-name">.uz - Uzbekistan</a>
+                                <div class="helper" title="For the extension .Thailand that represents the country of Thailand, only nationals or residents of this country are allowed to register. In case you are not able to meet this requirement. we can offer you a Trustee Service." data-toggle="tooltip" data-placement="right">
+                                    <svg fill="#a6ce2f" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 0h24v24H0z" fill="none"/>
+                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="filter__item India">
+                                <input type="checkbox" id="in2">
+                                <label for="in2"></label>
+                                <div class="filter__item-icon flag-shadowed flag-shadowed-IN">
+                                </div>
+                                <a href="#" class="filter__item-name">.in - India</a>
+                                <div class="helper" title="For the extension .Thailand that represents the country of Thailand, only nationals or residents of this country are allowed to register. In case you are not able to meet this requirement. we can offer you a Trustee Service." data-toggle="tooltip" data-placement="right">
+                                    <svg fill="#a6ce2f" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 0h24v24H0z" fill="none"/>
+                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="filter__item Singapore">
+                                <input type="checkbox" id="sg6">
+                                <label for="sg6"></label>
+                                <div class="filter__item-icon flag-shadowed flag-shadowed-SG">
+                                </div>
+                                <a href="#" class="filter__item-name">.sg - Singapore</a>
+                                <div class="helper" title="For the extension .Thailand that represents the country of Thailand, only nationals or residents of this country are allowed to register. In case you are not able to meet this requirement. we can offer you a Trustee Service." data-toggle="tooltip" data-placement="right">
+                                    <svg fill="#a6ce2f" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 0h24v24H0z" fill="none"/>
+                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="filter__item Macao">
+                                <input type="checkbox" id="mo7">
+                                <label for="mo7"></label>
+                                <div class="filter__item-icon flag-shadowed flag-shadowed-MO">
+                                </div>
+                                <a href="#" class="filter__item-name">.mo - Macao</a>
+                            </div>
+                            <div class="filter__item Japan">
+                                <input type="checkbox" id="jp7">
+                                <label for="jp7"></label>
+                                <div class="filter__item-icon flag-shadowed flag-shadowed-JP">
+                                </div>
+                                <a href="#" class="filter__item-name">.jp - Japan</a>
+                            </div>
+                            <div class="filter__item Aland">
+                                <input type="checkbox" id="ax1">
+                                <label for="ax1"></label>
+                                <div class="filter__item-icon flag-shadowed flag-shadowed-AX">
+                                </div>
+                                <a href="#" class="filter__item-name">ax.- Aland Islands</a>
+                            </div>
+                            <div class="filter__item Andorra">
+                                <input type="checkbox" id="ad2">
+                                <label for="ad2"></label>
+                                <div class="filter__item-icon flag-shadowed flag-shadowed-AD">
+                                </div>
+                                <a href="#" class="filter__item-name">.ad - Andorra</a>
+                            </div>
+                            <div class="filter__item Belarus">
+                                <input type="checkbox" id="by2">
+                                <label for="by2"></label>
+                                <div class="filter__item-icon flag-shadowed flag-shadowed-BY">
+                                </div>
+                                <a href="#" class="filter__item-name">.by - Belarus</a>
+                            </div>
+                            <div class="filter__item Belgium">
+                                <input type="checkbox" id="be2">
+                                <label for="be2"></label>
+                                <div class="filter__item-icon flag-shadowed flag-shadowed-BE">
+                                </div>
+                                <a href="#" class="filter__item-name">be. - Belgium</a>
+                            </div>
+                            <div class="filter__item Bosnia">
+                                <input type="checkbox" id="ba2">
+                                <label for="ba2"></label>
+                                <div class="filter__item-icon flag-shadowed flag-shadowed-BA">
+                                </div>
+                                <a href="#" class="filter__item-name">.ba - Bosnia</a>
+                            </div>
+                            <div class="filter__item Croatia">
+                                <input type="checkbox" id="hr6">
+                                <label for="hr6"></label>
+                                <div class="filter__item-icon flag-shadowed flag-shadowed-HR">
+                                </div>
+                                <a href="#" class="filter__item-name">.hr - Croatia</a>
+                            </div>
+                            <div class="filter__item Cyprus">
+                                <input type="checkbox" id="cy2">
+                                <label for="cy2"></label>
+                                <div class="filter__item-icon flag-shadowed flag-shadowed-CY">
+                                </div>
+                                <a href="#" class="filter__item-name">.com.cy - Cyprus</a>
+                            </div>
+                            <div class="filter__item Burkina">
+                                <input type="checkbox" id="bf2">
+                                <label for="bf2"></label>
+                                <div class="filter__item-icon flag-shadowed flag-shadowed-BF">
+                                </div>
+                                <a href="#" class="filter__item-name">.bf - Burkina Faso</a>
+                            </div>
+                            <div class="filter__item Congo">
+                                <input type="checkbox" id="cd2">
+                                <label for="cd2"></label>
+                                <div class="filter__item-icon flag-shadowed flag-shadowed-CD">
+                                </div>
+                                <a href="#" class="filter__item-name">.cd - Congo Democratic</a>
+                            </div>
+                            <div class="filter__item Cameroon">
+                                <input type="checkbox" id="cm2">
+                                <label for="cm2"></label>
+                                <div class="filter__item-icon flag-shadowed flag-shadowed-CM">
+                                </div>
+                                <a href="#" class="filter__item-name">.com.cm - Cameroon</a>
+                            </div>
+                            <div class="filter__item Egypt">
+                                <input type="checkbox" id="eg2">
+                                <label for="eg2"></label>
+                                <div class="filter__item-icon flag-shadowed flag-shadowed-EG">
+                                </div>
+                                <a href="#" class="filter__item-name">.eg - Egypt</a>
+                            </div>
+                            <div class="filter__item Guinea">
+                                <input type="checkbox" id="gq22">
+                                <label for="gq22"></label>
+                                <div class="filter__item-icon flag-shadowed flag-shadowed-GQ">
+                                </div>
+                                <a href="#" class="filter__item-name">.gq - Equatorial Guinea</a>
+                            </div>
+                            <div class="filter__item Congo">
+                                <input type="checkbox" id="cg11">
+                                <label for="cg11"></label>
+                                <div class="filter__item-icon flag-shadowed flag-shadowed-CG">
+                                </div>
+                                <a href="#" class="filter__item-name">.cg - Congo Republic</a>
+                            </div>
+                            <div class="filter__item Ghana">
+                                <input type="checkbox" id="gh44">
+                                <label for="gh44"></label>
+                                <div class="filter__item-icon flag-shadowed flag-shadowed-GH">
+                                </div>
+                                <a href="#" class="filter__item-name">.com.gh - Ghana</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="filter filter--mobile-layout mobile-slider filter-desktop-hide">
+    <div class="container">
+        <ul class="filter__filter-menu">
+            <li class="filter__filter-menu--first auto-width">
+                <a href="javascript:;">Popular gTLDs*</a>
+            </li>
+        </ul>
+        <div class="filter__filter-content ">
+            <div class="filter__tab-content">
+                <div class="mobile-layout">
+                    <div class="slickslider-simple">
+                        <div class="filter__item filter__item__select-all">
+                            <input type="checkbox" id="all">
+                            <label for="all" class="pseudo-checkbox"></label>
+                            <label for="all" class="filter__item-name">Select All</label>
+                        </div>
+                        <div class="filter__item">
+                            <input type="checkbox" id="adult1">
+                            <label for="adult1" class="pseudo-checkbox"></label>
+                            <div class="domain-icon domain-icon-gtld-adult">
+                            </div>
+                            <div  class="filter__item-name">.adult</div>
+                        </div>
+                        <div class="filter__item">
+                            <input type="checkbox" id="porn1">
+                            <label for="porn1" class="pseudo-checkbox"></label>
+                            <div class="domain-icon domain-icon-gtld-porn">
+                            </div>
+                            <div  class="filter__item-name">porn</div>
+                        </div>
+                        <div class="filter__item">
+                            <input type="checkbox" id="sexy">
+                            <label for="sexy" class="pseudo-checkbox"></label>
+                            <div class="domain-icon domain-icon-gtld-sexy">
+                            </div>
+                            <div  class="filter__item-name">sexy</div>
+                        </div>
+                        <div class="filter__item">
+                            <input type="checkbox" id="sex1">
+                            <label for="sex1" class="pseudo-checkbox"></label>
+                            <div class="domain-icon domain-icon-gtld-sex">
+                            </div>
+                            <div  class="filter__item-name">sex</div>
+                            <div class="helper" title="" data-toggle="tooltip" data-placement="top" data-original-title="For the extension .Thailand that represents the country of Thailand, only nationals or residents of this country are allowed to register">
+                                <svg fill="#a6ce2f" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="filter__item">
+                            <input type="checkbox" id="xxx1">
+                            <label for="xxx1" class="pseudo-checkbox"></label>
+                            <div class="domain-icon domain-icon-gtld-xxx">
+                            </div>
+                            <div  class="filter__item-name">.xxx</div>
+                            <div class="helper" title="" data-toggle="tooltip" data-placement="top" data-original-title="For the extension .Thailand that represents the country of Thailand, only nationals or residents of this country are allowed to register. ">
+                                <svg fill="#a6ce2f" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="filter__item">
+                            <input type="checkbox" id="sexy2">
+                            <label for="sexy2" class="pseudo-checkbox"></label>
+                            <div class="domain-icon domain-icon-gtld-sexy">
+                            </div>
+                            <div  class="filter__item-name">sexy</div>
+                        </div>
+                        <div class="filter__item">
+                            <input type="checkbox" id="sex12">
+                            <label for="sex12" class="pseudo-checkbox"></label>
+                            <div class="domain-icon domain-icon-gtld-sex">
+                            </div>
+                            <div  class="filter__item-name">sex</div>
+                            <div class="helper" title="" data-toggle="tooltip" data-placement="top" data-original-title="For the extension .Thailand that represents the country of Thailand, only nationals or residents of this country are allowed to register">
+                                <svg fill="#a6ce2f" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="filter filter--mobile-layout mobile-slider filter-desktop-hide">
+    <div class="container">
+        <div class="tabs-with-slider">
+            <div class="row">
+                <div class="col-md-9 col-sm-8 menu-slider">
+                    <ul class="filter__filter-menu slickslider-horizontal">
+                        <li data-extensions="Adult porn sexy delivery diamonds direct">
+                            <a href="#adilt">Adult</a>
+                        </li>
+                        <li data-extensions="businesssa boutique blackfriday energy express farm">
+                            <a href="#adilt">Art</a>
+                        </li>
+                        <li data-extensions="cards cheap clothing coupons trading trade toys taxi">
+                            <a href="#adilt">Business</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="filter__filter-content ">
+                <div id="adilt" class="filter__tab-content">
+                    <div class="mobile-layout">
+                        <div class="slickslider">
+                            <div class="filter__item filter__item__select-all">
+                                <input type="checkbox" id="all13123">
+                                <label for="all13123" class="pseudo-checkbox"></label>
+                                <label for="all13123" class="filter__item-name">Select All</label>
+                            </div>
+                            <div class="filter__item  Adult">
+                                <input type="checkbox" id="adult66">
+                                <label for="adult66" class="pseudo-checkbox"></label>
+                                <div class="domain-icon domain-icon-gtld-adult">
+                                </div>
+                                <div  class="filter__item-name">.adult</div>
+                            </div>
+                            <div class="filter__item  porn">
+                                <input type="checkbox" id="porn">
+                                <label for="porn" class="pseudo-checkbox"></label>
+                                <div class="domain-icon domain-icon-gtld-porn">
+                                </div>
+                                <div  class="filter__item-name">porn</div>
+                            </div>
+                            <div class="filter__item  sexy">
+                                <input type="checkbox" id="xxx">
+                                <label for="xxx" class="pseudo-checkbox"></label>
+                                <div class="domain-icon domain-icon-gtld-xxx">
+                                </div>
+                                <div  class="filter__item-name">.xxx</div>
+                                <div class="helper" title="" data-toggle="tooltip" data-placement="top" data-original-title="For the extension .Thailand that represents the country of Thailand, only nationals or residents of this country are allowed to register. ">
+                                    <svg fill="#a6ce2f" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="filter__item  businesssa">
+                                <input type="checkbox" id="businesssa">
+                                <label for="businesssa" class="pseudo-checkbox"></label>
+                                <div class="domain-icon domain-icon-gtld-business">
+                                </div>
+                                <div class="filter__item-name">.business</div>
+                            </div>
+                            <div class="filter__item  caba">
+                                <input type="checkbox" id="caba">
+                                <label for="caba" class="pseudo-checkbox"></label>
+                                <div class="domain-icon domain-icon-gtld-cab">
+                                </div>
+                                <div class="filter__item-name">.cab</div>
+                            </div>
+                            <div class="filter__item  cards">
+                                <input type="checkbox" id="cardsa">
+                                <label for="cardsa" class="pseudo-checkbox"></label>
+                                <div class="domain-icon domain-icon-gtld-cards">
+                                </div>
+                                <div class="filter__item-name">.cards</div>
+                            </div>
+                            <div class="filter__item  delivery">
+                                <input type="checkbox" id="delivery1">
+                                <label for="delivery1" class="pseudo-checkbox"></label>
+                                <div class="domain-icon domain-icon-GTLD-delivery">
+                                </div>
+                                <div class="filter__item-name">.delivery</div>
+                            </div>
+                            <div class="filter__item  diamonds">
+                                <input type="checkbox" id="diamonds1">
+                                <label for="diamonds1" class="pseudo-checkbox"></label>
+                                <div class="domain-icon domain-icon-gtld-diamonds">
+                                </div>
+                                <div class="filter__item-name">.diamonds</div>
+                            </div>
+                            <div class="filter__item  direct">
+                                <input type="checkbox" id="direct1">
+                                <label for="direct1" class="pseudo-checkbox"></label>
+                                <div class="domain-icon domain-icon-gtld-direct">
+                                </div>
+                                <div class="filter__item-name">.direct</div>
+                            </div>
+                            <div class="filter__item  energy">
+                                <input type="checkbox" id="energy1">
+                                <label for="energy1" class="pseudo-checkbox"></label>
+                                <div class="domain-icon domain-icon-gtld-direct">
+                                </div>
+                                <div class="filter__item-name">.energy</div>
+                            </div>
+                            <div class="filter__item  express">
+                                <input type="checkbox" id="express1">
+                                <label for="express1" class="pseudo-checkbox"></label>
+                                <div class="domain-icon domain-icon-gtld-express">
+                                </div>
+                                <div class="filter__item-name">.express</div>
+                            </div>
+                            <div class="filter__item  farm">
+                                <input type="checkbox" id="farm1">
+                                <label for="farm1" class="pseudo-checkbox"></label>
+                                <div class="domain-icon domain-icon-gtld-farm">
+                                </div>
+                                <div class="filter__item-name">.farm</div>
+                            </div>
+                            <div class="filter__item  blackfriday">
+                                <input type="checkbox" id="blackfriday1">
+                                <label for="blackfriday1"></label>
+                                <div class="domain-icon domain-icon-gtld-blackfriday">
+                                </div>
+                                <div class="filter__item-name">.blackfriday</div>
+                            </div>
+                            <div class="filter__item  boutique">
+                                <input type="checkbox" id="boutique1">
+                                <label for="boutique1"></label>
+                                <div class="domain-icon domain-icon-gtld-boutique">
+                                </div>
+                                <div class="filter__item-name">.boutique</div>
+                            </div>
+                            <div class="filter__item  cheap">
+                                <input type="checkbox" id="cheap1">
+                                <label for="cheap1"></label>
+                                <div class="domain-icon domain-icon-gtld-cheap">
+                                </div>
+                                <div class="filter__item-name">.cheap</div>
+                            </div>
+                            <div class="filter__item  clothing">
+                                <input type="checkbox" id="clothing1">
+                                <label for="clothing1"></label>
+                                <div class="domain-icon domain-icon-gtld-clothing">
+                                </div>
+                                <div class="filter__item-name">.clothing</div>
+                            </div>
+                            <div class="filter__item  coupons">
+                                <input type="checkbox" id="coupons1">
+                                <label for="coupons1"></label>
+                                <div class="domain-icon domain-icon-gtld-coupons">
+                                </div>
+                                <div class="filter__item-name">.coupons</div>
+                            </div>
+                            <div class="filter__item  taxi">
+                                <input type="checkbox" id="taxi1">
+                                <label for="taxi1" class="pseudo-checkbox"></label>
+                                <div class="domain-icon domain-icon-gtld-taxi">
+                                </div>
+                                <div class="filter__item-name">.taxi</div>
+                            </div>
+                            <div class="filter__item  toys">
+                                <input type="checkbox" id="toys1">
+                                <label for="toys1" class="pseudo-checkbox"></label>
+                                <div class="domain-icon domain-icon-gtld-toys">
+                                </div>
+                                <div class="filter__item-name">.toys</div>
+                            </div>
+                            <div class="filter__item  trade">
+                                <input type="checkbox" id="trade1">
+                                <label for="trade1" class="pseudo-checkbox"></label>
+                                <div class="domain-icon domain-icon-gtld-trade">
+                                </div>
+                                <div class="filter__item-name">.trade</div>
+                            </div>
+                            <div class="filter__item  trading">
+                                <input type="checkbox" id="trading1">
+                                <label for="trading1" class="pseudo-checkbox"></label>
+                                <div class="domain-icon domain-icon-gtld-trading">
+                                </div>
+                                <div class="filter__item-name">.trading</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 <section class="advantages">
     <div class="default-header">
         Free with every Domain
@@ -2972,30 +3493,77 @@
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script>window.jQuery || document.write('<script src="app/js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
 <script src="../js/plugins.js"></script>
-<script src="../js/owl.carousel.js"></script>
+<script src="../js/slick.min.js"></script>
 <script src="../js/main.js"></script>
 <script src="../js/bootstrap/tooltip.js"></script>
 <script>
-    $('.owl-carousel').owlCarousel({
-        loop: true,
-        items: 5,
-        nav:true,
-        navText: [,],
-        responsive:{
-            0 : {
-                items : 2
-            },
-            768 : {
-                items : 3
+    $('.slickslider-horizontal').slick({
+        vertical:false,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        responsive: [{
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 3
             }
-        }
+        },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    swipe:true,
+                    arrows:false
+                }
+            }
+        ]
+    });
+
+    $('.slickslider-simple').slick({
+        vertical:true,
+        slidesToShow: 6,
+        slidesToScroll: 6,
+        infinite: false
+    });
+
+    $('.slickslider-simple-releases').slick({
+        vertical:true,
+        slidesToShow: 3,
+        slidesToScroll: 3
 
     });
+
+    var $carousel = $('.slickslider').slick({
+        vertical:true,
+        slidesToShow: 6,
+        slidesToScroll: 6,
+        infinite: false
+    });
+    if (Modernizr.mq('(max-width: 767px)')) {
+        $('.slick-track li').on('click', function () {
+
+            $('.filter__item').removeClass('current');
+            $carousel.slick('slickUnfilter');
+
+            var $el = $(this);
+            var extensionsString = $el.data('extensions');
+            var extensions = extensionsString.split(' ');
+
+            $(extensions).each(function (index, el) {
+
+                $('.' + el).addClass('current');
+                $('.filter__item__select-all').addClass('current');
+
+            });
+
+            $carousel.slick('slickFilter', '.current');
+
+        });
+    }
 
     $(function () {
         $('[data-toggle="tooltip"]').tooltip()
     });
-
 </script>
 </body>
 </html>

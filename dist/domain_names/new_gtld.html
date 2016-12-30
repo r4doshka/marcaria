@@ -1187,7 +1187,7 @@
 <section class="filter filter--mobile-layout mobile-slider filter-desktop-hide">
     <div class="container">
         <ul class="filter__filter-menu">
-            <li class="filter__filter-menu--first">
+            <li class="filter__filter-menu--first auto-width">
                 <a href="javascript:;">Popular gTLDs*</a>
             </li>
         </ul>
@@ -2191,7 +2191,7 @@
         slidesToShow: 5,
         slidesToScroll: 1,
         responsive: [{
-            breakpoint: 1024,
+            breakpoint: 1200,
             settings: {
                 slidesToShow: 3
             }
@@ -2228,26 +2228,27 @@
         slidesToScroll: 6,
         infinite: false
     });
+    if (Modernizr.mq('(max-width: 767px)')) {
 
-    $('.slick-track li').on('click', function(){
+        $('.slick-track li').on('click', function () {
 
-        $('.filter__item').removeClass('current');
-        $carousel.slick('slickUnfilter');
+            $('.filter__item').removeClass('current');
+            $carousel.slick('slickUnfilter');
 
-        var $el = $(this);
-        var extensionsString = $el.data('extensions');
-        var extensions = extensionsString.split(' ');
+            var $el = $(this);
+            var extensionsString = $el.data('extensions');
+            var extensions = extensionsString.split(' ');
+            $(extensions).each(function (index, el) {
 
-        $(extensions).each(function(index, el){
+                $('.' + el).addClass('current');
+                $('.filter__item__select-all').addClass('current');
 
-            $('.' + el).addClass('current');
-            $('.filter__item__select-all').addClass('current');
+            });
+
+            $carousel.slick('slickFilter', '.current');
 
         });
-
-        $carousel.slick('slickFilter', '.current');
-
-    });
+    }
 
     $(function () {
         $('[data-toggle="tooltip"]').tooltip()

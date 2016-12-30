@@ -1621,15 +1621,16 @@ second site
 .header-info-countries{
   position: relative;
   text-align: center;
+  padding: 50px 0;
   .header-info__content{
-    margin: 55px 0 50px;
+    //margin: 55px 0 50px;
     padding: 0 20px 40px;
     display: inline-block;
   }
 
   .header-info__country{
     position: relative;
-    margin: 55px auto 50px;
+    //margin: 55px auto 50px;
     padding: 0 20px 40px;
     display: inline-block;
     background: #243a56;
@@ -4895,11 +4896,14 @@ card-payment  end
 }
 
 
-.slick-slide{
+.slick-slide {
   a{
     &:focus{
       outline: none;
     }
+  }
+  &:focus{
+    outline: none;
   }
 }
 
@@ -4945,6 +4949,9 @@ card-payment  end
   }
 }
 
+.slickslider-horizontal{
+  margin: 0 50px;
+}
 
 @media screen and (max-width: 1368px) {
   .our-clients-container {
@@ -5668,6 +5675,9 @@ card-payment  end
     }
   }
 
+  .header-info-countries{
+    padding: 0;
+  }
 }
 
 @media screen and  (min-width: 768px) {
@@ -5932,6 +5942,14 @@ card-payment  end
     .image-list .image-list__item{
       margin-right: 25px;
     }
+  }
+
+  .menu-slider .filter__filter-menu {
+    padding: 0 28px;
+  }
+
+  .slickslider-horizontal{
+    margin: 0;
   }
 }
 
@@ -7148,6 +7166,9 @@ card-payment  end
         border-bottom: 0;
         width: 150px;
         display: inline-block;
+      }
+      .auto-width{
+        width: auto;
       }
     }
     &.filter{
