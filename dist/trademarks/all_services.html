@@ -158,25 +158,6 @@
             </div>
             <div class="tabs">
                 <div class="container">
-                    <div class="tabs__content" >
-                        <ul class="horizontal-menu">
-                            <li class="horizontal-menu__item">
-                                <a href="#">Search Domains</a>
-                            </li>
-                            <li class="horizontal-menu__item horizontal-menu__item--active">
-                                <a href="../domain_names/international_domains/index.html">International Domains</a>
-                            </li>
-                            <li class="horizontal-menu__item">
-                                <a href="../domain_names/new_generic_domain/index.html">New Generic Domains</a>
-                            </li>
-                            <li class="horizontal-menu__item">
-                                <a href="../domain_names/hosting.html">Hosting</a>
-                            </li>
-                            <li class="horizontal-menu__item">
-                                <a href="../domain_names/all_services.html">All Services</a>
-                            </li>
-                        </ul>
-                    </div>
                     <div class="tabs__content current-tab" >
                         <ul class="horizontal-menu">
                             <li class="horizontal-menu__item">
@@ -193,19 +174,6 @@
                             </li>
                             <li class="horizontal-menu__item horizontal-menu__item--active">
                                 <a href="all_services.html">All Services</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="tabs__content">
-                        <ul class="horizontal-menu">
-                            <li class="horizontal-menu__item">
-                                <a href="#">Our Team</a>
-                            </li>
-                            <li class="horizontal-menu__item horizontal-menu__item--active">
-                                <a href="#">Accreditations</a>
-                            </li>
-                            <li class="horizontal-menu__item">
-                                <a href="#">Customer Reviews</a>
                             </li>
                         </ul>
                     </div>
@@ -606,13 +574,5 @@
 <script>window.jQuery || document.write('<script src="app/js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
 <script src="../js/plugins.js"></script>
 <script src="../js/main.js"></script>
-<script>
-    $(document).ready(function(){
-        $(".tab-controls .horizontal-menu__item a").click(function() {
-            $(this).parent().addClass("tab-controls--active");
-            $(this).parent().siblings().removeClass("tab-controls--active");
-        });
-    });
-</script>
 </body>
 </html>

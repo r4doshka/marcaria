@@ -6793,6 +6793,8 @@ button:active, button:focus {
 .header-info.sunrise {
   background: url("../img/icons/sunrise_bg.jpg") no-repeat;
   background-size: cover; }
+  .header-info.sunrise .header-info__content {
+    background: rgba(0, 0, 0, 0.33); }
 
 .header-info.holiday_travel {
   background: url("../img/categories/Holiday_Travel.jpg") no-repeat;
@@ -6807,14 +6809,14 @@ button:active, button:focus {
 .header-info.header-info__hosting {
   margin-bottom: 80px;
   background: url("../img/continents_background/hosting-bg.png") no-repeat;
-  background-size: cover; }
+  background-size: 100% 100%; }
   .header-info.header-info__hosting .header-info__country {
     background: rgba(0, 0, 0, 0.2);
     margin: 0; }
   .header-info.header-info__hosting .header-info__heading {
     background: rgba(0, 0, 0, 0.2);
     display: inline-block;
-    margin: 70px 0 0 0;
+    margin: 30px 0 0 0;
     padding: 0 50px;
     color: #fff;
     font-weight: bold; }
@@ -7881,6 +7883,30 @@ second site
     font-size: 26px;
     line-height: 28px; }
 
+.list-with-icon.list-with-icon--steps {
+  margin: 0; }
+  .list-with-icon.list-with-icon--steps .list-with-icon__item {
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0; }
+  .list-with-icon.list-with-icon--steps .list-with-icon__icon {
+    margin: 0 0 20px 0;
+    border: 3px solid #a6ce2f;
+    border-radius: 5px; }
+    .list-with-icon.list-with-icon--steps .list-with-icon__icon img {
+      border-radius: 3px;
+      width: 250px; }
+  .list-with-icon.list-with-icon--steps .list-with-icon__title {
+    text-align: center; }
+  .list-with-icon.list-with-icon--steps .bold {
+    font-size: 30px;
+    line-height: 36px; }
+
 .domain-stage .list-with-icon--icon-top .list-with-icon__item {
   -webkit-flex-flow: row wrap;
       -ms-flex-flow: row wrap;
@@ -7912,8 +7938,10 @@ second site
   font-size: 27px;
   line-height: 30px; }
 
-.list-with-icon .list-with-icon__text.list-with-icon__text--align-center {
-  text-align: center; }
+.list-with-icon .list-with-icon__text {
+  font-size: 18px; }
+  .list-with-icon .list-with-icon__text.list-with-icon__text--align-center {
+    text-align: center; }
 
 .card-list .card-list__card-item {
   padding: 10px 15px;
@@ -10062,7 +10090,7 @@ Trademarks start
     .list-with-icon.list-with-icon--icon-top .list-with-icon__title.list-with-icon__title--table-small {
       font-size: 16px; }
   .list-with-icon.list-with-icon--icon-top .list-with-icon__text {
-    font-size: 14px;
+    font-size: 16px;
     text-align: center; }
   .faq-list__table-dropdown .faq-list__show-more {
     display: none; }
@@ -10317,6 +10345,12 @@ Trademarks start
     .header-info .header-info__icon.header-info__icon--right {
       top: 0;
       right: 0; }
+  .header-info.header-info__hosting {
+    margin-bottom: 40px; }
+    .header-info.header-info__hosting .header-info__heading {
+      margin: 0; }
+    .header-info.header-info__hosting .header-info-countries {
+      padding: 30px 0; }
   .card-list.card-list_flexbox .card-item__name {
     font-size: 18px; }
   .form.content-box .form__form-body {
@@ -10593,7 +10627,8 @@ Trademarks start
   .faq-list__table-dropdown .faq-list__show-more {
     display: block; }
   .default-header {
-    font-size: 30px; }
+    font-size: 30px;
+    margin-top: 30px; }
     .default-header.default-header--small-size {
       font-size: 20px; }
   .content {
@@ -10798,6 +10833,8 @@ Trademarks start
   .header-info .header-info__text {
     font-size: 14px;
     font-weight: 400; }
+  .header-info.header-info__hosting .header-info-countries {
+    padding: 5px; }
   .header-info-countries .header-info__country {
     margin: 10px 0;
     padding: 0 20px 0; }
@@ -11264,7 +11301,7 @@ Trademarks start
     .select-plan .hosting-plans__price {
       font-size: 20px; }
   .header-info.header-info__hosting {
-    margin-bottom: 50px; }
+    margin-bottom: 30px; }
   .blockquote-list.blockquote-list--colored {
     padding: 20px 10px;
     margin: 0 10px; }
@@ -11400,7 +11437,7 @@ Trademarks start
             align-items: center; }
   /*simple-mobile-menu*/
   .simple-mobile-menu {
-    margin: 20px 00;
+    margin: 20px 0 0;
     padding: 0; }
     .simple-mobile-menu .simple-mobile-menu__item {
       padding: 0 0 0 35px;
