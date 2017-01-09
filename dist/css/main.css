@@ -5818,7 +5818,7 @@ button:active, button:focus {
 .header-info .header-info__description {
   font-weight: bold;
   color: #fff;
-  text-shadow: 0 2px 1px #020202;
+  text-shadow: 0 3px 1px #020202;
   text-align: center; }
 
 .header-info .header-info__heading {
@@ -6814,6 +6814,7 @@ button:active, button:focus {
     background: rgba(0, 0, 0, 0.2);
     margin: 0; }
   .header-info.header-info__hosting .header-info__heading {
+    text-shadow: 0 3px 1px #020202;
     background: rgba(0, 0, 0, 0.2);
     display: inline-block;
     margin: 30px 0 0 0;
