@@ -1425,12 +1425,17 @@ button{
 }
 
 .header-info {
+  &.trademark{
+    background: url('../img/icons/BanderasNuevas.jpg') no-repeat;
+    background-size: 100% 100%;
+
+    .header-info-countries{
+      padding: 100px 0;
+    }
+  }
   &.sunrise{
     background: url('../img/icons/sunrise_bg.jpg') no-repeat;
     background-size: cover;
-    .header-info__content{
-
-    }
   }
   &.holiday_travel{
     background: url('../img/categories/Holiday_Travel.jpg') no-repeat;
@@ -1666,11 +1671,13 @@ second site
 
   .horizontal-menu__item{
     margin-bottom: -2px;
-    &.horizontal-menu__item--active
-    a{
-      font-weight: 700;
-      color: #b2e712;
+    &.horizontal-menu__item--active{
+      a{
+        font-weight: 700;
+        color: #b2e712;
+      }
     }
+
   }
 
   .tab-controls--active{
@@ -1773,6 +1780,15 @@ second site
   flex-flow: row wrap;
   position: relative;
   top: -20px;
+  &.available-elements--big{
+    .available-elements__header{
+      font-size: 20px;
+      margin: 0 0 10px 0;
+    }
+    .available-item__name{
+      font-size: 18px;
+    }
+  }
   .available-elements__header{
     flex:1 1 100%;
     font-size: 16px;
@@ -1985,6 +2001,41 @@ second site
   }
   .continent-item{
     cursor: pointer;
+  }
+  &.trademarks-map{
+    .continent-item{
+      height: 160px;
+    }
+    .north_america{
+      height: 140px;
+    }
+    .central_america{
+      left: 250px;
+      top: 125px;
+    }
+    .south_america{
+      left: 130px;
+      top: 300px;
+    }
+    .europe{
+      left: 540px;
+      top: 6px;
+    }
+    .middle-east{
+      display: none;
+    }
+    .africa{
+      left: 540px;
+      top: 200px;
+    }
+    .asia{
+      left: 780px;
+      top: 70px;
+    }
+    .oceania{
+      right: 70px;
+      bottom: 70px;
+    }
   }
   .north_america{
     position: absolute;
@@ -2720,7 +2771,14 @@ second site
     font-size: 27px;
     line-height: 30px;
   }
+}
 
+.list-with-icon{
+  .list-with-icon__text{
+    &.list-with-icon__text--align-center{
+      text-align: center;
+    }
+  }
 }
 
 .card-list{
@@ -4953,6 +5011,35 @@ card-payment  end
   margin: 0 50px;
 }
 
+/*=============
+Trademarks start
+===============*/
+
+.trademarks-map{
+  &.world-map{
+    img{
+      height: 450px;
+    }
+  }
+
+}
+
+.list-with-icon--middle-align{
+  .list-with-icon__item{
+   justify-content: center;
+  }
+  .action-button{
+    flex: 0 0 auto;
+    display: inline-block;
+    margin: 20px 0 0;
+    padding: 10px 40px;
+    border-radius: 5px;
+    font-size: 19px;
+    background: #01309a;
+  }
+}
+
+
 @media screen and (max-width: 1368px) {
   .our-clients-container {
     margin: 40px 40px 60px;
@@ -5056,6 +5143,48 @@ card-payment  end
       font-size: 20px;
     }
   }
+
+  .world-map {
+    &.trademarks-map {
+      img{
+        height: 280px;
+      }
+      .continent-item{
+        width: 100px;
+        height: 100px;
+      }
+      .north_america{
+        height: 100px;
+      }
+      .central_america{
+        left: 200px;
+        top: 80px;
+      }
+      .south_america{
+        left: 120px;
+        top: 190px;
+      }
+      .europe{
+        left: 450px;
+        top: 6px;
+      }
+      .middle-east{
+        display: none;
+      }
+      .africa{
+        left: 420px;
+        top: 120px;
+      }
+      .asia{
+        left: 630px;
+        top: 30px;
+      }
+      .oceania{
+        right: 60px;
+        bottom: 30px;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 992px){
@@ -5155,6 +5284,9 @@ card-payment  end
       }
       .list-with-icon__title{
         font-size: 20px;
+        &.list-with-icon__title--table-small{
+          font-size: 16px;
+        }
       }
       .list-with-icon__text{
         font-size: 14px;
@@ -5678,6 +5810,57 @@ card-payment  end
   .header-info-countries{
     padding: 0;
   }
+
+  .world-map {
+    &.trademarks-map {
+      img{
+        height: 280px;
+      }
+      .continent-item{
+        width: 80px;
+        height: 100px;
+      }
+      .north_america{
+        height: 100px;
+      }
+      .central_america{
+        left: 150px;
+      }
+      .south_america{
+        left: 80px;
+      }
+      .europe{
+        left: 350px;
+      }
+      .middle-east{
+        display: none;
+      }
+      .africa{
+        left: 320px;
+      }
+      .asia{
+        left: 490px;
+        top: 40px;
+      }
+      .oceania{
+        right: 25px;
+        bottom: 30px;
+      }
+    }
+  }
+
+  .available-elements{
+    top:0;
+  }
+
+  .header-info{
+    &.trademark{
+      .header-info-countries{
+        padding: 0;
+      }
+    }
+  }
+
 }
 
 @media screen and  (min-width: 768px) {
@@ -5935,6 +6118,7 @@ card-payment  end
 
   .default-header{
     font-size: 30px;
+
   }
 
   .sign-up-form{
@@ -5980,6 +6164,9 @@ card-payment  end
 
   .default-header{
     font-size: 30px;
+    &.default-header--small-size{
+      font-size: 20px;
+    }
   }
   .content{
     margin: 30px 0;
@@ -7224,4 +7411,28 @@ card-payment  end
     }
   }
 
+  .list-with-icon--middle-align{
+    .list-with-icon__item{
+      align-items: center;
+    }
+  }
+  /*simple-mobile-menu*/
+  .simple-mobile-menu{
+    margin: 20px 0 0;
+    padding: 0;
+    .simple-mobile-menu__item{
+      padding: 0 0 0 35px;
+      border-bottom:1px solid #fff;
+      list-style: none;
+      background: #3d8af7;
+      a{
+        display: block;
+        padding: 7px 0;
+        font-size: 19px;
+        font-weight: 500;
+        color: #fff;
+      }
+    }
+  }
+  /*simple-mobile-menu*/
 }
