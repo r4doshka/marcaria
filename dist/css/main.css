@@ -7827,7 +7827,7 @@ second site
 
 /*search_domains*/
 .main-search .text-uppercase, .main-search .initialism {
-  font-size: 38px;
+  font-size: 40px;
   color: #021f54;
   font-weight: 700;
   text-align: center; }
@@ -10119,7 +10119,8 @@ Trademarks start
       line-height: inherit; }
     .main-search.main-search--small .text-uppercase, .main-search.main-search--small .initialism {
       font-size: 24px;
-      margin-top: 5px; }
+      margin-top: 5px;
+      text-align: right; }
     .main-search.main-search--small .main-search__search-field {
       padding: 4px 0 4px 15px;
       font-size: 20px; }
