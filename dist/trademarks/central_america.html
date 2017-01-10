@@ -352,7 +352,10 @@
 <div class="container desktop-layout">
     <div class="row">
         <div class="col-md-9">
-            <img class="full-img" src="../img/maps/map_central_america_en.jpg" border="0" alt="" />
+            <img class="full-img" src="../img/maps/map_central_america_en.jpg" usemap="#image-map" border="0" alt="" />
+            <map name="image-map">
+                <area target="" alt="" title="" href="america_trademark.html" coords="21,14,191,56" shape="rect">
+            </map>
         </div>
         <div class="col-md-3">
             <div class="title-box desktop-hide">
@@ -1031,11 +1034,15 @@
 <script src="../js/main.js"></script>
 <script src="../js/slick.min.js"></script>
 <script src="../js/bootstrap/tooltip.js"></script>
+<script src="../js/mapResize.js"> </script>
 <script>
     $('.slickslider').slick({
         vertical:true,
         slidesToShow: 5,
         slidesToScroll: 5,
         infinite: true
+    });
+    $(document).ready(function() {
+        $('map').imageMapResize();
     });
 </script>

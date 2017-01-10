@@ -352,7 +352,10 @@
 <div class="container desktop-layout">
     <div class="row">
         <div class="col-md-9">
-            <img class="full-img" src="../img/maps/map_asia_en.jpeg" border="0" alt="" />
+            <img class="full-img" src="../img/maps/map_asia_en.jpeg" border="0" alt="" usemap="#image-map"/>
+            <map name="image-map">
+                <area target="" alt="" title="" href="middle_east_trademark.html" coords="25,184,133,223" shape="rect">
+            </map>
         </div>
         <div class="col-md-3">
             <div class="title-box desktop-hide">
@@ -1081,11 +1084,15 @@
 <script src="../js/main.js"></script>
 <script src="../js/slick.min.js"></script>
 <script src="../js/bootstrap/tooltip.js"></script>
+<script src="../js/mapResize.js"> </script>
 <script>
     $('.slickslider').slick({
         vertical:true,
         slidesToShow: 5,
         slidesToScroll: 5,
         infinite: true
+    });
+    $(document).ready(function() {
+        $('map').imageMapResize();
     });
 </script>
