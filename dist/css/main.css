@@ -5591,6 +5591,14 @@ button:active, button:focus {
     margin: 0; }
   .breadcrumbs li:last-child a {
     cursor: default; }
+  .breadcrumbs.breadcrumbs--theme-blue a {
+    color: #01309a; }
+    .breadcrumbs.breadcrumbs--theme-blue a:hover {
+      color: #01309a; }
+  .breadcrumbs.breadcrumbs--theme-blue svg {
+    fill: #01309a; }
+  .breadcrumbs.breadcrumbs--theme-blue .breadcrumbs__item:not(:first-child):before {
+    color: #01309a; }
   .breadcrumbs.breadcrumbs_shadowed {
     background: rgba(0, 0, 0, 0.2);
     left: 15px;
@@ -5627,7 +5635,8 @@ button:active, button:focus {
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       color: #fff;
-      margin: 0 5px 0 5px; }
+      margin: 0 5px 0 5px;
+      font-weight: 700; }
     .breadcrumbs .breadcrumbs__item .breadcrumbs__country-icon {
       display: inline-block;
       margin-left: 5px;
@@ -8320,6 +8329,30 @@ second site
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
+  .element-box.element-box--pure {
+    padding: 10px;
+    margin: 0;
+    background: transparent;
+    border: 2px solid #929292; }
+  .element-box.element-box--fixed-height .element-box-inner {
+    max-height: 532px;
+    overflow: hidden;
+    overflow-y: scroll; }
+  .element-box.element-box--slider {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    border: none; }
+    .element-box.element-box--slider .element-box__element-item {
+      padding: 0 0 0 35px;
+      list-style: none;
+      background: #3d8af7; }
+      .element-box.element-box--slider .element-box__element-item a {
+        display: block;
+        padding: 7px 0;
+        font-size: 19px;
+        font-weight: 500;
+        color: #fff; }
 
 /*blockquote-list*/
 .blockquote-list {
@@ -9959,6 +9992,55 @@ Trademarks start
   font-size: 19px;
   background: #01309a; }
 
+.header-banner .header-banner__title {
+  color: #021f54;
+  font-size: 60px;
+  font-weight: 700; }
+
+.header-banner .header-info__description {
+  width: 50%;
+  margin: 0 0 60px 0;
+  color: #021f54;
+  font-size: 30px; }
+
+.header-banner .btn-next {
+  padding: 20px 40px;
+  font-size: 28px;
+  float: left; }
+
+.heading {
+  font-size: 50px;
+  font-weight: 700;
+  color: #021f54;
+  text-align: center; }
+
+.heading-remark {
+  font-size: 33px;
+  color: #021f54;
+  text-align: center; }
+
+.header-box {
+  position: relative;
+  padding: 60px 0 80px; }
+
+.title-box {
+  display: inline-block;
+  margin-left: 20px;
+  padding: 5px 15px;
+  font-size: 20px;
+  background: #a6ce2f;
+  color: #fff;
+  border: 2px solid #606060;
+  border-bottom: 1px solid #606060;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px; }
+
+.full-img {
+  width: 100%;
+  height: 100%;
+  max-height: 552px;
+  margin-bottom: 30px; }
+
 @media screen and (max-width: 1368px) {
   .our-clients-container {
     margin: 40px 40px 60px; } }
@@ -10029,7 +10111,11 @@ Trademarks start
     top: 30px; }
   .world-map.trademarks-map .oceania {
     right: 60px;
-    bottom: 30px; } }
+    bottom: 30px; }
+  .element-box.element-box--fixed-height .element-box-inner {
+    max-height: 448px;
+    overflow: hidden;
+    overflow-y: scroll; } }
 
 @media screen and (min-width: 992px) {
   .filter__mobile-select,
@@ -10261,6 +10347,25 @@ Trademarks start
     left: -275px; }
   .element-box .element-box--mobile-right {
     text-align: right; }
+  .element-box.element-box--pure.element-box--column-right {
+    padding: 50px 0 50px 60px;
+    background: #f7f6f6;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.75);
+    border: 1px solid #606060; }
+    .element-box.element-box--pure.element-box--column-right .element-box-inner {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-flow: row wrap;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      max-height: inherit; }
+    .element-box.element-box--pure.element-box--column-right .element-box__element-item {
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 0 50%;
+          -ms-flex: 0 0 50%;
+              flex: 0 0 50%; }
   .checkbox-list .checkbox-list__checkbox-group .pseudo-checkbox.pseudo-checkbox--large {
     left: 0; }
   /*check-order*/
@@ -10432,7 +10537,13 @@ Trademarks start
   .available-elements {
     top: 0; }
   .header-info.trademark .header-info-countries {
-    padding: 0; } }
+    padding: 0; }
+  .header-box {
+    padding: 20px 0; }
+  .heading {
+    font-size: 22px; }
+  .heading-remark {
+    font-size: 18px; } }
 
 @media screen and (min-width: 768px) {
   .mobile-layout {
@@ -11452,4 +11563,6 @@ Trademarks start
         font-size: 19px;
         font-weight: 500;
         color: #fff; }
-  /*simple-mobile-menu*/ }
+  /*simple-mobile-menu*/
+  .heading.bottom-indent {
+    margin-bottom: 20px; } }
