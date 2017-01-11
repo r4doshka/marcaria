@@ -9020,6 +9020,8 @@ domain configurations  start
         -ms-flex-pack: center;
             justify-content: center;
     cursor: pointer; }
+    .radio-checkbox-group input[type=radio] + .pseudo-radio.pseudo-radio--small-indent {
+      margin: 0 5px 0 0; }
   .radio-checkbox-group input[type=radio]:checked + .pseudo-radio:before {
     content: "\f111";
     display: inline-block;
@@ -9033,7 +9035,8 @@ domain configurations  start
     font-size: 21px;
     color: #01309a;
     cursor: pointer;
-    font-weight: 400; }
+    font-weight: 400;
+    margin-bottom: 0; }
     .radio-checkbox-group .radio-checkbox-group__text.radio-checkbox-group__text--large {
       font-size: 25px;
       font-weight: 700;
@@ -9435,6 +9438,24 @@ card-payment  end
       width: 100%; }
   .data-table .data-table__title .data-table_cell {
     background: #a8c6fa; }
+  .data-table .data-table__title.data-table__title--flexbox {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .data-table .data-table__title.data-table__title--flexbox .data-table_cell {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      padding: 25px 3px;
+      background: #75a9f9;
+      border-color: #a8c6fa; }
+      .data-table .data-table__title.data-table__title--flexbox .data-table_cell:first-child {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 160px;
+            -ms-flex: 0 0 160px;
+                flex: 0 0 160px; }
   .data-table .data-table__item .data-table_cell:first-child {
     border-left: 2px solid #75a9f9; }
   .data-table .data-table__item .data-table_cell:last-child {
@@ -9445,6 +9466,50 @@ card-payment  end
       border-bottom: 2px solid #75a9f9; }
   .data-table .data-table__item:nth-child(even) .data-table_cell {
     background: #d4e3fc; }
+  .data-table .data-table__item.data-table__item--flexbox {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .data-table .data-table__item.data-table__item--flexbox .data-table_cell {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      padding: 25px 3px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      border-color: #a8c6fa; }
+      .data-table .data-table__item.data-table__item--flexbox .data-table_cell:first-child {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 160px;
+            -ms-flex: 0 0 160px;
+                flex: 0 0 160px;
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+            -ms-flex-pack: start;
+                justify-content: flex-start; }
+      .data-table .data-table__item.data-table__item--flexbox .data-table_cell .data-table__item-icon {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 36px;
+            -ms-flex: 0 0 36px;
+                flex: 0 0 36px;
+        position: relative;
+        top: 2px; }
+    .data-table .data-table__item.data-table__item--flexbox .data-table__item-icon {
+      margin: 0; }
+    .data-table .data-table__item.data-table__item--flexbox:first-child .data-table_cell {
+      border-top: none; }
   .data-table .data-table_cell {
     padding: 8px 15px;
     border: 1px solid #75a9f9; }
@@ -9460,6 +9525,28 @@ card-payment  end
     top: -3px; }
   .data-table .context-remark {
     text-align: left; }
+
+.table-tab {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 0 160px; }
+  .table-tab .table-tab__item {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding: 15px 0;
+    background: #75a9f9;
+    font-size: 23px;
+    color: #021f54;
+    line-height: 25px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px; }
+    .table-tab .table-tab__item.table-tab__item--active {
+      font-weight: 700;
+      background: #a8c6fa; }
 
 .arrow-down {
   display: inline-block;
@@ -9794,6 +9881,12 @@ card-payment  end
   display: -ms-flexbox;
   display: flex; }
 
+.align-items-middle {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
 .align-items-bot {
   -webkit-box-align: end;
   -webkit-align-items: flex-end;
@@ -10040,6 +10133,70 @@ Trademarks start
   height: 100%;
   max-height: 552px;
   margin-bottom: 30px; }
+
+.border-line {
+  display: block;
+  width: 70%;
+  height: 2px;
+  background: #b2e712;
+  margin: 0 auto; }
+
+.control-box .control-box__title {
+  font-size: 25px;
+  color: #021f54; }
+
+.control-box .form-control {
+  width: auto;
+  height: 40px;
+  margin: 0 0 0 15px;
+  font-size: 25px;
+  color: #021f54; }
+
+.control-box .radio-checkbox-group {
+  margin-left: 30px; }
+
+.control-box .helper {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.control-box:last-child {
+  margin-bottom: 30px; }
+
+.control-box.control-box--inline .control-box__title {
+  display: inline-block; }
+
+.control-box.control-box--inline .form-control {
+  display: inline-block;
+  width: 40%;
+  margin-left: 15px; }
+
+.note-text {
+  padding-bottom: 50px;
+  color: #021f54;
+  font-size: 19px; }
+  .note-text .note-text-title {
+    font-size: 25px; }
+
+.list-group {
+  padding: 0 20px;
+  margin: 0; }
+  .list-group .list-group__item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 0 20px 0;
+    font-size: 16px; }
+    .list-group .list-group__item:last-child {
+      margin: 0; }
+  .list-group .list-group__item-text {
+    margin-left: 20px; }
 
 @media screen and (max-width: 1368px) {
   .our-clients-container {
@@ -10543,7 +10700,9 @@ Trademarks start
   .heading {
     font-size: 22px; }
   .heading-remark {
-    font-size: 18px; } }
+    font-size: 18px; }
+  .data-table .data-table__item--flexbox .data-table__item-icon {
+    left: 0; } }
 
 @media screen and (min-width: 768px) {
   .mobile-layout {
@@ -10617,7 +10776,6 @@ Trademarks start
     .order .order__order-item {
       padding: 20px 25px; }
     .order .order-item__country-flag {
-      width: 50px;
       display: inline-block; }
     .order .order-item__heading {
       font-size: 18px;
@@ -10718,7 +10876,28 @@ Trademarks start
   .menu-slider .filter__filter-menu {
     padding: 0 28px; }
   .slickslider-horizontal {
-    margin: 0; } }
+    margin: 0; }
+  .control-box.flexbox {
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap; }
+    .control-box.flexbox .control-box__title.control-box__title--single {
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 0 100%;
+          -ms-flex: 0 0 100%;
+              flex: 0 0 100%; }
+  .control-box .radio-checkbox-group__text {
+    font-size: 18px; }
+  .control-box .control-box__title {
+    font-size: 18px;
+    margin-bottom: 5px; }
+  .control-box .form-control {
+    margin: 0 15px 0 0;
+    font-size: 18px; }
+  .data-table .data-table__item.data-table__item--flexbox .data-table_cell.mobile-hide {
+    display: none; }
+  .note-text .note-text__item {
+    margin-bottom: 30px; } }
 
 @media screen and (max-width: 767px) {
   .mobile-layout {
@@ -11088,7 +11267,6 @@ Trademarks start
       padding: 20px 20px 30px;
       border: 1px solid #01309a; }
     .order .order-item__country-flag {
-      width: 40px;
       display: inline-block; }
     .order .order-item__heading {
       font-size: 18px; }
@@ -11565,4 +11743,46 @@ Trademarks start
         color: #fff; }
   /*simple-mobile-menu*/
   .heading.bottom-indent {
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+  .control-box.flexbox {
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .control-box .control-box__title.control-box__title--single {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%; }
+  .control-box .form-control {
+    padding: 5px;
+    width: 48%;
+    margin: 0;
+    font-size: 14px; }
+  .control-box .control-box__title {
+    margin-bottom: 5px;
+    font-size: 18px; }
+  .control-box .radio-checkbox-group {
+    margin: 0;
+    width: 100%; }
+  .control-box.control-box--inline .form-control {
+    width: 70%; }
+  .control-box .helper {
+    margin-left: 10px; }
+  .note-text {
+    font-size: 14px; }
+    .note-text .note-text-title {
+      font-size: 14px;
+      margin-bottom: 20px; }
+    .note-text .note-text__item {
+      margin-bottom: 20px; }
+      .note-text .note-text__item:last-child {
+        margin-bottom: 0; }
+  .flexbox.flexbox-start {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; } }

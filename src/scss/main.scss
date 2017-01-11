@@ -3934,6 +3934,9 @@ domain configurations  start
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    &.pseudo-radio--small-indent{
+      margin: 0 5px 0 0;
+    }
   }
   input[type=radio]:checked+.pseudo-radio:before{
     content: "\f111";
@@ -3950,6 +3953,7 @@ domain configurations  start
     color: #01309a;
     cursor: pointer;
     font-weight: 400;
+    margin-bottom: 0;
     &.radio-checkbox-group__text--large{
       font-size: 25px;
       font-weight: 700;
@@ -4435,7 +4439,20 @@ card-payment  end
       .data-table_cell{
         background: #a8c6fa;
       }
+      &.data-table__title--flexbox{
+        display: flex;
+        .data-table_cell{
+          flex: 1;
+          padding: 25px 3px;
+          background: #75a9f9;
+          border-color: #a8c6fa;
+          &:first-child{
+            flex: 0 0 160px;
+          }
+        }
+      }
     }
+
     .data-table__item{
       .data-table_cell:first-child{
         border-left:2px solid #75a9f9;
@@ -4452,6 +4469,34 @@ card-payment  end
       &:nth-child(even){
         .data-table_cell {
           background: #d4e3fc;
+        }
+      }
+      &.data-table__item--flexbox{
+        display: flex;
+        .data-table_cell{
+          flex: 1;
+          padding: 25px 3px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-color: #a8c6fa;
+          &:first-child{
+           flex: 0 0 160px;
+            justify-content: flex-start;
+          }
+          .data-table__item-icon{
+            flex:0 0 36px;
+            position: relative;
+            top:2px;
+          }
+        }
+        .data-table__item-icon{
+          margin: 0;
+        }
+        &:first-child{
+          .data-table_cell{
+            border-top: none;
+          }
         }
       }
     }
@@ -4474,6 +4519,25 @@ card-payment  end
 
     .context-remark{
       text-align: left;
+    }
+  }
+
+  .table-tab{
+    display: flex;
+    margin: 0 0 0 160px;
+    .table-tab__item{
+      flex:1;
+      padding: 15px 0;
+      background: #75a9f9;
+      font-size: 23px;
+      color: #021f54;
+      line-height: 25px;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+      &.table-tab__item--active{
+        font-weight: 700;
+        background: #a8c6fa;
+      }
     }
   }
 
@@ -4875,6 +4939,10 @@ card-payment  end
   display: flex;
 }
 
+.align-items-middle{
+  align-items: center;
+}
+
 .align-items-bot{
   align-items: flex-end;
 }
@@ -5182,6 +5250,73 @@ Trademarks start
   margin-bottom: 30px;
 }
 
+.border-line{
+  display: block;
+  width: 70%;
+  height: 2px;
+  background: #b2e712;
+  margin: 0 auto;
+}
+
+.control-box{
+  .control-box__title{
+    font-size: 25px;
+    color: #021f54;
+  }
+  .form-control{
+    width: auto;
+    height: 40px;
+    margin: 0 0 0 15px;
+    font-size: 25px;
+    color: #021f54;
+  }
+  .radio-checkbox-group{
+    margin-left: 30px;
+  }
+  .helper{
+    align-items: center;
+  }
+  &:last-child{
+    margin-bottom: 30px;
+  }
+  &.control-box--inline{
+    .control-box__title{
+      display: inline-block;
+    }
+    .form-control{
+      display: inline-block;
+      width: 40%;
+      margin-left: 15px;
+    }
+  }
+}
+
+.note-text{
+  padding-bottom: 50px;
+  color: #021f54;
+  font-size: 19px;
+  .note-text-title{
+    font-size: 25px;
+  }
+}
+
+.list-group{
+  padding: 0 20px;
+  margin: 0;
+  .list-group__item{
+    display: flex;
+    align-items: center;
+    margin: 0 0 20px 0;
+    font-size: 16px;
+    &:last-child{
+      margin: 0;
+    }
+  }
+  .list-group__item-text{
+    margin-left: 20px;
+  }
+}
+
 @media screen and (max-width: 1368px) {
   .our-clients-container {
     margin: 40px 40px 60px;
@@ -5366,46 +5501,45 @@ Trademarks start
   .login-panel,
   .breadcrumbs,
   .pagination,
-  .mobile-hide{
+  .mobile-hide {
     display: none;
   }
 
-
   .faq-list__show-more,
-  .search-result__mobile-option{
+  .search-result__mobile-option {
     display: block;
   }
 
-  .faq-list__mobile-dropdown{
-    .faq-list__item{
+  .faq-list__mobile-dropdown {
+    .faq-list__item {
       display: none;
     }
   }
-  .search-result__dropdown-options{
+  .search-result__dropdown-options {
     margin-top: 20px;
   }
 
-  .card-list{
-    .card-item__description{
+  .card-list {
+    .card-item__description {
       flex-flow: row wrap;
     }
-    .card-item__text{
+    .card-item__text {
       margin-bottom: 20px;
     }
-    .btn-link{
+    .btn-link {
       width: 100%;
       padding: 10px 0;
       text-align: center;
     }
-    .card-item__name{
+    .card-item__name {
       font-size: 16px;
     }
-    .card-item__icon{
-      img{
+    .card-item__icon {
+      img {
         width: 50px;
       }
     }
-    .card-group{
+    .card-group {
       margin-bottom: 20px;
     }
   }
@@ -5416,86 +5550,86 @@ Trademarks start
 
   .faq {
     margin-top: 50px;
-    .faq-heading{
+    .faq-heading {
       font-size: 20px;
     }
-    .faq-list__heading{
+    .faq-list__heading {
       font-size: 16px;
     }
-    .faq-list__description{
+    .faq-list__description {
       font-size: 14px;
     }
   }
 
   .list-with-icon {
-    &.list-with-icon--icon-top{
-      .list-with-icon__icon{
-        img{
+    &.list-with-icon--icon-top {
+      .list-with-icon__icon {
+        img {
           height: 70px;
         }
       }
-      .list-with-icon__title{
+      .list-with-icon__title {
         font-size: 20px;
-        &.list-with-icon__title--table-small{
+        &.list-with-icon__title--table-small {
           font-size: 16px;
         }
       }
-      .list-with-icon__text{
+      .list-with-icon__text {
         font-size: 16px;
         text-align: center;
       }
     }
   }
 
-  .faq-list__table-dropdown{
-    .faq-list__show-more{
+  .faq-list__table-dropdown {
+    .faq-list__show-more {
       display: none;
     }
   }
 
-  .our-clients-container{
+  .our-clients-container {
     margin: 40px 40px 100px;
   }
 
   .owl-next,
-  .owl-prev{
+  .owl-prev {
     width: 20px;
     height: 30px;
     margin-top: -15px;
   }
 
-  .owl-next{
+  .owl-next {
     right: -65px;
   }
 
-  .owl-prev{
+  .owl-prev {
     left: -65px;
   }
 
-  .service{
-    .service-item__item-description{
+  .service {
+    .service-item__item-description {
       line-height: 24px;
     }
   }
 
-  .main-banner{
-    .header{
+  .main-banner {
+    .header {
       font-size: 38px;
     }
-    .remark{
+    .remark {
       font-size: 18px;
       margin-top: 0;
     }
   }
 
-  .main-search.main-search--small{
+  .main-search.main-search--small {
     position: relative;
     .main-search__search-button {
       padding: 6px 20px 6px 40px;
       line-height: inherit;
 
     }
-    .text-uppercase{
+    .text-uppercase {
       font-size: 24px;
       margin-top: 5px;
       text-align: right;
@@ -5505,50 +5639,50 @@ Trademarks start
       padding: 4px 0 4px 15px;
       font-size: 20px;
     }
-    .main-search__search-icon{
+    .main-search__search-icon {
       width: 20px;
-      top:10px;
+      top: 10px;
     }
   }
 
-  .search-wrap{
+  .search-wrap {
     padding: 20px;
-    .main-search{
-      .main-search__search-icon{
+    .main-search {
+      .main-search__search-icon {
         display: none;
       }
-      .main-search__search-button{
+      .main-search__search-button {
         font-size: 16px;
         padding: 10px;
       }
     }
   }
 
-  .mobile-menu{
+  .mobile-menu {
     display: block;
-    .dropdown-menu{
+    .dropdown-menu {
       padding: 0;
-      .header__label{
+      .header__label {
         font-size: 20px;
       }
-      .toggle__icon{
+      .toggle__icon {
         width: 20px;
         position: relative;
         top: -2px;
       }
-      .header__label{
+      .header__label {
         font-weight: 400;
       }
-      .dropdown-menu__toggle{
+      .dropdown-menu__toggle {
         padding: 7px 25px 7px 20px;
       }
     }
 
-    .search-icon{
+    .search-icon {
       position: relative;
-      &:before{
+      &:before {
         content: '';
-        background:url(../img/icons/search.png) no-repeat;
+        background: url(../img/icons/search.png) no-repeat;
         background-size: contain;
         display: block;
         width: 14px;
@@ -5559,90 +5693,90 @@ Trademarks start
     }
 
     .header__nav {
-      top:40px;
-      .header__nav-item{
+      top: 40px;
+      .header__nav-item {
         border-top: 2px solid #3d8af7;
         padding: 8px 25px 8px 55px;
       }
-      a{
+      a {
         font-size: 16px;
       }
-      .has-child{
-        &:before{
+      .has-child {
+        &:before {
           font-size: 20px;
           top: 6px;
         }
       }
-      .header__nav__dropdown{
+      .header__nav__dropdown {
         margin-top: 20px;
-        li{
+        li {
           position: relative;
           margin-top: 20px;
-          &:first-child{
+          &:first-child {
             margin-top: 0;
           }
-          &:before{
-            top:0;
+          &:before {
+            top: 0;
           }
         }
       }
-      .header__nav__country-flag{
+      .header__nav__country-flag {
         position: relative;
         left: -20px;
         top: 1px;
         margin-right: 0;
-        img{
+        img {
           width: 20px;
         }
       }
     }
 
-    .currency{
-      a{
+    .currency {
+      a {
         font-weight: bold;
       }
     }
-    .currency-icon{
+    .currency-icon {
       position: relative;
       left: -20px;
       top: -3px;
-      img{
+      img {
         width: 10px;
       }
     }
   }
-  .desktop-menu{
+  .desktop-menu {
     display: none;
   }
   .found-identical {
-    .found-identical__heading{
+    .found-identical__heading {
       padding: 20px 0 0;
       font-size: 18px;
     }
 
-    .identical-result__name{
+    .identical-result__name {
       display: none;
-      &.identical-result__trademark{
+      &.identical-result__trademark {
         display: block;
       }
     }
-    .identical-result__value{
+    .identical-result__value {
       display: none;
       text-align: center;
-      &.identical-result__trademark{
+      &.identical-result__trademark {
         display: block;
         border-top: 1px solid #a8c6fa;
       }
     }
 
-    .identical-result__item{
+    .identical-result__item {
       display: flex;
       flex-flow: row wrap;
       margin-bottom: 20px;
 
     }
 
-    .identical-result__view-detail{
+    .identical-result__view-detail {
       display: inline-block;
       margin-top: 20px;
       line-height: 18px;
@@ -5653,73 +5787,73 @@ Trademarks start
     }
   }
 
-  .found_download{
+  .found_download {
     display: none;
   }
 
-  .available-domain{
-    .available-domain__heading{
+  .available-domain {
+    .available-domain__heading {
       font-size: 16px;
     }
-    .country-name__icon{
+    .country-name__icon {
       display: none;
     }
-    .available-domain__country-name__mobile-hide{
+    .available-domain__country-name__mobile-hide {
       display: none;
     }
 
-    .available-domain__country-name{
+    .available-domain__country-name {
       font-size: 22px;
     }
 
-    .available-domain__item{
+    .available-domain__item {
       display: flex;
       flex-flow: row wrap;
     }
 
-    .available-domain__register-button{
+    .available-domain__register-button {
       margin: 0 0 0 10px;
-      order:1;
+      order: 1;
     }
   }
 
-  .scroll-top{
+  .scroll-top {
     display: block;
   }
 
-  .main-page{
-    .filter__continent-search--hide{
+  .main-page {
+    .filter__continent-search--hide {
       display: block;
     }
   }
 
   .cart {
-    .cart-icon{
+    .cart-icon {
       width: 30px;
       height: 30px;
     }
-    .cart-content{
+    .cart-content {
       left: -275px;
     }
   }
 
-  .element-box{
-    .element-box--mobile-right{
+  .element-box {
+    .element-box--mobile-right {
       text-align: right;
     }
-    &.element-box--pure{
-      &.element-box--column-right{
+    &.element-box--pure {
+      &.element-box--column-right {
         padding: 50px 0 50px 60px;
         background: #f7f6f6;
         box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.75);
         border: 1px solid #606060;
-        .element-box-inner{
+        .element-box-inner {
           display: flex;
           flex-flow: row wrap;
           max-height: inherit;
         }
-        .element-box__element-item{
-          flex:0 0 50%;
+        .element-box__element-item {
+          flex: 0 0 50%;
         }
       }
     }
@@ -5727,189 +5861,189 @@ Trademarks start
 
   .checkbox-list {
     .checkbox-list__checkbox-group {
-      .pseudo-checkbox.pseudo-checkbox--large{
+      .pseudo-checkbox.pseudo-checkbox--large {
         left: 0;
       }
     }
   }
 
   /*check-order*/
-  .check-order{
-    .edit-control-panel{
+  .check-order {
+    .edit-control-panel {
       display: flex;
       flex-flow: row wrap;
     }
-    .context-remark{
+    .context-remark {
       flex: 0 0 100%;
       padding-left: 0;
     }
 
-    .btn-small{
-      order:1;
+    .btn-small {
+      order: 1;
       margin-right: 10px;
     }
 
-    .edit-button{
+    .edit-button {
       bottom: auto;
       left: auto;
-      top:10px;
+      top: 10px;
       right: 10px;
       width: 20px;
       height: 20px;
     }
   }
 
-  .radio-list.payments-options{
+  .radio-list.payments-options {
     padding: 20px;
   }
 
-  .image-list{
-    .image-list__item{
+  .image-list {
+    .image-list__item {
       width: 40px;
     }
   }
 
-  .bulk-search{
+  .bulk-search {
     margin-top: 8px;
   }
 
-  .text-container{
+  .text-container {
     padding: 20px 0;
-    .text-container__header{
+    .text-container__header {
       margin: 0 0 5px 0;
       font-size: 24px;
     }
-    .text-container__content{
+    .text-container__content {
       padding: 0 0 20px 0;
       font-size: 16px;
     }
   }
 
-  .search-result{
-    .search-result__title{
+  .search-result {
+    .search-result__title {
       font-size: 16px;
       line-height: 43px;
     }
   }
 
-  .extensions-search{
-    .search-result{
-      .search-result__search-button{
+  .extensions-search {
+    .search-result {
+      .search-result__search-button {
         padding: 7px 0 7px 20px;
         font-size: 16px;
       }
     }
-    .checkbox-list__text{
+    .checkbox-list__text {
       font-size: 16px;
     }
   }
 
-  .data-table{
+  .data-table {
     font-size: 16px;
-    .data-table_header{
+    .data-table_header {
       display: none;
     }
 
-    .data-table__title{
-      .arrow-down{
+    .data-table__title {
+      .arrow-down {
         display: none;
       }
     }
-    .data-table_cell{
+    .data-table_cell {
       padding: 8px 0;
       position: relative;
     }
-    .data-table__item-icon{
+    .data-table__item-icon {
       position: absolute;
-      left:15px;
-      top:50%;
+      left: 15px;
+      top: 50%;
       margin-top: -12px;
 
     }
   }
 
-  .data-table_cell_mobile-show{
+  .data-table_cell_mobile-show {
     display: block;
   }
-  .data-table_cell_mobile-hide{
+  .data-table_cell_mobile-hide {
     display: none;
   }
-  .header__nav{
-    .header__nav-item{
-      &.header__nav-item__home-icon:before{
+  .header__nav {
+    .header__nav-item {
+      &.header__nav-item__home-icon:before {
         width: 20px;
-        top:8px;
+        top: 8px;
       }
     }
   }
 
-  .header-info--desktop-hide{
+  .header-info--desktop-hide {
     display: block;
   }
 
   .content-box {
-    .request-form_body{
+    .request-form_body {
       padding: 40px 10px 10px;
-      .col-form-label{
+      .col-form-label {
         font-size: 16px;
       }
     }
   }
-  .header-info{
-    .header-info__icon{
+  .header-info {
+    .header-info__icon {
       width: 35px;
       left: -15px;
       bottom: 0;
-      &.header-info__icon--right{
-        top:0;
+      &.header-info__icon--right {
+        top: 0;
         right: 0;
       }
     }
-    &.header-info__hosting{
+    &.header-info__hosting {
       margin-bottom: 40px;
-      .header-info__heading{
+      .header-info__heading {
         margin: 0;
       }
-      .header-info-countries{
+      .header-info-countries {
         padding: 30px 0;
       }
     }
   }
 
-  .card-list.card-list_flexbox{
-    .card-item__name{
+  .card-list.card-list_flexbox {
+    .card-item__name {
       font-size: 18px;
     }
   }
 
   .form.content-box {
-    .form__form-body{
-      padding: 40px ;
+    .form__form-body {
+      padding: 40px;
     }
     .simple-list {
       margin-bottom: 30px;
       padding: 0 40px 0 55px;
     }
-    .image-list{
+    .image-list {
       margin: 40px 0 0;
     }
-    .image-list__item{
+    .image-list__item {
       max-width: 65px;
     }
   }
 
   .sign-up-form {
-    .image-list{
+    .image-list {
       margin: 20px 0;
     }
-    .col-form-label{
+    .col-form-label {
       font-size: 18px;
     }
 
-    .simple-list{
-      .simple-list__item{
-        &.simple-list__item--error-icon{
-          &:before{
+    .simple-list {
+      .simple-list__item {
+        &.simple-list__item--error-icon {
+          &:before {
             font-size: 16px;
             left: -16px;
             top: 4px;
@@ -5919,139 +6053,146 @@ Trademarks start
     }
   }
 
-  .note{
-    .simple-list{
-      .simple-list__item{
+  .note {
+    .simple-list {
+      .simple-list__item {
         font-size: 18px;
       }
     }
   }
 
-  .order-details{
-    .content-box_header-context{
+  .order-details {
+    .content-box_header-context {
       padding: 0 40px;
     }
-    .check-order{
+    .check-order {
       padding: 30px 30px 0;
     }
-    .description-list{
+    .description-list {
       margin: 30px 30px 0;
     }
   }
 
-  .box-text{
+  .box-text {
     padding: 30px 40px;
   }
 
-  .description-list{
-    .description-list__title{
+  .description-list {
+    .description-list__title {
       font-size: 22px;
     }
-    .description-list__item{
+    .description-list__item {
       font-size: 18px;
     }
   }
 
-  .control-buttons{
-    .btn-next{
+  .control-buttons {
+    .btn-next {
       padding: 6px 20px;
     }
   }
 
-  .filter__box{
-    .filter__item{
+  .filter__box {
+    .filter__item {
       width: 50%;
     }
   }
 
-  .domain-stage{
-    .list-with-icon--icon-top{
+  .domain-stage {
+    .list-with-icon--icon-top {
       margin: 0;
-      .list-with-icon__item{
+      .list-with-icon__item {
         justify-content: center;
         margin: 0 0 20px 0;
       }
-      .list-with-icon__icon{
+      .list-with-icon__icon {
         margin: 0 auto 20px;
       }
-      .list-with-icon__title{
+      .list-with-icon__title {
         text-align: center;
       }
     }
   }
 
-  .simple-table{
-    .simple-table__item{
+  .simple-table {
+    .simple-table__item {
       font-size: 16px;
     }
   }
 
-  .header-info-countries{
+  .header-info-countries {
     padding: 0;
   }
 
   .world-map {
     &.trademarks-map {
-      img{
+      img {
         height: 280px;
       }
-      .continent-item{
+      .continent-item {
         width: 80px;
         height: 100px;
       }
-      .north_america{
+      .north_america {
         height: 100px;
       }
-      .central_america{
+      .central_america {
         left: 150px;
       }
-      .south_america{
+      .south_america {
         left: 80px;
       }
-      .europe{
+      .europe {
         left: 350px;
       }
-      .middle-east{
+      .middle-east {
         display: none;
       }
-      .africa{
+      .africa {
         left: 320px;
       }
-      .asia{
+      .asia {
         left: 490px;
         top: 40px;
       }
-      .oceania{
+      .oceania {
         right: 25px;
         bottom: 30px;
       }
     }
   }
 
-  .available-elements{
-    top:0;
+  .available-elements {
+    top: 0;
   }
 
-  .header-info{
-    &.trademark{
-      .header-info-countries{
+  .header-info {
+    &.trademark {
+      .header-info-countries {
         padding: 0;
       }
     }
   }
 
-  .header-box{
+  .header-box {
     padding: 20px 0;
   }
 
-  .heading{
+  .heading {
     font-size: 22px;
   }
 
-  .heading-remark{
+  .heading-remark {
     font-size: 18px;
   }
 
+  .data-table {
+    .data-table__item--flexbox {
+      .data-table__item-icon {
+        left: 0;
+      }
+    }
+  }
 }
 
 @media screen and  (min-width: 768px) {
@@ -6171,7 +6312,7 @@ Trademarks start
       padding: 20px 25px;
     }
     .order-item__country-flag{
-      width: 50px;
+
       display: inline-block;
     }
     .order-item__heading{
@@ -6326,6 +6467,44 @@ Trademarks start
   .slickslider-horizontal{
     margin: 0;
   }
+
+  .control-box{
+    &.flexbox{
+      flex-flow: row wrap;
+      .control-box__title{
+        &.control-box__title--single{
+          flex:0 0 100%;
+        }
+      }
+    }
+    .radio-checkbox-group__text{
+      font-size: 18px;
+    }
+    .control-box__title{
+     font-size: 18px;
+      margin-bottom: 5px;
+    }
+    .form-control{
+      margin: 0 15px 0 0;
+      font-size: 18px;
+    }
+  }
+  .data-table{
+    .data-table__item.data-table__item--flexbox{
+      .data-table_cell{
+        &.mobile-hide{
+          display: none;
+        }
+      }
+    }
+  }
+
+  .note-text{
+    .note-text__item{
+      margin-bottom: 30px;
+    }
+  }
+
 }
 
 @media screen and  (max-width: 767px) {
@@ -6859,7 +7038,7 @@ Trademarks start
     }
 
     .order-item__country-flag{
-      width: 40px;
+
       display: inline-block;
     }
 
@@ -7638,4 +7817,55 @@ Trademarks start
       margin-bottom: 20px;
     }
   }
+
+  .control-box{
+    &.flexbox{
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
+    .control-box__title.control-box__title--single{
+      flex: 0 0 100%;
+    }
+    .form-control{
+      padding: 5px;
+      width: 48%;
+      margin: 0;
+      font-size: 14px;
+    }
+    .control-box__title{
+      margin-bottom: 5px;
+      font-size: 18px;
+    }
+    .radio-checkbox-group{
+      margin: 0;
+      width: 100%;
+    }
+    &.control-box--inline .form-control{
+     width: 70%;
+    }
+    .helper{
+      margin-left: 10px;
+    }
+  }
+
+  .note-text{
+    font-size: 14px;
+    .note-text-title{
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+    .note-text__item{
+        margin-bottom: 20px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .flexbox{
+    &.flexbox-start{
+      justify-content: flex-start;
+    }
+  }
 }
+
