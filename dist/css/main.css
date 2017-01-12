@@ -6844,7 +6844,7 @@ button:active, button:focus {
   background-size: cover; }
 
 .header-info.header-info_trademark-renewal {
-  background: url("../img/categories/all-services.jpg") no-repeat;
+  background: url("../img/icons/all-services.jpg") no-repeat;
   background-size: 100% 100%; }
   .header-info.header-info_trademark-renewal .breadcrumbs {
     top: 5px;
@@ -6863,6 +6863,12 @@ button:active, button:focus {
     top: 0;
     left: auto;
     bottom: auto; }
+
+.header-info.header-info--country-renewal {
+  background: url("../img/categories/usa.jpg") no-repeat;
+  background-size: 100% 100%; }
+  .header-info.header-info--country-renewal .header-info-countries {
+    padding: 70px 0; }
 
 .header-info.header-info__all-services {
   background: url("../img/categories/all-services.jpg") no-repeat;
@@ -6884,6 +6890,11 @@ button:active, button:focus {
     .header-info.header-info__all-services.trademark-service .icon-trademark {
       width: 90px;
       margin: 0 auto; }
+
+.header-info .header-info--country-flag {
+  position: absolute;
+  right: 20px;
+  top: 30px; }
 
 /*europe*/
 .europe .header-info {
@@ -8223,7 +8234,7 @@ second site
   top: 35px; }
 
 .advantages {
-  margin-top: 50px; }
+  margin-top: 30px; }
 
 .context-remark {
   padding: 5px 10px;
@@ -8566,6 +8577,12 @@ user login  end
   .simple-list.simple-list--large .simple-list__title {
     font-size: 40px;
     font-weight: 700; }
+
+.simple-list.simple-list--renewal .simple-list__item {
+  margin-bottom: 20px;
+  font-size: 19px; }
+  .simple-list.simple-list--renewal .simple-list__item:last-child {
+    margin-bottom: 40px; }
 
 /*simple-list end*/
 /*=============
@@ -10082,6 +10099,14 @@ card-payment  end
   background-size: contain;
   width: 100%; }
 
+.vertical-slider.arrow-blue .slick-prev {
+  background: url(../img/icons/up-arrow-key.png) #d4e3fc no-repeat 50%;
+  background-size: 40px; }
+
+.vertical-slider.arrow-blue .slick-next {
+  background: url(../img/icons/down-arrow-key.png) #d4e3fc no-repeat 50%;
+  background-size: 40px; }
+
 .slick-slide a:focus {
   outline: none; }
 
@@ -10268,6 +10293,29 @@ Trademarks start
 .watch-plans .order-button {
   font-size: 19px;
   padding: 6px 70px; }
+
+.simple-note {
+  margin-bottom: 25px;
+  font-size: 19px;
+  color: #606060; }
+
+.bordered-image-renewal {
+  border: 3px solid #a6ce2f;
+  border-radius: 15px; }
+
+.order-button.order-button--large {
+  padding: 6px 40px;
+  font-size: 28px;
+  background-color: #0c59cf; }
+
+.order-button.order-button--shadowed {
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.75); }
+
+.view-more {
+  display: block;
+  margin: 10px 0 0;
+  font-size: 18px;
+  color: #006ce5; }
 
 @media screen and (max-width: 1368px) {
   .our-clients-container {
@@ -10634,7 +10682,7 @@ Trademarks start
     padding: 20px 0; }
     .text-container .text-container__header {
       margin: 0 0 5px 0;
-      font-size: 24px; }
+      font-size: 32px; }
     .text-container .text-container__content {
       padding: 0 0 20px 0;
       font-size: 16px; }
@@ -10688,6 +10736,8 @@ Trademarks start
       margin: 0; }
     .header-info.header-info__hosting .header-info-countries {
       padding: 30px 0; }
+  .header-info.header-info--country-renewal .header-info-countries {
+    padding: 50px 0; }
   .card-list.card-list_flexbox .card-item__name {
     font-size: 18px; }
   .form.content-box .form__form-body {
@@ -10768,6 +10818,8 @@ Trademarks start
     top: 0; }
   .header-info.trademark .header-info-countries {
     padding: 0; }
+  .header-info.header-info__all-services.trademark-service .header-info__icon {
+    left: 0; }
   .header-box {
     padding: 20px 0; }
   .heading {
@@ -10790,7 +10842,9 @@ Trademarks start
     text-align: center; }
   .watch-plans .order-button {
     padding: 6px 30px;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+  .simple-note {
+    font-size: 16px; } }
 
 @media screen and (min-width: 768px) {
   .mobile-layout {
@@ -10993,6 +11047,12 @@ Trademarks start
   .control-box .form-control {
     margin: 0 15px 0 0;
     font-size: 18px; }
+  .radio-checkbox-group input[type=radio] + .pseudo-radio {
+    height: 15px;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 15px;
+        -ms-flex: 0 0 15px;
+            flex: 0 0 15px; }
   .data-table .data-table__item.data-table__item--flexbox .data-table_cell.mobile-hide {
     display: none; }
   .note-text .note-text__item {
@@ -11226,6 +11286,10 @@ Trademarks start
     font-weight: 400; }
   .header-info.header-info__hosting .header-info-countries {
     padding: 5px; }
+  .header-info .header-info--country-flag {
+    position: absolute;
+    right: 15px;
+    top: 14px; }
   .header-info-countries .header-info__country {
     margin: 10px 0;
     padding: 0 20px 0; }
@@ -11673,6 +11737,9 @@ Trademarks start
     padding: 0; }
   .header-info.header-info_trademark-renewal .header-info__country {
     padding: 10px; }
+  .header-info.header-info--country-renewal {
+    background: url(../img/categories/usa-mobile.png) no-repeat;
+    background-size: 100% 100%; }
   .request-form_body .btn-next {
     width: 100%; }
   .hosting-plans .icon {
@@ -11747,6 +11814,15 @@ Trademarks start
     font-weight: 700; }
     .note .simple-list .simple-list__item:before {
       left: -10px; }
+  .simple-list.simple-list--renewal {
+    margin: 20px 0 0; }
+    .simple-list.simple-list--renewal .simple-list__item {
+      padding-left: 15px;
+      font-size: 16px; }
+      .simple-list.simple-list--renewal .simple-list__item:last-child {
+        margin: 0 0 20px; }
+      .simple-list.simple-list--renewal .simple-list__item:before {
+        left: 0; }
   .helper-wrap {
     margin-bottom: 5px; }
   .wrap-box {
@@ -11854,6 +11930,28 @@ Trademarks start
         font-size: 19px;
         font-weight: 500;
         color: #fff; }
+      .simple-mobile-menu .simple-mobile-menu__item .simple-mobile-menu__arrow:after {
+        content: "\f0da";
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        float: right;
+        margin-right: 40px;
+        position: relative;
+        top: 4px; }
+    .simple-mobile-menu.simple-mobile-menu__dropdown {
+      display: none;
+      margin: 0; }
+      .simple-mobile-menu.simple-mobile-menu__dropdown .simple-mobile-menu__item {
+        padding: 0 0 0 15px;
+        border: none; }
+        .simple-mobile-menu.simple-mobile-menu__dropdown .simple-mobile-menu__item:first-child a {
+          padding: 0 0 7px 0; }
+        .simple-mobile-menu.simple-mobile-menu__dropdown .simple-mobile-menu__item a {
+          font-size: 16px; }
   /*simple-mobile-menu*/
   .heading.bottom-indent {
     margin-bottom: 20px; }
@@ -11912,4 +12010,11 @@ Trademarks start
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
         -ms-flex-pack: start;
-            justify-content: flex-start; } }
+            justify-content: flex-start; }
+  .bordered-image-renewal {
+    max-width: 280px;
+    display: block;
+    margin: 0 auto; }
+  .order-button.order-button--large {
+    width: 100%;
+    font-size: 18px; } }
