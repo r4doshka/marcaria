@@ -9414,6 +9414,8 @@ card-payment  end
     padding: 0 0 40px 0;
     color: #021f54;
     font-size: 25px; }
+    .text-container .text-container__content.text-container__content--indent {
+      padding: 0 70px 40px; }
 
 .extensions-search .checkbox-list__checkbox-item {
   border: none;
@@ -9474,6 +9476,11 @@ card-payment  end
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
+    .data-table .data-table__title.data-table__title--flexbox.data-table__item--auto-width .data-table_cell:first-child {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+          -ms-flex: 1;
+              flex: 1; }
     .data-table .data-table__title.data-table__title--flexbox .data-table_cell {
       -webkit-box-flex: 1;
       -webkit-flex: 1;
@@ -9502,6 +9509,11 @@ card-payment  end
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
+    .data-table .data-table__item.data-table__item--flexbox.data-table__item--auto-width .data-table_cell:first-child {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+          -ms-flex: 1;
+              flex: 1; }
     .data-table .data-table__item.data-table__item--flexbox .data-table_cell {
       -webkit-box-flex: 1;
       -webkit-flex: 1;
@@ -10598,6 +10610,8 @@ Trademarks start
     .text-container .text-container__content {
       padding: 0 0 20px 0;
       font-size: 16px; }
+      .text-container .text-container__content.text-container__content--indent {
+        padding: 0 0 30px; }
   .search-result .search-result__title {
     font-size: 16px;
     line-height: 43px; }
@@ -10739,7 +10753,12 @@ Trademarks start
   .mobile-layout {
     display: none; }
   .desktop-layout {
-    display: block; } }
+    display: block; }
+  .pagination.pagination--table-show {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
   /*breadcrumbs*/
@@ -11791,6 +11810,8 @@ Trademarks start
   /*simple-mobile-menu*/
   .heading.bottom-indent {
     margin-bottom: 20px; }
+  .control-box:last-child {
+    margin: 0; }
   .control-box.flexbox {
     -webkit-flex-flow: row wrap;
         -ms-flex-flow: row wrap;
@@ -11813,12 +11834,24 @@ Trademarks start
     margin-bottom: 5px;
     font-size: 18px; }
   .control-box .radio-checkbox-group {
-    margin: 0;
+    margin: 0 0 10px;
     width: 100%; }
+    .control-box .radio-checkbox-group:last-child {
+      margin: 0; }
   .control-box.control-box--inline .form-control {
     width: 70%; }
   .control-box .helper {
     margin-left: 10px; }
+  .control-box .control-box__item {
+    margin: 0 0 20px;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%; }
+    .control-box .control-box__item:last-child {
+      margin: 0; }
+    .control-box .control-box__item .form-control {
+      width: 100%; }
   .note-text {
     font-size: 14px; }
     .note-text .note-text-title {

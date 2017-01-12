@@ -4427,6 +4427,9 @@ card-payment  end
     padding: 0 0 40px 0;
     color: #021f54;
     font-size: 25px;
+    &.text-container__content--indent{
+      padding: 0 70px 40px;
+    }
   }
 }
 
@@ -4483,6 +4486,13 @@ card-payment  end
       }
       &.data-table__title--flexbox{
         display: flex;
+        &.data-table__item--auto-width{
+          .data-table_cell{
+            &:first-child{
+              flex: 1;
+            }
+          }
+        }
         .data-table_cell{
           flex: 1;
           padding: 25px 3px;
@@ -4515,6 +4525,13 @@ card-payment  end
       }
       &.data-table__item--flexbox{
         display: flex;
+        &.data-table__item--auto-width{
+          .data-table_cell{
+            &:first-child{
+              flex: 1;
+            }
+          }
+        }
         .data-table_cell{
           flex: 1;
           padding: 25px 3px;
@@ -5958,6 +5975,9 @@ Trademarks start
     .text-container__content {
       padding: 0 0 20px 0;
       font-size: 16px;
+      &.text-container__content--indent{
+        padding: 0 0 30px;
+      }
     }
   }
 
@@ -6243,6 +6263,11 @@ Trademarks start
   }
   .desktop-layout {
     display: block;
+  }
+  .pagination{
+    &.pagination--table-show{
+      display: flex;
+    }
   }
 }
 
@@ -7890,6 +7915,9 @@ Trademarks start
   }
 
   .control-box{
+    &:last-child{
+      margin: 0;
+    }
     &.flexbox{
       flex-flow: row wrap;
       justify-content: space-between;
@@ -7908,14 +7936,27 @@ Trademarks start
       font-size: 18px;
     }
     .radio-checkbox-group{
-      margin: 0;
+      margin: 0 0 10px;
       width: 100%;
+      &:last-child{
+        margin: 0;
+      }
     }
     &.control-box--inline .form-control{
      width: 70%;
     }
     .helper{
       margin-left: 10px;
+    }
+    .control-box__item{
+      margin: 0 0 20px;
+      flex:0 0 100%;
+      &:last-child{
+        margin: 0;
+      }
+      .form-control{
+        width: 100%;
+      }
     }
   }
 
