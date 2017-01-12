@@ -6845,7 +6845,7 @@ button:active, button:focus {
 
 .header-info.header-info__all-services {
   background: url("../img/categories/all-services.jpg") no-repeat;
-  background-size: cover; }
+  background-size: 100% 100%; }
   .header-info.header-info__all-services .header-info__content {
     margin: 20px 0 120px;
     padding: 20px 40px;
@@ -6853,6 +6853,16 @@ button:active, button:focus {
   .header-info.header-info__all-services .breadcrumbs {
     top: 5px;
     left: 10px; }
+  .header-info.header-info__all-services.trademark-service {
+    background: url("../img/icons/all-services.jpg") no-repeat;
+    background-size: 100% 100%; }
+    .header-info.header-info__all-services.trademark-service .header-info__content {
+      margin: 20px 0 60px; }
+    .header-info.header-info__all-services.trademark-service .header-info__text {
+      margin: 0; }
+    .header-info.header-info__all-services.trademark-service .icon-trademark {
+      width: 90px;
+      margin: 0 auto; }
 
 /*europe*/
 .europe .header-info {

@@ -1508,7 +1508,7 @@ button{
 
   &.header-info__all-services{
     background: url('../img/categories/all-services.jpg') no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     .header-info__content{
       margin: 20px 0 120px;
       padding: 20px 40px;
@@ -1517,6 +1517,20 @@ button{
     .breadcrumbs {
       top: 5px;
       left: 10px;
+    }
+    &.trademark-service{
+      background: url('../img/icons/all-services.jpg') no-repeat;
+      background-size: 100% 100%;
+      .header-info__content{
+        margin: 20px 0 60px;
+      }
+      .header-info__text{
+        margin: 0;
+      }
+      .icon-trademark{
+        width: 90px;
+        margin: 0 auto;
+      }
     }
   }
 }
