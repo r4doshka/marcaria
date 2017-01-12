@@ -8522,6 +8522,10 @@ user login  start
   text-decoration: underline;
   color: #0082eb; }
 
+/*=============
+user login  end
+===============*/
+/*simple-list start*/
 .simple-list .simple-list__title {
   font-size: 20px;
   color: #01309a; }
@@ -8548,9 +8552,22 @@ user login  start
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; }
 
-/*=============
-user login  end
-===============*/
+.simple-list.simple-list--grey .simple-list__item {
+  color: #444; }
+
+.simple-list.simple-list--grey .simple-list__title {
+  color: #444; }
+
+.simple-list.simple-list--large {
+  padding-right: 30px; }
+  .simple-list.simple-list--large .simple-list__item {
+    margin-bottom: 30px;
+    font-size: 19px; }
+  .simple-list.simple-list--large .simple-list__title {
+    font-size: 40px;
+    font-weight: 700; }
+
+/*simple-list end*/
 /*=============
 domain select  start
 ===============*/
@@ -10241,6 +10258,17 @@ Trademarks start
   .list-group .list-group__item-text {
     margin-left: 20px; }
 
+.watch-plans .watch-plans__icon {
+  width: 90px;
+  margin: 0 0 15px 0; }
+
+.watch-plans .hosting-plans__price {
+  margin: 0 0 30px 0; }
+
+.watch-plans .order-button {
+  font-size: 19px;
+  padding: 6px 70px; }
+
 @media screen and (max-width: 1368px) {
   .our-clients-container {
     margin: 40px 40px 60px; } }
@@ -10747,7 +10775,22 @@ Trademarks start
   .heading-remark {
     font-size: 18px; }
   .data-table .data-table__item--flexbox .data-table__item-icon {
-    left: 0; } }
+    left: 0; }
+  .simple-list.simple-list--large .simple-list__title {
+    font-size: 20px; }
+  .simple-list.simple-list--large .simple-list__item {
+    margin: 0 0 20px 0;
+    padding: 0 0 0 20px;
+    font-size: 14px; }
+    .simple-list.simple-list--large .simple-list__item:before {
+      left: 0; }
+  .watch-plans .watch-plans__icon {
+    width: 50px; }
+  .watch-plans .hosting-plans__price {
+    text-align: center; }
+  .watch-plans .order-button {
+    padding: 6px 30px;
+    margin: 0 auto; } }
 
 @media screen and (min-width: 768px) {
   .mobile-layout {
@@ -11618,6 +11661,10 @@ Trademarks start
     padding: 10px; }
   .header-info.header-info__all-services .header-info__text {
     margin: 10px 0 10px; }
+  .header-info.header-info__all-services.trademark-service .header-info__content {
+    margin: 20px 0; }
+  .header-info.header-info__all-services.trademark-service .icon-trademark {
+    width: 60px; }
   .header-info.header-info_trademark-renewal .header-info-countries {
     padding: 0; }
   .header-info.header-info_trademark-renewal .header-info__text {
