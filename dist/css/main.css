@@ -5816,11 +5816,11 @@ button:active, button:focus {
 .header-info .header-info__icon {
   position: absolute;
   left: 0;
-  bottom: -50px;
+  bottom: -40px;
   width: 94px; }
   .header-info .header-info__icon.header-info__icon--right {
     right: 0;
-    top: -56px;
+    top: -40px;
     left: auto;
     bottom: auto; }
 
@@ -5890,7 +5890,7 @@ button:active, button:focus {
     cursor: pointer; }
 
 .faq {
-  margin-top: 100px; }
+  margin-top: 50px; }
   .faq .faq-container {
     background: #f7f6f6;
     padding: 30px 0 60px;
@@ -6842,6 +6842,27 @@ button:active, button:focus {
 .header-info.header-info__central-america {
   background: url("../img/continents_background/central-america.png") no-repeat;
   background-size: cover; }
+
+.header-info.header-info_trademark-renewal {
+  background: url("../img/categories/all-services.jpg") no-repeat;
+  background-size: 100% 100%; }
+  .header-info.header-info_trademark-renewal .breadcrumbs {
+    top: 5px;
+    left: 15px; }
+  .header-info.header-info_trademark-renewal .header-info-countries {
+    padding: 30px 0; }
+  .header-info.header-info_trademark-renewal .header-info__heading {
+    padding: 40px 0 0; }
+  .header-info.header-info_trademark-renewal .header-info__text {
+    margin: 0 120px; }
+  .header-info.header-info_trademark-renewal .header-info__icon {
+    left: 0;
+    bottom: 0; }
+  .header-info.header-info_trademark-renewal .header-info__icon.header-info__icon--right {
+    right: 0;
+    top: 0;
+    left: auto;
+    bottom: auto; }
 
 .header-info.header-info__all-services {
   background: url("../img/categories/all-services.jpg") no-repeat;
@@ -10736,12 +10757,18 @@ Trademarks start
     text-shadow: 0 3px 3px #020202; }
   .header-info .header-info__text {
     font-size: 20px; }
-  .dropdown-menu__top .dropdown-menu__toggle {
-    padding: 5px; }
+  .header-info.header-info_trademark-renewal .header-info-countries {
+    padding: 0; }
+  .header-info.header-info_trademark-renewal .header-info__country {
+    padding: 0; }
+  .header-info.header-info_trademark-renewal .header-info__heading {
+    padding: 0; }
   .header-info-countries .header-info__country {
     display: block;
     margin: 20px 0;
     padding: 15px 20px; }
+  .dropdown-menu__top .dropdown-menu__toggle {
+    padding: 5px; }
   /*filter*/
   .main-search {
     padding: 0 15px 30px; }
@@ -11568,7 +11595,17 @@ Trademarks start
   .search-wrap .main-search .main-search__search-button {
     text-indent: -999999px; }
   .header-info.header-info__all-services .header-info__content {
-    margin-bottom: 60px;
+    margin-bottom: 20px;
+    padding: 10px; }
+  .header-info.header-info__all-services .header-info__text {
+    margin: 10px 0 10px; }
+  .header-info.header-info_trademark-renewal .header-info-countries {
+    padding: 0; }
+  .header-info.header-info_trademark-renewal .header-info__text {
+    margin: 0; }
+  .header-info.header-info_trademark-renewal .header-info__heading {
+    padding: 0; }
+  .header-info.header-info_trademark-renewal .header-info__country {
     padding: 10px; }
   .request-form_body .btn-next {
     width: 100%; }

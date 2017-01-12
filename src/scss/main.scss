@@ -331,12 +331,12 @@ button{
   .header-info__icon{
     position: absolute;
     left: 0;
-    bottom: -50px;
+    bottom: -40px;
     width: 94px;
 
     &.header-info__icon--right{
       right: 0;
-      top: -56px;
+      top: -40px;
       left:auto;
       bottom: auto;
     }
@@ -419,7 +419,7 @@ button{
 }
 
 .faq{
-  margin-top: 100px;
+  margin-top: 50px;
   .faq-container{
     background: #f7f6f6;
     padding: 30px 0 60px;
@@ -1504,6 +1504,34 @@ button{
   &.header-info__central-america{
     background: url('../img/continents_background/central-america.png') no-repeat;
     background-size: cover;
+  }
+
+  &.header-info_trademark-renewal{
+    background: url('../img/categories/all-services.jpg') no-repeat;
+    background-size: 100% 100%;
+    .breadcrumbs{
+      top:5px;
+      left: 15px;
+    }
+    .header-info-countries{
+      padding: 30px 0;
+    }
+    .header-info__heading{
+      padding: 40px 0 0;
+    }
+    .header-info__text{
+      margin: 0 120px;
+    }
+    .header-info__icon{
+      left: 0;
+      bottom: 0;
+    }
+    .header-info__icon.header-info__icon--right{
+      right: 0;
+      top: 0;
+      left: auto;
+      bottom: auto;
+    }
   }
 
   &.header-info__all-services{
@@ -6227,7 +6255,7 @@ Trademarks start
   }
 
   /*header*/
-  .header-info {
+  .header-info{
     .header-info__heading{
       font-size: 32px;
       img{
@@ -6243,10 +6271,16 @@ Trademarks start
     .header-info__text{
       font-size: 20px;
     }
-  }
-  .dropdown-menu__top{
-    .dropdown-menu__toggle{
-      padding: 5px ;
+    &.header-info_trademark-renewal{
+      .header-info-countries{
+        padding: 0;
+      }
+      .header-info__country{
+        padding: 0;
+      }
+      .header-info__heading{
+        padding: 0;
+      }
     }
   }
 
@@ -6255,6 +6289,12 @@ Trademarks start
       display: block;
       margin: 20px 0;
       padding: 15px 20px;
+    }
+  }
+
+  .dropdown-menu__top{
+    .dropdown-menu__toggle{
+      padding: 5px ;
     }
   }
 
@@ -7516,8 +7556,25 @@ Trademarks start
   .header-info{
     &.header-info__all-services{
       .header-info__content{
-        margin-bottom: 60px;
+        margin-bottom: 20px;
         padding: 10px;
+      }
+      .header-info__text{
+        margin: 10px 0 10px;
+      }
+    }
+    &.header-info_trademark-renewal{
+      .header-info-countries{
+        padding: 0;
+      }
+      .header-info__text{
+        margin: 0;
+      }
+      .header-info__heading{
+        padding: 0;
+      }
+      .header-info__country{
+        padding: 10px ;
       }
     }
   }
