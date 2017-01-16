@@ -9720,6 +9720,8 @@ card-payment  end
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale; }
+  .pagination.pagination--top-indent {
+    margin: 60px 0 30px; }
 
 /* pagination end*/
 .align-right {
@@ -10006,6 +10008,21 @@ card-payment  end
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
+  .flexbox.flexbox-start {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  .flexbox.flexbox-end {
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+  .flexbox.flexbox-center {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
 
 .align-items-middle {
   -webkit-box-align: center;
@@ -10373,6 +10390,12 @@ Trademarks start
 
 .form-wrap {
   padding: 30px 65px; }
+
+.achievement-list {
+  padding-bottom: 40px; }
+  .achievement-list .achievement-list__item {
+    margin-left: 10px;
+    max-height: 75px; }
 
 @media screen and (max-width: 1368px) {
   .our-clients-container {
@@ -12135,11 +12158,6 @@ Trademarks start
       margin-bottom: 20px; }
       .note-text .note-text__item:last-child {
         margin-bottom: 0; }
-  .flexbox.flexbox-start {
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-        -ms-flex-pack: start;
-            justify-content: flex-start; }
   .bordered-image-renewal {
     max-width: 280px;
     display: block;

@@ -4758,6 +4758,9 @@ card-payment  end
       }
     }
   }
+  &.pagination--top-indent{
+    margin: 60px 0 30px;
+  }
 }
 
 /* pagination end*/
@@ -5095,6 +5098,15 @@ card-payment  end
 
 .flexbox{
   display: flex;
+  &.flexbox-start{
+    justify-content: flex-start;
+  }
+  &.flexbox-end{
+    justify-content: flex-end;
+  }
+  &.flexbox-center{
+    justify-content: center;
+  }
 }
 
 .align-items-middle{
@@ -5537,6 +5549,14 @@ Trademarks start
 
 .form-wrap{
   padding: 30px 65px;
+}
+
+.achievement-list{
+  padding-bottom: 40px;
+  .achievement-list__item{
+    margin-left: 10px;
+    max-height: 75px;
+  }
 }
 
 @media screen and (max-width: 1368px) {
@@ -8371,12 +8391,6 @@ Trademarks start
       &:last-child{
         margin-bottom: 0;
       }
-    }
-  }
-
-  .flexbox{
-    &.flexbox-start{
-      justify-content: flex-start;
     }
   }
 
