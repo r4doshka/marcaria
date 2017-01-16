@@ -6889,7 +6889,8 @@ button:active, button:focus {
     background: url("../img/icons/all-services.jpg") no-repeat;
     background-size: 100% 100%; }
     .header-info.header-info__all-services.trademark-service .header-info__content {
-      margin: 20px 0 60px; }
+      margin: 20px 0 60px;
+      padding: 30px 40px; }
     .header-info.header-info__all-services.trademark-service .header-info__text {
       margin: 0;
       padding: 0 55px; }
@@ -10968,6 +10969,14 @@ Trademarks start
     padding: 0; }
   .header-info.header-info_trademark-renewal .header-info__heading {
     padding: 0; }
+  .header-info .header-info__heading-icon {
+    width: 35px;
+    margin: 0 0 0 20px;
+    vertical-align: middle; }
+    .header-info .header-info__heading-icon img {
+      display: block; }
+  .header-info .header-info__heading--indent {
+    margin-bottom: 20px; }
   .header-info-countries .header-info__country {
     display: block;
     margin: 20px 0;
@@ -11405,6 +11414,32 @@ Trademarks start
     top: 14px; }
   .header-info .header-info__description {
     text-shadow: 0 2px 1px #020202; }
+  .header-info.header-info__all-services .header-info__content {
+    margin-bottom: 20px;
+    padding: 10px; }
+  .header-info.header-info__all-services .header-info__text {
+    margin: 10px 0 10px; }
+  .header-info.header-info__all-services.trademark-service .header-info__content {
+    margin: 20px 0; }
+  .header-info.header-info__all-services.trademark-service .icon-trademark {
+    width: 60px; }
+  .header-info.header-info_trademark-renewal .header-info-countries {
+    padding: 0; }
+  .header-info.header-info_trademark-renewal .header-info__text {
+    margin: 0; }
+  .header-info.header-info_trademark-renewal .header-info__heading {
+    padding: 0; }
+  .header-info.header-info_trademark-renewal .header-info__country {
+    padding: 10px; }
+  .header-info.header-info--country-renewal {
+    background: url(../img/categories/usa-mobile.png) no-repeat;
+    background-size: 100% 100%; }
+  .header-info .header-info__heading-icon {
+    width: 18px;
+    margin: 0 0 0 20px;
+    vertical-align: middle; }
+    .header-info .header-info__heading-icon img {
+      display: block; }
   .header-info-countries .header-info__country {
     margin: 10px 0;
     padding: 0 20px 0; }
@@ -11835,26 +11870,6 @@ Trademarks start
     display: block; }
   .search-wrap .main-search .main-search__search-button {
     text-indent: -999999px; }
-  .header-info.header-info__all-services .header-info__content {
-    margin-bottom: 20px;
-    padding: 10px; }
-  .header-info.header-info__all-services .header-info__text {
-    margin: 10px 0 10px; }
-  .header-info.header-info__all-services.trademark-service .header-info__content {
-    margin: 20px 0; }
-  .header-info.header-info__all-services.trademark-service .icon-trademark {
-    width: 60px; }
-  .header-info.header-info_trademark-renewal .header-info-countries {
-    padding: 0; }
-  .header-info.header-info_trademark-renewal .header-info__text {
-    margin: 0; }
-  .header-info.header-info_trademark-renewal .header-info__heading {
-    padding: 0; }
-  .header-info.header-info_trademark-renewal .header-info__country {
-    padding: 10px; }
-  .header-info.header-info--country-renewal {
-    background: url(../img/categories/usa-mobile.png) no-repeat;
-    background-size: 100% 100%; }
   .request-form_body .btn-next {
     width: 100%; }
   .hosting-plans .icon {

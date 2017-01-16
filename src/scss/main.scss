@@ -1565,6 +1565,7 @@ button{
       background-size: 100% 100%;
       .header-info__content{
         margin: 20px 0 60px;
+        padding: 30px 40px;
       }
       .header-info__text{
         margin: 0;
@@ -6574,6 +6575,17 @@ Trademarks start
         padding: 0;
       }
     }
+    .header-info__heading-icon{
+      width: 35px;
+      margin: 0 0 0 20px;
+      vertical-align: middle;
+      img{
+        display: block;
+      }
+    }
+    .header-info__heading--indent{
+      margin-bottom: 20px;
+    }
   }
 
   .header-info-countries {
@@ -7213,6 +7225,50 @@ Trademarks start
     }
     .header-info__description{
       text-shadow: 0 2px 1px #020202;
+    }
+    &.header-info__all-services{
+      .header-info__content{
+        margin-bottom: 20px;
+        padding: 10px;
+      }
+      .header-info__text{
+        margin: 10px 0 10px;
+      }
+      &.trademark-service{
+        .header-info__content{
+          margin: 20px 0;
+        }
+        .icon-trademark{
+          width: 60px;
+        }
+      }
+    }
+    &.header-info_trademark-renewal{
+      .header-info-countries{
+        padding: 0;
+      }
+      .header-info__text{
+        margin: 0;
+      }
+      .header-info__heading{
+        padding: 0;
+      }
+      .header-info__country{
+        padding: 10px ;
+      }
+    }
+    &.header-info--country-renewal{
+      background: url(../img/categories/usa-mobile.png) no-repeat;
+      background-size: 100% 100%;
+    }
+
+    .header-info__heading-icon{
+      width: 18px;
+      margin: 0 0 0 20px;
+      vertical-align: middle;
+      img{
+        display: block;
+      }
     }
   }
 
@@ -7899,44 +7955,6 @@ Trademarks start
       .main-search__search-button{
         text-indent: -999999px;
       }
-    }
-  }
-
-  .header-info{
-    &.header-info__all-services{
-      .header-info__content{
-        margin-bottom: 20px;
-        padding: 10px;
-      }
-      .header-info__text{
-        margin: 10px 0 10px;
-      }
-      &.trademark-service{
-        .header-info__content{
-          margin: 20px 0;
-        }
-        .icon-trademark{
-          width: 60px;
-        }
-      }
-    }
-    &.header-info_trademark-renewal{
-      .header-info-countries{
-        padding: 0;
-      }
-      .header-info__text{
-        margin: 0;
-      }
-      .header-info__heading{
-        padding: 0;
-      }
-      .header-info__country{
-        padding: 10px ;
-      }
-    }
-    &.header-info--country-renewal{
-      background: url(../img/categories/usa-mobile.png) no-repeat;
-      background-size: 100% 100%;
     }
   }
 
