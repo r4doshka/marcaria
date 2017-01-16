@@ -5816,11 +5816,11 @@ button:active, button:focus {
 .header-info .header-info__icon {
   position: absolute;
   left: 0;
-  bottom: -40px;
+  bottom: 0;
   width: 94px; }
   .header-info .header-info__icon.header-info__icon--right {
     right: 0;
-    top: -40px;
+    top: 0;
     left: auto;
     bottom: auto; }
 
@@ -6886,7 +6886,8 @@ button:active, button:focus {
     .header-info.header-info__all-services.trademark-service .header-info__content {
       margin: 20px 0 60px; }
     .header-info.header-info__all-services.trademark-service .header-info__text {
-      margin: 0; }
+      margin: 0;
+      padding: 0 55px; }
     .header-info.header-info__all-services.trademark-service .icon-trademark {
       width: 90px;
       margin: 0 auto; }
@@ -8655,6 +8656,7 @@ domain select  start
     .content-box .content-box__header.content-box__header_indent {
       padding: 10px 0; }
     .content-box .content-box__header.content-box__header--auto-height {
+      padding: 10px 0;
       height: auto; }
     .content-box .content-box__header.content-box__form-header {
       height: auto;
@@ -8911,6 +8913,10 @@ domain select  start
     background: #3d8af7; }
   .btn-next.btn-next_right-indent {
     margin-right: 30px; }
+  .btn-next.btn-next--align-left {
+    float: left; }
+  .btn-next.btn-next--large {
+    padding: 14px 60px; }
 
 .modal-text .modal-dialog {
   width: 500px;
@@ -9063,6 +9069,10 @@ domain configurations  start
 
 .helper.helper--color-blue {
   fill: #3d8af7; }
+
+.helper .helper--large {
+  width: 30px;
+  height: 30px; }
 
 .radio-checkbox-group {
   display: -webkit-box;
@@ -9823,6 +9833,23 @@ card-payment  end
 .form .form-control__active-green {
   border-color: #b2e712; }
 
+.form.form-big .form-group {
+  margin-bottom: 30px; }
+
+.form.form-big .form-control {
+  height: 40px;
+  font-size: 23px;
+  color: #01309a; }
+
+.form.form-big .col-form-label {
+  font-size: 25px;
+  font-weight: 500;
+  color: #021f54; }
+
+.form.form-big .form-control-textarea {
+  height: 140px;
+  resize: none; }
+
 .sign-up-form {
   padding: 60px 120px 60px 80px; }
   .sign-up-form .col-form-label {
@@ -9832,26 +9859,6 @@ card-payment  end
     height: 42px;
     color: #01309a;
     font-size: 16px; }
-  .sign-up-form .float-field-icon {
-    position: absolute;
-    top: 8px;
-    left: 10px; }
-  .sign-up-form .group-wrap {
-    position: relative;
-    color: #75a9f9; }
-    .sign-up-form .group-wrap .form-control {
-      padding-left: 120px;
-      color: #75a9f9;
-      /* Firefox 19+ */
-      /* Firefox 18- */ }
-      .sign-up-form .group-wrap .form-control::-webkit-input-placeholder {
-        color: #75a9f9; }
-      .sign-up-form .group-wrap .form-control::-moz-placeholder {
-        color: #75a9f9; }
-      .sign-up-form .group-wrap .form-control:-moz-placeholder {
-        color: #75a9f9; }
-      .sign-up-form .group-wrap .form-control:-ms-input-placeholder {
-        color: #75a9f9; }
   .sign-up-form .image-list {
     margin-top: 40px; }
     .sign-up-form .image-list .image-list__item {
@@ -9916,6 +9923,10 @@ card-payment  end
     -moz-osx-font-smoothing: grayscale;
     font-size: 35px;
     color: #0844a4; }
+  .float-field .float-field-icon {
+    position: absolute;
+    top: 8px;
+    left: 10px; }
   .float-field .float-field-select {
     width: 100%;
     position: absolute;
@@ -9932,6 +9943,25 @@ card-payment  end
       outline: none; }
     .float-field .float-field-select::-ms-expand {
       display: none; }
+    .float-field .float-field-select.float-field-select--color-blue {
+      color: #01309a; }
+
+.group-wrap {
+  position: relative;
+  color: #75a9f9; }
+  .group-wrap .form-control {
+    padding-left: 120px;
+    color: #75a9f9;
+    /* Firefox 19+ */
+    /* Firefox 18- */ }
+    .group-wrap .form-control::-webkit-input-placeholder {
+      color: #75a9f9; }
+    .group-wrap .form-control::-moz-placeholder {
+      color: #75a9f9; }
+    .group-wrap .form-control:-moz-placeholder {
+      color: #75a9f9; }
+    .group-wrap .form-control:-ms-input-placeholder {
+      color: #75a9f9; }
 
 /*sign up start end*/
 /*note start*/
@@ -10335,6 +10365,9 @@ Trademarks start
   font-size: 18px;
   color: #006ce5; }
 
+.form-wrap {
+  padding: 30px 65px; }
+
 @media screen and (max-width: 1368px) {
   .our-clients-container {
     margin: 40px 40px 60px; } }
@@ -10352,12 +10385,16 @@ Trademarks start
     font-size: 20px; }
   .header-info .header-info__text {
     font-size: 30px; }
+  .header-info .header-info__heading {
+    font-size: 50px; }
+  .header-info .header-info__icon {
+    width: 75px; }
+  .header-info.header-info__all-services.trademark-service .header-info__text {
+    padding: 0 35px; }
   .footer-callback .footer-callback__button {
     margin: 0 10px; }
   .footer-menu .footer-menu__list a {
     font-size: 15px; }
-  .header-info .header-info__heading {
-    font-size: 50px; }
   .header-info-countries .header-info__content {
     display: block; }
   .checkout {
@@ -10755,7 +10792,7 @@ Trademarks start
       font-size: 16px; }
   .header-info .header-info__icon {
     width: 35px;
-    left: -15px;
+    left: 0;
     bottom: 0; }
     .header-info .header-info__icon.header-info__icon--right {
       top: 0;
@@ -10768,6 +10805,12 @@ Trademarks start
       padding: 30px 0; }
   .header-info.header-info--country-renewal .header-info-countries {
     padding: 50px 0; }
+  .header-info.trademark .header-info-countries {
+    padding: 0; }
+  .header-info.header-info__all-services.trademark-service .header-info__icon {
+    left: 0; }
+  .header-info.header-info__all-services.trademark-service .header-info__text {
+    padding: 0; }
   .card-list.card-list_flexbox .card-item__name {
     font-size: 18px; }
   .form.content-box .form__form-body {
@@ -10846,10 +10889,6 @@ Trademarks start
     bottom: 30px; }
   .available-elements {
     top: 0; }
-  .header-info.trademark .header-info-countries {
-    padding: 0; }
-  .header-info.header-info__all-services.trademark-service .header-info__icon {
-    left: 0; }
   .header-box {
     padding: 20px 0; }
   .heading {
@@ -10886,7 +10925,10 @@ Trademarks start
     padding: 40px 0; }
   .header-banner .btn-next {
     padding: 9px 40px;
-    font-size: 16px; } }
+    font-size: 16px; }
+  .helper .helper--large {
+    width: 25px;
+    height: 25px; } }
 
 @media screen and (min-width: 768px) {
   .mobile-layout {
@@ -11084,8 +11126,7 @@ Trademarks start
   .control-box .radio-checkbox-group__text {
     font-size: 18px; }
   .control-box .control-box__title {
-    font-size: 18px;
-    margin-bottom: 5px; }
+    font-size: 18px; }
   .control-box .form-control {
     margin: 0 15px 0 0;
     font-size: 18px; }
@@ -11098,7 +11139,15 @@ Trademarks start
   .data-table .data-table__item.data-table__item--flexbox .data-table_cell.mobile-hide {
     display: none; }
   .note-text .note-text__item {
-    margin-bottom: 30px; } }
+    margin-bottom: 30px; }
+  .form.form-wrap {
+    padding: 35px 30px; }
+  .form.form-big .col-form-label {
+    font-size: 20px; }
+  .form.form-big .form-group {
+    margin-bottom: 25px; }
+  .form.form-big .form-control {
+    font-size: 18px; } }
 
 @media screen and (max-width: 767px) {
   .mobile-layout {
@@ -11349,6 +11398,8 @@ Trademarks start
     position: absolute;
     right: 15px;
     top: 14px; }
+  .header-info .header-info__description {
+    text-shadow: 0 2px 1px #020202; }
   .header-info-countries .header-info__country {
     margin: 10px 0;
     padding: 0 20px 0; }
@@ -12035,7 +12086,6 @@ Trademarks start
     margin: 0;
     font-size: 14px; }
   .control-box .control-box__title {
-    margin-bottom: 5px;
     font-size: 18px; }
   .control-box .radio-checkbox-group {
     margin: 0 0 10px;
@@ -12088,4 +12138,14 @@ Trademarks start
     text-align: center; }
   .header-banner .btn-next {
     width: 100%;
-    padding: 9px 0; } }
+    padding: 9px 0; }
+  .form-wrap {
+    padding: 35px 15px 15px; }
+    .form-wrap.form-big .col-form-label {
+      font-size: 16px; }
+    .form-wrap.form-big .form-group {
+      margin-bottom: 15px; }
+    .form-wrap.form-big .form-control {
+      font-size: 18px; }
+  .btn-next .btn-next--large {
+    width: 100%; } }

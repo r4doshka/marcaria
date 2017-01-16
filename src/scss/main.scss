@@ -331,12 +331,12 @@ button{
   .header-info__icon{
     position: absolute;
     left: 0;
-    bottom: -40px;
+    bottom: 0;
     width: 94px;
 
     &.header-info__icon--right{
       right: 0;
-      top: -40px;
+      top: 0;
       left:auto;
       bottom: auto;
     }
@@ -1563,6 +1563,7 @@ button{
       }
       .header-info__text{
         margin: 0;
+        padding: 0 55px;
       }
       .icon-trademark{
         width: 90px;
@@ -3561,6 +3562,7 @@ domain select  start
     text-align: center;
     background: #d4e3fc;
     &.content-box__header--auto-height{
+      padding: 10px 0;
       height: auto;
     }
     &.content-box__form-header{
@@ -3847,6 +3849,12 @@ domain select  start
   &.btn-next_right-indent{
     margin-right: 30px;
   }
+  &.btn-next--align-left{
+    float: left;
+  }
+  &.btn-next--large{
+    padding: 14px 60px;
+  }
 }
 
 .modal-text{
@@ -4017,6 +4025,10 @@ domain configurations  start
 .helper{
   &.helper--color-blue{
     fill: #3d8af7;
+  }
+  .helper--large{
+      width: 30px;
+      height: 30px;
   }
 }
 
@@ -4892,6 +4904,25 @@ card-payment  end
   .form-control__active-green{
     border-color: #b2e712;
   }
+  &.form-big{
+    .form-group{
+      margin-bottom: 30px;
+    }
+    .form-control{
+      height: 40px;
+      font-size: 23px;
+      color: #01309a;
+    }
+    .col-form-label{
+      font-size: 25px;
+      font-weight: 500;
+      color: #021f54;
+    }
+    .form-control-textarea{
+      height: 140px;
+      resize: none;
+    }
+  }
 }
 .sign-up-form{
   padding: 60px 120px 60px 80px;
@@ -4904,26 +4935,6 @@ card-payment  end
     color: #01309a;
     font-size: 16px;
   }
-
-  .float-field-icon{
-    position: absolute;
-    top: 8px;
-    left: 10px;
-  }
-
-  .group-wrap{
-    position: relative;
-    color: #75a9f9;
-    .form-control{
-      padding-left: 120px;
-      color: #75a9f9;
-      &::-webkit-input-placeholder {color:#75a9f9;}
-      &::-moz-placeholder          {color:#75a9f9;}/* Firefox 19+ */
-      &:-moz-placeholder           {color:#75a9f9;}/* Firefox 18- */
-      &:-ms-input-placeholder      {color:#75a9f9;}
-    }
-  }
-
   .image-list{
     margin-top: 40px;
     .image-list__item{
@@ -4994,6 +5005,11 @@ card-payment  end
     font-size: 35px;
     color: #0844a4;
   }
+  .float-field-icon{
+    position: absolute;
+    top: 8px;
+    left: 10px;
+  }
   .float-field-select{
     width: 100%;
     position: absolute;
@@ -5013,9 +5029,24 @@ card-payment  end
     &::-ms-expand {
       display: none;
     }
+    &.float-field-select--color-blue{
+      color:#01309a;
+    }
   }
 }
 
+.group-wrap{
+  position: relative;
+  color: #75a9f9;
+  .form-control{
+    padding-left: 120px;
+    color: #75a9f9;
+    &::-webkit-input-placeholder {color:#75a9f9;}
+    &::-moz-placeholder          {color:#75a9f9;}/* Firefox 19+ */
+    &:-moz-placeholder           {color:#75a9f9;}/* Firefox 18- */
+    &:-ms-input-placeholder      {color:#75a9f9;}
+  }
+}
 /*sign up start end*/
 
 /*note start*/
@@ -5498,6 +5529,10 @@ Trademarks start
   color: #006ce5;
 }
 
+.form-wrap{
+  padding: 30px 65px;
+}
+
 @media screen and (max-width: 1368px) {
   .our-clients-container {
     margin: 40px 40px 60px;
@@ -5533,6 +5568,17 @@ Trademarks start
     .header-info__text{
       font-size: 30px;
     }
+    .header-info__heading{
+      font-size: 50px;
+    }
+    .header-info__icon{
+      width: 75px;
+    }
+    &.header-info__all-services.trademark-service{
+      .header-info__text{
+        padding: 0 35px;
+      }
+    }
   }
 
   .footer-callback {
@@ -5546,12 +5592,6 @@ Trademarks start
       a{
         font-size: 15px;
       }
-    }
-  }
-
-  .header-info {
-    .header-info__heading{
-      font-size: 50px;
     }
   }
 
@@ -6204,7 +6244,7 @@ Trademarks start
   .header-info {
     .header-info__icon {
       width: 35px;
-      left: -15px;
+      left: 0;
       bottom: 0;
       &.header-info__icon--right {
         top: 0;
@@ -6223,6 +6263,19 @@ Trademarks start
     &.header-info--country-renewal{
       .header-info-countries{
         padding: 50px 0;
+      }
+    }
+    &.trademark {
+      .header-info-countries {
+        padding: 0;
+      }
+    }
+    &.header-info__all-services.trademark-service{
+      .header-info__icon{
+        left:0;
+      }
+      .header-info__text{
+        padding: 0;
       }
     }
   }
@@ -6383,19 +6436,6 @@ Trademarks start
     top: 0;
   }
 
-  .header-info {
-    &.trademark {
-      .header-info-countries {
-        padding: 0;
-      }
-    }
-    &.header-info__all-services.trademark-service{
-      .header-info__icon{
-        left:0;
-      }
-    }
-  }
-
   .header-box {
     padding: 20px 0;
   }
@@ -6471,6 +6511,12 @@ Trademarks start
     }
   }
 
+  .helper{
+    .helper--large{
+      width: 25px;
+      height: 25px;
+    }
+  }
 }
 
 @media screen and  (min-width: 768px) {
@@ -6777,7 +6823,6 @@ Trademarks start
     }
     .control-box__title{
      font-size: 18px;
-      margin-bottom: 5px;
     }
     .form-control{
       margin: 0 15px 0 0;
@@ -6805,6 +6850,23 @@ Trademarks start
   .note-text{
     .note-text__item{
       margin-bottom: 30px;
+    }
+  }
+
+  .form{
+    &.form-wrap{
+      padding: 35px 30px;
+    }
+    &.form-big{
+      .col-form-label{
+        font-size: 20px;
+      }
+      .form-group{
+        margin-bottom: 25px;
+      }
+      .form-control{
+        font-size: 18px;
+      }
     }
   }
 
@@ -7143,6 +7205,9 @@ Trademarks start
       position: absolute;
       right: 15px;
       top: 14px;
+    }
+    .header-info__description{
+      text-shadow: 0 2px 1px #020202;
     }
   }
 
@@ -8245,7 +8310,6 @@ Trademarks start
       font-size: 14px;
     }
     .control-box__title{
-      margin-bottom: 5px;
       font-size: 18px;
     }
     .radio-checkbox-group{
@@ -8324,5 +8388,27 @@ Trademarks start
       padding: 9px 0;
     }
   }
+
+  .form-wrap{
+    padding: 35px 15px 15px;
+    &.form-big{
+      .col-form-label{
+        font-size: 16px;
+      }
+      .form-group{
+        margin-bottom: 15px;
+      }
+      .form-control{
+        font-size: 18px;
+      }
+    }
+  }
+
+  .btn-next{
+    .btn-next--large{
+      width: 100%;
+    }
+  }
+
 }
 
