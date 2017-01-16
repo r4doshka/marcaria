@@ -7946,13 +7946,26 @@ second site
         -ms-flex-pack: center;
             justify-content: center;
     margin: 0; }
+    .list-with-icon.list-with-icon--steps .list-with-icon__item:last-child .list-with-icon__icon:after {
+      display: none; }
   .list-with-icon.list-with-icon--steps .list-with-icon__icon {
+    position: relative;
     margin: 0 0 20px 0;
     border: 3px solid #a6ce2f;
     border-radius: 5px; }
     .list-with-icon.list-with-icon--steps .list-with-icon__icon img {
       border-radius: 3px;
       width: 250px; }
+    .list-with-icon.list-with-icon--steps .list-with-icon__icon:after {
+      content: '';
+      background: url(../img/icons/arrow-pointing-to-right.png) no-repeat;
+      width: 64px;
+      height: 64px;
+      display: inline-block;
+      position: absolute;
+      right: -100px;
+      top: 50%;
+      margin-top: -32px; }
   .list-with-icon.list-with-icon--steps .list-with-icon__title {
     text-align: center; }
   .list-with-icon.list-with-icon--steps .bold {
@@ -10186,6 +10199,11 @@ Trademarks start
   font-size: 28px;
   float: left; }
 
+.header-banner.header-banner--trademark-registration {
+  background: url("../img/categories/leader.jpg") no-repeat;
+  background-size: cover;
+  padding: 40px 0 230px; }
+
 .heading {
   font-size: 50px;
   font-weight: 700;
@@ -10391,7 +10409,17 @@ Trademarks start
   .element-box.element-box--fixed-height .element-box-inner {
     max-height: 448px;
     overflow: hidden;
-    overflow-y: scroll; } }
+    overflow-y: scroll; }
+  .list-with-icon.list-with-icon--steps .list-with-icon__icon:after {
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    right: -50px;
+    background-size: contain; }
+  .header-banner.header-banner--trademark-registration {
+    padding: 40px 0; }
+  .header-banner .header-info__description {
+    width: 65%; } }
 
 @media screen and (min-width: 992px) {
   .filter__mobile-select,
@@ -10455,6 +10483,8 @@ Trademarks start
   .list-with-icon.list-with-icon--icon-top .list-with-icon__text {
     font-size: 16px;
     text-align: center; }
+  .list-with-icon.list-with-icon--steps .list-with-icon__icon:after {
+    display: none; }
   .faq-list__table-dropdown .faq-list__show-more {
     display: none; }
   .our-clients-container {
@@ -10844,6 +10874,18 @@ Trademarks start
     padding: 6px 30px;
     margin: 0 auto; }
   .simple-note {
+    font-size: 16px; }
+  .header-banner .header-banner__title {
+    font-size: 36px; }
+  .header-banner .header-info__description {
+    width: 55%;
+    margin: 0 0 40px 0;
+    font-size: 20px;
+    font-weight: 300; }
+  .header-banner.header-banner--trademark-registration {
+    padding: 40px 0; }
+  .header-banner .btn-next {
+    padding: 9px 40px;
     font-size: 16px; } }
 
 @media screen and (min-width: 768px) {
@@ -11115,6 +11157,23 @@ Trademarks start
       height: 90px; }
   .list-with-icon .list-with-icon__description {
     width: 100%; }
+  .list-with-icon.list-with-icon--steps .list-with-icon__item {
+    margin: 0 0 50px 0; }
+  .list-with-icon.list-with-icon--steps .list-with-icon__icon {
+    height: auto;
+    width: 90%; }
+    .list-with-icon.list-with-icon--steps .list-with-icon__icon img {
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+      max-height: 170px; }
+  .list-with-icon.list-with-icon--steps .bold {
+    font-size: 18px;
+    display: inline-block; }
+  .list-with-icon.list-with-icon--steps .list-with-icon__title {
+    font-size: 18px; }
+  .list-with-icon.list-with-icon--steps .list-with-icon__text {
+    font-size: 16px; }
   .our-advantages .list-with-icon__text {
     display: none; }
   .card-list .card-group {
@@ -12017,4 +12076,16 @@ Trademarks start
     margin: 0 auto; }
   .order-button.order-button--large {
     width: 100%;
-    font-size: 18px; } }
+    font-size: 18px; }
+  .header-banner .header-banner__inner-wrap {
+    background: #ffffff; }
+  .header-banner .header-banner__title {
+    font-size: 22px;
+    text-align: center; }
+  .header-banner .header-info__description {
+    width: 100%;
+    font-size: 16px;
+    text-align: center; }
+  .header-banner .btn-next {
+    width: 100%;
+    padding: 9px 0; } }
