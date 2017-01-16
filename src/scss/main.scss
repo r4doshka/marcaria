@@ -341,6 +341,11 @@ button{
       bottom: auto;
     }
   }
+  .header-info__heading-icon{
+    width: 90px;
+    display: inline-block;
+    margin: 0 0 0 50px;
+  }
 
   .header-info__description{
     font-weight: bold;
@@ -4500,7 +4505,7 @@ card-payment  end
   .text-container__content{
     padding: 0 0 40px 0;
     color: #021f54;
-    font-size: 25px;
+    font-size: 24px;
     &.text-container__content--indent{
       padding: 0 70px 40px;
     }

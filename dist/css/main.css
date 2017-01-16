@@ -5824,6 +5824,11 @@ button:active, button:focus {
     left: auto;
     bottom: auto; }
 
+.header-info .header-info__heading-icon {
+  width: 90px;
+  display: inline-block;
+  margin: 0 0 0 50px; }
+
 .header-info .header-info__description {
   font-weight: bold;
   color: #fff;
@@ -9470,7 +9475,7 @@ card-payment  end
   .text-container .text-container__content {
     padding: 0 0 40px 0;
     color: #021f54;
-    font-size: 25px; }
+    font-size: 24px; }
     .text-container .text-container__content.text-container__content--indent {
       padding: 0 70px 40px; }
 
