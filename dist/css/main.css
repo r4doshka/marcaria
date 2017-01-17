@@ -7470,6 +7470,9 @@ second site
     .world-map .oceania.with-flags--active {
       background: url(../img/icons/oceania-withflag-green.png) no-repeat;
       background-size: contain; }
+  .world-map .animate-extensions {
+    background: transparent;
+    width: 100px; }
 
 .more-hidden {
   display: none !important; }
