@@ -1577,7 +1577,6 @@ button{
       }
     }
   }
-
   .header-info--country-flag{
     position: absolute;
     right: 20px;
@@ -7257,6 +7256,7 @@ Trademarks start
       &.trademark-service{
         .header-info__content{
           margin: 20px 0;
+          padding: 10px;
         }
         .icon-trademark{
           width: 60px;

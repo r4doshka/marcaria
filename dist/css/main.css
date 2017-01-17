@@ -11443,7 +11443,8 @@ Trademarks start
   .header-info.header-info__all-services .header-info__text {
     margin: 10px 0 10px; }
   .header-info.header-info__all-services.trademark-service .header-info__content {
-    margin: 20px 0; }
+    margin: 20px 0;
+    padding: 10px; }
   .header-info.header-info__all-services.trademark-service .icon-trademark {
     width: 60px; }
   .header-info.header-info_trademark-renewal .header-info-countries {
