@@ -7845,6 +7845,41 @@ second site
 .reviews .reviews-indent {
   padding: 0 50px; }
 
+.reviews.reviews-slider .review-item {
+  margin: 0 85px; }
+
+.reviews.reviews-slider .review-item__content {
+  padding: 27px 20px 0 15px; }
+
+.reviews.reviews-slider .slick-arrow {
+  width: 85px;
+  height: 85px;
+  background-size: auto 34px;
+  z-index: 999999;
+  background-color: #d6d6d6;
+  background-position: 50% 50%; }
+  .reviews.reviews-slider .slick-arrow:active {
+    background-color: #3d8af7; }
+
+.reviews.reviews-slider .slick-prev {
+  top: 20px;
+  left: -15px; }
+
+.reviews.reviews-slider .slick-next {
+  top: 20px;
+  right: -15px; }
+
+.reviews.reviews-slider .review-item__date {
+  display: block;
+  padding: 0 0 10px; }
+
+.reviews.reviews-slider .default-header {
+  font-size: 20px;
+  text-shadow: none; }
+
+.reviews.reviews-slider .review-item__user-icon {
+  vertical-align: middle; }
+
 .our-clients-container {
   margin: 40px 0 100px;
   background: #ebebeb;
@@ -8926,6 +8961,12 @@ domain select  start
     float: left; }
   .btn-next.btn-next--large {
     padding: 14px 60px; }
+  .btn-next.btn-next--live-chat {
+    margin: 20px 0 24px;
+    background: #a6ce2f;
+    border: 1px solid #fff;
+    padding: 4px 40px;
+    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.45); }
 
 .modal-text .modal-dialog {
   width: 500px;
@@ -10393,12 +10434,80 @@ Trademarks start
 
 .form-wrap {
   padding: 30px 65px; }
+  .form-wrap.form-wrap--large {
+    padding: 30px 230px; }
 
 .achievement-list {
   padding-bottom: 40px; }
   .achievement-list .achievement-list__item {
     margin-left: 10px;
     max-height: 75px; }
+
+.contacts-list {
+  padding: 46px 70px 40px; }
+  .contacts-list .contacts-list-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 0 10px; }
+  .contacts-list .contacts-list-item__name {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 50%;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    color: #021f54;
+    font-size: 23px;
+    font-weight: 600; }
+  .contacts-list .contacts-list-item__icon {
+    display: inline-block;
+    vertical-align: middle; }
+  .contacts-list .contacts-list-item__description {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 50%;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    font-size: 23px;
+    color: #021f54; }
+
+.support-wrap {
+  padding: 15px 32px 15px 35px;
+  overflow: hidden; }
+
+.links-list {
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .links-list .links-list-item {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 48%;
+        -ms-flex: 0 0 48%;
+            flex: 0 0 48%;
+    margin: 0 0 6px 0; }
+    .links-list .links-list-item a {
+      color: #006ce5;
+      font-size: 16px;
+      text-decoration: underline; }
+
+.more-btn {
+  color: #006ce5;
+  font-size: 18px;
+  border: none;
+  background: none;
+  text-decoration: underline;
+  font-weight: 600;
+  float: right; }
 
 @media screen and (max-width: 1368px) {
   .our-clients-container {
@@ -10488,7 +10597,13 @@ Trademarks start
   .header-banner.header-banner--trademark-registration {
     padding: 40px 0; }
   .header-banner .header-info__description {
-    width: 65%; } }
+    width: 65%; }
+  .contacts-list {
+    padding: 60px 40px 60px; }
+    .contacts-list .contacts-list-item__name {
+      font-size: 18px; }
+    .contacts-list .contacts-list-item__description {
+      font-size: 18px; } }
 
 @media screen and (min-width: 992px) {
   .filter__mobile-select,
@@ -10960,7 +11075,33 @@ Trademarks start
     font-size: 16px; }
   .helper .helper--large {
     width: 25px;
-    height: 25px; } }
+    height: 25px; }
+  .contacts-list {
+    padding: 30px 40px 45px; }
+    .contacts-list .contacts-list-item {
+      margin: 0 0 20px; }
+    .contacts-list .contacts-list-item__name {
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 0 100%;
+          -ms-flex: 0 0 100%;
+              flex: 0 0 100%;
+      font-size: 23px; }
+    .contacts-list .contacts-list-item__description {
+      padding: 0 0 0 42px;
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 0 100%;
+          -ms-flex: 0 0 100%;
+              flex: 0 0 100%;
+      font-size: 23px;
+      line-height: 25px; }
+  .links-list .links-list-item {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    margin: 0 0 11px 0; }
+  .more-btn {
+    float: left; } }
 
 @media screen and (min-width: 768px) {
   .mobile-layout {
@@ -11338,6 +11479,22 @@ Trademarks start
     font-size: 14px; }
   .reviews .review-item__vote img {
     width: 120px; }
+  .reviews.reviews-slider {
+    margin: 0 0 140px; }
+    .reviews.reviews-slider .review-item {
+      margin: 0 3px; }
+    .reviews.reviews-slider .review-item__title {
+      font-size: 16px; }
+    .reviews.reviews-slider .review-item__description {
+      font-size: 15px; }
+    .reviews.reviews-slider .slick-next {
+      top: auto;
+      bottom: -120px; }
+    .reviews.reviews-slider .slick-prev {
+      top: auto;
+      bottom: -120px; }
+    .reviews.reviews-slider .slick-arrow {
+      background-color: #f7f6f6; }
   .main-banner {
     -webkit-transition: all 0.5s;
     transition: all 0.5s; }
@@ -11758,6 +11915,9 @@ Trademarks start
   .content-box .content-box__header.content-box__header--auto-height {
     padding: 5px;
     font-size: 16px; }
+    .content-box .content-box__header.content-box__header--auto-height.content-box__header--mobile-big {
+      font-size: 20px;
+      padding: 20px 0; }
   .content-box .helper {
     top: 0; }
   .radio-list {
@@ -12189,5 +12349,13 @@ Trademarks start
       margin-bottom: 15px; }
     .form-wrap.form-big .form-control {
       font-size: 18px; }
+    .form-wrap.form-wrap--large {
+      padding: 15px; }
   .btn-next .btn-next--large {
-    width: 100%; } }
+    width: 100%; }
+  .contacts-list {
+    padding: 30px 20px 45px; }
+    .contacts-list .contacts-list-item__name {
+      font-size: 20px; }
+    .contacts-list .contacts-list-item__description {
+      font-size: 20px; } }

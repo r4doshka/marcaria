@@ -2720,6 +2720,45 @@ second site
   .reviews-indent{
     padding: 0 50px;
   }
+
+  &.reviews-slider{
+    .review-item{
+      margin: 0 85px;
+    }
+    .review-item__content{
+      padding: 27px 20px 0 15px;
+    }
+    .slick-arrow{
+      width: 85px;
+      height: 85px;
+      background-size: auto 34px;
+      z-index: 999999;
+      background-color: #d6d6d6;
+      background-position: 50% 50%;
+      &:active{
+        background-color: #3d8af7;
+      }
+    }
+    .slick-prev{
+      top:20px;
+      left: -15px;
+    }
+    .slick-next{
+      top:20px;
+      right: -15px;
+    }
+    .review-item__date{
+      display: block;
+      padding: 0 0 10px;
+    }
+    .default-header{
+      font-size: 20px;
+      text-shadow: none;
+    }
+    .review-item__user-icon{
+      vertical-align: middle;
+    }
+  }
 }
 
 .our-clients-container{
@@ -3864,6 +3903,13 @@ domain select  start
   }
   &.btn-next--large{
     padding: 14px 60px;
+  }
+  &.btn-next--live-chat{
+    margin: 20px 0 24px;
+    background: #a6ce2f;
+    border: 1px solid #fff;
+    padding: 4px 40px;
+    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.45);
   }
 }
 
@@ -5553,6 +5599,9 @@ Trademarks start
 
 .form-wrap{
   padding: 30px 65px;
+  &.form-wrap--large{
+    padding: 30px 230px;
+  }
 }
 
 .achievement-list{
@@ -5561,6 +5610,61 @@ Trademarks start
     margin-left: 10px;
     max-height: 75px;
   }
+}
+
+.contacts-list{
+  padding: 46px 70px 40px;
+  .contacts-list-item{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0 0 10px;
+
+  }
+  .contacts-list-item__name{
+    flex: 0 0 50%;
+    color: #021f54;
+    font-size: 23px;
+    font-weight: 600;
+  }
+  .contacts-list-item__icon{
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .contacts-list-item__description{
+    flex: 0 0 50%;
+    font-size: 23px;
+    color: #021f54;
+  }
+}
+
+.support-wrap{
+  padding: 15px 32px 15px 35px;
+  overflow: hidden;
+}
+
+.links-list{
+  flex-flow: row wrap;
+  justify-content: space-between;
+  .links-list-item{
+    flex: 0 0 48%;
+    margin: 0 0 6px 0;
+    a{
+      color: #006ce5;
+      font-size: 16px;
+      text-decoration: underline;
+    }
+  }
+}
+
+.more-btn{
+  color: #006ce5;
+  font-size: 18px;
+  border: none;
+  background: none;
+  text-decoration: underline;
+  font-weight: 600;
+  float: right;
 }
 
 @media screen and (max-width: 1368px) {
@@ -5742,6 +5846,16 @@ Trademarks start
     }
     .header-info__description{
       width: 65%;
+    }
+  }
+
+  .contacts-list{
+    padding: 60px 40px 60px;
+    .contacts-list-item__name{
+      font-size: 18px;
+    }
+    .contacts-list-item__description{
+      font-size: 18px;
     }
   }
 }
@@ -6547,6 +6661,35 @@ Trademarks start
       height: 25px;
     }
   }
+
+  .contacts-list{
+    padding: 30px 40px 45px;
+    .contacts-list-item{
+      margin: 0 0 20px;
+    }
+    .contacts-list-item__name{
+      flex:0 0 100%;
+      font-size: 23px;
+    }
+    .contacts-list-item__description{
+      padding: 0 0 0 42px;
+      flex:0 0 100%;
+      font-size: 23px;
+      line-height: 25px;
+    }
+  }
+
+  .links-list{
+
+    .links-list-item{
+      flex: 0 0 100%;
+      margin: 0 0 11px 0;
+    }
+  }
+
+  .more-btn{
+    float: left;
+  }
 }
 
 @media screen and  (min-width: 768px) {
@@ -7102,6 +7245,29 @@ Trademarks start
     .review-item__vote{
       img{
         width: 120px;
+      }
+    }
+    &.reviews-slider{
+      margin: 0 0 140px;
+      .review-item{
+        margin:0 3px;
+      }
+      .review-item__title{
+        font-size: 16px;
+      }
+      .review-item__description{
+        font-size: 15px;
+      }
+      .slick-next{
+        top:auto;
+        bottom: -120px;
+      }
+      .slick-prev{
+        top:auto;
+        bottom: -120px;
+      }
+      .slick-arrow{
+        background-color: #f7f6f6;
       }
     }
   }
@@ -7767,9 +7933,15 @@ Trademarks start
   }
 
   .content-box{
-    .content-box__header.content-box__header--auto-height{
-      padding: 5px;
-      font-size: 16px;
+    .content-box__header{
+      &.content-box__header--auto-height{
+        padding: 5px;
+        font-size: 16px;
+        &.content-box__header--mobile-big{
+          font-size: 20px;
+          padding: 20px 0;
+        }
+      }
     }
     .helper{
       top:0;
@@ -8444,11 +8616,24 @@ Trademarks start
         font-size: 18px;
       }
     }
+    &.form-wrap--large{
+      padding: 15px;
+    }
   }
 
   .btn-next{
     .btn-next--large{
       width: 100%;
+    }
+  }
+
+  .contacts-list {
+    padding: 30px 20px 45px;
+    .contacts-list-item__name{
+      font-size: 20px;
+    }
+    .contacts-list-item__description{
+      font-size: 20px;
     }
   }
 

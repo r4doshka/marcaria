@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/font-awesome.css">
     <link rel="stylesheet" href="../css/flags-with-shadow-icon.css">
+    <link rel="stylesheet" href="../css/slick.css">
     <link rel="stylesheet" href="../css/main.css">
     <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
@@ -353,7 +354,7 @@
         <div class="border-line"> </div>
     </div>
 </section>
-<section class="reviews">
+<section class="reviews mobile-hide">
     <div class="default-header">
         Recent Reviews
     </div>
@@ -629,7 +630,125 @@
         </div>
     </div>
 </section>
+<section class="reviews reviews-slider desktop-hide">
+    <div class="default-header">
+        What our Clients are saying about us:
+    </div>
+    <div class="content">
+        <div class="container">
+            <div class="slickslider">
+                <div>
+                    <div class="review-item">
+                        <div class="review-item__content">
+                            <div class="review-item__title">
+                                Great Service!
+                            </div>
+                            <div class="review-item__description">
+                                "Quite satisfied with my experience of working with marcaria.com so far. Wish you all the best!"
+                            </div>
+                            <div class="review-item__date">
+                                02-02-2016
+                            </div>
+                        </div>
+                        <div class="review-item__user">
+                            <div class="review-item__user-icon">
+                                <img src="../img/icons/smiling-face.png" alt="">
+                            </div>
+                            <div class="review-item__user-name">
+                                mori85_user
+                            </div>
+                        </div>
+                        <div class="review-item__vote">
+                            <img src="../img/icons/rating.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="review-item">
+                        <div class="review-item__content">
+                            <div class="review-item__title">
+                                Everything went ok
+                            </div>
+                            <div class="review-item__description">
+                                "Quite satisfied with my experience of working with marcaria.com so far. Wish you all the best!"
+                                "Quite satisfied with my experience of working with marcaria.com so far. Wish you all the best!"
+                                marcaria.com so far. Wish you all the best!"
 
+                            </div>
+                            <div class="review-item__date">
+                                02-02-2016
+                            </div>
+                        </div>
+                        <div class="review-item__user">
+                            <div class="review-item__user-icon">
+                                <img src="../img/icons/smiling-face.png" alt="">
+                            </div>
+                            <div class="review-item__user-name">
+                                FrancisDrak
+                            </div>
+                        </div>
+                        <div class="review-item__vote">
+                            <img src="../img/icons/rating.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="review-item">
+                        <div class="review-item__content">
+                            <div class="review-item__title">
+                                Everything went ok
+                            </div>
+                            <div class="review-item__description">
+                                "Quite satisfied with my experience of working with marcaria.com so far. Wish you all the best!"
+                                "Quite satisfied with my experience of working with marcaria.com so far. Wish you all the best!"
+                            </div>
+                            <div class="review-item__date">
+                                02-02-2016
+                            </div>
+                        </div>
+                        <div class="review-item__user">
+                            <div class="review-item__user-icon">
+                                <img src="../img/icons/smiling-face.png" alt="">
+                            </div>
+                            <div class="review-item__user-name">
+                                FrancisDrak
+                            </div>
+                        </div>
+                        <div class="review-item__vote">
+                            <img src="../img/icons/rating.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="review-item">
+                        <div class="review-item__content">
+                            <div class="review-item__title">
+                                Excellent Support!
+                            </div>
+                            <div class="review-item__description">
+                                "Quite satisfied with my experience of working with marcaria.com so far. Wish you all the best!"
+                            </div>
+                            <div class="review-item__date">
+                                02-02-2016
+                            </div>
+                        </div>
+                        <div class="review-item__user">
+                            <div class="review-item__user-icon">
+                                <img src="../img/icons/smiling-face.png" alt="">
+                            </div>
+                            <div class="review-item__user-name">
+                                Jhonn34
+                            </div>
+                        </div>
+                        <div class="review-item__vote">
+                            <img src="../img/icons/rating.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <section class="container">
     <div class="row">
         <div class="col-md-12">
@@ -644,7 +763,6 @@
         </div>
     </div>
 </section>
-
 <footer class="footer">
     <div class="container">
         <div class="footer-callback">
@@ -786,7 +904,14 @@
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script>window.jQuery || document.write('<script src="../../js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
 <script src="../js/plugins.js"></script>
+<script src="../js/slick.min.js"></script>
 <script src="../js/main.js"></script>
-
+<script>
+    $('.slickslider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true
+    });
+</script>
 </body>
 </html>
