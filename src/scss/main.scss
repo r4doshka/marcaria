@@ -138,6 +138,9 @@ button{
 
 .wrap-box{
   padding: 50px 0;
+  &.wrap-box--accreditation{
+    padding: 10px 0 100px;
+  }
 }
 
 .dropdown-menu{
@@ -1684,6 +1687,13 @@ button{
   .defaul-header__icon{
     width: 60px;
     display: inline-block;
+  }
+  &.default-header--indent{
+    margin: 100px 0 0;
+  }
+  &.default-header--dark{
+    text-shadow: none;
+    color: #021f54;
   }
 }
 
@@ -5736,6 +5746,55 @@ Trademarks start
   }
 }
 
+.extension-card{
+  margin: 25px 0 0 0;
+  .extension-card__icon{
+    display: flex;
+    align-items: center;
+    height: 75px;
+    width: 140px;
+    margin: 0 0 10px;
+    img{
+      max-height: 100%;
+    }
+  }
+  .extension-card__wrap{
+    height: 250px;
+    padding: 20px 25px;
+    background: #f7f6f6;
+    border:1px solid #ebebeb;
+    border-radius: 5px;
+  }
+  .extension-card__title{
+    color:#444444;
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .simple-list{
+    .simple-list__item{
+      &:before{
+        display: none;
+      }
+      color: #444444;
+      font-size: 19px;
+    }
+  }
+
+  .view-more{
+    text-align: right;
+    font-size: 19px;
+    font-weight: 600;
+  }
+}
+
+.show-more-btn{
+  display: none;
+  &.show-more-btn--indent{
+    margin: 40px;
+  }
+}
+
 
 @media screen and (max-width: 1368px) {
   .our-clients-container {
@@ -6761,6 +6820,29 @@ Trademarks start
   .more-btn{
     float: left;
   }
+  .default-header{
+    &.default-header--indent{
+      margin: 20px 0 0;
+    }
+  }
+
+  .wrap-box{
+    &.wrap-box--accreditation{
+      padding: 0 0 70px;
+    }
+  }
+
+  .show-more-btn{
+    display: block;
+    padding: 14px 20px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    background: #1464f6;
+    border-radius: 5px;
+    border:none;
+  }
+
 }
 
 @media screen and  (min-width: 768px) {
@@ -7046,7 +7128,9 @@ Trademarks start
 
   .default-header{
     font-size: 30px;
-
+    &.default-header--dark{
+      font-size: 24px;
+    }
   }
 
   .sign-up-form{
@@ -8705,6 +8789,62 @@ Trademarks start
     }
     .contacts-list-item__description{
       font-size: 20px;
+    }
+  }
+
+
+
+  .slider-auto-height{
+    padding: 50px 0;
+    margin: 30px 0 50px;
+    .extension-card{
+      margin: 0;
+      border-bottom: 2px solid #d4e3fc;
+      .extension-card__wrap{
+        height: auto;
+        background: none;
+        border:none;
+        padding: 5px 0 25px;
+      }
+      .extension-card__title{
+        text-align: center;
+        margin: 0 0 20px;
+      }
+      .extension-card__icon{
+        margin: 0 auto;
+        height: 55px;
+      }
+    }
+    .bx-wrapper {
+      padding: 0 15px;
+      .bx-viewport{
+        left: 0;
+        box-shadow: none;
+      }
+    }
+    .bx-controls{
+      .bx-prev{
+        position: absolute;
+        top: -50px;
+        left: 0;
+        display: block;
+        width: 100%;
+        text-indent: -99999px;
+        height: 50px;
+        background: url(../img/icons/up-arrow-key.png) #d4e3fc no-repeat 50%;
+        background-size: 40px;
+      }
+      .bx-next{
+        position: absolute;
+        bottom: -50px;
+        left: 0;
+        display: block;
+        width: 100%;
+        text-indent: -99999px;
+        height: 50px;
+        background: url(../img/icons/down-arrow-key.png) #d4e3fc no-repeat 50%;
+        background-size: 40px;
+      }
     }
   }
 
