@@ -5829,6 +5829,7 @@ button:active, button:focus {
 .header-info .header-info__heading-icon {
   width: 90px;
   display: inline-block;
+  vertical-align: middle;
   margin: 0 0 0 50px; }
 
 .header-info .header-info__description {
@@ -7315,8 +7316,20 @@ second site
     opacity: 0.2;
     height: 300px;
     width: 100%; }
-  .world-map .continent-item {
+  .world-map .animate-extensions.continent-item {
     cursor: pointer; }
+    .world-map .animate-extensions.continent-item .wheel-button {
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      -ms-transition: all 0.5s;
+      -o-transition: all 0.5s; }
+      .world-map .animate-extensions.continent-item .wheel-button.active {
+        width: 80px;
+        height: 80px; }
+        .world-map .animate-extensions.continent-item .wheel-button.active path {
+          fill: #a6ce2f; }
+        .world-map .animate-extensions.continent-item .wheel-button.active svg {
+          fill: #a6ce2f; }
   .world-map.trademarks-map .continent-item {
     height: 160px; }
   .world-map.trademarks-map .north_america {

@@ -347,6 +347,7 @@ button{
   .header-info__heading-icon{
     width: 90px;
     display: inline-block;
+    vertical-align: middle;
     margin: 0 0 0 50px;
   }
 
@@ -2095,8 +2096,26 @@ second site
     height: 300px;
     width: 100%;
   }
-  .continent-item{
-    cursor: pointer;
+  .animate-extensions{
+    &.continent-item{
+      cursor: pointer;
+      .wheel-button{
+        -webkit-transition:all 0.5s;
+        -moz-transition:all 0.5s;
+        -ms-transition:all 0.5s;
+        -o-transition:all 0.5s;
+        &.active{
+          width: 80px;
+          height: 80px;
+          path{
+            fill: #a6ce2f;
+          }
+          svg{
+            fill: #a6ce2f;
+          }
+        }
+      }
+    }
   }
   &.trademarks-map{
     .continent-item{

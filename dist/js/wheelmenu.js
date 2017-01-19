@@ -21,8 +21,6 @@
         this.css("top", -(elheight / 2)  + "px");
         this.css("left", -(elwidth / 2)   + "px");
 
-         // this.css("top", 0  + "px");
-         // this.css("left", 0   + "px");
         return this;
     }
 
