@@ -1055,7 +1055,7 @@
         slidesToScroll: 5,
         infinite: true
     });
-    $(document).ready(function() {
+    $(document).on('ready',function() {
         $('map').imageMapResize();
         var colHeight = $('.full-img').height();
         $('.element-box.element-box--fixed-height .element-box-inner').css('height', colHeight-20);

@@ -1603,6 +1603,10 @@ button{
         width: 90px;
         margin: 0 auto;
       }
+      &.header-info__flags-rotate{
+        background: url('../img/icons/banderasRotadas.jpg') no-repeat;
+        background-size: 100% 100%;
+      }
     }
   }
   .header-info--country-flag{

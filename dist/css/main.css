@@ -6918,6 +6918,9 @@ button:active, button:focus {
     .header-info.header-info__all-services.trademark-service .icon-trademark {
       width: 90px;
       margin: 0 auto; }
+    .header-info.header-info__all-services.trademark-service.header-info__flags-rotate {
+      background: url("../img/icons/banderasRotadas.jpg") no-repeat;
+      background-size: 100% 100%; }
 
 .header-info .header-info--country-flag {
   position: absolute;
