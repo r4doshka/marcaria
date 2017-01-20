@@ -1053,4 +1053,8 @@
         slidesToScroll: 5,
         infinite: true
     });
+    $(document).ready(function() {
+        var colHeight = $('.full-img').height();
+        $('.element-box.element-box--fixed-height .element-box-inner').css('height', colHeight-20);
+    });
 </script>

@@ -369,6 +369,21 @@
                         <a href="javascript:;" class="element-item__name">Chile</a>
                     </div>
                     <div class="element-box__element-item">
+                        <div class="element-item__icon flag-shadowed flag-shadowed-CA-shadow">
+                        </div>
+                        <a href="javascript:;" class="element-item__name">Canada</a>
+                    </div>
+                    <div class="element-box__element-item">
+                        <div class="element-item__icon flag-shadowed flag-shadowed-US-shadow">
+                        </div>
+                        <a href="javascript:;" class="element-item__name">USA</a>
+                    </div>
+                    <div class="element-box__element-item">
+                        <div class="element-item__icon flag-shadowed flag-shadowed-MX">
+                        </div>
+                        <a href="javascript:;" class="element-item__name">Mexico</a>
+                    </div>
+                    <div class="element-box__element-item">
                         <div class="element-item__icon flag-shadowed flag-shadowed-sr-shadow">
                         </div>
                         <a href="javascript:;" class="element-item__name">Suriname</a>
@@ -451,8 +466,8 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3">
-            <div class="title-box desktop-hide">
+        <div class="col-md-3 desktop-hide">
+            <div class="title-box">
                 North America
             </div>
             <div class="element-box element-box--pure element-box--fixed-height element-box--column-right">
@@ -1042,5 +1057,7 @@
     });
     $(document).ready(function() {
         $('map').imageMapResize();
+        var colHeight = $('.full-img').height();
+        $('.element-box.element-box--fixed-height .element-box-inner').css('height', colHeight-20);
     });
 </script>
