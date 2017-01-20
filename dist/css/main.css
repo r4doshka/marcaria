@@ -5591,6 +5591,8 @@ button:active, button:focus {
     margin: 0; }
   .breadcrumbs li:last-child a {
     cursor: default; }
+    .breadcrumbs li:last-child a:hover {
+      text-decoration: none; }
   .breadcrumbs.breadcrumbs--theme-blue a {
     color: #01309a; }
     .breadcrumbs.breadcrumbs--theme-blue a:hover {
@@ -5702,7 +5704,7 @@ button:active, button:focus {
   background-size: cover;
   position: relative; }
   .header-info.header-info__all-services .header-info__text {
-    margin: 40px 0 60px; }
+    margin: 10px 0 30px; }
 
 .header__nav {
   display: none;
@@ -5814,6 +5816,16 @@ button:active, button:focus {
   background: rgba(1, 69, 156, 0.4); }
   .header-info .header-info__content.header-info__content--bg-transparent {
     background: transparent; }
+
+.header-info.trademarks-header .header-info__description {
+  background: rgba(94, 131, 241, 0.5);
+  padding: 10px 5px; }
+
+.header-info.trademarks-header .header-info__heading {
+  font-size: 52px; }
+
+.header-info.trademarks-header .header-info__text {
+  padding: 0 20px; }
 
 .header-info .header-info__icon {
   position: absolute;
@@ -6809,9 +6821,10 @@ button:active, button:focus {
 
 .header-info.sunrise {
   background: url("../img/icons/sunrise_bg.jpg") no-repeat;
-  background-size: cover; }
+  background-size: 100% 100%; }
   .header-info.sunrise .header-info__content {
-    background: rgba(0, 0, 0, 0.33); }
+    background: rgba(0, 0, 0, 0.33);
+    padding: 5px; }
 
 .header-info.holiday_travel {
   background: url("../img/categories/Holiday_Travel.jpg") no-repeat;
@@ -6829,12 +6842,15 @@ button:active, button:focus {
   background-size: 100% 100%; }
   .header-info.header-info__hosting .header-info__country {
     background: rgba(0, 0, 0, 0.2);
-    margin: 0; }
+    margin: 0;
+    padding: 0 10px 5px; }
+  .header-info.header-info__hosting .header-info-countries {
+    padding: 50px 0 30px; }
   .header-info.header-info__hosting .header-info__heading {
     text-shadow: 0 3px 1px #020202;
     background: rgba(0, 0, 0, 0.2);
     display: inline-block;
-    margin: 30px 0 0 0;
+    margin: 20px 0 0 0;
     padding: 0 50px;
     color: #fff;
     font-weight: bold; }
@@ -6880,11 +6896,13 @@ button:active, button:focus {
 
 .header-info.header-info__all-services {
   background: url("../img/categories/all-services.jpg") no-repeat;
-  background-size: 100% 100%; }
+  background-size: cover; }
   .header-info.header-info__all-services .header-info__content {
     margin: 20px 0 120px;
     padding: 20px 40px;
     background: rgba(1, 69, 156, 0.2); }
+  .header-info.header-info__all-services .header-info__heading--big {
+    font-size: 70px; }
   .header-info.header-info__all-services .breadcrumbs {
     top: 5px;
     left: 10px; }
@@ -7005,11 +7023,11 @@ second site
     display: inline-block; }
   .header-info-countries .header-info__country {
     position: relative;
-    padding: 0 20px 40px;
+    padding: 0 20px 20px;
     display: inline-block;
     background: #243a56;
     background: rgba(16, 102, 239, 0.2); }
-  .header-info-countries .breadcrumbs__item a {
+  .header-info-countries .breadcrumbs__item a:hover {
     text-decoration: underline; }
 
 /*horizontal-menu*/
@@ -7906,7 +7924,7 @@ second site
   padding: 15px 30px;
   border-radius: 7px; }
   .our-clients-container.our-clients-container--indent-fix {
-    margin: 40px 0 20px; }
+    margin-bottom: 20px; }
 
 .our-clients {
   padding: 0;
@@ -10554,6 +10572,11 @@ Trademarks start
   border-radius: 10px;
   box-shadow: 0 5px 5px 0 #4d4c4c; }
 
+.text-box .text-box__item {
+  margin: 0 0 25px; }
+  .text-box .text-box__item:last-child {
+    margin: 0; }
+
 .text-box .text-box__item-title {
   color: #606060;
   font-size: 26px;
@@ -10616,6 +10639,43 @@ Trademarks start
   .show-more-btn.show-more-btn--indent {
     margin: 40px; }
 
+.news-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap; }
+  .news-list .news-list__item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 50%;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    margin: 0 0 30px 0; }
+  .news-list .news-list__icon {
+    margin-right: 30px;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 180px;
+        -ms-flex: 0 0 180px;
+            flex: 0 0 180px; }
+  .news-list .news-list__description {
+    color: #606060;
+    font-size: 17px; }
+
+.control-buttons .control-buttons--wrap {
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap; }
+
 @media screen and (max-width: 1368px) {
   .our-clients-container {
     margin: 40px 40px 60px; } }
@@ -10639,6 +10699,8 @@ Trademarks start
     width: 75px; }
   .header-info.header-info__all-services.trademark-service .header-info__text {
     padding: 0 35px; }
+  .header-info.trademarks-header .header-info__heading {
+    font-size: 40px; }
   .footer-callback .footer-callback__button {
     margin: 0 10px; }
   .footer-menu .footer-menu__list a {
@@ -11222,7 +11284,9 @@ Trademarks start
     font-weight: 600;
     background: #1464f6;
     border-radius: 5px;
-    border: none; } }
+    border: none; }
+  .text-info.text-info--company {
+    font-size: 16px; } }
 
 @media screen and (min-width: 768px) {
   .mobile-layout {
@@ -11265,6 +11329,12 @@ Trademarks start
       display: block; }
   .header-info .header-info__heading--indent {
     margin-bottom: 20px; }
+  .header-info.trademarks-header .header-info__heading {
+    font-size: 36px; }
+  .header-info.trademarks-header .header-info__text {
+    padding: 0 40px; }
+  .header-info.trademarks-header .header-info__description {
+    padding: 40px 0; }
   .header-info-countries .header-info__country {
     display: block;
     margin: 20px 0;
@@ -11451,7 +11521,39 @@ Trademarks start
   .form.form-big .form-group {
     margin-bottom: 25px; }
   .form.form-big .form-control {
-    font-size: 18px; } }
+    font-size: 18px; }
+  .text-box .text-box__item {
+    margin: 0 0 15px; }
+  .text-box .text-box__item-title {
+    font-size: 18px; }
+  .text-box .text-box__item-description {
+    font-size: 16px; }
+  .simple-list.simple-list--company .simple-list__item {
+    font-size: 16px; }
+  .element-card .element-card__title {
+    font-size: 18px; }
+  .element-card .element-card__description {
+    font-size: 16px;
+    padding: 0; }
+  .news-list .news-list__item {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 25%;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap; }
+  .news-list .news-list__icon {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    margin: 0; }
+  .news-list .news-list__description {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%; } }
 
 @media screen and (max-width: 767px) {
   .mobile-layout {
@@ -11747,6 +11849,15 @@ Trademarks start
     vertical-align: middle; }
     .header-info .header-info__heading-icon img {
       display: block; }
+  .header-info.trademarks-header .header-info__heading {
+    font-size: 22px; }
+  .header-info.trademarks-header .header-info__text {
+    font-size: 16px;
+    padding: 0; }
+  .header-info.trademarks-header .header-info__description {
+    padding: 10px 5px; }
+  .header-info.trademarks-header .header-info__content {
+    padding: 0; }
   .header-info-countries .header-info__country {
     margin: 10px 0;
     padding: 0 20px 0; }
@@ -12295,6 +12406,8 @@ Trademarks start
     width: 100%;
     margin-bottom: 20px;
     font-size: 17px; }
+  .control-buttons .control-buttons--wrap .btn-next.btn-next_right-indent {
+    margin-right: 0; }
   /*filter slider start*/
   .mobile-slider {
     display: block; }
@@ -12523,4 +12636,19 @@ Trademarks start
       text-indent: -99999px;
       height: 50px;
       background: url(../img/icons/down-arrow-key.png) #d4e3fc no-repeat 50%;
-      background-size: 40px; } }
+      background-size: 40px; }
+  .news-list .news-list__item {
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap; }
+  .text-box .text-box__item-title {
+    font-size: 18px; }
+  .text-box .text-box__item-description {
+    font-size: 16px; }
+  .simple-list.simple-list--company .simple-list__item {
+    font-size: 16px; }
+  .element-card .element-card__title {
+    font-size: 18px; }
+  .element-card .element-card__description {
+    font-size: 16px;
+    padding: 0 10px; } }

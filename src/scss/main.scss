@@ -47,6 +47,9 @@ button{
     &:last-child{
       a{
         cursor: default;
+        &:hover{
+          text-decoration: none;
+        }
       }
     }
   }
@@ -178,7 +181,7 @@ button{
 
   &.header-info__all-services{
     .header-info__text{
-      margin: 40px 0 60px;
+      margin: 10px 0 30px;
     }
   }
 }
@@ -328,6 +331,19 @@ button{
     background: rgba(1, 69, 156, 0.4);
     &.header-info__content--bg-transparent{
       background: transparent;
+    }
+  }
+
+  &.trademarks-header{
+    .header-info__description{
+      background: rgba(94, 131, 241, 0.5);
+      padding: 10px 5px;
+    }
+    .header-info__heading{
+      font-size: 52px;
+    }
+    .header-info__text{
+      padding: 0 20px;
     }
   }
 
@@ -1464,9 +1480,10 @@ button{
   }
   &.sunrise{
     background: url('../img/icons/sunrise_bg.jpg') no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     .header-info__content{
       background: rgba(0, 0, 0, 0.33);
+      padding: 5px;
     }
   }
   &.holiday_travel{
@@ -1488,12 +1505,16 @@ button{
     .header-info__country{
       background: rgba(0, 0, 0, 0.2);
       margin: 0;
+      padding: 0 10px 5px;
+    }
+    .header-info-countries{
+      padding: 50px 0 30px;
     }
     .header-info__heading{
       text-shadow: 0 3px 1px #020202;
       background: rgba(0, 0, 0, 0.2);
       display: inline-block;
-      margin: 30px 0 0 0;
+      margin: 20px 0 0 0;
       padding: 0 50px;
       color: #fff;
       font-weight: bold;
@@ -1554,11 +1575,14 @@ button{
 
   &.header-info__all-services{
     background: url('../img/categories/all-services.jpg') no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
     .header-info__content{
       margin: 20px 0 120px;
       padding: 20px 40px;
       background: rgba(1, 69, 156, 0.2);
+    }
+    .header-info__heading--big{
+      font-size: 70px;
     }
     .breadcrumbs {
       top: 5px;
@@ -1734,13 +1758,13 @@ second site
   .header-info__country{
     position: relative;
     //margin: 55px auto 50px;
-    padding: 0 20px 40px;
+    padding: 0 20px 20px;
     display: inline-block;
     background: #243a56;
     background: rgba(16, 102, 239, 0.2);
   }
 
-  .breadcrumbs__item a{
+  .breadcrumbs__item a:hover{
     text-decoration: underline;
   }
 }
@@ -2796,7 +2820,7 @@ second site
   padding: 15px 30px;
   border-radius: 7px;
   &.our-clients-container--indent-fix{
-    margin: 40px 0 20px;
+    margin-bottom: 20px;
   }
 }
 
@@ -5456,7 +5480,6 @@ Trademarks start
       height: 450px;
     }
   }
-
 }
 
 .list-with-icon--middle-align{
@@ -5475,7 +5498,6 @@ Trademarks start
 }
 
 .header-banner{
-
   .header-banner__title{
     color: #021f54;
     font-size: 60px;
@@ -5737,7 +5759,10 @@ Trademarks start
 
 .text-box{
   .text-box__item{
-
+    margin: 0 0 25px;
+    &:last-child{
+      margin: 0;
+    }
   }
   .text-box__item-title{
     color: #606060;
@@ -5814,6 +5839,31 @@ Trademarks start
   }
 }
 
+.news-list{
+  display: flex;
+  flex-flow: row wrap;
+  .news-list__item{
+    display: flex;
+    justify-content: space-between;
+    flex:0 0 50%;
+    margin: 0 0 30px 0;
+  }
+  .news-list__icon{
+    margin-right: 30px;
+    flex: 0 0 180px;
+  }
+  .news-list__description{
+    color: #606060;
+    font-size: 17px;
+  }
+}
+
+.control-buttons{
+  .control-buttons--wrap{
+    flex-flow:row wrap;
+  }
+}
+
 
 @media screen and (max-width: 1368px) {
   .our-clients-container {
@@ -5859,6 +5909,11 @@ Trademarks start
     &.header-info__all-services.trademark-service{
       .header-info__text{
         padding: 0 35px;
+      }
+    }
+    &.trademarks-header{
+      .header-info__heading{
+        font-size: 40px;
       }
     }
   }
@@ -6862,6 +6917,12 @@ Trademarks start
     border:none;
   }
 
+  .text-info{
+    &.text-info--company{
+      font-size: 16px;
+    }
+  }
+
 }
 
 @media screen and  (min-width: 768px) {
@@ -6924,6 +6985,18 @@ Trademarks start
     }
     .header-info__heading--indent{
       margin-bottom: 20px;
+    }
+
+    &.trademarks-header{
+      .header-info__heading{
+        font-size: 36px;
+      }
+      .header-info__text{
+        padding: 0 40px;
+      }
+      .header-info__description{
+        padding: 40px 0;
+      }
     }
   }
 
@@ -7225,6 +7298,51 @@ Trademarks start
       .form-control{
         font-size: 18px;
       }
+    }
+  }
+
+  .text-box{
+    .text-box__item{
+      margin: 0 0 15px;
+    }
+    .text-box__item-title{
+      font-size: 18px;
+    }
+    .text-box__item-description{
+      font-size: 16px;
+    }
+  }
+
+  .simple-list{
+    &.simple-list--company{
+      .simple-list__item {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .element-card{
+    .element-card__title{
+      font-size: 18px;
+    }
+    .element-card__description{
+      font-size: 16px;
+      padding: 0;
+    }
+  }
+
+  .news-list{
+    .news-list__item{
+      flex:0 0 25%;
+
+      flex-flow: row wrap;
+    }
+    .news-list__icon{
+      flex: 0 0 100%;
+      margin: 0;
+    }
+    .news-list__description{
+      flex: 0 0 100%;
     }
   }
 
@@ -7633,6 +7751,21 @@ Trademarks start
       vertical-align: middle;
       img{
         display: block;
+      }
+    }
+    &.trademarks-header{
+      .header-info__heading{
+        font-size: 22px;
+      }
+      .header-info__text{
+        font-size: 16px;
+        padding: 0;
+      }
+      .header-info__description{
+        padding: 10px 5px;
+      }
+      .header-info__content{
+        padding: 0;
       }
     }
   }
@@ -8541,6 +8674,11 @@ Trademarks start
       margin-bottom: 20px;
       font-size: 17px;
     }
+    .control-buttons--wrap{
+      .btn-next.btn-next_right-indent{
+        margin-right: 0;
+      }
+    }
   }
 
   /*filter slider start*/
@@ -8864,6 +9002,39 @@ Trademarks start
         background: url(../img/icons/down-arrow-key.png) #d4e3fc no-repeat 50%;
         background-size: 40px;
       }
+    }
+  }
+
+  .news-list{
+    .news-list__item{
+      flex-flow: row wrap;
+    }
+  }
+
+  .text-box{
+    .text-box__item-title{
+      font-size: 18px;
+    }
+    .text-box__item-description{
+      font-size: 16px;
+    }
+  }
+
+  .simple-list{
+    &.simple-list--company {
+      .simple-list__item{
+        font-size: 16px;
+      }
+    }
+  }
+
+  .element-card{
+    .element-card__title{
+      font-size: 18px;
+    }
+    .element-card__description{
+      font-size: 16px;
+      padding: 0 10px;
     }
   }
 
