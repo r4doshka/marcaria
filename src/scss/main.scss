@@ -1724,6 +1724,9 @@ button{
     text-shadow: none;
     color: #021f54;
   }
+  &.default-header--small{
+    font-size: 34px;
+  }
 }
 
 .content{
@@ -1976,6 +1979,9 @@ second site
     font-weight: 700;
     color: #606060;
     text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+    }
   }
 
   .domains-list__icon{
@@ -6843,6 +6849,12 @@ Trademarks start
       margin: 0 auto;
     }
   }
+  .order-button{
+    &.order-button--large{
+      font-size: 20px;
+    }
+  }
+
 
   .simple-note{
     font-size: 16px;
@@ -6906,6 +6918,9 @@ Trademarks start
   .default-header{
     &.default-header--indent{
       margin: 20px 0 0;
+    }
+    &.default-header--small{
+      font-size: 20px;
     }
   }
 
