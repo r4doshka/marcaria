@@ -178,12 +178,6 @@ button{
   background: url("../img/icons/WorldWide_Trademark.png") no-repeat 0 100%;
   background-size: cover;
   position: relative;
-
-  &.header-info__all-services{
-    .header-info__text{
-      margin: 10px 0 30px;
-    }
-  }
 }
 
 .header__nav{
@@ -351,7 +345,7 @@ button{
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 94px;
+    width: 84px;
 
     &.header-info__icon--right{
       right: 0;
@@ -379,6 +373,9 @@ button{
   .header-info__text{
     font-size: 30px;
     font-weight: 400;
+    &.header-info__text--padding{
+      padding: 0 50px;
+    }
   }
 }
 
@@ -1574,12 +1571,16 @@ button{
   }
 
   &.header-info__all-services{
-    background: url('../img/categories/all-services.jpg') no-repeat;
-    background-size: cover;
+    background: url('../img/icons/all-services.jpg') no-repeat;
+    background-size: 100% 100%;
     .header-info__content{
-      margin: 20px 0 120px;
-      padding: 20px 40px;
+      margin: 20px 0 50px;
+      padding: 30px;
       background: rgba(1, 69, 156, 0.2);
+      z-index: 1;
+      &.header-info__content--indent-bottom{
+        padding-bottom: 75px;
+      }
     }
     .header-info__heading--big{
       font-size: 70px;
@@ -1588,24 +1589,40 @@ button{
       top: 5px;
       left: 10px;
     }
-    &.trademark-service{
-      background: url('../img/icons/all-services.jpg') no-repeat;
+    .header-info__content--background{
+      background: url('../img/icons/aumentar_ventas_i.png') no-repeat;
+      background-size: cover;
+      width: 400px;
+      height: auto;
+      position: absolute;
+      top: 38px;
+      left: -110px;
+      bottom: -50px;
+      z-index: 0;
+    }
+    .header-info__wrap{
+      position: relative;
+    }
+    .icon-trademark{
+      width: 90px;
+      margin: 0 auto;
+    }
+
+    &.header-info__flags-rotate{
+      background: url('../img/icons/banderasRotadas.jpg') no-repeat;
       background-size: 100% 100%;
-      .header-info__content{
-        margin: 20px 0 60px;
-        padding: 30px 40px;
+    }
+    .header-info-countries{
+      .header-info__country{
+        z-index: 1;
+        padding: 20px 70px 30px;
       }
-      .header-info__text{
-        margin: 0;
-        padding: 0 55px;
-      }
-      .icon-trademark{
-        width: 90px;
-        margin: 0 auto;
-      }
-      &.header-info__flags-rotate{
-        background: url('../img/icons/banderasRotadas.jpg') no-repeat;
-        background-size: 100% 100%;
+      .header-info__content--background{
+        width: 400px;
+        height: auto;
+        top: 0;
+        left: -110px;
+        bottom: -50px;
       }
     }
   }
@@ -3073,6 +3090,15 @@ second site
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  &.trademarks-tools{
+    .card-item__name{
+      font-size: 29px;
+    }
+    .card-item__text{
+      font-size: 20px;
+    }
   }
 }
 
@@ -5870,6 +5896,9 @@ Trademarks start
 }
 
 .control-buttons{
+  &.wrap-box{
+    padding: 0 0 70px;
+  }
   .control-buttons--wrap{
     flex-flow:row wrap;
   }
@@ -5921,14 +5950,22 @@ Trademarks start
     .header-info__icon{
       width: 75px;
     }
-    &.header-info__all-services.trademark-service{
-      .header-info__text{
-        padding: 0 35px;
+    &.header-info__all-services{
+      .header-info__content--background {
+        width: 330px;
+        height: auto;
+        top: 90px;
+        left: -26px;
+        bottom: -50px;
       }
-    }
-    &.trademarks-header{
-      .header-info__heading{
-        font-size: 40px;
+      .header-info-countries{
+        .header-info__content--background{
+          width: 300px;
+          height: auto;
+          top: 35px;
+          left: -15px;
+          bottom: -50px;
+        }
       }
     }
   }
@@ -6074,6 +6111,20 @@ Trademarks start
     }
     .contacts-list-item__description{
       font-size: 18px;
+    }
+  }
+
+  .card-list{
+    &.trademarks-tools{
+      .card-item__name{
+        font-size: 22px;
+      }
+      .card-item__icon{
+        width: 30px;
+      }
+      .card-item__text{
+        font-size: 16px;
+      }
     }
   }
 }
@@ -6614,6 +6665,11 @@ Trademarks start
         right: 0;
       }
     }
+    .header-info__heading{
+      &.header-info__heading--big{
+        font-size: 50px;
+      }
+    }
     &.header-info__hosting {
       margin-bottom: 40px;
       .header-info__heading {
@@ -6633,12 +6689,21 @@ Trademarks start
         padding: 0;
       }
     }
-    &.header-info__all-services.trademark-service{
-      .header-info__icon{
-        left:0;
+    &.header-info__all-services{
+      .header-info__content--background {
+        background-size: cover;
+        width: 200px;
+        top: 15px;
+        left: -20px;
+        bottom: -20px;
+        &.header-info__content--trademark-services{
+          width: 255px;
+        }
       }
-      .header-info__text{
-        padding: 0;
+      .header-info__content{
+        &.header-info__content--indent-bottom{
+          padding-bottom: 30px;
+        }
       }
     }
   }
@@ -7006,6 +7071,10 @@ Trademarks start
       img{
         display: block;
       }
+      svg{
+        width: 30px;
+        height: 30px;
+      }
     }
     .header-info__heading--indent{
       margin-bottom: 20px;
@@ -7020,6 +7089,28 @@ Trademarks start
       }
       .header-info__description{
         padding: 40px 0;
+      }
+    }
+
+    &.header-info__all-services{
+      .header-info__content {
+        padding: 15px 30px;
+        margin: 20px 0;
+      }
+      .header-info-countries{
+        .header-info__content--background{
+          width: 200px;
+          height: auto;
+          top: 20px;
+          left: 0;
+          bottom: -20px;
+        }
+        .header-info__heading{
+          margin-bottom:10px;
+        }
+        .header-info__country{
+         padding: 20px 30px;
+       }
       }
     }
   }
@@ -7710,14 +7801,20 @@ Trademarks start
       img{
         display: none;
       }
+      &.header-info__heading--big{
+        font-size: 17px;
+      }
     }
     .header-info__content{
       padding: 5px 15px;
       margin: 10px 0;
     }
     .header-info__text{
-      font-size: 14px;
+      font-size: 13px;
       font-weight: 400;
+      &.header-info__text--padding{
+        padding: 0;
+      }
     }
     &.header-info__hosting{
       .header-info-countries{
@@ -7734,19 +7831,37 @@ Trademarks start
     }
     &.header-info__all-services{
       .header-info__content{
-        margin-bottom: 20px;
+        margin: 10px 0;
         padding: 10px;
+        &.header-info__content--indent-bottom{
+          padding-bottom: 0;
+        }
       }
       .header-info__text{
         margin: 10px 0 10px;
       }
-      &.trademark-service{
-        .header-info__content{
-          margin: 20px 0;
-          padding: 10px;
+      .icon-trademark{
+        display: none;
+      }
+      .header-info__content--background{
+        width: 120px;
+        top: 25px;
+        left: -10px;
+        bottom: -10px;
+        &.header-info__content--trademark-services{
+          width: 98px;
         }
-        .icon-trademark{
-          width: 60px;
+      }
+      .header-info-countries{
+        .header-info__country{
+          padding: 0;
+        }
+        .header-info__content--background{
+          width: 100px;
+          height: auto;
+          top: 20px;
+          left: 0;
+          bottom: 0;
         }
       }
     }
@@ -7775,6 +7890,10 @@ Trademarks start
       vertical-align: middle;
       img{
         display: block;
+      }
+      svg{
+        height: 20px;
+        width: 20px;
       }
     }
     &.trademarks-header{
@@ -8475,9 +8594,13 @@ Trademarks start
       flex: 0 0 100%;
       text-align: center;
     }
+    .card-item__text{
+      flex:0 0 100%;
+    }
     .card-item__description,
     .top-inner{
       flex-flow: row wrap;
+      flex:0 0 100%;
     }
   }
 
