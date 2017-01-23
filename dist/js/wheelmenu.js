@@ -245,7 +245,8 @@
 
         return this.each(function(){
             var button = $(this)
-            var el = $($(this).attr("href"));
+            var el = $($(this).data("wheel"));
+            console.log(el);
             el.addClass("wheel");
 
             button.css("opacity", 0).animate({
