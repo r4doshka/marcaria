@@ -9580,6 +9580,7 @@ card-payment  start
     color: #01309a; }
   .card-payment .image {
     display: inline-block;
+    vertical-align: bottom;
     width: 55px;
     margin-left: 5px; }
   .card-payment .image-list {
