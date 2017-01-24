@@ -2847,7 +2847,7 @@ second site
   padding: 15px 30px;
   border-radius: 7px;
   &.our-clients-container--indent-fix{
-    margin-bottom: 20px;
+    margin: 30px 100px 0;
   }
 }
 
@@ -2980,10 +2980,14 @@ second site
     }
     .list-with-icon__title{
       text-align: center;
+      font-size: 21px;
+      line-height: 23px;
+      color: #606060;
     }
     .bold{
       font-size: 30px;
       line-height: 36px;
+      margin-bottom: 5px;
     }
   }
 }
@@ -4664,14 +4668,18 @@ card-payment  end
     font-weight: 700;
     color: #021f54;
     font-size: 60px;
+    text-align: center;
   }
   .text-container__content{
     padding: 0 0 40px 0;
     color: #021f54;
-    font-size: 24px;
+    font-size: 23px;
     &.text-container__content--indent{
       padding: 0 70px 40px;
     }
+  }
+  &.text-container--align-left{
+    text-align: left;
   }
 }
 
@@ -4740,6 +4748,10 @@ card-payment  end
           padding: 25px 3px;
           background: #75a9f9;
           border-color: #a8c6fa;
+          &.data-table_cell--active{
+            background: #a8c6fa;
+            border-color: #75a9f9;
+          }
           &:first-child{
             flex: 0 0 160px;
           }
@@ -4829,12 +4841,16 @@ card-payment  end
     .table-tab__item{
       flex:1;
       padding: 15px 0;
+      margin:0 2px 0 0;
       background: #75a9f9;
       font-size: 23px;
       color: #021f54;
       line-height: 25px;
       border-top-right-radius: 10px;
       border-top-left-radius: 10px;
+      &:last-child{
+        margin: 0;
+      }
       &.table-tab__item--active{
         font-weight: 700;
         background: #a8c6fa;
@@ -5718,8 +5734,10 @@ Trademarks start
 .achievement-list{
   padding-bottom: 40px;
   .achievement-list__item{
+    display: flex;
+    align-items: center;
     margin-left: 10px;
-    max-height: 75px;
+    max-width: 150px;
   }
 }
 
@@ -5795,6 +5813,9 @@ Trademarks start
 }
 
 .text-box{
+  .text-box__icon{
+    margin: 0 0 15px 0;
+  }
   .text-box__item{
     margin: 0 0 25px;
     &:last-child{
@@ -5824,6 +5845,9 @@ Trademarks start
     color: #606060;
     font-size: 19px;
     text-align: center;
+  }
+  .element-card__icon{
+    margin: 0 0 20px;
   }
 }
 
@@ -5879,6 +5903,7 @@ Trademarks start
 .news-list{
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-between;
   .news-list__item{
     display: flex;
     justify-content: space-between;
@@ -6240,6 +6265,13 @@ Trademarks start
           display: none;
         }
       }
+      .bold{
+        display: inline-block;
+        font-size: 19px;
+      }
+      .list-with-icon__title{
+        font-size: 19px;
+      }
     }
   }
 
@@ -6251,6 +6283,9 @@ Trademarks start
 
   .our-clients-container {
     margin: 40px 40px 100px;
+    &.our-clients-container--indent-fix{
+      margin: 30px 50px 0;
+    }
   }
 
   .owl-next,
@@ -7012,6 +7047,11 @@ Trademarks start
     }
   }
 
+  .element-card {
+    .element-card__description{
+      display: none;
+    }
+  }
 }
 
 @media screen and  (min-width: 768px) {
@@ -7448,7 +7488,7 @@ Trademarks start
 
   .news-list{
     .news-list__item{
-      flex:0 0 25%;
+      flex:0 0 23%;
 
       flex-flow: row wrap;
     }
@@ -7541,6 +7581,7 @@ Trademarks start
       .bold{
         font-size: 18px;
         display: inline-block;
+        margin: 0;
       }
       .list-with-icon__title{
         font-size: 18px;
@@ -9161,6 +9202,10 @@ Trademarks start
   .news-list{
     .news-list__item{
       flex-flow: row wrap;
+      flex: 0 0 100%;
+    }
+    .news-list__icon{
+      margin: 0 0 10px 0;
     }
   }
 
@@ -9171,23 +9216,46 @@ Trademarks start
     .text-box__item-description{
       font-size: 16px;
     }
+    &.text-box--mobile-indent{
+      margin-bottom: 20px;
+    }
+    &.text-box--mobile-hide{
+      display: none;
+    }
   }
 
   .simple-list{
     &.simple-list--company {
+      display: none;
+      padding: 20px 0 0 20px;
       .simple-list__item{
         font-size: 16px;
       }
     }
   }
+  .text-container{
+    .text-container__header{
+      font-size: 20px;
+    }
+    .text-container__content{
+      font-size: 14px;
+    }
+  }
 
   .element-card{
+    margin: 0 0 20px 0;
     .element-card__title{
       font-size: 18px;
     }
     .element-card__description{
       font-size: 16px;
       padding: 0 10px;
+    }
+    .element-card__icon{
+      margin: 0 0 10px 0;
+    }
+    .view-more{
+      margin: 0;
     }
   }
 
