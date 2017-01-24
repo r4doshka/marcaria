@@ -6895,7 +6895,7 @@ button:active, button:focus {
     padding: 70px 0; }
 
 .header-info.header-info__all-services {
-  background: url("../img/icons/all-services.jpg") no-repeat;
+  background: url("../img/icons/all_services_clean.jpg") no-repeat;
   background-size: 100% 100%; }
   .header-info.header-info__all-services .header-info__content {
     margin: 20px 0 50px;
@@ -7339,6 +7339,9 @@ second site
     font-size: 16px;
     line-height: 16px;
     color: #444444; }
+  .list-with-icon a.list-with-icon__title {
+    display: block;
+    cursor: pointer; }
   .list-with-icon.all-services .list-with-icon__icon {
     -webkit-box-flex: 0;
     -webkit-flex: 0 1 60px;

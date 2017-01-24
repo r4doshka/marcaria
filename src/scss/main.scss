@@ -1571,7 +1571,7 @@ button{
   }
 
   &.header-info__all-services{
-    background: url('../img/icons/all-services.jpg') no-repeat;
+    background: url('../img/icons/all_services_clean.jpg') no-repeat;
     background-size: 100% 100%;
     .header-info__content{
       margin: 20px 0 50px;
@@ -2129,6 +2129,10 @@ second site
     font-size: 16px;
     line-height: 16px;
     color: #444444;
+  }
+  a.list-with-icon__title{
+    display: block;
+    cursor: pointer;
   }
   &.all-services{
     .list-with-icon__icon{
