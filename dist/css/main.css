@@ -8508,16 +8508,27 @@ second site
         -ms-flex-align: center;
             align-items: center; }
   .element-box.element-box--pure {
-    padding: 10px;
+    padding: 10px 0 10px 10px;
     margin: 0;
-    background: transparent;
-    border: 2px solid #929292; }
+    background: transparent; }
   .element-box.element-box--indent {
-    margin-bottom: 30px; }
+    margin-bottom: 10px; }
   .element-box.element-box--fixed-height .element-box-inner {
     max-height: 532px;
     overflow: hidden;
-    overflow-y: scroll; }
+    overflow-y: scroll;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap; }
+    .element-box.element-box--fixed-height .element-box-inner .element-box__element-item {
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 0 50%;
+          -ms-flex: 0 0 50%;
+              flex: 0 0 50%; }
   .element-box.element-box--slider {
     margin: 0;
     padding: 0;
@@ -10431,7 +10442,8 @@ Trademarks start
 .full-img {
   height: 100%;
   max-height: 552px;
-  margin-bottom: 30px; }
+  margin-bottom: 10px;
+  display: inline-block; }
 
 .border-line {
   display: block;
@@ -10744,6 +10756,18 @@ Trademarks start
 
 .select-arrow {
   background: url("../img/icons/sunrise_bg.jpg") no-repeat; }
+
+.element-border-desktop {
+  border: 2px solid #929292; }
+
+.padding-left-cancel-desktop {
+  padding-left: 0; }
+
+.padding-right-cancel-desktop {
+  padding-right: 0; }
+
+.align-center {
+  text-align: center; }
 
 @media screen and (max-width: 1368px) {
   .our-clients-container {
@@ -11390,7 +11414,13 @@ Trademarks start
   .text-info.text-info--company {
     font-size: 16px; }
   .element-card .element-card__description {
-    display: none; } }
+    display: none; }
+  .element-border-desktop {
+    border: none; }
+  .padding-left-cancel-desktop {
+    padding-left: 15px; }
+  .padding-right-cancel-desktop {
+    padding-right: 15px; } }
 
 @media screen and (min-width: 768px) {
   .mobile-layout {

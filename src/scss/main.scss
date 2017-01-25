@@ -3428,14 +3428,13 @@ second site
   }
 
   &.element-box--pure{
-    padding: 10px;
+    padding: 10px 0 10px 10px;
     margin: 0;
     background: transparent;
-    border:2px solid #929292;
   }
 
   &.element-box--indent{
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 
   &.element-box--fixed-height{
@@ -3443,8 +3442,15 @@ second site
       max-height: 532px;
       overflow: hidden;
       overflow-y: scroll;
+      display: flex;
+      flex-flow: row wrap;
+      .element-box__element-item{
+        flex: 0 0 50%;
+      }
     }
   }
+
+
   &.element-box--slider{
     margin: 0;
     padding: 0;
@@ -5614,10 +5620,10 @@ Trademarks start
 }
 
 .full-img{
-  //width: 100%;
   height: 100%;
   max-height: 552px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+  display: inline-block;
 }
 
 .border-line{
@@ -5942,6 +5948,21 @@ Trademarks start
   background: url('../img/icons/sunrise_bg.jpg') no-repeat;
 }
 
+.element-border-desktop{
+  border: 2px solid #929292;
+}
+
+.padding-left-cancel-desktop{
+  padding-left: 0;
+}
+
+.padding-right-cancel-desktop{
+  padding-right: 0;
+}
+
+.align-center{
+  text-align: center;
+}
 
 @media screen and (max-width: 1368px) {
   .our-clients-container {
@@ -7060,6 +7081,18 @@ Trademarks start
     .element-card__description{
       display: none;
     }
+  }
+
+  .element-border-desktop{
+    border:none;
+  }
+
+  .padding-left-cancel-desktop{
+    padding-left:15px;
+  }
+
+  .padding-right-cancel-desktop{
+    padding-right: 15px;
   }
 }
 
