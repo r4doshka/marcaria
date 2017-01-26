@@ -7755,7 +7755,7 @@ second site
 /*home page*/
 .main-banner {
   position: relative;
-  margin-bottom: 140px; }
+  margin-bottom: 135px; }
   .main-banner .header {
     margin: 40px 0 20px;
     font-size: 60px;
@@ -7772,7 +7772,7 @@ second site
     color: #023376; }
   .main-banner .img-wrap {
     position: absolute;
-    top: 140px;
+    top: 50px;
     left: 0;
     right: 0;
     z-index: -1;
@@ -7791,19 +7791,19 @@ second site
     -webkit-transition: all 0.5s;
     transition: all 0.5s; }
     .main-banner .img-wrap .group-img {
-      max-height: 300px; }
+      max-height: 210px; }
 
 /*service*/
 .service .service-item {
   text-align: center; }
 
 .service .service-item__item-image {
-  margin-bottom: 40px; }
+  margin-bottom: 20px; }
   .service .service-item__item-image img {
-    width: 260px; }
+    width: 270px; }
 
 .service .service-item__item-title {
-  margin-bottom: 24px;
+  margin-bottom: 12px;
   font-size: 28px;
   color: #222222;
   font-weight: bold; }
@@ -7812,7 +7812,7 @@ second site
   display: none; }
 
 .service .service-item__item-description {
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   font-size: 18px;
   line-height: 20px;
   font-weight: bold;
@@ -8111,7 +8111,7 @@ second site
   margin: 40px 0 0 0; }
 
 .our-advantages .list-with-icon__icon img {
-  max-width: 120px; }
+  max-width: 100px; }
 
 .our-advantages .list-with-icon__text {
   font-size: 19px; }
@@ -10772,6 +10772,14 @@ Trademarks start
 /*============
 STEP 1-2 start
  ==============*/
+.content-box .content-box__header.content-box__header--indent-inner {
+  padding: 20px 0; }
+  .content-box .content-box__header.content-box__header--indent-inner .content-box_header-context {
+    padding: 10px 100px 0; }
+
+.content-box .content-box__header .content-box_header-context.content-box_header-context--lg {
+  font-size: 18px; }
+
 /*============
 STEP 1-2 end
  ==============*/
