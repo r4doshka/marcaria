@@ -5964,6 +5964,22 @@ Trademarks start
   text-align: center;
 }
 
+/*============
+STEP 1-2 start
+ ==============*/
+.content-box{
+  .content-box__header{
+    &.content-box__header--indent-inner{
+
+    }
+  }
+}
+
+
+
+/*============
+STEP 1-2 end
+ ==============*/
 @media screen and (max-width: 1368px) {
   .our-clients-container {
     margin: 40px 40px 60px;
