@@ -450,8 +450,10 @@
                                     Enter your Trademark
                                 </div>
                                 <div class="registered-form__item-content">
-                                    <input type="text" class="form-control form-control--green-border"
-                                           placeholder="Royal Guardian">
+                                    <input type="text" class="form-control form-control--green-border validation-error" placeholder="Royal Guardian" >
+                                    <div class="error-description">
+                                        Your Word Mark must have at least 1 character
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -477,11 +479,14 @@
                                     </div>
 
                                 </div>
+                                <div class="error-description error-description--image-load">
+                                    Your image is too big to upload, please resize it and try it again.
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-8">
+                        <div class="col-md-12">
                             <div class="registered-form__item">
                                 <div class="registered-form__item-title">
                                     Describe Products or Services
@@ -489,7 +494,10 @@
                                 <div class="registered-form__item-content">
                                     Please provide a brief description of the products or services that will be used in
                                     connection to your trademark.
-                                    <textarea name="" id="" class="form-control-textarea form-control"></textarea>
+                                    <textarea name="" id=""  class="form-control-textarea form-control validation-error"></textarea>
+                                    <div class="error-description">
+                                        Please be more specific about your description
+                                    </div>
                                     <span class="bold">Note:</span> If you have experience with trademarks, and know
                                     your trademark class number, you can specify it by using this
                                     <a href="javascript:;" class="dropdown-class-toggle link-underline">class selector,</a>
@@ -754,7 +762,6 @@
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                     <div class="row">
@@ -866,7 +873,6 @@
         </div>
     </div>
 </div>
-
 <footer class="footer">
     <div class="container">
         <div class="footer-callback">
@@ -1060,7 +1066,6 @@
             imageListEl.appendChild(name);
         };
         reader.readAsDataURL(fileList[0]);
-
     }
 
 </script>
