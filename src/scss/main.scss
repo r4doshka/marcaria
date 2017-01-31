@@ -681,7 +681,6 @@ button{
 }
 
 
-
 .filter__filter-container{
   padding: 40px;
   background: #d6d6d6;
@@ -1870,7 +1869,7 @@ second site
   text-align: center;
   position: relative;
   .product-list__item{
-    padding: 10px 10px 15px;
+    padding: 30px 20px;
     margin: 5px 0 20px;
     border: 1px solid #000;
     border-radius:20px;
@@ -1890,19 +1889,28 @@ second site
     }
   }
   .product-list__logo{
-    margin: 25px 0 20px;
-    img{
-      height: 160px;
-    }
-    &.product-list__logo--large{
+    margin: 0 auto 20px;
       img{
-        height: 180px;
+        height: 170px;
+      }
+    &.hosting-plans-icon{
+      img{
+        height: 120px;
+        width: auto;
+      }
+    }
+    &.product-list__logo--trademarks{
+      img{
+        height: 140px;
       }
     }
   }
   .product-list__info{
-    margin: 20px 0;
-    border-right: 2px solid #b9d75f;
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .product-list__title{
     margin-bottom: 5px;
@@ -1914,7 +1922,6 @@ second site
     font-size: 16px;
     color: #606060;
   }
-
   .action-button{
     padding:7px 15px;
     font-size: 18px;
@@ -1925,6 +1932,66 @@ second site
     display: inline-block;
   }
 
+}
+
+.products-list{
+  padding: 20px 15px;
+  background: #fff;
+  .products-list__products-item{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    color: #01309a;
+    font-size: 20px;
+    .checkbox-list__text{
+      font-size: 20px;
+      line-height: 22px;
+      color: #0130b0;
+    }
+    .pseudo-checkbox{
+      width: 15px;
+      height: 15px;
+      margin-left: 2px;
+    }
+    &.products-list__products-item--empty{
+      margin: 10px 0 40px 0;
+      padding: 0 0 0 30px;
+      font-size: 18px;
+    }
+  }
+  .products-list__heading{
+    font-weight: 700;
+    font-size: 25px;
+    color: #0c59d8;
+    .select-years{
+      width: 120px;
+    }
+    .checkbox-list__text{
+      font-size: 25px;
+      color: #0c59d8;
+      font-weight: 700;
+    }
+  }
+  .products-list__products-item--available{
+    color: #a6ce2f;
+    font-size: 18px;
+  }
+  .select-years{
+    border:1px solid #5a79bd;
+    border-radius: 5px;
+    width: 70px;
+  }
+
+  .add-to-cart{
+    margin-top: 20px;
+  }
+  .context-remark{
+    position: absolute;
+    bottom: 10px;
+    right: 25px;
+    color: #01309a;
+    font-size: 14px;
+  }
 }
 
 
@@ -1985,8 +2052,8 @@ second site
 .domains-list{
   display: flex;
   flex-flow: row wrap;
-  margin-top: 30px;
-
+  border-left: 2px solid #b9d75f;
+  padding-left: 20px;
   .domains-list__item{
     display: flex;
     align-items: center;
@@ -2064,7 +2131,6 @@ second site
 
 .hosting-plans{
   .advantages-list{
-    margin-top: 20px;
     padding-left: 25px;
   }
 
@@ -2116,7 +2182,6 @@ second site
 }
 
 .list-with-icon{
-  margin-top: 30px;
   .list-with-icon__item {
     display: flex;
     margin-bottom: 40px;
@@ -2148,6 +2213,7 @@ second site
     .list-with-icon__description{
       flex:0 1 auto;
     }
+    border-left: 2px solid #b9d75f;
   }
 }
 
@@ -2395,7 +2461,7 @@ second site
 
 .tools{
   &.list-with-icon{
-    margin-top: 80px;
+    border-left: 2px solid #b9d75f;
   }
   .list-with-icon__icon{
     flex: 0 1 40px;
@@ -2405,6 +2471,7 @@ second site
   }
   .list-with-icon__title{
     font-size: 20px;
+    line-height: 22px;
   }
   .list-with-icon__text{
     font-size: 16px;
@@ -3334,6 +3401,9 @@ second site
     position: relative;
     bottom: -30px;
   }
+  &.context-remark--fixed-width{
+    width: 320px;
+  }
 }
 
 
@@ -3791,69 +3861,6 @@ domain select  start
   font-size: 14px;
 }
 
-.products-list{
-  padding: 20px 15px;
-  background: #fff;
-  .products-list__products-item{
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-    &.products-list__products-item--empty{
-      margin: 10px 0 40px 0;
-      padding: 0 0 0 30px;
-      font-size: 18px;
-    }
-  }
-
-  .products-list__heading{
-    font-weight: 700;
-    font-size: 25px;
-    color: #0c59d8;
-    .select-years{
-      width: 120px;
-    }
-    .checkbox-list__text{
-      font-size: 25px;
-      color: #0c59d8;
-      font-weight: 700;
-    }
-  }
-
-  .products-list__products-item--available{
-    color: #a6ce2f;
-    font-size: 18px;
-  }
-  .products-list__products-item{
-    color: #01309a;
-    font-size: 20px;
-    .checkbox-list__text{
-      font-size: 20px;
-      line-height: 22px;
-      color: #0130b0;
-    }
-    .pseudo-checkbox{
-      width: 15px;
-      height: 15px;
-      margin-left: 2px;
-    }
-  }
-  .select-years{
-    border:1px solid #5a79bd;
-    border-radius: 5px;
-    width: 70px;
-  }
-
-  .add-to-cart{
-    margin-top: 20px;
-  }
-  .context-remark{
-    position: absolute;
-    bottom: 10px;
-    right: 25px;
-    color: #01309a;
-    font-size: 14px;
-  }
-}
 
 .products-list.checkbox-list{
   position: relative;
@@ -7044,6 +7051,12 @@ STEP 1-2 end
     }
   }
 
+  .context-remark{
+    &.context-remark--fixed-width{
+      width: auto;
+    }
+  }
+
   /*check-order*/
   .check-order {
     .edit-control-panel {
@@ -9183,7 +9196,11 @@ STEP 1-2 end
       margin-left: 25px;
     }
     .payments-options__item{
+      flex:0 0 100%;
       margin-right: 0;
+      &.payments-options__item--mobile-last{
+        order: 2;
+      }
     }
     .context-remark{
       margin-left: 15px;

@@ -7106,7 +7106,7 @@ second site
   text-align: center;
   position: relative; }
   .product-list .product-list__item {
-    padding: 10px 10px 15px;
+    padding: 30px 20px;
     margin: 5px 0 20px;
     border: 1px solid #000;
     border-radius: 20px;
@@ -7117,14 +7117,35 @@ second site
     .product-list .product-list__item.middle-size .product-list__title {
       font-size: 22px; }
   .product-list .product-list__logo {
-    margin: 25px 0 20px; }
+    margin: 0 auto 20px; }
     .product-list .product-list__logo img {
-      height: 160px; }
-    .product-list .product-list__logo.product-list__logo--large img {
-      height: 180px; }
+      height: 170px; }
+    .product-list .product-list__logo.hosting-plans-icon img {
+      height: 120px;
+      width: auto; }
+    .product-list .product-list__logo.product-list__logo--trademarks img {
+      height: 140px; }
   .product-list .product-list__info {
-    margin: 20px 0;
-    border-right: 2px solid #b9d75f; }
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .product-list .product-list__title {
     margin-bottom: 5px;
     font-size: 18px;
@@ -7141,6 +7162,59 @@ second site
     color: #fff;
     font-weight: bold;
     display: inline-block; }
+
+.products-list {
+  padding: 20px 15px;
+  background: #fff; }
+  .products-list .products-list__products-item {
+    margin-top: 10px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #01309a;
+    font-size: 20px; }
+    .products-list .products-list__products-item .checkbox-list__text {
+      font-size: 20px;
+      line-height: 22px;
+      color: #0130b0; }
+    .products-list .products-list__products-item .pseudo-checkbox {
+      width: 15px;
+      height: 15px;
+      margin-left: 2px; }
+    .products-list .products-list__products-item.products-list__products-item--empty {
+      margin: 10px 0 40px 0;
+      padding: 0 0 0 30px;
+      font-size: 18px; }
+  .products-list .products-list__heading {
+    font-weight: 700;
+    font-size: 25px;
+    color: #0c59d8; }
+    .products-list .products-list__heading .select-years {
+      width: 120px; }
+    .products-list .products-list__heading .checkbox-list__text {
+      font-size: 25px;
+      color: #0c59d8;
+      font-weight: 700; }
+  .products-list .products-list__products-item--available {
+    color: #a6ce2f;
+    font-size: 18px; }
+  .products-list .select-years {
+    border: 1px solid #5a79bd;
+    border-radius: 5px;
+    width: 70px; }
+  .products-list .add-to-cart {
+    margin-top: 20px; }
+  .products-list .context-remark {
+    position: absolute;
+    bottom: 10px;
+    right: 25px;
+    color: #01309a;
+    font-size: 14px; }
 
 .available-elements {
   display: -webkit-box;
@@ -7205,7 +7279,8 @@ second site
   -webkit-flex-flow: row wrap;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  margin-top: 30px; }
+  border-left: 2px solid #b9d75f;
+  padding-left: 20px; }
   .domains-list .domains-list__item {
     display: -webkit-box;
     display: -webkit-flex;
@@ -7282,7 +7357,6 @@ second site
           justify-content: center; }
 
 .hosting-plans .advantages-list {
-  margin-top: 20px;
   padding-left: 25px; }
 
 .hosting-plans .remark {
@@ -7326,27 +7400,32 @@ second site
   font-size: 25px;
   font-weight: 700; }
 
-.list-with-icon {
-  margin-top: 30px; }
-  .list-with-icon .list-with-icon__item {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    margin-bottom: 40px; }
-  .list-with-icon .list-with-icon__icon {
-    margin-right: 15px; }
-  .list-with-icon .list-with-icon__description {
-    text-align: left; }
-  .list-with-icon .list-with-icon__title {
-    margin-bottom: 10px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 16px;
-    color: #444444; }
-  .list-with-icon a.list-with-icon__title {
-    display: block;
-    cursor: pointer; }
+.list-with-icon .list-with-icon__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 40px; }
+
+.list-with-icon .list-with-icon__icon {
+  margin-right: 15px; }
+
+.list-with-icon .list-with-icon__description {
+  text-align: left; }
+
+.list-with-icon .list-with-icon__title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #444444; }
+
+.list-with-icon a.list-with-icon__title {
+  display: block;
+  cursor: pointer; }
+
+.list-with-icon.all-services {
+  border-left: 2px solid #b9d75f; }
   .list-with-icon.all-services .list-with-icon__icon {
     -webkit-box-flex: 0;
     -webkit-flex: 0 1 60px;
@@ -7546,7 +7625,7 @@ second site
   display: none !important; }
 
 .tools.list-with-icon {
-  margin-top: 80px; }
+  border-left: 2px solid #b9d75f; }
 
 .tools .list-with-icon__icon {
   -webkit-box-flex: 0;
@@ -7561,7 +7640,8 @@ second site
           flex: 0 1 80%; }
 
 .tools .list-with-icon__title {
-  font-size: 20px; }
+  font-size: 20px;
+  line-height: 22px; }
 
 .tools .list-with-icon__text {
   font-size: 16px; }
@@ -8391,6 +8471,8 @@ second site
     text-align: right;
     position: relative;
     bottom: -30px; }
+  .context-remark.context-remark--fixed-width {
+    width: 320px; }
 
 /*checkbox-list*/
 .country-domains .checkbox-list {
@@ -8839,60 +8921,6 @@ domain select  start
   display: inline-block;
   color: #e61610;
   font-size: 14px; }
-
-.products-list {
-  padding: 20px 15px;
-  background: #fff; }
-  .products-list .products-list__products-item {
-    margin-top: 10px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    .products-list .products-list__products-item.products-list__products-item--empty {
-      margin: 10px 0 40px 0;
-      padding: 0 0 0 30px;
-      font-size: 18px; }
-  .products-list .products-list__heading {
-    font-weight: 700;
-    font-size: 25px;
-    color: #0c59d8; }
-    .products-list .products-list__heading .select-years {
-      width: 120px; }
-    .products-list .products-list__heading .checkbox-list__text {
-      font-size: 25px;
-      color: #0c59d8;
-      font-weight: 700; }
-  .products-list .products-list__products-item--available {
-    color: #a6ce2f;
-    font-size: 18px; }
-  .products-list .products-list__products-item {
-    color: #01309a;
-    font-size: 20px; }
-    .products-list .products-list__products-item .checkbox-list__text {
-      font-size: 20px;
-      line-height: 22px;
-      color: #0130b0; }
-    .products-list .products-list__products-item .pseudo-checkbox {
-      width: 15px;
-      height: 15px;
-      margin-left: 2px; }
-  .products-list .select-years {
-    border: 1px solid #5a79bd;
-    border-radius: 5px;
-    width: 70px; }
-  .products-list .add-to-cart {
-    margin-top: 20px; }
-  .products-list .context-remark {
-    position: absolute;
-    bottom: 10px;
-    right: 25px;
-    color: #01309a;
-    font-size: 14px; }
 
 .products-list.checkbox-list {
   position: relative; }
@@ -11555,6 +11583,8 @@ STEP 1-2 end
       margin: 0 0 5px 0; }
   .checkbox-list .checkbox-list__checkbox-group .pseudo-checkbox.pseudo-checkbox--large {
     left: 0; }
+  .context-remark.context-remark--fixed-width {
+    width: auto; }
   /*check-order*/
   .check-order .edit-control-panel {
     display: -webkit-box;
@@ -12895,7 +12925,16 @@ STEP 1-2 end
   .payments-options .image-list {
     margin-left: 25px; }
   .payments-options .payments-options__item {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
     margin-right: 0; }
+    .payments-options .payments-options__item.payments-options__item--mobile-last {
+      -webkit-box-ordinal-group: 3;
+      -webkit-order: 2;
+          -ms-flex-order: 2;
+              order: 2; }
   .payments-options .context-remark {
     margin-left: 15px; }
   .radio-list.payments-options {
