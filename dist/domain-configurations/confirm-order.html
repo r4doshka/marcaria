@@ -444,8 +444,9 @@
                                 <option value="">1</option>
                             </select>
                         </div>
-                        <div class="col-md-2 col-sm-3 col-xs-6">
+                        <div class="col-md-2 col-sm-3 col-xs-6 group-item-price">
                             $ 100
+                            <button class="btn-discard" data-toggle="modal" data-target="#myModal1">-</button>
                         </div>
                     </div>
                     <div class="row">
@@ -462,8 +463,9 @@
                                 <option value="">5</option>
                             </select>
                         </div>
-                        <div class="col-md-2 col-sm-3 col-xs-6">
+                        <div class="col-md-2 col-sm-3 col-xs-6 group-item-price">
                             $ 50
+                            <button class="btn-discard" data-toggle="modal" data-target="#myModal1">-</button>
                         </div>
                     </div>
                 </div>
@@ -1068,6 +1070,7 @@
         </div>
     </div>
 </footer>
+
 <div class="modal fade modal-text modal-terms" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -1084,6 +1087,22 @@
         </div>
     </div>
 </div>
+
+<div class="modal fade modal-text modal-delete" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-text__description">
+                This will delete the selected item
+            </div>
+
+            <div class="edit-control-panel">
+                <button class="btn-small">Cancel</button>
+                <button class="btn-small btn-small-paint">Confirm</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script>window.jQuery || document.write('<script src="app/js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
 <script src="../js/plugins.js"></script>

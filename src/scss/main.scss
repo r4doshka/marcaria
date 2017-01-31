@@ -2718,6 +2718,13 @@ second site
 }
 
 
+.select-service{
+  margin-bottom: 145px;
+  .content{
+    padding-top:0;
+  }
+}
+
 /*reviews*/
 .reviews{
   .review-item{
@@ -4068,6 +4075,16 @@ domain select  start
     border: 2px solid #006ce5;
   }
 
+  &.modal-delete{
+    .modal-dialog{
+      width: 400px;
+    }
+    .modal-text__description{
+      text-align: center;
+      font-size: 20px;
+    }
+  }
+
   &.modal-terms{
     .modal-dialog{
       width: 660px;
@@ -4387,6 +4404,11 @@ domain configurations  start
   }
 }
 
+.validation-error__trademark-wrap{
+  display: inline-block;
+  vertical-align: top;
+}
+
 .validation-error{
   border-color: #e61610 !important;
   color: #e61610 !important;
@@ -4510,7 +4532,77 @@ domain configurations  start
     display: inline-block;
     font-size: 14px;
   }
+
+  &.check-order--trademark{
+    margin: 35px 50px;
+    padding: 40px;
+    box-shadow: none;
+    border:1px solid #2f476c;
+    border-radius:5px;
+    .check-order__options{
+      margin-bottom: 10px;
+      font-weight: 400;
+      font-size: 21px;
+      color:#01309a;
+    }
+    .check-order__title{
+      font-size: 22px;
+    }
+    .total-price{
+      width: auto;
+      border:none;
+      font-size: 22px;
+    }
+    .edit-button{
+      top:16px;
+      right: 16px;
+      bottom: inherit;
+      left: inherit;
+    }
+    .check-order__group{
+      padding: 0 15px;
+      &:first-child{
+        .check-order__group-item{
+          border-top: 2px solid #d6d6d6;
+        }
+      }
+    }
+    .check-order__group-item{
+      padding: 6px 20px;
+      border: 2px solid #d6d6d6;
+      border-top: none;
+      &:first-child{
+        border-right: 0;
+      }
+    }
+    .edit-control-panel{
+      margin: 12px 0 0;
+    }
+    .tooltip-inner{
+      width: 125px;
+      background: #ebebeb;
+      border:none;
+      padding: 20px 25px;
+      font-size: 14px;
+    }
+    .tooltip.in{
+      opacity: 1;
+    }
+    .tooltip {
+      margin-left: 25px;
+      .tooltip-arrow{
+        margin-top: -10px;
+        border-width: 10px 20px 10px 0;
+        left:-15px;
+        border-right-color: #ebebeb;
+      }
+    }
+    .edit-button{
+      text-indent: -9999999px;
+    }
+  }
 }
+
 
 .edit-button{
   position: absolute;
@@ -4565,6 +4657,9 @@ domain configurations  start
     color: #01309a;
     font-size: 14px;
   }
+  &.payments-options__space-between{
+    justify-content: space-between;
+  }
 }
 
 .image-list{
@@ -4572,6 +4667,9 @@ domain configurations  start
     display: inline-block;
     width: 55px;
     margin-right: 5px;
+    &.image-list__item--small{
+      width: 40px;
+    }
   }
 }
 
@@ -5760,8 +5858,10 @@ Trademarks start
 
 .watch-plans{
   .watch-plans__icon{
-    width: 90px;
     margin: 0 0 15px 0;
+    img{
+      height: 80px;
+    }
   }
   .hosting-plans__price{
     margin: 0 0 30px 0;
@@ -6259,6 +6359,53 @@ STEP 1-2 start
   .total-price{
     border:none;
     margin: 15px 0;
+  }
+}
+
+.group-item-price{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-remove{
+  width: 26px;
+  height: 26px;
+  border: none;
+  padding: 0;
+  background: #3d8af7;
+  border-radius: 5px;
+  .minus-symbol{
+    position: relative;
+    top:-2px;
+  }
+}
+
+.btn-discard{
+  display: inline-block;
+  position: relative;
+  top: -2px;
+  width: 18px;
+  height: 18px;
+  line-height: 15px;
+  text-align: center;
+  border-radius: 50%;
+  background: #ebebeb;
+  cursor: pointer;
+  border:none;
+  padding: 0;
+}
+
+.minus-symbol{
+  color: #fff;
+  font-weight: 400;
+}
+.edit-field{
+  &.edit-field--active{
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #b2e712;
+    border-radius:5px;
   }
 }
 
@@ -6930,6 +7077,9 @@ STEP 1-2 end
   .image-list {
     .image-list__item {
       width: 40px;
+      &.image-list__item--small{
+        width: 35px;
+      }
     }
   }
 
@@ -7423,6 +7573,22 @@ STEP 1-2 end
       }
     }
   }
+  .check-order{
+    &.check-order--trademark{
+      margin: 15px;
+      padding: 24px 16px;
+      .check-order__options{
+        font-size: 18px;
+      }
+      .check-order__title{
+        font-size: 20px;
+      }
+      .tooltip{
+        display: none !important;
+      }
+    }
+  }
+
 }
 
 @media screen and  (min-width: 768px) {
@@ -7872,6 +8038,14 @@ STEP 1-2 end
     }
     .news-list__description{
       flex: 0 0 100%;
+    }
+  }
+
+  .btn-remove{
+    width: 21px;
+    height: 21px;
+    .minus-symbol{
+      top:-1px;
     }
   }
 
@@ -8767,6 +8941,13 @@ STEP 1-2 end
   .context-remark--mobile-hide{
     display: none;
   }
+
+  .context-remark{
+    &.context-remark--mobile{
+      bottom: 0;
+    }
+  }
+
   .advantages {
     &.advantages--mobile-hide {
       display: none;
@@ -8797,6 +8978,12 @@ STEP 1-2 end
         padding-right: 0;
       }
     }
+    &.modal-delete{
+      .modal-dialog{
+        width: 300px;
+      }
+    }
+
     .simple-list{
       .simple-list__title{
         text-align: left;
@@ -8820,6 +9007,9 @@ STEP 1-2 end
           font-size: 20px;
           padding: 20px 0;
         }
+      }
+      &.content-box__header--mobile-small{
+        height: 70px;
       }
     }
     .helper{
@@ -8901,6 +9091,13 @@ STEP 1-2 end
     margin: 10px 0 0 0;
     text-align: center;
   }
+  .total-price{
+    &.total-price--mobile-left{
+      width: 100%;
+      padding: 10px 0 0;
+    }
+  }
+
 
   /*check-order*/
   .check-order{
@@ -8919,13 +9116,77 @@ STEP 1-2 end
       padding-top: 10px;
       font-size: 16px;
     }
+    &.checkout-colored{
+      .checkout__box{
+        font-size: 16px;
+        padding: 10px 10px 40px;
+      }
+      .checkout-item{
+        font-size: 16px;
+      }
+      .total-price{
+        font-size: 20px;
+      }
+    }
+
+    &.check-order--trademark{
+      margin: 10px;
+      padding: 20px 10px;
+      .check-order__options{
+        font-size: 16px;
+      }
+      .check-order__title{
+        font-size: 18px;
+      }
+      .check-order__group{
+        &:first-child{
+          .check-order__group-item{
+            &:first-child{
+              border-bottom: none;
+            }
+          }
+        }
+        &:nth-child(even){
+          background: #f7f6f6;
+        }
+      }
+      .check-order__group-item{
+        &:first-child{
+          border-right: 2px solid #d6d6d6;
+        }
+        padding: 6px 10px;
+        font-size: 16px;
+      }
+      .total-price{
+        font-size: 18px;
+        float: left;
+        margin: 0;
+        padding-left: 5px;
+      }
+      .edit-button{
+        position: static;
+        margin: 20px 0 0 10px;
+        text-indent: 20px;
+        .edit-button--mobile-text{
+          display: block;
+          position: relative;
+          bottom: 4px;
+          color: #878787;
+          font-weight: 600;
+          font-size: 18px;
+        }
+      }
+    }
   }
   .payments-options {
     .image-list{
-      margin-left: 30px;
+      margin-left: 25px;
     }
     .payments-options__item{
       margin-right: 0;
+    }
+    .context-remark{
+      margin-left: 15px;
     }
   }
   .radio-list.payments-options{
@@ -9127,6 +9388,9 @@ STEP 1-2 end
   .content-box{
     .content-box__body{
       padding: 10px;
+    }
+    &.content-box--mobile-indent{
+      margin-top: 0;
     }
   }
 
@@ -9522,6 +9786,12 @@ STEP 1-2 end
     &.btn-next--mobile-left{
       float: left;
     }
+    &.btn-next--mobile-center{
+      display: block;
+      width: 170px;
+      float: none;
+      margin:10px auto 0;
+    }
   }
 
   .contacts-list {
@@ -9677,18 +9947,16 @@ STEP 1-2 end
     }
   }
 
-  .checkout {
-    &.checkout-colored{
-      .checkout__box{
-        font-size: 16px;
-        padding: 10px 10px 40px;
-      }
-      .checkout-item{
-        font-size: 16px;
-      }
-      .total-price{
-        font-size: 20px;
-      }
+  .validation-error__trademark-wrap{
+    margin: 0 0 10px 0;
+    .error-description{
+      text-align: left;
+    }
+  }
+
+  .btn-remove{
+    .minus-symbol{
+      top:0;
     }
   }
 }

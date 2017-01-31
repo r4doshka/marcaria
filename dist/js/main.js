@@ -170,8 +170,13 @@ $('.main-search .btn-link.bulk-search').on('click', function(e){
     $('.bulk-case, .single-case').toggleClass('hidden');
 });
 
+
+/*==========================================
+ for check-order edit
+ * ==============================================*/
 $('.check-order .edit-button, .check-order .btn-small').click(function(){
-    $(this).parents('.check-order').find('.edit-button, .edit-control-panel, .default-select, .check-order__description').toggleClass('hidden');
+    $(this).parents('.check-order').find('.edit-button, .edit-control-panel, .default-select, .check-order__description, .btn-remove').toggleClass('hidden');
+    $(this).parents('.check-order').find('.edit-field').toggleClass('edit-field--active');
 });
 
 /*==========================================

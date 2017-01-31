@@ -7832,6 +7832,11 @@ second site
   .service .action_button:hover {
     text-decoration: none; }
 
+.select-service {
+  margin-bottom: 145px; }
+  .select-service .content {
+    padding-top: 0; }
+
 /*reviews*/
 .reviews .review-item {
   margin-bottom: 30px; }
@@ -9086,6 +9091,13 @@ domain select  start
   margin: auto;
   border: 2px solid #006ce5; }
 
+.modal-text.modal-delete .modal-dialog {
+  width: 400px; }
+
+.modal-text.modal-delete .modal-text__description {
+  text-align: center;
+  font-size: 20px; }
+
 .modal-text.modal-terms .modal-dialog {
   width: 660px; }
 
@@ -9380,6 +9392,10 @@ domain configurations  start
     margin: 0 0 0 15px;
     bottom: 23px; }
 
+.validation-error__trademark-wrap {
+  display: inline-block;
+  vertical-align: top; }
+
 .validation-error {
   border-color: #e61610 !important;
   color: #e61610 !important; }
@@ -9475,6 +9491,57 @@ domain configurations  start
   .check-order .context-remark {
     display: inline-block;
     font-size: 14px; }
+  .check-order.check-order--trademark {
+    margin: 35px 50px;
+    padding: 40px;
+    box-shadow: none;
+    border: 1px solid #2f476c;
+    border-radius: 5px; }
+    .check-order.check-order--trademark .check-order__options {
+      margin-bottom: 10px;
+      font-weight: 400;
+      font-size: 21px;
+      color: #01309a; }
+    .check-order.check-order--trademark .check-order__title {
+      font-size: 22px; }
+    .check-order.check-order--trademark .total-price {
+      width: auto;
+      border: none;
+      font-size: 22px; }
+    .check-order.check-order--trademark .edit-button {
+      top: 16px;
+      right: 16px;
+      bottom: inherit;
+      left: inherit; }
+    .check-order.check-order--trademark .check-order__group {
+      padding: 0 15px; }
+      .check-order.check-order--trademark .check-order__group:first-child .check-order__group-item {
+        border-top: 2px solid #d6d6d6; }
+    .check-order.check-order--trademark .check-order__group-item {
+      padding: 6px 20px;
+      border: 2px solid #d6d6d6;
+      border-top: none; }
+      .check-order.check-order--trademark .check-order__group-item:first-child {
+        border-right: 0; }
+    .check-order.check-order--trademark .edit-control-panel {
+      margin: 12px 0 0; }
+    .check-order.check-order--trademark .tooltip-inner {
+      width: 125px;
+      background: #ebebeb;
+      border: none;
+      padding: 20px 25px;
+      font-size: 14px; }
+    .check-order.check-order--trademark .tooltip.in {
+      opacity: 1; }
+    .check-order.check-order--trademark .tooltip {
+      margin-left: 25px; }
+      .check-order.check-order--trademark .tooltip .tooltip-arrow {
+        margin-top: -10px;
+        border-width: 10px 20px 10px 0;
+        left: -15px;
+        border-right-color: #ebebeb; }
+    .check-order.check-order--trademark .edit-button {
+      text-indent: -9999999px; }
 
 .edit-button {
   position: absolute;
@@ -9526,11 +9593,18 @@ domain configurations  start
     margin-left: 25px;
     color: #01309a;
     font-size: 14px; }
+  .payments-options.payments-options__space-between {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
 
 .image-list .image-list__item {
   display: inline-block;
   width: 55px;
   margin-right: 5px; }
+  .image-list .image-list__item.image-list__item--small {
+    width: 40px; }
 
 .checkout {
   padding: 30px 40px;
@@ -10566,8 +10640,9 @@ Trademarks start
     margin-left: 20px; }
 
 .watch-plans .watch-plans__icon {
-  width: 90px;
   margin: 0 0 15px 0; }
+  .watch-plans .watch-plans__icon img {
+    height: 80px; }
 
 .watch-plans .hosting-plans__price {
   margin: 0 0 30px 0; }
@@ -11055,6 +11130,55 @@ STEP 1-2 start
     border: none;
     margin: 15px 0; }
 
+.group-item-price {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.btn-remove {
+  width: 26px;
+  height: 26px;
+  border: none;
+  padding: 0;
+  background: #3d8af7;
+  border-radius: 5px; }
+  .btn-remove .minus-symbol {
+    position: relative;
+    top: -2px; }
+
+.btn-discard {
+  display: inline-block;
+  position: relative;
+  top: -2px;
+  width: 18px;
+  height: 18px;
+  line-height: 15px;
+  text-align: center;
+  border-radius: 50%;
+  background: #ebebeb;
+  cursor: pointer;
+  border: none;
+  padding: 0; }
+
+.minus-symbol {
+  color: #fff;
+  font-weight: 400; }
+
+.edit-field.edit-field--active {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #b2e712;
+  border-radius: 5px; }
+
 /*============
 STEP 1-2 end
  ==============*/
@@ -11463,6 +11587,8 @@ STEP 1-2 end
     padding: 20px; }
   .image-list .image-list__item {
     width: 40px; }
+    .image-list .image-list__item.image-list__item--small {
+      width: 35px; }
   .bulk-search {
     margin-top: 8px; }
   .text-container {
@@ -11722,7 +11848,16 @@ STEP 1-2 end
     font-size: 18px; }
   .checkout.checkout-colored .checkout-item.flexbox-start {
     font-size: 18px;
-    margin: 0; } }
+    margin: 0; }
+  .check-order.check-order--trademark {
+    margin: 15px;
+    padding: 24px 16px; }
+    .check-order.check-order--trademark .check-order__options {
+      font-size: 18px; }
+    .check-order.check-order--trademark .check-order__title {
+      font-size: 20px; }
+    .check-order.check-order--trademark .tooltip {
+      display: none !important; } }
 
 @media screen and (min-width: 768px) {
   .mobile-layout {
@@ -12007,7 +12142,12 @@ STEP 1-2 end
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 100%;
         -ms-flex: 0 0 100%;
-            flex: 0 0 100%; } }
+            flex: 0 0 100%; }
+  .btn-remove {
+    width: 21px;
+    height: 21px; }
+    .btn-remove .minus-symbol {
+      top: -1px; } }
 
 @media screen and (max-width: 767px) {
   .mobile-layout {
@@ -12606,6 +12746,8 @@ STEP 1-2 end
   .bulk-search--mobile-hide,
   .context-remark--mobile-hide {
     display: none; }
+  .context-remark.context-remark--mobile {
+    bottom: 0; }
   .advantages.advantages--mobile-hide {
     display: none; }
   .main-search__search-field {
@@ -12628,6 +12770,8 @@ STEP 1-2 end
     width: 290px; }
   .modal-text.modal-terms .modal-text__description {
     padding-right: 0; }
+  .modal-text.modal-delete .modal-dialog {
+    width: 300px; }
   .modal-text .simple-list .simple-list__title {
     text-align: left; }
   .progress-step-bar {
@@ -12640,6 +12784,8 @@ STEP 1-2 end
     .content-box .content-box__header.content-box__header--auto-height.content-box__header--mobile-big {
       font-size: 20px;
       padding: 20px 0; }
+  .content-box .content-box__header.content-box__header--mobile-small {
+    height: 70px; }
   .content-box .helper {
     top: 0; }
   .radio-list {
@@ -12690,6 +12836,9 @@ STEP 1-2 end
   .error-description__term-error {
     margin: 10px 0 0 0;
     text-align: center; }
+  .total-price.total-price--mobile-left {
+    width: 100%;
+    padding: 10px 0 0; }
   /*check-order*/
   .check-order {
     margin: 15px 10px;
@@ -12704,10 +12853,51 @@ STEP 1-2 end
     .check-order .total-price {
       padding-top: 10px;
       font-size: 16px; }
+    .check-order.checkout-colored .checkout__box {
+      font-size: 16px;
+      padding: 10px 10px 40px; }
+    .check-order.checkout-colored .checkout-item {
+      font-size: 16px; }
+    .check-order.checkout-colored .total-price {
+      font-size: 20px; }
+    .check-order.check-order--trademark {
+      margin: 10px;
+      padding: 20px 10px; }
+      .check-order.check-order--trademark .check-order__options {
+        font-size: 16px; }
+      .check-order.check-order--trademark .check-order__title {
+        font-size: 18px; }
+      .check-order.check-order--trademark .check-order__group:first-child .check-order__group-item:first-child {
+        border-bottom: none; }
+      .check-order.check-order--trademark .check-order__group:nth-child(even) {
+        background: #f7f6f6; }
+      .check-order.check-order--trademark .check-order__group-item {
+        padding: 6px 10px;
+        font-size: 16px; }
+        .check-order.check-order--trademark .check-order__group-item:first-child {
+          border-right: 2px solid #d6d6d6; }
+      .check-order.check-order--trademark .total-price {
+        font-size: 18px;
+        float: left;
+        margin: 0;
+        padding-left: 5px; }
+      .check-order.check-order--trademark .edit-button {
+        position: static;
+        margin: 20px 0 0 10px;
+        text-indent: 20px; }
+        .check-order.check-order--trademark .edit-button .edit-button--mobile-text {
+          display: block;
+          position: relative;
+          bottom: 4px;
+          color: #878787;
+          font-weight: 600;
+          font-size: 18px; }
   .payments-options .image-list {
-    margin-left: 30px; }
+    margin-left: 25px; }
   .payments-options .payments-options__item {
     margin-right: 0; }
+  .payments-options .context-remark {
+    margin-left: 15px; }
   .radio-list.payments-options {
     padding: 15px; }
   .image-list .image-list__item {
@@ -12838,6 +13028,8 @@ STEP 1-2 end
       margin: 0 5px 10px 0; }
   .content-box .content-box__body {
     padding: 10px; }
+  .content-box.content-box--mobile-indent {
+    margin-top: 0; }
   .password-recover .modal-dialog {
     width: 100%;
     margin: 0; }
@@ -13090,6 +13282,11 @@ STEP 1-2 end
     width: 100%; }
   .btn-next.btn-next--mobile-left {
     float: left; }
+  .btn-next.btn-next--mobile-center {
+    display: block;
+    width: 170px;
+    float: none;
+    margin: 10px auto 0; }
   .contacts-list {
     padding: 30px 20px 45px; }
     .contacts-list .contacts-list-item__name {
@@ -13200,10 +13397,9 @@ STEP 1-2 end
         -webkit-flex: 0 0 100%;
             -ms-flex: 0 0 100%;
                 flex: 0 0 100%; }
-  .checkout.checkout-colored .checkout__box {
-    font-size: 16px;
-    padding: 10px 10px 40px; }
-  .checkout.checkout-colored .checkout-item {
-    font-size: 16px; }
-  .checkout.checkout-colored .total-price {
-    font-size: 20px; } }
+  .validation-error__trademark-wrap {
+    margin: 0 0 10px 0; }
+    .validation-error__trademark-wrap .error-description {
+      text-align: left; }
+  .btn-remove .minus-symbol {
+    top: 0; } }
