@@ -4608,6 +4608,30 @@ domain configurations  start
       text-indent: -9999999px;
     }
   }
+  .check-order__options{
+    &.check-order__options--bottom-indent{
+      padding: 0 0 10px;
+    }
+  }
+
+
+  .check-order__subtotal{
+    float: right;
+    padding: 5px 0 0;
+    min-width: 150px;
+    text-align: right;
+    font-size: 18px;
+    font-weight:600;
+    border-top:2px solid #01309a;
+  }
+  .check-order__product-name{
+    font-size: 18px;
+  }
+  .check-order__price{
+    padding: 0 0 5px;
+    font-size: 18px;
+    text-align: right;
+  }
 }
 
 
@@ -7600,7 +7624,17 @@ STEP 1-2 end
         display: none !important;
       }
     }
+    .check-order__inner-wrap{
+      &.check-order__inner-wrap--table-left{
+        padding: 0;
+      }
+    }
+    .check-order__product-name{
+      font-size: 16px;
+    }
   }
+
+
 
 }
 
@@ -9495,12 +9529,15 @@ STEP 1-2 end
     }
 
     .check-order {
+      padding: 20px 15px 0;
+      font-size: 16px;
       .check-order__inner-wrap{
         font-size: 13px;
       }
       .total-price{
         width: 100%;
         float: none;
+        font-size: 20px;
         text-align: right;
       }
     }
@@ -9515,6 +9552,24 @@ STEP 1-2 end
       .checkout-item__price{
         font-size: 14px;
       }
+    }
+    .description-list{
+      margin: 20px 15px 0;
+    }
+  }
+
+  .check-order{
+    .check-order__options{
+      &.check-order__options--bottom-indent{
+        padding: 0 0 20px;
+      }
+    }
+    .check-order__selected-classes{
+      font-size: 16px;
+      padding-bottom: 5px;
+    }
+    .check-order__subtotal{
+      min-width: 100px;
     }
   }
 

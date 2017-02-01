@@ -9570,6 +9570,22 @@ domain configurations  start
         border-right-color: #ebebeb; }
     .check-order.check-order--trademark .edit-button {
       text-indent: -9999999px; }
+  .check-order .check-order__options.check-order__options--bottom-indent {
+    padding: 0 0 10px; }
+  .check-order .check-order__subtotal {
+    float: right;
+    padding: 5px 0 0;
+    min-width: 150px;
+    text-align: right;
+    font-size: 18px;
+    font-weight: 600;
+    border-top: 2px solid #01309a; }
+  .check-order .check-order__product-name {
+    font-size: 18px; }
+  .check-order .check-order__price {
+    padding: 0 0 5px;
+    font-size: 18px;
+    text-align: right; }
 
 .edit-button {
   position: absolute;
@@ -11887,7 +11903,11 @@ STEP 1-2 end
     .check-order.check-order--trademark .check-order__title {
       font-size: 20px; }
     .check-order.check-order--trademark .tooltip {
-      display: none !important; } }
+      display: none !important; }
+  .check-order .check-order__inner-wrap.check-order__inner-wrap--table-left {
+    padding: 0; }
+  .check-order .check-order__product-name {
+    font-size: 16px; } }
 
 @media screen and (min-width: 768px) {
   .mobile-layout {
@@ -13112,12 +13132,16 @@ STEP 1-2 end
     font-size: 30px; }
   .order-details .content-box_header-context {
     padding: 20px 0 0; }
-  .order-details .check-order .check-order__inner-wrap {
-    font-size: 13px; }
-  .order-details .check-order .total-price {
-    width: 100%;
-    float: none;
-    text-align: right; }
+  .order-details .check-order {
+    padding: 20px 15px 0;
+    font-size: 16px; }
+    .order-details .check-order .check-order__inner-wrap {
+      font-size: 13px; }
+    .order-details .check-order .total-price {
+      width: 100%;
+      float: none;
+      font-size: 20px;
+      text-align: right; }
   .order-details .checkout {
     float: none; }
     .order-details .checkout .checkout__title {
@@ -13126,6 +13150,15 @@ STEP 1-2 end
       font-size: 14px; }
     .order-details .checkout .checkout-item__price {
       font-size: 14px; }
+  .order-details .description-list {
+    margin: 20px 15px 0; }
+  .check-order .check-order__options.check-order__options--bottom-indent {
+    padding: 0 0 20px; }
+  .check-order .check-order__selected-classes {
+    font-size: 16px;
+    padding-bottom: 5px; }
+  .check-order .check-order__subtotal {
+    min-width: 100px; }
   .box-text {
     padding: 10px 20px; }
   .description-list .description-list__title {
