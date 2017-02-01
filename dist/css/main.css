@@ -9338,6 +9338,7 @@ domain configurations  start
       color: #0c59cf; }
 
 .default-select {
+  max-width: 100%;
   padding: 3px;
   color: #01309a;
   border: 1px solid #3359ae;
@@ -9356,6 +9357,10 @@ domain configurations  start
     -webkit-flex-flow: row wrap;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap; }
+    .radio-list .radio-list__item.radio-list__item--trademark-owner {
+      margin: 0 0 20px; }
+      .radio-list .radio-list__item.radio-list__item--trademark-owner:last-child {
+        margin: 0; }
     .radio-list .radio-list__item.radio-list__item--inactive .radio-checkbox-group__text {
       color: #acc9fa;
       font-weight: 500; }
@@ -12827,7 +12832,17 @@ STEP 1-2 end
   .progress-step-bar {
     margin: 20px 0; }
     .progress-step-bar .progress-step-bar__item-name {
-      font-size: 11px; }
+      font-size: 10px; }
+    .progress-step-bar .progress-step-bar__circle {
+      width: 18px;
+      height: 18px;
+      margin-top: -9px;
+      margin-left: -9px; }
+      .progress-step-bar .progress-step-bar__circle:before {
+        width: 8px;
+        height: 8px; }
+    .progress-step-bar .progress-step-bar__line {
+      height: 6px; }
   .content-box .content-box__header.content-box__header--auto-height {
     padding: 5px;
     font-size: 16px; }
@@ -12846,6 +12861,11 @@ STEP 1-2 end
         font-size: 16px; }
       .radio-list .radio-list__item .radio-checkbox-group {
         margin-right: 0; }
+      .radio-list .radio-list__item.radio-list__item--trademark-owner {
+        margin: 0 0 30px; }
+        .radio-list .radio-list__item.radio-list__item--trademark-owner .default-select {
+          width: 100%;
+          margin: 10px 0 0; }
     .radio-list .simple-list {
       padding: 0 0 0 20px; }
     .radio-list .simple-list__item {
