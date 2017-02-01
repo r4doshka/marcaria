@@ -338,7 +338,7 @@
                 Providing Trademark Registration Services for more than 15 years across the world
             </div>
         </div>
-        <button class="btn-next">
+        <button class="btn-next" data-toggle="modal" data-target="#myModal">
             Start Trademark Registration
         </button>
     </div>
@@ -785,7 +785,43 @@
         </div>
     </div>
 </footer>
+
+<div class="modal fade trademark-registration-modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="trademark-registration-modal__header">
+                Where do you want to register your Trademark?
+            </div>
+            <div class="trademark-registration-modal__description">
+                <div class="transition-card">
+                    <div class="transition-card__icon">
+                        <img src="../img/flags/popular/united-states-flag.gif" alt="">
+                    </div>
+                    <div class="transition-card__title">
+                        United States
+                    </div>
+                    <a href="select_usa_trademark.html" class="btn-next">
+                        GO
+                    </a>
+                </div>
+                <div class="transition-card">
+                    <div class="transition-card__icon">
+                        <img src="../img/flags/popular/united-states-flag.gif" alt="">
+                    </div>
+                    <div class="transition-card__title">
+                        Internationally
+                    </div>
+                    <a href="trademarks.html" class="btn-next">
+                        GO
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script>window.jQuery || document.write('<script src="../../js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
 <script src="../js/plugins.js"></script>
 <script src="../js/main.js"></script>
+<script src="../js/bootstrap/modal.js"></script>

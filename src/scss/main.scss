@@ -4075,6 +4075,55 @@ domain select  start
   }
 }
 
+.trademark-registration-modal{
+  .modal-dialog{
+    width: 900px;
+  }
+  .modal-content{
+    padding: 45px 50px;
+    background: #ebebeb;
+    border: 1px solid #001c55;
+  }
+  .trademark-registration-modal__header{
+    margin-bottom: 20px;
+    font-size: 34px;
+    font-weight: 600;
+    text-align: center;
+    color: #021f54;
+  }
+  .trademark-registration-modal__description{
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.transition-card{
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: column;
+  align-items: center;
+  .transition-card__icon{
+    width: 160px;
+    margin: 0 0 20px;
+  }
+
+  .transition-card__title{
+    font-size: 26px;
+    font-weight: 600;
+    color: #021f54;
+    margin-bottom: 20px;
+  }
+
+  .btn-next{
+    &:hover,
+    &:active,
+    &:focus{
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+}
+
 .modal-text{
   .modal-dialog{
     width: 500px;
@@ -4436,7 +4485,6 @@ domain configurations  start
 }
 
 .modal-open{
-  text-decoration: underline;
   color: #01309a;
 }
 
@@ -6451,6 +6499,9 @@ STEP 1-2 start
 /*============
 STEP 1-2 end
  ==============*/
+
+
+
 @media screen and (max-width: 1368px) {
   .our-clients-container {
     margin: 40px 40px 60px;
@@ -7641,8 +7692,11 @@ STEP 1-2 end
     }
   }
 
-
-
+  .trademark-registration-modal{
+    .modal-dialog{
+      width: 600px;
+    }
+  }
 }
 
 @media screen and  (min-width: 768px) {
@@ -10022,7 +10076,6 @@ STEP 1-2 end
     }
   }
 
-
   .registered-form {
     .registered-form__item{
       padding: 0 0 25px 0;
@@ -10032,7 +10085,6 @@ STEP 1-2 end
       margin: 10px 0;
     }
   }
-  
   .type-list{
     flex-flow: row wrap;
     .type-list__item{
@@ -10047,17 +10099,42 @@ STEP 1-2 end
       }
     }
   }
-
   .validation-error__trademark-wrap{
     margin: 0 0 10px 0;
     .error-description{
       text-align: left;
     }
   }
-
   .btn-remove{
     .minus-symbol{
       top:0;
+    }
+  }
+  .trademark-registration-modal{
+    .modal-dialog{
+      width: 300px;
+      margin: 20px auto 0;
+    }
+    .modal-content{
+      padding: 15px;
+    }
+    .trademark-registration-modal__header{
+      font-size: 20px;
+    }
+    .trademark-registration-modal__description{
+      flex-flow: column wrap;
+    }
+  }
+  .transition-card{
+    margin: 0 0 40px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    .transition-card__icon{
+      margin: 0 0 10px;
+    }
+    .transition-card__title{
+      font-size: 20px;
     }
   }
 }

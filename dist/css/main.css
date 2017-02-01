@@ -9114,6 +9114,59 @@ domain select  start
     padding: 4px 40px;
     box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.45); }
 
+.trademark-registration-modal .modal-dialog {
+  width: 900px; }
+
+.trademark-registration-modal .modal-content {
+  padding: 45px 50px;
+  background: #ebebeb;
+  border: 1px solid #001c55; }
+
+.trademark-registration-modal .trademark-registration-modal__header {
+  margin-bottom: 20px;
+  font-size: 34px;
+  font-weight: 600;
+  text-align: center;
+  color: #021f54; }
+
+.trademark-registration-modal .trademark-registration-modal__description {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+
+.transition-card {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .transition-card .transition-card__icon {
+    width: 160px;
+    margin: 0 0 20px; }
+  .transition-card .transition-card__title {
+    font-size: 26px;
+    font-weight: 600;
+    color: #021f54;
+    margin-bottom: 20px; }
+  .transition-card .btn-next:hover, .transition-card .btn-next:active, .transition-card .btn-next:focus {
+    text-decoration: none;
+    color: #fff; }
+
 .modal-text .modal-dialog {
   width: 500px;
   margin: auto;
@@ -9439,7 +9492,6 @@ domain configurations  start
   margin: 10px 0 0 40px; }
 
 .modal-open {
-  text-decoration: underline;
   color: #01309a; }
 
 .indent-bottom {
@@ -11912,7 +11964,9 @@ STEP 1-2 end
   .check-order .check-order__inner-wrap.check-order__inner-wrap--table-left {
     padding: 0; }
   .check-order .check-order__product-name {
-    font-size: 16px; } }
+    font-size: 16px; }
+  .trademark-registration-modal .modal-dialog {
+    width: 600px; } }
 
 @media screen and (min-width: 768px) {
   .mobile-layout {
@@ -13494,4 +13548,23 @@ STEP 1-2 end
     .validation-error__trademark-wrap .error-description {
       text-align: left; }
   .btn-remove .minus-symbol {
-    top: 0; } }
+    top: 0; }
+  .trademark-registration-modal .modal-dialog {
+    width: 300px;
+    margin: 20px auto 0; }
+  .trademark-registration-modal .modal-content {
+    padding: 15px; }
+  .trademark-registration-modal .trademark-registration-modal__header {
+    font-size: 20px; }
+  .trademark-registration-modal .trademark-registration-modal__description {
+    -webkit-flex-flow: column wrap;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap; }
+  .transition-card {
+    margin: 0 0 40px; }
+    .transition-card:last-child {
+      margin-bottom: 0; }
+    .transition-card .transition-card__icon {
+      margin: 0 0 10px; }
+    .transition-card .transition-card__title {
+      font-size: 20px; } }
