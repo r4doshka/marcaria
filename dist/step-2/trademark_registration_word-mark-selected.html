@@ -432,10 +432,10 @@
                                 </div>
                                 <div class="registered-form__item-content">
                                     <div class="type-list">
-                                        <div class="type-list__item">
+                                        <div class="type-list__item type-list__item--active">
                                             <div class="type-list__item-title">
                                                 <div class="radio-checkbox-group">
-                                                    <input type="radio" name="contact" id="brand">
+                                                    <input type="radio" name="contact" id="brand" checked>
                                                     <label for="brand" class="pseudo-radio"></label>
                                                     <label for="brand" class="radio-checkbox-group__text">
                                                         Word Mark
@@ -460,10 +460,10 @@
                                                 <img src="../img/icons/logo_default.png" alt="">
                                             </div>
                                         </div>
-                                        <div class="type-list__item type-list__item--active">
+                                        <div class="type-list__item">
                                             <div class="type-list__item-title">
                                                 <div class="radio-checkbox-group">
-                                                    <input type="radio" name="contact" id="combined" checked>
+                                                    <input type="radio" name="contact" id="combined">
                                                     <label for="combined" class="pseudo-radio"></label>
                                                     <label for="combined" class="radio-checkbox-group__text">
                                                         Combined Mark
@@ -499,24 +499,277 @@
                         <div class="col-md-12">
                             <div class="registered-form__item">
                                 <div class="registered-form__item-title">
-                                    Upload your Logo
+                                    Describe Products or Services
                                 </div>
-                                <div class="registered-form__item-content context-remark-logo">
-                                    This is <span class="bold">optional</span>, don't worry if you don't have a Logo.
+                                <div class="registered-form__item-content">
+                                    Please provide a brief description of the products or services that will be used in
+                                    connection to your trademark.
+                                    <textarea name="" id="" class="form-control-textarea form-control"></textarea>
+                                    <span class="bold">Note:</span> If you have experience with trademarks, and know
+                                    your trademark class number, you can specify it by using this
+                                    <a href="javascript:;" class="dropdown-class-toggle link-underline">class selector,</a>
+                                    <a href="javascript:;" class="link-underline">What are trademark classes?</a>
                                 </div>
-                                <div class="upload-file-box">
-                                    <div class="file-upload">
-                                        <button type="button" id="upload-btn" class="upload-btn btn-next btn-next--blue btn-next--align-left">
-                                            Upload Image
-                                        </button>
-                                        <div id="image-wrap" class="image-wrap">
+                                <div class="content-box classes-modal">
+                                    <div class="content-box__header content-box__header--auto-height">
+                                        Trademark Class Selector
+                                        <div class="content-box_header-context">
+                                            Select the Classes for your Trademark Comprehensive Study, if you are not sure about classes, please leave them empty and close this window.
                                         </div>
-                                        <input type="file" id="uploadFile" value="Upload Image">
-                                        <button id="delete-logo" class="btn-link btn-delete link-underline">Delete Image</button>
                                     </div>
-
+                                    <div class="content-box__body content-box__body--small-indent">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="filter__all-classes">
+                                                            <div class="filter__class-item">
+                                                                <input type="checkbox" id="1">
+                                                                <label for="1"></label>
+                                                                <label for="1" class="filter__class-name">1</label>
+                                                            </div>
+                                                            <div class="filter__class-item">
+                                                                <input type="checkbox" id="2">
+                                                                <label for="2"></label>
+                                                                <label for="2" class="filter__class-name">2</label>
+                                                            </div>
+                                                            <div class="filter__class-item">
+                                                                <input type="checkbox" id="3">
+                                                                <label for="3"></label>
+                                                                <label for="3" class="filter__class-name">3</label>
+                                                            </div>
+                                                            <div class="filter__class-item">
+                                                                <input type="checkbox" id="4">
+                                                                <label for="4"></label>
+                                                                <label for="4" class="filter__class-name">4</label>
+                                                            </div>
+                                                            <div class="filter__class-item">
+                                                                <input type="checkbox" id="5">
+                                                                <label for="5"></label>
+                                                                <label for="5" class="filter__class-name">5</label>
+                                                            </div>
+                                                            <div class="filter__class-item">
+                                                                <input type="checkbox" id="6">
+                                                                <label for="6"></label>
+                                                                <label for="6" class="filter__class-name">6</label>
+                                                            </div>
+                                                            <div class="filter__class-item">
+                                                                <input type="checkbox" id="7">
+                                                                <label for="7"></label>
+                                                                <label for="7" class="filter__class-name">7</label>
+                                                            </div>
+                                                            <div class="filter__class-item">
+                                                                <input type="checkbox" id="8">
+                                                                <label for="8"></label>
+                                                                <label for="8" class="filter__class-name">8</label>
+                                                            </div>
+                                                            <div class="filter__class-item">
+                                                                <input type="checkbox" id="9">
+                                                                <label for="9"></label>
+                                                                <label for="9" class="filter__class-name">9</label>
+                                                            </div>
+                                                            <div class="filter__class-item">
+                                                                <input type="checkbox" id="10">
+                                                                <label for="10"></label>
+                                                                <label for="10" class="filter__class-name">10</label>
+                                                            </div>
+                                                            <div class="filter__class-item">
+                                                                <input type="checkbox" id="11">
+                                                                <label for="11"></label>
+                                                                <label for="11" class="filter__class-name">11</label>
+                                                            </div>
+                                                            <div class="filter__class-item">
+                                                                <input type="checkbox" id="12">
+                                                                <label for="12"></label>
+                                                                <label for="12" class="filter__class-name">12</label>
+                                                            </div>
+                                                            <div class="filter__class-item">
+                                                                <input type="checkbox" id="13">
+                                                                <label for="13"></label>
+                                                                <label for="13" class="filter__class-name">13</label>
+                                                            </div>
+                                                            <div class="filter__class-item">
+                                                                <input type="checkbox" id="14">
+                                                                <label for="14"></label>
+                                                                <label for="14" class="filter__class-name">14</label>
+                                                            </div>
+                                                            <div class="filter__class-item">
+                                                                <input type="checkbox" id="15">
+                                                                <label for="15"></label>
+                                                                <label for="15" class="filter__class-name">15</label>
+                                                            </div>
+                                                            <div class="filter__class-item">
+                                                                <input type="checkbox" id="16">
+                                                                <label for="16"></label>
+                                                                <label for="16" class="filter__class-name">16</label>
+                                                            </div>
+                                                            <div class="filter__class-item">
+                                                                <input type="checkbox" id="17">
+                                                                <label for="17"></label>
+                                                                <label for="17" class="filter__class-name">17</label>
+                                                            </div>
+                                                            <div class="filter__class-item">
+                                                                <input type="checkbox" id="18">
+                                                                <label for="18"></label>
+                                                                <label for="18" class="filter__class-name">18</label>
+                                                            </div>
+                                                            <div class="filter__class-item">
+                                                                <input type="checkbox" id="19">
+                                                                <label for="19"></label>
+                                                                <label for="19" class="filter__class-name">19</label>
+                                                            </div>
+                                                            <div class="filter__class-item">
+                                                                <input type="checkbox" id="20">
+                                                                <label for="20"></label>
+                                                                <label for="20" class="filter__class-name">20</label>
+                                                            </div>
+                                                            <div class="filter__class-item">
+                                                                <input type="checkbox" id="21">
+                                                                <label for="21"></label>
+                                                                <label for="21" class="filter__class-name">21</label>
+                                                            </div>
+                                                            <div class="filter__class-item">
+                                                                <input type="checkbox" id="22">
+                                                                <label for="22"></label>
+                                                                <label for="22" class="filter__class-name">22</label>
+                                                            </div>
+                                                            <div class="filter__class-item">
+                                                                <input type="checkbox" id="23">
+                                                                <label for="23"></label>
+                                                                <label for="23" class="filter__class-name">23</label>
+                                                            </div>
+                                                            <div class="filter__class-item">
+                                                                <input type="checkbox" id="24">
+                                                                <label for="24"></label>
+                                                                <label for="24" class="filter__class-name">24</label>
+                                                            </div>
+                                                            <div class="filter__class-item">
+                                                                <input type="checkbox" id="25">
+                                                                <label for="25"></label>
+                                                                <label for="25" class="filter__class-name">25</label>
+                                                            </div>
+                                                            <div class="filter__class-item">
+                                                                <input type="checkbox" id="26">
+                                                                <label for="26"></label>
+                                                                <label for="26" class="filter__class-name">26</label>
+                                                            </div>
+                                                            <div class="filter__class-item">
+                                                                <input type="checkbox" id="27">
+                                                                <label for="27"></label>
+                                                                <label for="27" class="filter__class-name">27</label>
+                                                            </div>
+                                                            <div class="filter__class-item">
+                                                                <input type="checkbox" id="28">
+                                                                <label for="28"></label>
+                                                                <label for="28" class="filter__class-name">28</label>
+                                                            </div>
+                                                            <div class="filter__class-item">
+                                                                <input type="checkbox" id="29">
+                                                                <label for="29"></label>
+                                                                <label for="29" class="filter__class-name">29</label>
+                                                            </div>
+                                                            <div class="filter__class-item">
+                                                                <input type="checkbox" id="30">
+                                                                <label for="30"></label>
+                                                                <label for="30" class="filter__class-name">30</label>
+                                                            </div>
+                                                            <div class="filter__class-item">
+                                                                <input type="checkbox" id="31">
+                                                                <label for="31"></label>
+                                                                <label for="31" class="filter__class-name">31</label>
+                                                            </div>
+                                                            <div class="filter__class-item">
+                                                                <input type="checkbox" id="32">
+                                                                <label for="32"></label>
+                                                                <label for="32" class="filter__class-name">32</label>
+                                                            </div>
+                                                            <div class="filter__class-item">
+                                                                <input type="checkbox" id="33">
+                                                                <label for="33"></label>
+                                                                <label for="33" class="filter__class-name">33</label>
+                                                            </div>
+                                                            <div class="filter__class-item">
+                                                                <input type="checkbox" id="34">
+                                                                <label for="34"></label>
+                                                                <label for="34" class="filter__class-name">34</label>
+                                                            </div>
+                                                            <div class="filter__class-item">
+                                                                <input type="checkbox" id="35">
+                                                                <label for="35"></label>
+                                                                <label for="35" class="filter__class-name">35</label>
+                                                            </div>
+                                                            <div class="filter__class-item">
+                                                                <input type="checkbox" id="36">
+                                                                <label for="36"></label>
+                                                                <label for="36" class="filter__class-name">36</label>
+                                                            </div>
+                                                            <div class="filter__class-item">
+                                                                <input type="checkbox" id="37">
+                                                                <label for="37"></label>
+                                                                <label for="37" class="filter__class-name">37</label>
+                                                            </div>
+                                                            <div class="filter__class-item">
+                                                                <input type="checkbox" id="38">
+                                                                <label for="38"></label>
+                                                                <label for="38" class="filter__class-name">38</label>
+                                                            </div>
+                                                            <div class="filter__class-item">
+                                                                <input type="checkbox" id="39">
+                                                                <label for="39"></label>
+                                                                <label for="39" class="filter__class-name">39</label>
+                                                            </div>
+                                                            <div class="filter__class-item">
+                                                                <input type="checkbox" id="40">
+                                                                <label for="40"></label>
+                                                                <label for="40" class="filter__class-name">40</label>
+                                                            </div>
+                                                            <div class="filter__class-item">
+                                                                <input type="checkbox" id="41">
+                                                                <label for="41"></label>
+                                                                <label for="41" class="filter__class-name">41</label>
+                                                            </div>
+                                                            <div class="filter__class-item">
+                                                                <input type="checkbox" id="42">
+                                                                <label for="42"></label>
+                                                                <label for="42" class="filter__class-name">42</label>
+                                                            </div>
+                                                            <div class="filter__class-item">
+                                                                <input type="checkbox" id="43">
+                                                                <label for="43"></label>
+                                                                <label for="43" class="filter__class-name">43</label>
+                                                            </div>
+                                                            <div class="filter__class-item">
+                                                                <input type="checkbox" id="44">
+                                                                <label for="44"></label>
+                                                                <label for="44" class="filter__class-name">44</label>
+                                                            </div>
+                                                            <div class="filter__class-item">
+                                                                <input type="checkbox" id="45">
+                                                                <label for="45"></label>
+                                                                <label for="45" class="filter__class-name">45</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="total-price">
+                                                            Total: $ 150
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <button class="btn-next btn-toggle btn-next--blue">Confirm</button>
+                                                        <button class="btn-next btn-toggle btn-next--grey">Cancel</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                     <div class="row">
@@ -531,18 +784,18 @@
                                         <div class="add-class-item">
                                             <div class="row">
                                                 <div class="col-md-3 col-sm-3">
-                                                   <div class="add-class-item--no-icon">
-                                                       Select Class
-                                                       <select name="" id="select-class" class="form-control form-control--mobile-indent form-control--blue-border">
-                                                           <option value="">Class 1</option>
-                                                           <option value="">Class 2</option>
-                                                           <option value="">Class 3</option>
-                                                       </select>
-                                                   </div>
+                                                    <div class="add-class-item--no-icon">
+                                                        Select Class
+                                                        <select name="" id="select-class" class="form-control form-control--mobile-indent form-control--blue-border">
+                                                            <option value="">Class 1</option>
+                                                            <option value="">Class 2</option>
+                                                            <option value="">Class 3</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
                                                 <div class="col-md-9 col-sm-7">
                                                     Please provide description of goods/services.
-                                                    <textarea name="" id="" class="form-control-textarea form-control form-control--blue-border"></textarea>
+                                                    <textarea name="" id="qq" class="form-control-textarea form-control form-control--blue-border"></textarea>
                                                 </div>
                                             </div>
                                         </div>
@@ -986,51 +1239,7 @@ Select <b>&quot;Actual Use&quot;</b> if you are currently using your trademark i
     $(function () {
         $('[data-toggle="tooltip"]').tooltip()
     });
-    /*==========================================
-     upload image
-     * ==============================================*/
 
-    var inputElement = document.getElementById("uploadFile");
-    var imageListEl = document.getElementById("image-wrap");
-    var uploadBtn = document.getElementById("upload-btn");
-    var remark = document.querySelector('.context-remark-logo');
-    var deleteLogo = document.querySelector('#delete-logo');
-
-    deleteLogo.addEventListener('click', handleDeleteLogo, false);
-    inputElement.addEventListener("change", handleFiles, false);
-    imageListEl.display = false;
-    function handleDeleteLogo(e) {
-        imageListEl.style.display = 'none';
-        uploadBtn.style.display = 'block';
-        deleteLogo.style.display = 'none';
-        remark.style.display = 'block';
-    }
-
-    function handleFiles() {
-        var fileList = this.files;
-        var reader = new FileReader();
-        var name = document.createElement("div");
-        name.innerHTML = fileList[0].name;
-        name.classList.add("upload-img-name");
-        reader.onloadend = function (resp) {
-
-            deleteLogo.style.display = 'block';
-            uploadBtn.style.display = 'none';
-            imageListEl.style.display = 'block';
-            console.log(remark);
-            remark.style.display = 'none';
-
-            imageListEl.innerHTML = '';
-
-            var image = document.createElement("IMG");
-            image.classList.add("upload-img");
-            image.src = resp.target.result;
-            imageListEl.appendChild(image);
-            imageListEl.appendChild(name);
-        };
-        reader.readAsDataURL(fileList[0]);
-
-    }
 </script>
 </body>
 </html>

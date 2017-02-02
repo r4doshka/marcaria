@@ -1025,11 +1025,9 @@
         $('[data-toggle="tooltip"]').tooltip()
     });
 
-
-    $('.dropdown-class-toggle, .btn-toggle').on('click', function(){
-        $('.classes-modal').slideToggle();
-    });
-
+    /*==========================================
+     upload image
+     * ==============================================*/
 
     var inputElement = document.getElementById("uploadFile");
     var imageListEl = document.getElementById("image-wrap");
@@ -1072,7 +1070,6 @@
         reader.readAsDataURL(fileList[0]);
 
     }
-
 </script>
 </body>
 </html>

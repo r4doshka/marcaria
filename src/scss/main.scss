@@ -2093,7 +2093,23 @@ second site
   color: #fff;
   border-radius: 5px;
   border:none;
+
+  &.order-button--large{
+    padding: 6px 40px;
+    font-size: 28px;
+    background-color: #0c59cf;
+  }
+  &.order-button--shadowed{
+    -webkit-box-shadow: 0 5px 5px 0 rgba(0,0,0,0.75);
+    -moz-box-shadow: 0 5px 5px 0 rgba(0,0,0,0.75);
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.75);
+  }
+
+  &.order-button--inline{
+    display: inline-block;
+  }
 }
+
 
 .advantages-list{
   text-align: left;
@@ -5969,18 +5985,6 @@ Trademarks start
   border-radius: 15px;
 }
 
-.order-button{
-  &.order-button--large{
-    padding: 6px 40px;
-    font-size: 28px;
-    background-color: #0c59cf;
-  }
-  &.order-button--shadowed{
-    -webkit-box-shadow: 0 5px 5px 0 rgba(0,0,0,0.75);
-    -moz-box-shadow: 0 5px 5px 0 rgba(0,0,0,0.75);
-    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.75);
-  }
-}
 
 .view-more{
   display: block;
@@ -6234,6 +6238,10 @@ STEP 1-2 start
   }
 }
 
+.form-control--blue-border{
+  border-color: #3d8af7;
+}
+
 .registered-form{
   .registered-form__item{
     padding: 0 0 35px 0;
@@ -6246,6 +6254,9 @@ STEP 1-2 start
     overflow: hidden;
     color: #01309a;
     font-size: 16px;
+    &.registered-form__item-content--overflow-inherit{
+      overflow: inherit;
+    }
   }
   .registered-form__item-title{
     margin: 0 0 10px 0;
@@ -6272,6 +6283,7 @@ STEP 1-2 start
     &:-ms-input-placeholder      {color: #01309a;}
   }
 
+
   .upload-btn{
     margin: 20px 0 0;
     padding: 10px 20px;
@@ -6285,6 +6297,14 @@ STEP 1-2 start
     min-height: 80px;
     &.validation-error{
       margin-bottom: 0;
+    }
+  }
+  .add-class{
+    .form-control-textarea{
+      margin: 0;
+    }
+    .form-control{
+      color: #01309a;
     }
   }
 }
@@ -6328,6 +6348,9 @@ STEP 1-2 start
     background-color: #f7f6f6;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    &.type-list__item-content--align-top{
+      align-items: flex-start;
+    }
   }
   .type-list__item-text{
     padding: 0 0 15px 0;
@@ -6411,19 +6434,25 @@ STEP 1-2 start
 /*tooltip*/
 
 .tooltip--simple{
- .tooltip-inner{
+  .tooltip-inner{
    max-width: 420px;
    border-color: #000;
    text-align: left;
    padding: 30px 10px;
    font-size: 16px;
    color: #021f54;
- }
+  }
   .tooltip-arrow{
     display: none;
   }
   .tooltip.in{
     opacity: 1;
+  }
+  &.tooltip--simple-large{
+    .tooltip-inner{
+      max-width: 600px;
+      width: 600px;
+    }
   }
 }
 
@@ -6465,6 +6494,35 @@ STEP 1-2 start
     position: relative;
     top:-2px;
   }
+  &.btn-remove--circle{
+    border-radius: 50%;
+    .minus-symbol{
+      top:0;
+    }
+    &.btn-remove--transparent{
+      .minus-symbol{
+        top:-3px;
+      }
+    }
+  }
+  &.btn-remove--background-pink{
+    background: #ff8a84;
+  }
+  &.btn-remove--background-green{
+    background: #b2e712;
+  }
+  &.btn-remove--desktop-absolute{
+    position: absolute;
+    left: -20px;
+    bottom: 4px;
+  }
+  &.btn-remove--transparent{
+    background: none;
+    border:2px solid #3d8af7;
+    .minus-symbol{
+      color: #3d8af7;
+    }
+  }
 }
 
 .btn-discard{
@@ -6495,6 +6553,37 @@ STEP 1-2 start
   }
 }
 
+
+.add-class{
+  margin: 45px 0 0;
+  .add-class-item{
+    margin: 0 0 30px;
+    position: relative;
+    &:last-child{
+      margin: 0;
+    }
+    &.add-class-item--add-new{
+      .add-class-item__title{
+        font-size: 21px;
+        color: #a6ce2f;
+        font-weight: 600;
+      }
+    }
+  }
+  .form-control-textarea{
+    margin: 0;
+  }
+  .form-control{
+
+  }
+}
+
+.items-selected{
+  margin: 10px 0 0;
+  font-size: 19px;
+  color: #01309a;
+  font-weight: 600;
+}
 
 /*============
 STEP 1-2 end
@@ -7268,6 +7357,9 @@ STEP 1-2 end
     }
     .content-box__body{
       padding: 20px 30px;
+      &.registered-form{
+        padding: 20px 10px;
+      }
     }
     .content-box__header{
       font-size: 26px;
@@ -7695,6 +7787,27 @@ STEP 1-2 end
   .trademark-registration-modal{
     .modal-dialog{
       width: 600px;
+    }
+  }
+  .type-list{
+    .type-list__item-title{
+      padding: 10px;
+    }
+  }
+  .btn-remove{
+    &.btn-remove--desktop-absolute{
+      position: relative;
+      bottom: inherit;
+      left: inherit;
+      margin-right: 10px;
+    }
+  }
+  .add-class{
+    .add-class-item{
+
+    }
+    .add-class-item--no-icon{
+      margin-left: 30px;
     }
   }
 }
@@ -8152,6 +8265,7 @@ STEP 1-2 end
   .btn-remove{
     width: 21px;
     height: 21px;
+    flex:0 0 21px;
     .minus-symbol{
       top:-1px;
     }
@@ -9540,9 +9654,14 @@ STEP 1-2 end
       height: auto;
     }
   }
-  .form-control.grey-bg{
-    background: #d6d6d6;
-    font-size: 22px;
+  .form-control{
+    &.grey-bg{
+      background: #d6d6d6;
+      font-size: 22px;
+    }
+    &.form-control--mobile-indent{
+      margin: 10px 0;
+    }
   }
   /*sign up form*/
   .sign-up-form{
@@ -10106,6 +10225,7 @@ STEP 1-2 end
     }
   }
   .btn-remove{
+    flex: 0 0 26px;
     .minus-symbol{
       top:0;
     }
@@ -10135,6 +10255,29 @@ STEP 1-2 end
     }
     .transition-card__title{
       font-size: 20px;
+    }
+  }
+
+  .add-class{
+    margin: 15px 0 0;
+    .add-class-item{
+
+    }
+    .add-class-item--no-icon{
+      margin-left: 0;
+    }
+  }
+
+  .flex-group-reverse{
+    .btn-remove{
+      &.btn-remove--desktop-absolute{
+        order: 3;
+        margin: 0 0 0 20px;
+      }
+    }
+    .form-control{
+      display: inline-block;
+      width: auto;
     }
   }
 }

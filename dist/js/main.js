@@ -193,3 +193,13 @@ $('.simple-mobile-menu__item').on('click', function(e){
     }
 
 });
+
+
+/*==========================================
+ toggle class panel
+ * ==============================================*/
+
+$('.dropdown-class-toggle, .btn-toggle').on('click', function(){
+    $('.classes-modal').slideToggle();
+});
+

@@ -7320,6 +7320,14 @@ second site
   color: #fff;
   border-radius: 5px;
   border: none; }
+  .order-button.order-button--large {
+    padding: 6px 40px;
+    font-size: 28px;
+    background-color: #0c59cf; }
+  .order-button.order-button--shadowed {
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.75); }
+  .order-button.order-button--inline {
+    display: inline-block; }
 
 .advantages-list {
   text-align: left;
@@ -10761,14 +10769,6 @@ Trademarks start
   border: 3px solid #a6ce2f;
   border-radius: 15px; }
 
-.order-button.order-button--large {
-  padding: 6px 40px;
-  font-size: 28px;
-  background-color: #0c59cf; }
-
-.order-button.order-button--shadowed {
-  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.75); }
-
 .view-more {
   display: block;
   margin: 10px 0 0;
@@ -11015,6 +11015,9 @@ STEP 1-2 start
 .content-box .content-box__header .content-box_header-context.content-box_header-context--lg {
   font-size: 18px; }
 
+.form-control--blue-border {
+  border-color: #3d8af7; }
+
 .registered-form .registered-form__item {
   padding: 0 0 35px 0;
   position: relative; }
@@ -11025,6 +11028,8 @@ STEP 1-2 start
   overflow: hidden;
   color: #01309a;
   font-size: 16px; }
+  .registered-form .registered-form__item-content.registered-form__item-content--overflow-inherit {
+    overflow: inherit; }
 
 .registered-form .registered-form__item-title {
   margin: 0 0 10px 0;
@@ -11065,6 +11070,12 @@ STEP 1-2 start
   min-height: 80px; }
   .registered-form .form-control-textarea.validation-error {
     margin-bottom: 0; }
+
+.registered-form .add-class .form-control-textarea {
+  margin: 0; }
+
+.registered-form .add-class .form-control {
+  color: #01309a; }
 
 .type-list {
   display: -webkit-box;
@@ -11130,6 +11141,11 @@ STEP 1-2 start
     background-color: #f7f6f6;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px; }
+    .type-list .type-list__item-content.type-list__item-content--align-top {
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+          -ms-flex-align: start;
+              align-items: flex-start; }
   .type-list .type-list__item-text {
     padding: 0 0 15px 0;
     color: #01309a;
@@ -11215,6 +11231,10 @@ STEP 1-2 start
 .tooltip--simple .tooltip.in {
   opacity: 1; }
 
+.tooltip--simple.tooltip--simple-large .tooltip-inner {
+  max-width: 600px;
+  width: 600px; }
+
 /*classes modal*/
 .classes-modal {
   display: none;
@@ -11255,6 +11275,25 @@ STEP 1-2 start
   .btn-remove .minus-symbol {
     position: relative;
     top: -2px; }
+  .btn-remove.btn-remove--circle {
+    border-radius: 50%; }
+    .btn-remove.btn-remove--circle .minus-symbol {
+      top: 0; }
+    .btn-remove.btn-remove--circle.btn-remove--transparent .minus-symbol {
+      top: -3px; }
+  .btn-remove.btn-remove--background-pink {
+    background: #ff8a84; }
+  .btn-remove.btn-remove--background-green {
+    background: #b2e712; }
+  .btn-remove.btn-remove--desktop-absolute {
+    position: absolute;
+    left: -20px;
+    bottom: 4px; }
+  .btn-remove.btn-remove--transparent {
+    background: none;
+    border: 2px solid #3d8af7; }
+    .btn-remove.btn-remove--transparent .minus-symbol {
+      color: #3d8af7; }
 
 .btn-discard {
   display: inline-block;
@@ -11279,6 +11318,26 @@ STEP 1-2 start
   padding: 5px 10px;
   border: 1px solid #b2e712;
   border-radius: 5px; }
+
+.add-class {
+  margin: 45px 0 0; }
+  .add-class .add-class-item {
+    margin: 0 0 30px;
+    position: relative; }
+    .add-class .add-class-item:last-child {
+      margin: 0; }
+    .add-class .add-class-item.add-class-item--add-new .add-class-item__title {
+      font-size: 21px;
+      color: #a6ce2f;
+      font-weight: 600; }
+  .add-class .form-control-textarea {
+    margin: 0; }
+
+.items-selected {
+  margin: 10px 0 0;
+  font-size: 19px;
+  color: #01309a;
+  font-weight: 600; }
 
 /*============
 STEP 1-2 end
@@ -11741,6 +11800,8 @@ STEP 1-2 end
       font-size: 16px; }
   .content-box .content-box__body {
     padding: 20px 30px; }
+    .content-box .content-box__body.registered-form {
+      padding: 20px 10px; }
   .content-box .content-box__header {
     font-size: 26px; }
     .content-box .content-box__header.content-box__header--indent-inner .content-box_header-context {
@@ -11966,7 +12027,16 @@ STEP 1-2 end
   .check-order .check-order__product-name {
     font-size: 16px; }
   .trademark-registration-modal .modal-dialog {
-    width: 600px; } }
+    width: 600px; }
+  .type-list .type-list__item-title {
+    padding: 10px; }
+  .btn-remove.btn-remove--desktop-absolute {
+    position: relative;
+    bottom: inherit;
+    left: inherit;
+    margin-right: 10px; }
+  .add-class .add-class-item--no-icon {
+    margin-left: 30px; } }
 
 @media screen and (min-width: 768px) {
   .mobile-layout {
@@ -12254,7 +12324,11 @@ STEP 1-2 end
             flex: 0 0 100%; }
   .btn-remove {
     width: 21px;
-    height: 21px; }
+    height: 21px;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 21px;
+        -ms-flex: 0 0 21px;
+            flex: 0 0 21px; }
     .btn-remove .minus-symbol {
       top: -1px; } }
 
@@ -13173,6 +13247,8 @@ STEP 1-2 end
   .form-control.grey-bg {
     background: #d6d6d6;
     font-size: 22px; }
+  .form-control.form-control--mobile-indent {
+    margin: 10px 0; }
   /*sign up form*/
   .sign-up-form {
     padding: 34px 15px 60px; }
@@ -13547,8 +13623,13 @@ STEP 1-2 end
     margin: 0 0 10px 0; }
     .validation-error__trademark-wrap .error-description {
       text-align: left; }
-  .btn-remove .minus-symbol {
-    top: 0; }
+  .btn-remove {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 26px;
+        -ms-flex: 0 0 26px;
+            flex: 0 0 26px; }
+    .btn-remove .minus-symbol {
+      top: 0; }
   .trademark-registration-modal .modal-dialog {
     width: 300px;
     margin: 20px auto 0; }
@@ -13567,4 +13648,17 @@ STEP 1-2 end
     .transition-card .transition-card__icon {
       margin: 0 0 10px; }
     .transition-card .transition-card__title {
-      font-size: 20px; } }
+      font-size: 20px; }
+  .add-class {
+    margin: 15px 0 0; }
+    .add-class .add-class-item--no-icon {
+      margin-left: 0; }
+  .flex-group-reverse .btn-remove.btn-remove--desktop-absolute {
+    -webkit-box-ordinal-group: 4;
+    -webkit-order: 3;
+        -ms-flex-order: 3;
+            order: 3;
+    margin: 0 0 0 20px; }
+  .flex-group-reverse .form-control {
+    display: inline-block;
+    width: auto; } }
