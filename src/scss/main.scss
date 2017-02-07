@@ -4822,6 +4822,9 @@ domain configurations  start
       border-top: none;
       font-size: 24px;
     }
+    &.checkout-colored--indent{
+      padding: 0;
+    }
   }
 }
 
@@ -6528,6 +6531,11 @@ STEP 1-2 start
       color: #3d8af7;
     }
   }
+  &.btn-remove--align{
+    margin: 0 10px 0 0;
+    position: relative;
+    top: -1px;
+  }
 }
 
 .btn-discard{
@@ -6575,10 +6583,10 @@ STEP 1-2 start
       }
     }
   }
-  .add-class-group{
-    margin: 10px 0 0;
-  }
   .form-control-textarea{
+    margin: 0;
+  }
+  &.add-class--no-indent{
     margin: 0;
   }
 }
@@ -6603,8 +6611,8 @@ STEP 1-2 start
     margin: 5px 0 0;
   }
   &.form-control--big-size{
-    height: 40px;
-    font-size: 22px;
+    height: 36px;
+    font-size: 20px;
   }
 }
 
@@ -7932,6 +7940,9 @@ animate loader end
   .add-class{
     .add-class-item--no-icon{
       margin-left: 30px;
+    }
+    .add-class-group{
+      margin: 10px 0 0;
     }
   }
 }
@@ -10421,13 +10432,7 @@ animate loader end
       width: auto;
     }
   }
-  .checkout{
-    &.checkout-colored{
-      &.checkout-colored--mobile-indent{
-        padding: 0;
-      }
-    }
-  }
+
 
   .upload-img{
     margin: 0 0 5px;
