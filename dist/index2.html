@@ -387,7 +387,7 @@
         </div>
     </div>
 </header>
-<section class="container main-banner ">
+<section class="container main-banner" style="height: 360px;">
     <div class="header">
         Welcome to Marcaria.com
         <div class="remark">
@@ -852,29 +852,34 @@
 <script src="js/owl.carousel.js"></script>
 <script src="js/main.js"></script>
 <script>
-    jQuery(function($) {
-        $('.owl-carousel').owlCarousel({
-            loop: true,
-            items: 7,
-            nav:true,
-            navText: [,],
-            responsive:{
-                0 : {
-                    items : 2
-                },
-                768 : {
-                    items : 5
-                }
-            }
-        });
-        var maxHeight = $('.main-banner .img-wrap').height();
-        $('.main-banner').css('height', maxHeight);
 
-        $(window).resize(function() {
-            var maxHeight = $('.main-banner .img-wrap').height();
-            $('.main-banner').css('height', maxHeight);
-        });
-    })(jQuery);
+   $(document).ready(function () {
+       $('.owl-carousel').owlCarousel({
+           loop: true,
+           items: 7,
+           nav:true,
+           navText: [,],
+           responsive:{
+               0 : {
+                   items : 2
+               },
+               768 : {
+                   items : 5
+               }
+           }
+       });
+
+
+       var maxHeight = $('.main-banner .img-wrap').height();
+       $('.main-banner').css('height', maxHeight);
+
+       $(window).resize(function() {
+           var maxHeight = $('.main-banner .img-wrap').height();
+           $('.main-banner').css('height', maxHeight);
+       });
+   })
+
+
 </script>
 </body>
 </html>

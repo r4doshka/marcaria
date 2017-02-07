@@ -4773,6 +4773,16 @@ domain configurations  start
       width: 40px;
     }
   }
+
+  &.services-image{
+    display: flex;
+    margin: 20px 0 0;
+    .image-list__item{
+      flex: 0 0 33.33%;
+      margin: 0;
+      text-align: center;
+    }
+  }
 }
 
 .checkout{
@@ -6570,11 +6580,11 @@ STEP 1-2 start
       }
     }
   }
+  .add-class-group{
+    margin: 10px 0 0;
+  }
   .form-control-textarea{
     margin: 0;
-  }
-  .form-control{
-
   }
 }
 
@@ -6583,6 +6593,24 @@ STEP 1-2 start
   font-size: 19px;
   color: #01309a;
   font-weight: 600;
+}
+
+.services-image-wrap{
+  margin: 0 0 80px 0;
+}
+
+.form-control{
+  &.form-control--auto-width{
+    width: auto;
+    display: block;
+  }
+  &.form-control--indent{
+    margin: 5px 0 0;
+  }
+  &.form-control--big-size{
+    height: 40px;
+    font-size: 22px;
+  }
 }
 
 /*============
@@ -7803,9 +7831,6 @@ STEP 1-2 end
     }
   }
   .add-class{
-    .add-class-item{
-
-    }
     .add-class-item--no-icon{
       margin-left: 30px;
     }
@@ -9444,7 +9469,21 @@ STEP 1-2 end
   .image-list{
     .image-list__item{
       width:35px;
-   }
+    }
+    &.services-image{
+      flex-flow: row wrap;
+      .image-list__item{
+        flex: 0 0 100%;
+        margin: 0 0 20px;
+        &:last-child{
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .services-image-wrap{
+    margin: 0 0 40px;
   }
 
   .card-panel{
@@ -10198,6 +10237,9 @@ STEP 1-2 end
   .registered-form {
     .registered-form__item{
       padding: 0 0 25px 0;
+      &.registered-form__item--no-indent{
+        padding: 0;
+      }
     }
     .registered-form__item-title{
       font-size: 20px;
@@ -10260,11 +10302,11 @@ STEP 1-2 end
 
   .add-class{
     margin: 15px 0 0;
-    .add-class-item{
-
-    }
     .add-class-item--no-icon{
       margin-left: 0;
+    }
+    &.add-class--no-indent{
+      margin: 0 0 15px;
     }
   }
 
@@ -10278,6 +10320,35 @@ STEP 1-2 end
     .form-control{
       display: inline-block;
       width: auto;
+    }
+  }
+  .checkout{
+    &.checkout-colored{
+      &.checkout-colored--mobile-indent{
+        padding: 0;
+      }
+    }
+  }
+
+  .upload-img{
+    margin: 0 0 5px;
+  }
+  .upload-img-name{
+    margin: 0 0 5px;
+    padding: 0;
+  }
+  .btn-delete{
+    left: 0;
+    bottom: 0;
+  }
+
+  .form-control{
+    &.form-control--auto-width{
+      width: 100%;
+    }
+    &.form-control--big-size{
+      font-size: 16px;
+      height: 34px;
     }
   }
 }
