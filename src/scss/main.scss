@@ -178,6 +178,10 @@ button{
   background: url("../img/icons/WorldWide_Trademark.png") no-repeat 0 100%;
   background-size: cover;
   position: relative;
+  &.header-info--new-york-img{
+    background: url("../img/continents_background/New_York.jpg") no-repeat 0 100%;
+    background-size: cover;
+  }
 }
 
 .header__nav{
@@ -318,6 +322,7 @@ button{
 }
 
 .header-info{
+
   .header-info__content{
     position: relative;
     padding: 55px 0 50px;
@@ -6628,7 +6633,6 @@ animate loader start
   height: 12px;
   width: 14px;
   display: inline-block;
-  margin-bottom: 0.6em;
   animation: stretchdelay 1.38s infinite ease-in-out;
   -o-animation: stretchdelay 1.38s infinite ease-in-out;
   -ms-animation: stretchdelay 1.38s infinite ease-in-out;
