@@ -1569,6 +1569,9 @@ button{
     background: url('../img/categories/usa.jpg') no-repeat;
     background-size: 100% 100%;
 
+    .header-info__content{
+      margin: 20px 0 30px;
+    }
     .header-info-countries{
       padding: 70px 0;
     }
@@ -5979,8 +5982,13 @@ Trademarks start
     margin: 0 0 30px 0;
   }
   .order-button{
+    display: inline-block;
     font-size: 19px;
     padding: 6px 70px;
+    &:hover{
+      text-decoration: none;
+      color: #ffffff;
+    }
   }
 }
 
@@ -8870,6 +8878,12 @@ animate loader end
     &.header-info--country-renewal{
       background: url(../img/categories/usa-mobile.png) no-repeat;
       background-size: 100% 100%;
+     .header-info__content{
+       margin-top: 40px;
+       .header-info--country-flag{
+         top:-30px;
+       }
+     }
     }
 
     .header-info__heading-icon{
