@@ -119,8 +119,8 @@ button{
     &:hover,
     &:focus,
     &:active{
-      color: #fff;
-      text-decoration: none;
+      //color: #fff;
+      text-decoration: underline;
     }
   }
 
@@ -3526,13 +3526,20 @@ second site
   }
 
   &.element-box--pure{
-    padding: 10px 0 10px 10px;
+    padding: 10px 0 ;
     margin: 0;
     background: transparent;
   }
 
   &.element-box--indent{
     margin-bottom: 10px;
+  }
+
+  .element-box-inner{
+    &.element-box-inner--right-col{
+      overflow: hidden;
+      overflow-y: scroll;
+    }
   }
 
   &.element-box--fixed-height{
@@ -6620,6 +6627,7 @@ STEP 1-2 start
 STEP 1-2 end
  ==============*/
 
+
 /*=============
 animate loader start
 ==============*/
@@ -6725,6 +6733,32 @@ animate loader start
 /*=============
 animate loader end
 ==============*/
+
+/*left menu start*/
+.menu-left{
+  padding: 0;
+  margin: 0;
+  .menu-left__item{
+    padding: 10px 0;
+    list-style: none;
+    a{
+      font-size: 21px;
+      color: #444444;
+      font-weight: 600;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+    &.menu-left__item--current{
+      background: #021f54;
+      border-radius: 7px;
+      a{
+        color: #fff;
+      }
+    }
+  }
+}
+/*left menu end*/
 
 @media screen and (max-width: 1368px) {
   .our-clients-container {
