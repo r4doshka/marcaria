@@ -10489,5 +10489,14 @@ animate loader end
       height: 34px;
     }
   }
+
+  .tooltip--simple{
+    &.tooltip--simple{
+      .tooltip-inner{
+        width: auto;
+        min-width: 280px;
+      }
+    }
+  }
 }
 
