@@ -2259,6 +2259,35 @@ second site
           background: url("../img/icons/male-silhouette-talking_green.png") no-repeat;
           background-size: contain;
         }
+        .domain-registration-icon{
+          background: url("../img/icons/domain-registration.png") no-repeat;
+          background-size: contain;
+        }
+
+        .eye-icon{
+          background: url("../img/icons/open-eye.png") no-repeat;
+          background-size: contain;
+        }
+
+        .recycle-icon{
+          background: url("../img/icons/recycle-sign.png") no-repeat;
+          background-size: contain;
+        }
+
+        .earth-icon{
+          background: url("../img/icons/earth-globe.svg") no-repeat;
+          background-size: contain;
+        }
+
+        .upload-icon{
+          background: url("../img/icons/uploading-file.png") no-repeat;
+          background-size: contain;
+        }
+
+        .security-icon{
+          background: url("../img/icons/Protect.svg") no-repeat;
+          background-size: contain;
+        }
       }
     }
   }
@@ -6829,6 +6858,50 @@ animate loader end
   background: url(../img/icons/male-silhouette-talking.png) no-repeat;
   background-size: contain;
 }
+
+.domain-registration-icon{
+  height: 30px;
+  width: 30px;
+  background: url(../img/icons/domain-registration-grey.png) no-repeat;
+  background-size: contain;
+}
+
+.eye-icon{
+  height: 30px;
+  width: 30px;
+  background: url(../img/icons/open-eye-grey.png) no-repeat;
+  background-size: contain;
+}
+
+.recycle-icon{
+  height: 30px;
+  width: 30px;
+  background: url(../img/icons/recycle-sign-grey.png) no-repeat;
+  background-size: contain;
+}
+
+.earth-icon{
+  height: 30px;
+  width: 30px;
+  background: url(../img/icons/earth-globe-grey.png) no-repeat;
+  background-size: contain;
+}
+
+.upload-icon{
+   height: 30px;
+   width: 30px;
+   background: url(../img/icons/uploading-file-grey.png) no-repeat;
+   background-size: contain;
+}
+
+.security-icon{
+  height: 30px;
+  width: 30px;
+  background: url(../img/icons/security-grey.png) no-repeat;
+  background-size: contain;
+}
+
+
 
 @media screen and (max-width: 1368px) {
   .our-clients-container {
