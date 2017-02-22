@@ -2230,6 +2230,38 @@ second site
     display: block;
     cursor: pointer;
   }
+  &.list-with-icon__icon-absolute{
+    .list-with-icon__description{
+      position: relative;
+      padding-left: 55px;
+      flex:0 0 100%;
+    }
+    .icon-absolute{
+      position: absolute;
+      left: 0;
+      top:0;
+    }
+    .list-with-icon__title{
+      &:hover{
+        .c-search-icon{
+          background: url("../img/icons/c-search_green.png") no-repeat;
+          background-size: contain;
+        }
+        .r-search-icon{
+          background: url("../img/icons/musica-searcher_green.png") no-repeat;
+          background-size: contain;
+        }
+        .label-icon{
+          background: url("../img/icons/label_green.png") no-repeat;
+          background-size: contain;
+        }
+        .male-talking-icon{
+          background: url("../img/icons/male-silhouette-talking_green.png") no-repeat;
+          background-size: contain;
+        }
+      }
+    }
+  }
   &.all-services{
     .list-with-icon__icon{
       flex:0 1 60px;
@@ -2729,6 +2761,7 @@ second site
 .main-banner{
   position: relative;
   margin-bottom: 135px;
+  height: 360px;
   .header{
     margin:40px 0 20px;
     font-size: 60px;
@@ -6767,6 +6800,35 @@ animate loader end
   }
 }
 /*left menu end*/
+
+
+.c-search-icon{
+  height: 34px;
+  width: 34px;
+  background: url(../img/icons/C-search.png) no-repeat;
+  background-size: contain;
+}
+
+.r-search-icon{
+  height: 34px;
+  width: 34px;
+  background: url(../img/icons/R-search.png) no-repeat;
+  background-size: contain;
+}
+
+.label-icon{
+  height: 34px;
+  width: 34px;
+  background: url(../img/icons/label.png) no-repeat;
+  background-size: contain;
+}
+
+.male-talking-icon{
+  height: 34px;
+  width: 34px;
+  background: url(../img/icons/male-silhouette-talking.png) no-repeat;
+  background-size: contain;
+}
 
 @media screen and (max-width: 1368px) {
   .our-clients-container {
