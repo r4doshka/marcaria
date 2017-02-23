@@ -1895,7 +1895,11 @@ second site
         font-size: 22px;
       }
     }
+    &.product-list__item--none-indent{
+      padding: 0;
+    }
   }
+
   .product-list__logo{
     margin: 0 auto 20px;
       img{
@@ -1919,6 +1923,16 @@ second site
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    &.product-list__info--border-right{
+      border-right: 2px solid #b9d75f;
+    }
+    &.product-list__info--none-indent{
+      padding: 0;
+      margin: 0 15px;
+      background: #ebebeb;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+    }
   }
   .product-list__title{
     margin-bottom: 5px;
@@ -2300,6 +2314,10 @@ second site
     }
     border-left: 2px solid #b9d75f;
   }
+}
+
+.world-map-panel{
+  padding: 20px 15px;
 }
 
 .world-map{
@@ -8799,22 +8817,7 @@ animate loader end
     }
   }
 
-  .main-banner{
-    transition: all 0.5s;
-    .header{
-      margin-top: 0;
-      font-size: 20px;
-      color: #021f54;
-    }
-    .img-wrap{
-      top:110px;
-    }
-    .remark {
-      margin-top: 0;
-      font-size: 13px;
-      line-height: 24px;
-    }
-  }
+
 
   .products-list{
     .products-list__heading{
@@ -10645,6 +10648,31 @@ animate loader end
         width: auto;
         min-width: 280px;
       }
+    }
+  }
+
+  .main-banner{
+    .header{
+      margin-top: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 650px){
+  .main-banner{
+    transition: all 0.5s;
+    .header{
+      margin-top: 0;
+      font-size: 20px;
+      color: #021f54;
+    }
+    .img-wrap{
+      top:110px;
+    }
+    .remark {
+      margin-top: 0;
+      font-size: 13px;
+      line-height: 24px;
     }
   }
 }
