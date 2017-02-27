@@ -2312,12 +2312,11 @@ second site
     .list-with-icon__description{
       flex:0 1 auto;
     }
-    border-left: 2px solid #b9d75f;
   }
 }
 
 .world-map-panel{
-  padding: 20px 15px;
+  padding: 30px 30px 30px 0;
 }
 
 .world-map{
@@ -2628,9 +2627,6 @@ second site
 }
 
 .tools{
-  &.list-with-icon{
-    border-left: 2px solid #b9d75f;
-  }
   .list-with-icon__icon{
     flex: 0 1 40px;
   }
@@ -2645,6 +2641,11 @@ second site
     font-size: 16px;
   }
 }
+
+.wrap-indent{
+  padding: 30px 30px 30px 0;
+}
+
 
 .mobile-menu{
   display: none;

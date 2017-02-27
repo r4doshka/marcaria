@@ -16,7 +16,7 @@
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
 <![endif]-->
-<header class="header main-page">
+<header class="header">
     <div class="container">
         <div class="row vertical-alignment">
             <div class="col-md-4 col-sm-4 col-xs-4 header-logo">
@@ -325,9 +325,9 @@
     </div>
 </header>
 <section class="product-list container">
-    <div class="product-list__item">
+    <div class="product-list__item product-list__item--none-indent">
         <div class="row flexbox">
-            <div class="col-md-4 product-list__info product-list__info--border-right international-info">
+            <div class="col-md-4 product-list__info product-list__info--none-indent international-info">
                 <div class="product-list__logo product-list__logo--trademarks">
                     <img src="../../img/icons/r_circle.png" alt="">
                 </div>
@@ -341,7 +341,7 @@
                     Go
                 </a>
             </div>
-            <div class="col-md-4 product-list__info product-list__info--border-right africa-info hidden" >
+            <div class="col-md-4 product-list__info product-list__info--none-indent africa-info hidden" >
                 <div class="product-list__logo product-list__logo--trademarks">
                     <img src="../../img/icons/africa-withflag-green.png" alt="">
                 </div>
@@ -355,7 +355,7 @@
                     Go
                 </a>
             </div>
-            <div class="col-md-4 product-list__info product-list__info--border-right asia-info hidden">
+            <div class="col-md-4 product-list__info product-list__info--none-indent asia-info hidden">
                 <div class="product-list__logo product-list__logo--trademarks">
                     <img src="../../img/icons/asia-withflag-green.png" alt="">
                 </div>
@@ -369,7 +369,7 @@
                     Go
                 </a>
             </div>
-            <div class="col-md-4 product-list__info product-list__info--border-right central-america-info hidden">
+            <div class="col-md-4 product-list__info product-list__info--none-indent central-america-info hidden">
                 <div class="product-list__logo product-list__logo--trademarks">
                     <img src="../../img/icons/central-america-withflag-green.png" alt="">
                 </div>
@@ -383,7 +383,7 @@
                     Go
                 </a>
             </div>
-            <div class="col-md-4 product-list__info product-list__info--border-right europe-info hidden">
+            <div class="col-md-4 product-list__info product-list__info--none-indent europe-info hidden">
                 <div class="product-list__logo product-list__logo--trademarks">
                     <img src="../../img/icons/europe-withflag-green.png" alt="">
                 </div>
@@ -397,7 +397,7 @@
                     Go
                 </a>
             </div>
-            <div class="col-md-4 product-list__info product-list__info--border-right north-america-info hidden">
+            <div class="col-md-4 product-list__info product-list__info--none-indent north-america-info hidden">
                 <div class="product-list__logo product-list__logo--trademarks">
                     <img src="../../img/icons/north-america-withflag-green.png" alt="">
                 </div>
@@ -411,7 +411,7 @@
                     Go
                 </a>
             </div>
-            <div class="col-md-4 product-list__info product-list__info--border-right oceania-info hidden">
+            <div class="col-md-4 product-list__info product-list__info--none-indent oceania-info hidden">
                 <div class="product-list__logo product-list__logo--trademarks">
                     <img src="../../img/icons/oceania-withflag-green.png" alt="">
                 </div>
@@ -425,7 +425,7 @@
                     Go
                 </a>
             </div>
-            <div class="col-md-4 product-list__info product-list__info--border-right south-america-info hidden">
+            <div class="col-md-4 product-list__info product-list__info--none-indent south-america-info hidden">
                 <div class="product-list__logo product-list__logo--trademarks">
                     <img src="../../img/icons/south-america-withflag-green.png" alt="">
                 </div>
@@ -439,7 +439,7 @@
                     Go
                 </a>
             </div>
-            <div class="col-md-4 product-list__info product-list__info--border-right middle-east-info hidden">
+            <div class="col-md-4 product-list__info product-list__info--none-indent middle-east-info hidden">
                 <div class="product-list__logo product-list__logo--trademarks">
                     <img src="../../img/icons/Middle_East_with-flags_green.png" alt="">
                 </div>
@@ -453,7 +453,7 @@
                     Go
                 </a>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-8 world-map-panel">
                 <div class="world-map">
                     <img src="../../img/icons/worldmap.png" alt="">
                     <div class="continent-item north_america with-flags" data-panel-class="north-america-info" data-title="North America" data-countries="Canada Mexico USA">
@@ -756,13 +756,6 @@
 <script src="../../js/plugins.js"></script>
 <script src="../../js/main.js"></script>
 <script>
-    $(document).ready(function(){
-        $(".tab-controls .horizontal-menu__item a").click(function() {
-            $(this).parent().addClass("tab-controls--active");
-            $(this).parent().siblings().removeClass("tab-controls--active");
-        });
-    });
-
     /*============
      click on world map
      ==============*/
