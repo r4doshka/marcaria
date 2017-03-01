@@ -1927,7 +1927,7 @@ second site
       border-right: 2px solid #b9d75f;
     }
     &.product-list__info--none-indent{
-      padding: 0;
+      padding: 0 5px;
       margin: 0 15px;
       background: #ebebeb;
       border-top-left-radius: 20px;
@@ -2074,7 +2074,7 @@ second site
 .domains-list{
   display: flex;
   flex-flow: row wrap;
-  border-left: 2px solid #b9d75f;
+  //border-left: 2px solid #b9d75f;
   padding-left: 20px;
   .domains-list__item{
     display: flex;
