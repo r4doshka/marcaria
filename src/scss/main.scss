@@ -2241,7 +2241,7 @@ second site
     color: #444444;
   }
   a.list-with-icon__title{
-    display: block;
+    display: inline-block;
     cursor: pointer;
   }
   &.list-with-icon__icon-absolute{
@@ -2289,17 +2289,31 @@ second site
         }
 
         .earth-icon{
-          background: url("../img/icons/earth-globe.svg") no-repeat;
+          background: url("../img/icons/earth-globe.png") no-repeat;
           background-size: contain;
         }
 
         .upload-icon{
           background: url("../img/icons/uploading-file.png") no-repeat;
+          width: 30px;
+          height: 30px;
           background-size: contain;
         }
 
         .security-icon{
           background: url("../img/icons/Protect.svg") no-repeat;
+          background-size: contain;
+        }
+        .original-icon{
+          background: url("../img/icons/original.png") no-repeat;
+          background-size: contain;
+        }
+        .server-icon{
+          background: url("../img/icons/server-icon.png") no-repeat;
+          background-size: contain;
+        }
+        .secure-file-icon{
+          background: url("../img/icons/secure-file.png") no-repeat;
           background-size: contain;
         }
       }
@@ -2394,6 +2408,10 @@ second site
       background:url(../img/icons/north_america_green.png) no-repeat;
       background-size: contain;
     }
+    &:hover{
+      background:url(../img/icons/north_america_green.png) no-repeat;
+      background-size: contain;
+    }
     &.with-flags{
       background:url(../img/icons/north-america-withflag.png) no-repeat;
       background-size: contain;
@@ -2420,6 +2438,10 @@ second site
     background:url(../img/icons/Central_America.png) no-repeat;
     background-size: contain;
     &.continent--active{
+      background:url(../img/icons/central_america_green.png) no-repeat;
+      background-size: contain;
+    }
+    &:hover{
       background:url(../img/icons/central_america_green.png) no-repeat;
       background-size: contain;
     }
@@ -2452,6 +2474,10 @@ second site
       background:url(../img/icons/south_america_green.png) no-repeat;
       background-size: contain;
     }
+    &:hover{
+      background:url(../img/icons/south_america_green.png) no-repeat;
+      background-size: contain;
+    }
     &.with-flags{
       background:url(../img/icons/south-america-withflag.png) no-repeat;
       background-size: contain;
@@ -2478,6 +2504,10 @@ second site
     background:url(../img/icons/Europe.png) no-repeat;
     background-size: contain;
     &.continent--active{
+      background:url(../img/icons/europe_green.png) no-repeat;
+      background-size: contain;
+    }
+    &:hover{
       background:url(../img/icons/europe_green.png) no-repeat;
       background-size: contain;
     }
@@ -2510,6 +2540,10 @@ second site
       background:url(../img/icons/Middle_East_green.png) no-repeat;
       background-size: contain;
     }
+    &:hover{
+      background:url(../img/icons/Middle_East_green.png) no-repeat;
+      background-size: contain;
+    }
     &.with-flags{
       background:url(../img/icons/Middle_East_with-flags.png) no-repeat;
       background-size: contain;
@@ -2536,6 +2570,10 @@ second site
     background:url(../img/icons/Africa.png) no-repeat;
     background-size: contain;
     &.continent--active{
+      background:url(../img/icons/africa_green.png) no-repeat;
+      background-size: contain;
+    }
+    &:hover{
       background:url(../img/icons/africa_green.png) no-repeat;
       background-size: contain;
     }
@@ -2568,6 +2606,10 @@ second site
       background:url(../img/icons/asia_green.png) no-repeat;
       background-size: contain;
     }
+    &:hover{
+      background:url(../img/icons/asia_green.png) no-repeat;
+      background-size: contain;
+    }
     &.with-flags{
       background:url(../img/icons/asia-withflag.png) no-repeat;
       background-size: contain;
@@ -2594,6 +2636,10 @@ second site
     background:url(../img/icons/Oceania.png) no-repeat;
     background-size: contain;
     &.continent--active{
+      background:url(../img/icons/oceania_green.png) no-repeat;
+      background-size: contain;
+    }
+    &:hover{
       background:url(../img/icons/oceania_green.png) no-repeat;
       background-size: contain;
     }
@@ -6985,6 +7031,25 @@ animate loader end
   background-size: contain;
 }
 
+.original-icon{
+  height: 30px;
+  width: 30px;
+  background: url(../img/icons/original-grey.png) no-repeat;
+  background-size: contain;
+}
+
+.server-icon{
+  height: 30px;
+  width: 30px;
+  background: url(../img/icons/server-grey.png) no-repeat;
+  background-size: contain;
+}
+.secure-file-icon{
+  height: 30px;
+  width: 30px;
+  background: url(../img/icons/secure-file-grey.png) no-repeat;
+  background-size: contain;
+}
 
 
 @media screen and (max-width: 1368px) {
