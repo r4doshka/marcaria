@@ -739,52 +739,6 @@
 <script>window.jQuery || document.write('<script src="dist/js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
 <script src="../js/plugins.js"></script>
 <script src="../js/main.js"></script>
-<script>
-    $(document).ready(function(){
-        var $el = $('.continent-item').filter(':first').toggleClass('with-flags--active');
-        var panelClass = $el.data('panelClass');
-        var countriesString = $el.data('countries');
-        var countries = countriesString.split(' ');
-        var continentHeader = $el.data('title');
-        $('.available-elements__header').text(continentHeader);
-        $('.available-item, .show-more').removeClass('more-hidden').addClass('hidden');
 
-        $(countries).each(function(index, el){
-            $('.' + el).removeClass('hidden');
-            if(index > 2){
-                $('.' + el).addClass('more-hidden');
-                $('.show-more').removeClass('hidden');
-            }
-        });
-        $('.' + panelClass).toggleClass('hidden');
-    });
-
-    $('.continent-item').on('click', function () {
-        $('.world-map *').removeClass('with-flags--active');
-        $(this).toggleClass('with-flags--active');
-        var $el = $(this);
-        var panelClass = $el.data('panelClass');
-        var countriesString = $el.data('countries');
-        var countries = countriesString.split(' ');
-        var continentHeader = $el.data('title');
-        $('.available-elements__header').text(continentHeader);
-        $('.available-item, .show-more').removeClass('more-hidden').addClass('hidden');
-
-        $(countries).each(function(index, el){
-            $('.' + el).removeClass('hidden');
-            if(index > 2){
-                $('.' + el).addClass('more-hidden');
-                $('.show-more').removeClass('hidden');
-            }
-        });
-        $('.' + panelClass).toggleClass('hidden');
-    });
-
-    $('.show-more').on('click', function(e){
-        e.preventDefault();
-        $(this).addClass('hidden');
-        $('.available-item.more-hidden').removeClass('more-hidden')
-    });
-</script>
 </body>
 </html>
