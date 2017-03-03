@@ -4282,6 +4282,10 @@ domain select  start
     padding: 4px 40px;
     box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.45);
   }
+  &:hover{
+    color:#fff;
+    text-decoration: none;
+  }
 }
 
 .trademark-registration-modal{
