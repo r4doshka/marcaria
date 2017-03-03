@@ -4139,6 +4139,7 @@ domain select  start
 }
 
 .add-to-cart{
+  display: inline-block;
   padding: 7px 20px 7px 45px;
   background:url('../img/icons/shopping-cart_white_plus.png') no-repeat 5% 50% #a6ce2f;
   background-size: 30px;
@@ -4147,6 +4148,11 @@ domain select  start
   color: #fff;
   font-size: 20px;
   font-weight: 700;
+  &:hover,
+  &:focus{
+    text-decoration: none;
+    color: #fff;
+  }
 }
 
 
