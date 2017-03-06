@@ -154,6 +154,7 @@ button{
     background: #021f54;
     transition: background 0.5s;
   }
+
   .dropdown-menu__toggle{
     display: flex;
     flex-flow: row nowrap;
@@ -9079,6 +9080,30 @@ animate loader end
       display: none;
     }
   }
+  .dropdown-menu{
+    &.dropdown-menu--mobile{
+      .toggle__icon{
+        position: relative;
+        top: -2px;
+        width: 25px;
+      }
+      .header__label{
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 400;
+      }
+      .header__nav{
+        .header__nav-item{
+          padding: 5px 25px 5px 50px;
+        }
+        .header__nav__dropdown li{
+          padding-bottom: 5px;
+        }
+      }
+
+    }
+  }
+
   .header-info {
     .header-info__heading{
       font-size: 17px;
