@@ -2129,6 +2129,10 @@ second site
 
   &.order-button--inline{
     display: inline-block;
+    &:hover{
+      color:#fff;
+      text-decoration: none;
+    }
   }
 }
 
@@ -4323,7 +4327,11 @@ domain select  start
   align-items: center;
   .transition-card__icon{
     width: 160px;
+    height: 110px;
     margin: 0 0 20px;
+    img{
+      height: 100%;
+    }
   }
 
   .transition-card__title{
