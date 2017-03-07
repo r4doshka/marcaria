@@ -6218,6 +6218,12 @@ Trademarks start
   margin: 10px 0 0;
   font-size: 18px;
   color: #006ce5;
+  &.view-more--inline{
+    display: inline-block;
+  }
+  &:focus{
+    outline:none;
+  }
 }
 
 .form-wrap{
@@ -7073,6 +7079,159 @@ animate loader end
   background-size: contain;
 }
 
+/*modal-prices start*/
+
+.modal-prices{
+  color:#0c59cf;
+  .modal-dialog{
+    width: 620px;
+  }
+  .modal-content{
+    padding: 35px 60px 20px 60px;
+    border:1px solid #1846a5;
+  }
+  .modal-header{
+    padding: 0;
+    border-bottom: none;
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .modal-header__icon{
+    margin: 0 0 0 10px;
+  }
+  .modal-header__note{
+    font-size: 16px;
+    font-weight:400;
+    text-align: center;
+  }
+  .btn-close{
+    position: absolute;
+    top:10px;
+    right: 10px;
+    color: #01309a;
+    opacity: 1;
+  }
+}
+
+.tab-list {
+  padding: 0;
+  margin: 0;
+  .tab-list__item{
+    list-style: none;
+    flex:1 0 auto;
+    &:nth-child(even){
+      .tab-list__link{
+        border-right: none;
+        border-left:none;
+      }
+    }
+    &:last-child{
+      .tab-list__link {
+        border-right: 1px solid #00329a;
+      }
+    }
+  }
+  .tab-list__link{
+    display:block;
+    text-align:center;
+    text-decoration:none;
+    text-transform:uppercase;
+    color:#00329a;
+    padding:15px 0;
+    border:1px solid #00329a;
+    border-bottom:2px solid #5d7dc4;
+    border-top-right-radius:10px;
+    border-top-left-radius:10px;
+    background:#fff;
+    font-weight: 600;
+    &:hover, &.active {
+      background:#d4e3fc;
+      border-bottom:2px solid #d4e3fc;
+    }
+  }
+}
+.tab-list-group{
+  padding: 15px 20px 60px;
+  background:#d4e3fc;
+  border:1px solid #00329a;
+  border-top: none;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+}
+.tab-list__note{
+  color:#444;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 10px 0 0;
+}
+
+.step-box{
+  margin: 15px 0 0 0 ;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #01309a;
+  border-radius: 10px;
+  &:first-child{
+    margin: 0;
+  }
+  .step-box__header{
+    padding: 0 0 5px 0;
+    font-size: 22px;
+    color:#0c59cf;
+    font-weight: 600;
+  }
+  .step-box__name{
+    flex: 0 0 50%;
+    font-size: 19px;
+    color: #0c59cf;
+  }
+  .step-box__title-wrap{
+    padding: 0 0 0 33.333%;
+    width: 100%;
+  }
+  .step-box__title{
+    flex: 0 0 50%;
+    font-size: 19px;
+    color: #0c59cf;
+    &.step-box__title--small{
+      flex: 0 0 35%;
+    }
+  }
+  .step-box__price{
+    flex: 0 0 50%;
+    font-size: 17px;
+    color: #0844a4;
+  }
+  .step-box__link {
+    color:#01309a;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+  .tooltip-inner{
+    border: 1px solid #001c55;
+    background: #fff;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);;
+  }
+  .step-box-group{
+    &.step-box-group--extensive{
+      .step-box__name{
+        flex: 0 0 33.333%;
+      }
+      .step-box__price{
+        flex: 1 0 auto;
+        &.step-box__price--small{
+          flex: 0 0 24%;
+        }
+      }
+    }
+  }
+}
+
+/*modal-prices end*/
 
 @media screen and (max-width: 1368px) {
   .our-clients-container {
