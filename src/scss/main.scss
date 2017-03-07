@@ -2803,7 +2803,8 @@ second site
     font-weight: bold;
     color: #fff;
     border:none;
-    &:hover{
+    &:hover,
+    &:focus{
       text-decoration: none;
     }
     &.remove{
