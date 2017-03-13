@@ -1236,6 +1236,42 @@ button{
 
   }
 }
+.tooltip-modal{
+  .tooltip-modal__header{
+    margin:0 0 20px 0;
+    color: #01309a;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+  }
+  &.tooltip-modal__width-500{
+    .tooltip-inner{
+      max-width: 500px;
+      width: 500px;
+      border-color: #01309a;
+      -webkit-box-shadow: 0 3px 9px 0 rgba(0,0,0,.6);
+      -moz-box-shadow: 0 3px 9px 0 rgba(0,0,0,.6);
+      box-shadow: 0 3px 9px 0 rgba(0,0,0,.6);
+    }
+  }
+  &.tooltip-modal__mobile-width-auto{
+
+  }
+  .bottom{
+    margin: 0;
+  }
+  .tooltip-arrow{
+    border-color: transparent !important;
+    border-width: 0 !important;
+  }
+  .tooltip-inner{
+    color: #0c59cf;
+    font-size: 19px;
+    line-height: 22px;
+    text-align: left;
+  }
+}
+
 
 .tooltip-inner{
   background: #d6d6d6;
@@ -10986,6 +11022,29 @@ animate loader end
       }
     }
   }
+
+  .tooltip-modal{
+    .tooltip-modal__header{
+      font-size: 16px;
+    }
+    .tooltip-inner{
+      font-size: 14px;
+      line-height: 18px;
+    }
+    &.tooltip-modal__mobile-width-auto{
+      .tooltip-inner{
+        width: auto;
+        min-width: 280px;
+      }
+      &.tooltip-modal__width-500{
+        .tooltip-inner{
+          width: auto;
+          min-width: 280px;
+        }
+      }
+    }
+  }
+
 
   .main-banner{
     .header{
