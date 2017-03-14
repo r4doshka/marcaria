@@ -333,7 +333,7 @@
     </div>
 </header>
 <section class="container">
-    <div class="main-banner" style="height: 560px; margin-bottom: 135px;">
+    <div class="main-banner" style="height: 360px;">
         <div class="header">
             Welcome to Marcaria.com
             <div class="remark">
@@ -815,14 +815,17 @@
                }
            }
        });
-       var maxHeight = $('.main-banner .img-wrap').height();
-       $('.main-banner').css('height', maxHeight);
 
        $(window).resize(function() {
            var maxHeight = $('.main-banner .img-wrap').height();
            $('.main-banner').css('height', maxHeight);
        });
-   })
+   });
+
+   $( window ).on( "load", function() {
+       var maxHeight = $('.main-banner .img-wrap').height();
+       $('.main-banner').css('height', maxHeight);
+   });
 
 
 </script>
