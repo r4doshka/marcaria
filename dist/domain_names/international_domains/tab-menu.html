@@ -754,7 +754,7 @@
 <script>
     $('.tabs-box > div').hide();
     $('.tabs-box > div:first-of-type').show();
-    $('.horizontal-menu li:not(:first-of-type) a').click(function(e){
+    $('.tabs .horizontal-menu li:not(:first-of-type) a').click(function(e){
         e.preventDefault();
         var $this = $(this),
             tabgroup = '#'+$this.parents('.horizontal-menu').data('tabgroup'),
