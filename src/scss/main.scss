@@ -5868,6 +5868,9 @@ card-payment  end
     .checkout-item__name{
       margin: 0 30px 0 0;
       font-size: 25px;
+      &.checkout-item__name--small{
+        font-size: 20px;
+      }
     }
   }
   .simple-list{
