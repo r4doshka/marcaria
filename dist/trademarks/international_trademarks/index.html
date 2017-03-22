@@ -344,7 +344,21 @@
             <div class="col-md-8 world-map-panel">
                 <div class="world-map">
                     <img src="../../img/icons/worldmap.png" alt="">
-                    <a href="../america_trademark.html" class="continent-item north_america grey-circle-with-flags" >
+                    <a href="../america_trademark.html" class="continent-item north_america north_america__circle-grey" >
+                        <div style="position:relative; height: 100%;">
+                            <ul class="list">
+                                <li class="list-item">
+                                    <img src="../../img/icons/flags-line3.png" alt="">
+
+                                </li>
+                                <li class="list-item">
+                                    <img src="../../img/icons/flags-line1.png" alt="">
+                                </li>
+                                <li class="list-item">
+                                    <img src="../../img/icons/flags-line.png" alt="">
+                                </li>
+                            </ul>
+                        </div>
 
                     </a>
                     <a href="../central_america.html" class="continent-item central_america grey-circle-with-flags" >
@@ -382,6 +396,28 @@
         </div>
     </div>
 </section>
+<style>
+    .list{
+        position: absolute;
+        bottom: -10px;
+        padding: 0;
+        margin: 0;
+        left: 0;
+        right: 0;
+    }
+    .list-item{
+        display: none;
+        width: auto;
+        height: 14px;
+        list-style: none;
+    }
+    .list-item img{
+        max-height: 100%;
+        width: auto;
+        opacity: 1;
+    }
+</style>
+
 <footer class="footer">
     <div class="container">
         <div class="footer-callback">
@@ -520,9 +556,28 @@
         </div>
     </div>
 </footer>
-<!--<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>-->
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script>window.jQuery || document.write('<script src="../../js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
 <script src="../../js/plugins.js"></script>
 <script src="../../js/main.js"></script>
+
+<script type="text/javascript">
+   var circle = (function () {
+       $('.list .list-item').each(function (index, element) {
+           if (index === 0 ){
+               $(this).appendTo('.list');
+               $(element).fadeIn(1000);
+           }else{
+               $(this).hide();
+           }
+       });
+   });
+
+   circle();
+    setInterval(function(){
+        $('.list .list-item').not(':first').hide();
+        circle();
+    }, 3000);
+</script>
 </body>
 </html>

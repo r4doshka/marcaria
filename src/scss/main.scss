@@ -2468,6 +2468,16 @@ second site
         background-size: contain;
       }
     }
+    &.north_america__circle-grey{
+      width: 80px;
+      height: 80px;
+      background:url(../img/icons/north-america-grey-circle.png) no-repeat;
+      background-size: contain;
+      &:hover{
+        background:url(../img/icons/north-america-green-circle.png) no-repeat;
+        background-size: contain;
+      }
+    }
   }
   .central_america{
     position: absolute;
