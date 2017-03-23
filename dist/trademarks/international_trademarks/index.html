@@ -344,7 +344,12 @@
             <div class="col-md-8 world-map-panel">
                 <div class="world-map">
                     <img src="../../img/icons/worldmap.png" alt="">
-                    <a href="../america_trademark.html" class="continent-item north_america north_america__circle-grey" >
+                    <a href="../america_trademark.html" class="continent-item north_america grey-circle-with-flags" >
+                    </a>
+                    <a href="../central_america.html" class="continent-item central_america grey-circle-with-flags" >
+
+                    </a>
+                    <a href="../america_trademark.html" class="continent-item south_america south_america__circle-grey" >
                         <div style="position:relative; height: 100%;">
                             <div class="list flexbox" style="height: 20px;">
                                 <div class="list-item">
@@ -369,12 +374,6 @@
                                 </div>
                             </div>
                         </div>
-                    </a>
-                    <a href="../central_america.html" class="continent-item central_america grey-circle-with-flags" >
-
-                    </a>
-                    <a href="../america_trademark.html" class="continent-item south_america grey-circle-with-flags" >
-
                     </a>
                     <a href="../european_trademark.html" class="continent-item europe grey-circle-with-flags" >
 
@@ -583,7 +582,7 @@
 <script type="text/javascript">
 
    var circleFirst = (function () {
-       $('.list .list-item ').each(function (index, element) {
+       $('.continent-item .list .list-item ').each(function (index, element) {
            var imgFirst = $(this).find('img').filter(':first');
            if($(imgFirst).is(':visible')){
                $(imgFirst).delay(index * 3000 + 3000).fadeOut();
@@ -598,7 +597,7 @@
    var circleSecond = (function () {
 
 
-       $('.list .list-item ').each(function (index, element) {
+       $('.continent-item .list .list-item ').each(function (index, element) {
            var imgSecond = $(this).find('img').not(':first');
            if($(imgSecond).is(':visible')){
                $(imgSecond).delay(index*3000+3000).fadeOut();

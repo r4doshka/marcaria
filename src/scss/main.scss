@@ -2544,6 +2544,16 @@ second site
         background-size: contain;
       }
     }
+    &.south_america__circle-grey{
+      width: 80px;
+      height: 80px;
+      background:url(../img/icons/south-america-grey-circle.png) no-repeat;
+      background-size: contain;
+      &:hover{
+        background:url(../img/icons/south-america-green-circle.png) no-repeat;
+        background-size: contain;
+      }
+    }
   }
   .europe{
     position: absolute;
