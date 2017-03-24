@@ -2511,6 +2511,16 @@ second site
         background-size: contain;
       }
     }
+    &.central_america__circle-grey{
+      width: 80px;
+      height: 80px;
+      background:url(../img/icons/central-america-grey-circle.png) no-repeat;
+      background-size: contain;
+      &:hover{
+        background:url(../img/icons/central-america-green-circle.png) no-repeat;
+        background-size: contain;
+      }
+    }
   }
   .south_america{
     position: absolute;
@@ -2587,6 +2597,16 @@ second site
         background-size: contain;
       }
     }
+    &.europe__circle-grey{
+      width: 80px;
+      height: 80px;
+      background:url(../img/icons/europe-grey-circle.png) no-repeat;
+      background-size: contain;
+      &:hover{
+        background:url(../img/icons/europe-green-circle.png) no-repeat;
+        background-size: contain;
+      }
+    }
   }
   .middle-east{
     position: absolute;
@@ -2617,6 +2637,16 @@ second site
       background-size: contain;
       &:hover{
         background:url(../img/icons/Middle_East_with-flags_green.png) no-repeat;
+        background-size: contain;
+      }
+    }
+    &.middle-east__circle-grey{
+      width: 80px;
+      height: 80px;
+      background:url(../img/icons/middle-east-grey-circle.png) no-repeat;
+      background-size: contain;
+      &:hover{
+        background:url(../img/icons/middle-east-green-circle.png) no-repeat;
         background-size: contain;
       }
     }
@@ -2653,6 +2683,16 @@ second site
         background-size: contain;
       }
     }
+    &.africa__circle-grey{
+      width: 80px;
+      height: 80px;
+      background:url(../img/icons/africa-grey-circle.png) no-repeat;
+      background-size: contain;
+      &:hover{
+        background:url(../img/icons/africa-green-circle.png) no-repeat;
+        background-size: contain;
+      }
+    }
   }
   .asia{
     position: absolute;
@@ -2683,6 +2723,16 @@ second site
       background-size: contain;
       &:hover{
         background:url(../img/icons/asia-withflag-green.png) no-repeat;
+        background-size: contain;
+      }
+    }
+    &.asia__circle-grey{
+      width: 80px;
+      height: 80px;
+      background:url(../img/icons/asia-grey-circle.png) no-repeat;
+      background-size: contain;
+      &:hover{
+        background:url(../img/icons/asia-green-circle.png) no-repeat;
         background-size: contain;
       }
     }
@@ -2719,7 +2769,16 @@ second site
         background-size: contain;
       }
     }
-
+    &.oceania__circle-grey{
+      width: 80px;
+      height: 80px;
+      background:url(../img/icons/oceania-grey-circle.png) no-repeat;
+      background-size: contain;
+      &:hover{
+        background:url(../img/icons/oceania-green-circle.png) no-repeat;
+        background-size: contain;
+      }
+    }
   }
 
   .animate-extensions{
