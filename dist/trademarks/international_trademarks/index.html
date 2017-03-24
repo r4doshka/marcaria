@@ -718,41 +718,41 @@
 <script type="text/javascript">
    var circleFirst = (function () {
        var continentFirst ='';
-           $('.continent-item').each(function(index,elem){
-               var countries = $(elem).data('name');
-               continentFirst = $('.'+countries);
-               continentFirst = continentFirst.selector;
-               var number = 1 + Math.floor(Math.random() * 6);
-               console.log(continentFirst +' '+ number);
-               $(continentFirst+' .rotate-list .rotate-list-item').each(function (index) {
-                   var imgFirst = $(this).find('img').filter(':first');
-                   if($(imgFirst).is(':visible')){
-                       $(imgFirst).delay(index * 3000 + 3000).fadeOut();
+       $('.continent-item').each(function(index,elem){
+           var countries = $(elem).data('name');
+           continentFirst = $('.'+countries);
+           continentFirst = continentFirst.selector;
+           var number = 1 + Math.floor(Math.random() * 6);
+           console.log(continentFirst +' '+ number);
+           $(continentFirst+' .rotate-list .rotate-list-item').each(function (index) {
+               var imgFirst = $(this).find('img').filter(':first');
+               if($(imgFirst).is(':visible')){
+                   $(imgFirst).delay(index * 3000 + 3000).fadeOut();
 
-                   }else{
-                       $(imgFirst).delay(index * 3010 + 3000).fadeIn();
+               }else{
+                   $(imgFirst).delay(index * 3010 + 3000).fadeIn();
 
-                   }
-               });
+               }
            });
+       });
    });
    var circleSecond = (function () {
        var continentSecond = '';
-           $('.continent-item').each(function(index,elem){
-               var countries = $(elem).data('name');
-               continentSecond = $('.'+countries);
-               continentSecond = continentSecond.selector;
-               $(continentSecond + ' .rotate-list .rotate-list-item').each(function (index) {
-                   var imgSecond = $(this).find('img').not(':first');
-                   if($(imgSecond).is(':visible')){
-                       $(imgSecond).delay(index*3000+3000).fadeOut();
+       $('.continent-item').each(function(index,elem){
+           var countries = $(elem).data('name');
+           continentSecond = $('.'+countries);
+           continentSecond = continentSecond.selector;
+           $(continentSecond + ' .rotate-list .rotate-list-item').each(function (index) {
+               var imgSecond = $(this).find('img').not(':first');
+               if($(imgSecond).is(':visible')){
+                   $(imgSecond).delay(index*3000+3000).fadeOut();
 
-                   }else{
-                       $(imgSecond).delay(index*3010+3000).fadeIn();
+               }else{
+                   $(imgSecond).delay(index*3010+3000).fadeIn();
 
-                   }
-               });
+               }
            });
+       });
    });
    $(document).on('ready', function(){
       circleSecond();
