@@ -350,24 +350,24 @@
                         <div style="position:relative; height: 100%;">
                             <div class="rotate-list flexbox" style="height: 20px;">
                                 <div class="rotate-list-item">
-                                    <img src="../../img/flags/Central_America/GT.png" alt="">
-                                    <img src="../../img/flags/Central_America/PR.png" alt="">
+                                    <img src="../../img/flags/Central_America/GT.png" class="" alt="">
+                                    <img src="../../img/flags/Central_America/PR.png"  alt="">
                                 </div>
                                 <div class="rotate-list-item">
                                     <img src="../../img/flags/Central_America/DM.png" alt="">
-                                    <img src="../../img/flags/Central_America/PA.png" alt="">
+                                    <img src="../../img/flags/Central_America/PA.png"  alt="">
                                 </div>
                                 <div class="rotate-list-item">
                                     <img src="../../img/flags/Central_America/BZpng.png" alt="">
-                                    <img src="../../img/flags/Central_America/JM.png" alt="">
+                                    <img src="../../img/flags/Central_America/JM.png"  alt="">
                                 </div>
                                 <div class="rotate-list-item">
                                     <img src="../../img/flags/Central_America/BS.png" alt="">
-                                    <img src="../../img/flags/Central_America/HN.png" alt="">
+                                    <img src="../../img/flags/Central_America/HN.png"  alt="">
                                 </div>
                                 <div class="rotate-list-item">
                                     <img src="../../img/flags/Central_America/CR.png" alt="">
-                                    <img src="../../img/flags/Central_America/SV.png" alt="">
+                                    <img src="../../img/flags/Central_America/SV.png"  alt="">
                                 </div>
                             </div>
                         </div>
@@ -716,52 +716,41 @@
 <script src="../../js/main.js"></script>
 
 <script type="text/javascript">
-   var circleFirst = (function () {
-       var continentFirst ='';
+   var circle = (function () {
+       var continents ='';
        $('.continent-item').each(function(index,elem){
-           var countries = $(elem).data('name');
-           continentFirst = $('.'+countries);
-           continentFirst = continentFirst.selector;
-           var number = 1 + Math.floor(Math.random() * 6);
-           console.log(continentFirst +' '+ number);
-           $(continentFirst+' .rotate-list .rotate-list-item').each(function (index) {
-               var imgFirst = $(this).find('img').filter(':first');
-               if($(imgFirst).is(':visible')){
-                   $(imgFirst).delay(index * 3000 + 3000).fadeOut();
-
-               }else{
-                   $(imgFirst).delay(index * 3010 + 3000).fadeIn();
-
-               }
-           });
+           var number = 1 + Math.floor(Math.random() * 5000);
+           setTimeout(function() {
+               var countries = $(elem).data('name');
+               continents = $('.'+countries);
+               continents = continents.selector;
+               $(continents+' .rotate-list .rotate-list-item').each(function (index) {
+                   var imgFirst = $(this).find('img').filter(':first');
+                   if($(imgFirst).is(':visible')){
+                       $(imgFirst).delay(index * 3000 + 3000).fadeOut();
+                   }else{
+                       $(imgFirst).delay(index * 3010 + 3000).fadeIn();
+                   }
+                   var imgSecond = $(this).find('img').not(':first');
+                   if($(imgSecond).is(':visible')){
+                       $(imgSecond).delay(index * 3000 + 3000).fadeOut();
+                   }else{
+                       $(imgSecond).delay(index * 3010 + 3000).fadeIn();
+                   }
+               });
+           }, number*index);
        });
-   });
-   var circleSecond = (function () {
-       var continentSecond = '';
-       $('.continent-item').each(function(index,elem){
-           var countries = $(elem).data('name');
-           continentSecond = $('.'+countries);
-           continentSecond = continentSecond.selector;
-           $(continentSecond + ' .rotate-list .rotate-list-item').each(function (index) {
-               var imgSecond = $(this).find('img').not(':first');
-               if($(imgSecond).is(':visible')){
-                   $(imgSecond).delay(index*3000+3000).fadeOut();
 
-               }else{
-                   $(imgSecond).delay(index*3010+3000).fadeIn();
-
-               }
-           });
-       });
    });
+
    $(document).on('ready', function(){
-      circleSecond();
-      circleFirst();
+      circle();
+
    });
     setInterval(function(){
-        circleSecond();
-        circleFirst();
-    }, 17000);
+       circle();
+    }, 44000);
+
 </script>
 </body>
 </html>
