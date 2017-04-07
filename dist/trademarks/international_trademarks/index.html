@@ -722,7 +722,8 @@
            var number = 1 + Math.floor(Math.random() * 5000);
            setTimeout(function() {
                var countries = $(elem).data('name');
-               continents = $('.'+countries);
+               continents = '.' + countries;
+               continents = $(continents);
                continents = continents.selector;
                $(continents+' .rotate-list .rotate-list-item').each(function (index) {
                    var imgFirst = $(this).find('img').filter(':first');
