@@ -7352,6 +7352,35 @@ animate loader end
 
 /*modal-prices end*/
 
+/* rotate flags start*/
+.rotate-list{
+  position: absolute;
+  bottom: -20px;
+  padding: 0;
+  margin: 0;
+  left: 2px;
+  right: 0;
+}
+.rotate-list-item{
+  position: relative;
+  display: block;
+  width: 24px;
+  height: 14px;
+  list-style: none;
+}
+.rotate-list-item img{
+  position: absolute;
+  top:0;
+  right: 0;
+  width: 24px;
+  height: 14px;
+  max-height: 100% !important;
+  opacity: 1;
+}
+.rotate-list-item img:not(:first-child){
+  display: none;
+}
+/* rotate flags end*/
 @media screen and (max-width: 1368px) {
   .our-clients-container {
     margin: 40px 40px 60px;
