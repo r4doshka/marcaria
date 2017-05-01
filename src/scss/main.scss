@@ -2844,7 +2844,8 @@ second site
 
 /*cart*/
 
-.cart{
+.cart,
+.cart__form{
   float: right;
   position: relative;
 
@@ -2866,7 +2867,16 @@ second site
       background:url(../img/icons/shopping-cart_light_blue.png) no-repeat;
       background-size: contain;
     }
+    &.cart-icon__complete{
+      display: none;
+      height:30px;
+      width: 30px;
+      margin-right: 5px;
+      background: url('../img/icons/cart-complete.png') no-repeat;
+      background-size: contain;
+    }
   }
+
 
   .cart-content{
     display: none;
@@ -3762,6 +3772,17 @@ second site
     &:last-child{
       margin-right: 0;
     }
+    &.checkbox-list__checkbox-item_state_added{
+        .cart-icon__complete{
+          display: block;
+        }
+      .checkbox-list__checkbox-group{
+        display:none;
+      }
+    }
+  }
+  .checkbox-list__checkbox-item-icon{
+    width: 30px;
   }
   .checkbox-list__checkbox-group{
     display: flex;
@@ -3810,7 +3831,7 @@ second site
     overflow: hidden;
     text-overflow: ellipsis;
     &.checkbox-list__text--left-indent{
-      margin-left: 40px;
+      margin-left: 28px;
     }
   }
 }
@@ -5123,6 +5144,9 @@ domain configurations  start
     justify-content: space-between;
   }
   .checkout-item--discount{
+    .checkout-item__name{
+      font-size: 17px;
+    }
     font-size: 17px;
   }
   .total-price{
@@ -5934,6 +5958,7 @@ card-payment  end
   .checkout{
     float: right;
     padding: 0 0 40px 0;
+
 
     .checkout__title{
       font-size: 28px;
@@ -7980,6 +8005,8 @@ animate loader end
       left: -275px;
     }
   }
+
+
 
   .element-box {
     .element-box--mobile-right {
