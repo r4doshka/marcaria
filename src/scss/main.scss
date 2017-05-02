@@ -4933,6 +4933,11 @@ domain configurations  start
   -webkit-box-shadow: 0 0 10px 0 rgba(214,214,214,1);
   -moz-box-shadow: 0 0 10px 0 rgba(214,214,214,1);
   box-shadow: 0 0 10px 0 rgba(214,214,214,1);
+  &.check-order__clear{
+    box-shadow: none;
+    padding: 40px 60px 0;
+    margin: 0;
+  }
   .check-order__title{
     margin-bottom: 10px;
     color:#01309a;
@@ -4963,8 +4968,6 @@ domain configurations  start
   &.check-order--trademark{
     margin: 35px 50px;
     padding: 40px;
-    box-shadow: none;
-    border:1px solid #2f476c;
     border-radius:5px;
     .check-order__options{
       margin-bottom: 10px;
@@ -5951,9 +5954,7 @@ card-payment  end
     font-size: 18px;
   }
   .check-order{
-    box-shadow: none;
-    padding: 40px 60px 0;
-    margin: 0;
+
   }
   .checkout{
     float: right;
@@ -6220,6 +6221,9 @@ Trademarks start
     background: url('../img/categories/leader.jpg') no-repeat;
     background-size: cover;
     padding: 40px 0 230px;
+    .header-banner__inner-wrap{
+      background: rgba(255,255,255 , 0.5);
+    }
   }
 }
 
@@ -9126,6 +9130,9 @@ animate loader end
     margin: 30px 0;
     padding: 30px 0;
   }
+
+
+
   .list-with-icon{
     &.list-with-icon--icon-top{
       margin-bottom: 0;
@@ -9159,10 +9166,11 @@ animate loader end
         height: auto;
         width: 90%;
         img{
-          max-width: 100%;
+          max-width: 280px;
           width: 100%;
           height: auto;
           max-height: 170px;
+          margin: 0 auto;
         }
       }
       .bold{
@@ -10863,6 +10871,9 @@ animate loader end
   }
 
   .header-banner {
+    &.header-banner--trademark-registration{
+      text-align: center;
+    }
     .header-banner__inner-wrap{
       background: #ffffff;
     }
@@ -10876,8 +10887,9 @@ animate loader end
       text-align: center;
     }
     .btn-next{
-      width: 100%;
-      padding: 9px 0;
+      display: inline-block;
+      float: none;
+      padding: 9px 30px;
     }
   }
 
