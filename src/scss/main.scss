@@ -4207,6 +4207,15 @@ domain select  start
     }
   }
 
+  &.shopping-cart{
+    .content-box__header{
+      background: #033076;
+      color:#fff;
+      border-top-right-radius: 5px;
+      border-top-left-radius: 5px;
+    }
+  }
+
   .content-box_header-context{
     color: #01309a;
     font-size: 14px;
@@ -4308,29 +4317,44 @@ domain select  start
 }
 
 .card-panel{
-  padding: 20px 25px;
+  padding: 0 15px 20px;
+  border: 2px solid #033076;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
   .card-panel__content{
-    max-height: 290px;
-    margin: 0 0 30px;
+    max-height: 310px;
+    margin: 0 0 10px;
+    border-bottom: 2px solid #033076;
     overflow-y: scroll;
   }
   .card-panel--empty{
     text-align: right;
     color: #01309a;
     font-size: 21px;
+    margin-top: 20px;
   }
   .card-panel__item{
+    padding: 0 15px 15px;
     margin-bottom: 10px;
     font-size: 18px;
-    color: #01309a;
+    color: #232323;
+    border-bottom:1px solid #ebebeb;
+    &:first-child{
+      padding-top: 15px;
+    }
+    &:last-child{
+      margin-bottom:0;
+    }
   }
   .card-panel__item-description{
     display: inline-block;
-    margin:0 25px 0 60px;
+    margin:0 25px 0 0;
+    color:#01309a;
   }
   .card-panel__item-price{
     display: inline-block;
     margin: 0 5px 0 0 ;
+    color:#01309a;
   }
   .card-panel__discard-button{
     display: inline-block;
@@ -4366,6 +4390,9 @@ domain select  start
   font-size: 24px;
   font-weight: 700;
   border-top:2px solid #0844a4;
+  &__noborder{
+    border:none;
+  }
 }
 
 .order-2{
@@ -7410,6 +7437,10 @@ animate loader end
   display: none;
 }
 /* rotate flags end*/
+
+
+
+
 @media screen and (max-width: 1368px) {
   .our-clients-container {
     margin: 40px 40px 60px;
