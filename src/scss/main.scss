@@ -2520,6 +2520,10 @@ second site
         background:url(../img/icons/central-america-green-circle.png) no-repeat;
         background-size: contain;
       }
+      &.central_america__circle-grey--big{
+        width: 120px;
+        height:120px;
+      }
     }
   }
   .south_america{
@@ -2562,6 +2566,10 @@ second site
       &:hover{
         background:url(../img/icons/south-america-green-circle.png) no-repeat;
         background-size: contain;
+      }
+      &.south_america__circle-grey--big{
+        width: 120px;
+        height: 120px;
       }
     }
   }
@@ -2606,6 +2614,10 @@ second site
         background:url(../img/icons/europe-green-circle.png) no-repeat;
         background-size: contain;
       }
+      &.europe__circle-grey--big{
+        width: 120px;
+        height: 120px;
+      }
     }
   }
   .middle-east{
@@ -2648,6 +2660,10 @@ second site
       &:hover{
         background:url(../img/icons/middle-east-green-circle.png) no-repeat;
         background-size: contain;
+      }
+      &.middle-east__circle-grey--big{
+        width: 120px;
+        height: 120px;
       }
     }
   }
@@ -2692,6 +2708,10 @@ second site
         background:url(../img/icons/africa-green-circle.png) no-repeat;
         background-size: contain;
       }
+      &.africa__circle-grey--big{
+        width: 120px;
+        height: 120px;
+      }
     }
   }
   .asia{
@@ -2735,6 +2755,10 @@ second site
         background:url(../img/icons/asia-green-circle.png) no-repeat;
         background-size: contain;
       }
+      &.asia__circle-grey--big{
+        width: 120px;
+        height: 120px;
+      }
     }
   }
   .oceania{
@@ -2777,6 +2801,10 @@ second site
       &:hover{
         background:url(../img/icons/oceania-green-circle.png) no-repeat;
         background-size: contain;
+      }
+      &.oceania__circle-grey--big{
+        width: 120px;
+        height: 120px;
       }
     }
   }
@@ -6248,9 +6276,7 @@ Trademarks start
     background: url('../img/categories/leader.jpg') no-repeat;
     background-size: cover;
     padding: 40px 0 230px;
-    .header-banner__inner-wrap{
-      background: rgba(255,255,255 , 0.5);
-    }
+
   }
 }
 
@@ -7409,6 +7435,7 @@ animate loader end
 /*modal-prices end*/
 
 /* rotate flags start*/
+
 .rotate-list{
   position: absolute;
   bottom: -20px;
@@ -7416,26 +7443,39 @@ animate loader end
   margin: 0;
   left: 2px;
   right: 0;
+  height: 20px;
 }
-.rotate-list-item{
+
+.rotate-list__item{
   position: relative;
+  width: 15px;
+  height: 10px;
   display: block;
-  width: 24px;
-  height: 14px;
+  overflow:hidden;
   list-style: none;
+
 }
-.rotate-list-item img{
+.rotate-list .rotate-list__item img{
   position: absolute;
   top:0;
   right: 0;
-  width: 24px;
-  height: 14px;
-  max-height: 100% !important;
+  width: 100%;
+  height: auto;
   opacity: 1;
+  &:not(:first-child){
+    display: none;
+  }
 }
-.rotate-list-item img:not(:first-child){
-  display: none;
+
+.world-map{
+  &.trademarks-map{
+    .rotate-list__item{
+      width: 24px;
+      height: 18px;
+    }
+  }
 }
+
 /* rotate flags end*/
 
 
@@ -10904,6 +10944,9 @@ animate loader end
   .header-banner {
     &.header-banner--trademark-registration{
       text-align: center;
+      .header-banner__inner-wrap{
+        background: rgba(255,255,255 , 0.5);
+      }
     }
     .header-banner__inner-wrap{
       background: #ffffff;
