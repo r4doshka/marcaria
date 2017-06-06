@@ -487,13 +487,64 @@
                                     <option value="">USA</option>
                                 </select>
                             </div>
-                            <div class="col-md-3 col-sm-12">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                                <label for="Email" class="info-form__name">Email</label>
+                                <input type="text" id="Email" class="form-control info-form__field">
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <label for="Telephone" class="info-form__name">Telephone</label>
+                                <input type="text" id="Telephone" class="form-control info-form__field">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 align-center">
                                 <input type="button" value="Save & Select" class="btn-next">
                             </div>
                         </div>
-
                     </div>
                 </form>
+            </div>
+        </div>
+    </div>
+    <div class="content-box">
+        <div class="content-box__header content-box__header--auto-height">
+            Domain Privacy
+            <div class="helper helper--color-blue" title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Please notice that ICANN (Domain Authority) Requieres Owner Infomration is stored in their Whois Database for all domain names. ">
+                <svg  height="30" viewBox="0 0 24 24" width="30" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"></path>
+                </svg>
+            </div>
+            <div class="content-box_header-context">
+                For some extensions, we offer the service "Domain Privacy". This service that  will hide your personal information from public domain databases. Notice that this service is not available for all extensions.
+            </div>
+        </div>
+        <div class="radio-list row">
+            <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                <div class="radio-list__item">
+                    <div class="radio-checkbox-group">
+                        <input type="radio" name="contact1" id="contact" checked>
+                        <label for="contact" class="pseudo-radio"></label>
+                        <label for="contact" class="radio-checkbox-group__text">
+                            Keep my contact information Public
+                        </label>
+                    </div>
+                </div>
+                <div class="radio-list__item radio-list__item--inactive">
+                    <div class="radio-checkbox-group">
+                        <input type="radio" name="contact1" id="contact2">
+                        <label for="contact2" class="pseudo-radio"></label>
+                        <label for="contact2" class="radio-checkbox-group__text">
+                            Keep my contact information Private
+                        </label>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -564,7 +615,7 @@
                             <input type="radio" name="contact" id="radio122">
                             <label for="radio122" class="pseudo-radio"></label>
                             <label for="radio122" class="radio-checkbox-group__text">
-                                Keep my domain information Public
+                                Keep my contact information Public
                             </label>
                         </div>
                     </div>
@@ -573,7 +624,7 @@
                             <input type="radio" name="contact" id="radio212" checked>
                             <label for="radio212" class="pseudo-radio"></label>
                             <label for="radio212" class="radio-checkbox-group__text">
-                                Make my domain information Private - $ 5 per year
+                                Make my contact information Private - $ 5 per year
                             </label>
                         </div>
                     </div>

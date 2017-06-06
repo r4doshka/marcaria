@@ -26,6 +26,13 @@ img{
   }
 }
 
+a{
+  &:focus,
+  &:hover{
+    outline:none;
+  }
+}
+
 button{
   &:active,
   &:focus{
@@ -4245,8 +4252,9 @@ domain select  start
   }
 
   .content-box_header-context{
+    padding: 0 20px;
     color: #01309a;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     flex:1 1 100%;
   }
@@ -4786,7 +4794,7 @@ domain configurations  start
   color: #01309a;
   border:1px solid #3359ae;
   border-radius: 5px;
-  font-size: 21px;
+  font-size: 18px;
 }
 
 .radio-list{
@@ -4794,9 +4802,19 @@ domain configurations  start
   .radio-list__inner{
     padding: 15px 30px;
   }
+
+  .radio-list__item-inner-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: 30px;
+  }
   .radio-list__item{
     display: flex;
     flex-flow: row wrap;
+    &.radio-list__item--align-middle{
+      align-items: center;
+    }
     &.radio-list__item--trademark-owner{
       margin: 0 0 20px;
       &:last-child{
@@ -4831,6 +4849,11 @@ domain configurations  start
   .simple-list__item{
     width: 50%;
     float: left;
+  }
+  .radio-list__create-contact{
+    label{
+      margin: 0;
+    }
   }
 }
 
@@ -4916,6 +4939,9 @@ domain configurations  start
 
 .info-form{
   margin-bottom: 60px;
+  &.info-form--noindent{
+    margin-bottom: 0;
+  }
   .info-form__name{
     display: block;
     color: #0c59cf;
@@ -5128,6 +5154,16 @@ domain configurations  start
   }
 }
 
+.edit-link{
+  color:#75a9f9;
+  font-size: 18px;
+  &:hover,
+  &:active,
+  &:focus{
+    text-decoration: none;
+  }
+}
+
 .btn-small{
   padding: 5px 30px;
   border: none;
@@ -5144,6 +5180,43 @@ domain configurations  start
   &:hover{
     outline: none;
   }
+}
+
+.btn-cancel{
+  padding: 6px 30px;
+  border: none;
+  box-shadow: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 19px;
+  background: #929292;
+  border-radius: 5px;
+  &:focus,
+  &:hover{
+    outline: none;
+  }
+  &.btn-cancel__right-gap{
+    margin-right: 20px;
+  }
+}
+
+.btn-save{
+  border: none;
+  box-shadow: none;
+  padding: 6px 20px;
+  background: #3d8af7;
+  font-size: 19px;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 5px;
+  &:focus,
+  &:hover{
+    outline: none;
+  }
+}
+
+.form-control-group{
+  margin-top: 30px;
 }
 
 .payments-options{
@@ -7279,6 +7352,47 @@ animate loader end
 }
 
 
+/*modal profile view*/
+.modal{
+ &.modal__profile-view{
+   .modal-content{
+     border:none;
+   }
+   .modal-dialog{
+     width: 1000px;
+   }
+   .info-form{
+     padding: 20px;
+   }
+   .content-box{
+     margin:0;
+     box-shadow: none;
+   }
+
+   .form-control{
+     font-size:18px;
+     color: #01309a;
+   }
+
+   input::-webkit-input-placeholder{
+     font-size:18px;
+     color: #01309a;
+   }
+   input::-moz-placeholder{
+     font-size:18px;
+     color: #01309a;
+   }
+   input:-moz-placeholder{
+     font-size:18px;
+     color: #01309a;
+   }
+   input:-ms-input-placeholder {
+     font-size:18px;
+     color: #01309a;
+   }
+
+ }
+}
 
 /*modal-prices start*/
 
@@ -8700,6 +8814,18 @@ animate loader end
     }
     .add-class-group{
       margin: 10px 0 0;
+    }
+  }
+  .radio-list{
+    .radio-list__item-inner-wrap{
+      margin: 0 20px 0 0;
+    }
+  }
+  .modal{
+    &.modal__profile-view{
+      .modal-dialog{
+        width: 700px;
+      }
     }
   }
 }
@@ -11270,11 +11396,31 @@ animate loader end
     }
   }
 
-
+  .edit-link{
+    margin: 10px 0 0;
+    flex:0 0 100%;
+  }
   .main-banner{
     .header{
       margin-top: 0;
     }
+  }
+
+  .modal{
+    &.modal__profile-view{
+      .modal-dialog{
+        width: auto;
+      }
+    }
+  }
+
+  .btn-cancel,
+  .btn-save{
+    padding: 6px 14px;
+    font-size: 16px;
+  }
+  .btn-cancel{
+    margin-right: 10px;
   }
 }
 
