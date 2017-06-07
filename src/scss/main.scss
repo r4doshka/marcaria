@@ -5013,7 +5013,7 @@ domain configurations  start
 
 .check-order{
   position: relative;
-  margin:30px 60px;
+  margin:30px 50px;
   padding: 15px 20px;
   border-radius: 5px;
   color: #01309a;
@@ -5123,6 +5123,12 @@ domain configurations  start
     }
     .edit-button{
       text-indent: -9999999px;
+    }
+
+    &.check-order--confirm{
+      .description-list{
+        margin: 30px 60px 0;
+      }
     }
   }
   .check-order__options{
@@ -5235,6 +5241,8 @@ domain configurations  start
   &:focus,
   &:hover{
     outline: none;
+    text-decoration: none;
+    color: #fff;
   }
 }
 
@@ -6161,6 +6169,9 @@ card-payment  end
   .description-list{
     margin: 30px 60px 0;
     border-bottom: 1px solid #01309a;
+    &.description-list_noborder{
+      border: none;
+    }
   }
 }
 
@@ -7665,6 +7676,9 @@ animate loader end
  }
 }
 
+.receipt-cart-wrap{
+  padding-right: 50px;
+}
 
 @media screen and (max-width: 1368px) {
   .our-clients-container {
@@ -8908,6 +8922,9 @@ animate loader end
   }
   .edit-form{
     padding: 30px 100px;
+  }
+  .receipt-cart-wrap{
+    padding-right: 15px;
   }
 }
 
@@ -10539,6 +10556,9 @@ animate loader end
         }
       }
       &.check-order--confirm{
+        .description-list{
+          margin: 20px;
+        }
          .check-order__group-item{
           border: 2px solid #d6d6d6 !important;
            &:not(:last-child){
@@ -11536,6 +11556,9 @@ animate loader end
     right: 8px;
     background: #fff !important;
     z-index: 5;
+  }
+  .receipt-cart-wrap{
+    padding: 10px;
   }
 }
 
