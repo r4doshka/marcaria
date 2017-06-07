@@ -4855,6 +4855,13 @@ domain configurations  start
       margin: 0;
     }
   }
+
+  .radio-list__inner{
+    .radio-checkbox-group .radio-checkbox-group__text{
+      font-size: 18px;
+    }
+  }
+
 }
 
 .radio-list__inner{
@@ -5082,8 +5089,14 @@ domain configurations  start
       padding: 6px 20px;
       border: 2px solid #d6d6d6;
       border-top: none;
-      &:first-child{
+      &:not(:last-child){
         border-right: 0;
+      }
+    }
+    .check-order__year-edit{
+      select{
+        min-width: 50%;
+        font-size: 18px;
       }
     }
     .edit-control-panel{
@@ -5182,6 +5195,12 @@ domain configurations  start
   }
 }
 
+.btn--top-right{
+  position: absolute;
+  top:16px;
+  right:16px;
+}
+
 .btn-cancel{
   padding: 6px 30px;
   border: none;
@@ -5201,6 +5220,7 @@ domain configurations  start
 }
 
 .btn-save{
+  max-width: 200px;
   border: none;
   box-shadow: none;
   padding: 6px 20px;
@@ -5209,6 +5229,9 @@ domain configurations  start
   color: #fff;
   font-weight: 700;
   border-radius: 5px;
+  &.btn-save__right-gap{
+    margin-right: 20px;
+  }
   &:focus,
   &:hover{
     outline: none;
@@ -5942,6 +5965,11 @@ card-payment  end
   }
 }
 
+.underline{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .link-underline{
   color: #0c59cf;
   text-decoration: underline;
@@ -6063,6 +6091,9 @@ card-payment  end
 .flexbox-justify{
   justify-content: space-between;
 }
+.justify-center{
+  justify-content: center;
+}
 .align-items-middle{
   align-items: center;
 }
@@ -6080,9 +6111,6 @@ card-payment  end
   .content-box_header-context{
     padding: 0 120px;
     font-size: 18px;
-  }
-  .check-order{
-
   }
   .checkout{
     float: right;
@@ -7592,7 +7620,50 @@ animate loader end
 
 /* rotate flags end*/
 
+.tooltip-text{
+  .tooltip{
+    font-size: 16px;
+    color:#000000;
+    &.in{
+      opacity: 1;
+    }
+    &.top{
+      margin-top: -20px;
+      .tooltip-arrow{
+        bottom: -15px;
+        border-width: 20px 10px 0;
+        border-top-color: #ffffff;
+      }
+    }
+  }
+  .tooltip-inner{
+    max-width: 500px;
+    border: none;
+    box-shadow: 1px 1px 16px 0 #000;
+  }
+}
 
+.modal__server-preview{
+  .modal-dialog{
+    width: 900px;
+    border-radius: 5px;
+  }
+  .content-box{
+    margin: 0;
+  }
+}
+
+.edit-form{
+  padding: 50px 150px;
+ .form-control{
+   border:1px solid #01309a;
+   color: #01309a;
+   &::-webkit-input-placeholder       {color: #01309a}
+   &::-moz-placeholder                {color: #01309a}
+   &:-moz-placeholder                 {color: #01309a}
+   &:-ms-input-placeholder             {color: #01309a}
+ }
+}
 
 
 @media screen and (max-width: 1368px) {
@@ -8827,6 +8898,16 @@ animate loader end
         width: 700px;
       }
     }
+  }
+  .modal__server-preview{
+    .modal-dialog{
+      width: 90%;
+      margin: 0 auto;
+      border-radius: 5px;
+    }
+  }
+  .edit-form{
+    padding: 30px 100px;
   }
 }
 
@@ -10457,6 +10538,23 @@ animate loader end
           font-size: 18px;
         }
       }
+      &.check-order--confirm{
+         .check-order__group-item{
+          border: 2px solid #d6d6d6 !important;
+           &:not(:last-child){
+             border-bottom: none !important;
+           }
+        }
+        .check-order__group:nth-child(even){
+          background: #fff;
+        }
+        .check-order__group{
+          margin-bottom: 20px;
+          &:last-of-type{
+            margin-bottom: 0;
+          }
+        }
+      }
     }
   }
   .payments-options {
@@ -11421,6 +11519,23 @@ animate loader end
   }
   .btn-cancel{
     margin-right: 10px;
+  }
+
+  .tooltip-text{
+    .tooltip-inner{
+      max-width: 280px;
+    }
+  }
+
+  .edit-form{
+    padding: 20px 15px;
+  }
+
+  .btn--top-right{
+    top: 8px;
+    right: 8px;
+    background: #fff !important;
+    z-index: 5;
   }
 }
 
