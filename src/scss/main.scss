@@ -3778,7 +3778,7 @@ second site
     font-size: 13px;
     text-align: right;
     position: relative;
-    bottom: -30px;
+    bottom: -25px;
   }
   &.context-remark--fixed-width{
     width: 320px;
@@ -5053,6 +5053,24 @@ domain configurations  start
     font-size: 14px;
   }
 
+  .check-order__group-item-classes{
+    font-size: 16px;
+  }
+
+  .check-order__group-wrap{
+    display: flex;
+  }
+
+  .check-order__group-item{
+    display: flex;
+    align-items: center;
+  }
+
+  .check-order__options-title{
+    font-size: 26px;
+    font-weight: 700;
+  }
+
   &.check-order--trademark{
     margin: 35px 50px;
     padding: 40px;
@@ -6101,6 +6119,9 @@ card-payment  end
 }
 .justify-center{
   justify-content: center;
+}
+.justify-start{
+  justify-content: flex-start;
 }
 .align-items-middle{
   align-items: center;
@@ -7680,6 +7701,76 @@ animate loader end
   padding-right: 50px;
 }
 
+.welcome-banner{
+  position: relative;
+  width: 728px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 15px 0;
+  .welcome-banner__inner-wrap{
+    width: 100%;
+    padding: 0 25px 0 15px;
+  }
+  .welcome-banner__group{
+    display: flex;
+    align-items: center;
+  }
+  .welcome-banner__control-wrap{
+    display: flex;
+    justify-content: flex-end;
+  }
+  .welcome-banner__group-logo{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: center;
+  }
+
+  .welcome-banner__name{
+    font-size: 20px;
+    line-height: 22px;
+    color:#fff;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+  .welcome-banner__title{
+    text-transform: uppercase;
+    color:#fff;
+    font-size: 13px;
+  }
+  .welcome-banner__sub-title{
+    flex: 0 0 100%;
+    margin-top: 4px;
+    text-align: center;
+    text-transform: uppercase;
+    color:#fff;
+    font-size: 10px;
+  }
+  .welcome-banner__icon{
+
+  }
+  .welcome-banner__background{
+    position: absolute;
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  .btn--banner-order{
+    padding: 13px 23px;
+    background: rgba(152, 193, 30, 1);
+    color:#fff;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border:none;
+  }
+}
+
+
 @media screen and (max-width: 1368px) {
   .our-clients-container {
     margin: 40px 40px 60px;
@@ -8342,6 +8433,21 @@ animate loader end
       right: 10px;
       width: 20px;
       height: 20px;
+    }
+
+
+    .check-order__group-wrap{
+      flex-wrap: wrap;
+      .check-order__group-item{
+        &:first-child{
+          border-right: 2px solid #d6d6d6;
+          border-bottom: none;
+        }
+      }
+      .check-order__group-item-classes,
+      .group-item-price{
+        border-top: 2px solid #d6d6d6;
+      }
     }
   }
 
@@ -10891,6 +10997,17 @@ animate loader end
     padding: 10px 0;
   }
 
+  .check-order {
+    &.check-order--trademark{
+      .check-order__group-wrap{
+        .check-order__group-item-classes{
+          border-right: 2px solid #d6d6d6;
+          border-bottom: none;
+        }
+      }
+    }
+  }
+
   .order-details {
     .content-box__header{
       font-size: 30px;
@@ -11554,7 +11671,7 @@ animate loader end
   .btn--top-right{
     top: 8px;
     right: 8px;
-    background: #fff !important;
+    background: #fff;
     z-index: 5;
   }
   .receipt-cart-wrap{
