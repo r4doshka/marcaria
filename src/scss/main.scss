@@ -6117,6 +6117,9 @@ card-payment  end
 .flexbox-justify{
   justify-content: space-between;
 }
+.flexwrap{
+  flex-wrap: wrap;
+}
 .justify-center{
   justify-content: center;
 }
@@ -7049,6 +7052,17 @@ STEP 1-2 start
   .total-price{
     border:none;
     margin: 15px 0;
+  }
+
+  .classes-modal__control-group{
+    margin-top: 15px;
+  }
+  .classes-modal__control{
+    display: inline-block;
+    margin-right: 15px;
+    &:last-child{
+      margin-right: 0;
+    }
   }
 }
 

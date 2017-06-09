@@ -39,6 +39,7 @@ gulp.task('img', function() {
         .pipe(cache(imagemin({  // Сжимаем их с наилучшими настройками с учетом кеширования
             interlaced: true,
             progressive: true,
+            optimizationLevel: 5,
             svgoPlugins: [{removeViewBox: false}],
             use: [pngquant()]
         })))
