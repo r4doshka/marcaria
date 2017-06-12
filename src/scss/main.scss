@@ -5116,6 +5116,7 @@ domain configurations  start
     .check-order__title{
       font-size: 22px;
     }
+
     .total-price{
       width: auto;
       border:none;
@@ -5141,6 +5142,9 @@ domain configurations  start
       border-top: none;
       &:not(:last-child){
         border-right: 0;
+      }
+      &.check-order__group-item__sub{
+        padding-left: 30px;
       }
     }
     .check-order__year-edit{
@@ -6245,6 +6249,17 @@ card-payment  end
   .description-list__title{
     font-size: 25px;
     font-weight: 700;
+  }
+
+  &.description-list__payment{
+    padding: 20px 40px;
+    .description-list__title{
+      font-size: 22px;
+    }
+    .description-list__item{
+      padding-bottom: 6px;
+      font-size: 19px;
+    }
   }
 }
 
@@ -11162,6 +11177,9 @@ animate loader end
     .check-order__subtotal{
       min-width: 100px;
     }
+    .check-order__options-title{
+      font-size: 20px;
+    }
   }
 
   .box-text {
@@ -11182,6 +11200,7 @@ animate loader end
       width: 100%;
       margin-bottom: 20px;
       font-size: 17px;
+      padding: 6px 10px;
     }
     .control-buttons--wrap{
       .btn-next.btn-next_right-indent{
