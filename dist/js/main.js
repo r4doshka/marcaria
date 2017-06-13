@@ -203,3 +203,10 @@ $('.dropdown-class-toggle, .btn-toggle').on('click', function(){
     $('.classes-modal').slideToggle();
 });
 
+/*==================
+currency dropdown toggle
+* ================*/
+
+$('.dropdown-currency--toggle').on('click', function(){
+    $('.dropdown.dropdown-currency').slideToggle();
+});

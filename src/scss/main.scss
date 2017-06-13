@@ -3778,7 +3778,8 @@ second site
     font-size: 13px;
     text-align: right;
     position: relative;
-    bottom: -25px;
+    bottom: -30px;
+    z-index: 5;
   }
   &.context-remark--fixed-width{
     width: 320px;
@@ -7943,6 +7944,46 @@ animate loader end
     }
   }
 }
+
+.dropdown{
+  &.dropdown-currency{
+    display: none;
+    position: absolute;
+    right: 15px;
+    top: 67px;
+    background: #fff;
+    padding: 5px;
+    border: 1px solid #75a9f9;
+    border-radius: 5px;
+    z-index: 10;
+    .dropdown-currency__title{
+      padding-bottom: 5px;
+      margin-bottom: 8px;
+      border-bottom: 2px solid #3d8af7;
+      font-size: 18px;
+      color: #01309a;
+      text-align: center;
+      font-weight: 600;
+    }
+    .dropdown-currency__item{
+      display: flex;
+      align-items: center;
+    }
+    .dropdown-currency__item-icon{
+      width: 36px;
+      height: 28px;
+    }
+    .dropdown-currency__item-name{
+      .btn-link{
+        font-size: 16px;
+        color: #01309a;
+      }
+
+    }
+  }
+}
+
+
 
 
 @media screen and (max-width: 1368px) {
