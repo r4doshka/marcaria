@@ -58,13 +58,37 @@
                         </div>
                     </div>
                 </div>
-                <div class="login-panel">
-                    <a href="#" class="personal action-button">
-                        <span class="personal-icon">
-                            <img src="../img/icons/account_white.png" alt="">
-                        </span>
+                <div class="account-menu">
+                    <a href="#" class="personal action-button ">
+                            <span class="personal-icon">
+                                <img src="../img/icons/account_white.png" alt="">
+                            </span>
                         My Account
                     </a>
+                    <div class="account-menu__menu-context hidden">
+                        Hello:
+                        <a href="#" class="account-menu__user-name">
+                            Franjavier
+                        </a>
+                        <div class="account-menu__dropdown">
+                            <div class="dropdow-item">
+                                <div class="dropdow-item__icon">
+                                    <img src="../img/icons/Account.png" alt="">
+                                </div>
+                                <a href="#" class="dropdow-item__title">
+                                    My Account
+                                </a>
+                            </div>
+                            <div class="dropdow-item">
+                                <div class="dropdow-item__icon">
+                                    <img src="../img/icons/log-out.png" alt="">
+                                </div>
+                                <a href="#" class="dropdow-item__title">
+                                    Log Out
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -80,10 +104,10 @@
                                     <a href="../index2.html">Home</a>
                                 </li>
                                 <li class="horizontal-menu__item">
-                                    <a href="../domain_names/search_domains.html">Domain Names</a>
+                                    <a href="../domain_names/international_domains">Domain Names</a>
                                 </li>
-                                <li class="horizontal-menu__item tab-controls--active">
-                                    <a href="../trademarks/trademark_registration.html">Trademarks</a>
+                                <li class="horizontal-menu__item">
+                                    <a href="../trademarks/international_trademarks/index.html">Trademarks</a>
                                 </li>
                                 <li class="horizontal-menu__item">
                                     <a href="../about/our-company.html">About Us</a>
@@ -99,20 +123,20 @@
                                     <div class="select-panel__item-icon">
                                         <img src="../img/icons/dollar-symbol-bluex.png" alt="">
                                     </div>
-                                    <div class="select-panel__item-name" >
+                                    <div class="select-panel__item-name">
                                         USD
                                     </div>
                                 </div>
                                 <div class="select-panel__dropdown currency-select">
-                                    <div class="select-panel__dropdown-item" >
+                                    <div class="select-panel__dropdown-item">
                                         <div class="select-panel__item-icon">
                                             <img src="../img/icons/euro.png" alt="">
                                         </div>
-                                        <div class="select-panel__item-name" >
+                                        <div class="select-panel__item-name">
                                             EUR
                                         </div>
                                     </div>
-                                    <div class="select-panel__dropdown-item" >
+                                    <div class="select-panel__dropdown-item">
                                         <div class="select-panel__item-icon">
                                             <img src="../img/icons/pounds-symbol.png" alt="">
                                         </div>
@@ -124,26 +148,26 @@
                             </div>
                             <div class="select-panel">
                                 <div class="select-panel__item">
-                                    <div class="select-panel__item-name" >
+                                    <div class="select-panel__item-name">
                                         English
                                     </div>
                                 </div>
                                 <div class="select-panel__dropdown">
-                                    <div class="select-panel__dropdown-item" >
-                                        <div class="select-panel__item-name" >
+                                    <div class="select-panel__dropdown-item">
+                                        <div class="select-panel__item-name">
                                             Francais
                                         </div>
                                         <div class="select-panel__item-icon flag-shadowed flag-shadowed-FR">
                                         </div>
                                     </div>
-                                    <div class="select-panel__dropdown-item" >
+                                    <div class="select-panel__dropdown-item">
                                         <div class="select-panel__item-name">
                                             Espanol
                                         </div>
                                         <div class="select-panel__item-icon flag-shadowed flag-shadowed-ES-shadow">
                                         </div>
                                     </div>
-                                    <div class="select-panel__dropdown-item" >
+                                    <div class="select-panel__dropdown-item">
                                         <div class="select-panel__item-name">
                                             Portugues
                                         </div>
@@ -158,22 +182,22 @@
             </div>
             <div class="tabs">
                 <div class="container">
-                    <div class="tabs__content current-tab">
+                    <div class="tabs__content">
                         <ul class="horizontal-menu">
                             <li class="horizontal-menu__item">
-                                <a href="../trademarks/trademark_registration.html">Trademark Registration</a>
+                                <a href="../domain_names/search_domains.html">Search Domains</a>
                             </li>
                             <li class="horizontal-menu__item">
-                                <a href="../trademarks/international_trademarks/index.html">International Trademarks</a>
+                                <a href="../domain_names/search_domains.html">International Domains</a>
                             </li>
                             <li class="horizontal-menu__item">
-                                <a href="../trademarks/trademark_tools.html">Trademark Tools</a>
+                                <a href="../domain_names/new_generic_domain/index.html">New Generic Domains</a>
                             </li>
                             <li class="horizontal-menu__item">
-                                <a href="../trademarks/trademark_renewal.html">Trademark Renewal</a>
+                                <a href="../domain_names/hosting.html">Hosting</a>
                             </li>
                             <li class="horizontal-menu__item">
-                                <a href="../trademarks/all_services.html">All Services</a>
+                                <a href="../domain_names/all_services.html">All Services</a>
                             </li>
                         </ul>
                     </div>
@@ -191,18 +215,18 @@
                                 </div>
                                 <span class="header__label">Menu</span>
                             </div>
-                            <nav class="header__nav">
+                            <nav class="header__nav" style="">
                                 <ul>
                                     <li class="header__nav-item header__nav-item__home-icon">
                                         <a href="../index2.html">Home</a>
                                     </li>
-                                    <li class="header__nav-item">
+                                    <li class="header__nav-item has-child">
                                         <a href="#">Domain Names</a>
                                         <ul class="header__nav__dropdown">
                                             <li class="search-icon">
                                                 <a href="#">Search Domains</a>
                                             </li>
-                                            <li>
+                                            <li class="has-child">
                                                 <a href="#">International Domains</a>
                                                 <ul class="header__nav__dropdown">
                                                     <li>
@@ -221,7 +245,7 @@
                                                     </li>
                                                 </ul>
                                             </li>
-                                            <li >
+                                            <li class="has-child">
                                                 <a href="#">New Generic Domains</a>
                                                 <ul class="header__nav__dropdown">
                                                     <li>
@@ -237,7 +261,7 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li class="header__nav-item">
+                                    <li class="header__nav-item has-child">
                                         <a href="#">Trademarks</a>
                                         <ul class="header__nav__dropdown">
                                             <li>
@@ -254,7 +278,7 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li class="header__nav-item"><a href="#">About Us</a>
+                                    <li class="header__nav-item has-child"><a href="#">About Us</a>
                                         <ul class="header__nav__dropdown">
                                             <li>
                                                 <a href="../about/our-company.html">Our Company</a>
@@ -266,7 +290,7 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li class="header__nav-item">
+                                    <li class="header__nav-item has-child">
                                         <a href="#">Support</a>
                                         <ul class="header__nav__dropdown">
                                             <li>
@@ -282,10 +306,10 @@
                                     <li class="header__nav-item">
                                         <a href="#">My Account</a>
                                     </li>
-                                    <li class="header__nav-item">
+                                    <li class="header__nav-item has-child">
                                         <a href="#">Settings</a>
                                         <ul class="header__nav__dropdown">
-                                            <li>
+                                            <li class="has-child">
                                                 <a href="#">Currency</a>
                                                 <ul class="header__nav__dropdown">
                                                     <li class="currency">
@@ -301,10 +325,10 @@
                                                         <a href="#">GBP</a></li>
                                                 </ul>
                                             </li>
-                                            <li>
+                                            <li class="has-child">
                                                 <a href="#">Language</a>
                                                 <ul class="header__nav__dropdown">
-                                                    <li >
+                                                    <li>
                                                         <span class="header__nav__country-flag flag-shadowed flag-shadowed-UK">
                                                         </span>
                                                         <a href="#">English</a>
@@ -327,211 +351,306 @@
         </div>
     </div>
 </header>
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
-            <div class="progress-step-bar">
-                <div class="progress-step-bar__item progress-step-bar__item--first progress-step-bar__item--finished">
-                    <div class="progress-step-bar__path-container">
-                        <div class="progress-step-bar__circle">
-
-                        </div>
-                        <div class="progress-step-bar__line">
-
-                        </div>
-                    </div>
-                    <a class="progress-step-bar__item-name">
-                        Order<br>Form
-                    </a>
-                </div>
-                <div class="progress-step-bar__item progress-step-bar__item--finished">
-                    <div class="progress-step-bar__path-container">
-                        <div class="progress-step-bar__circle">
-
-                        </div>
-                        <div class="progress-step-bar__line">
-
-                        </div>
-                    </div>
-                    <a class="progress-step-bar__item-name">
-                        Confirm <br> Order
-                    </a>
-                </div>
-                <div class="progress-step-bar__item progress-step-bar__item--finished">
-                    <div class="progress-step-bar__path-container">
-                        <div class="progress-step-bar__circle">
-
-                        </div>
-                        <div class="progress-step-bar__line">
-
-                        </div>
-                    </div>
-                    <a class="progress-step-bar__item-name">
-                        Proceed with <br> Payment
-                    </a>
-                </div>
-                <div class="progress-step-bar__item progress-step-bar__item--last">
-                    <div class="progress-step-bar__path-container">
-                        <div class="progress-step-bar__circle">
-
-                        </div>
-                        <div class="progress-step-bar__line">
-
-                        </div>
-                    </div>
-                    <a class="progress-step-bar__item-name">
-                        Order <br> Receipt
-                    </a>
-                </div>
+<section class="wrap-box">
+    <div class="container">
+        <div class="content-box">
+            <div class="content-box__header">
+                Sign Up for a New Account
             </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12">
-            <div class="context-remark context-remark--before">
-                Prices are in U.S. Dollars
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-7">
-            <div class="content-box">
-                <div class="content-box__header">
-                    Credit Card Payment
-                </div>
-                <form class="card-payment">
-                    <div class="form-group">
-                        <label for="name" class="card-payment__name">Name <span class="context-remark">(as appears on your card)</span></label>
-                        <input type="text" id="name" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="number" class="card-payment__name">Card Number</label>
-                        <input type="text" id="number" class="form-control icon-field" placeholder="1234 5678 9012 3456">
-                    </div>
-                    <div class="form-group">
-                        <label for="month" class="card-payment__name">Expiration Date</label>
-                        <select name="month" class="default-select select-conner card-payment__select-gap" id="month">
-                            <option value="">01 - January</option>
-                            <option value="">02 - February</option>
-                            <option value="">03 - March</option>
-                        </select>
-                        <select name="year" class="default-select select-conner" id="year">
-                            <option value="">2016</option>
-                            <option value="">2017</option>
-                            <option value="">2018</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="cvc" class="card-payment__name">Security Code  <span class="context-remark">(3 on back, Amex: 4 on front)</span></label>
-                        <input type="text" id="cvc" class="form-control cvc-cod-field">
-                        <div class="image">
-                            <img src="../img/icons/credit-card_back_side_3.png" alt="">
-                        </div>
-                        <div class="image">
-                            <img src="../img/icons/credit-card_back_side_4.png" alt="">
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <div class="col-md-5">
-            <form action="">
-                <div class="content-box shopping-cart">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="content-box__header">
-                                Order Summary
+            <form class="form sign-up-form">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label class="col-form-label">First Name</label>
+                            <input class="form-control validation-error">
+                            <div class="error-description">
+                                Please enter your "First Name"
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="checkout">
-                                <div class="checkout-item">
-                                    <div class="checkout-item__name">
-                                        4 Items total:
-                                    </div>
-                                    <div class="checkout-item__price">
-                                        $ 450
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="total-price">
-                                            Total:   $ 400
-                                        </div>
-                                    </div>
-                                </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label class="col-form-label">Last Name</label>
+                            <input class="form-control validation-error">
+                            <div class="error-description">
+                                Please enter your "Last Name"
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <a href="./receipt.html" class="btn-next btn-next--large">Pay now</a>
+                        <div class="form-group">
+                            <label class="col-form-label">Company (optional)</label>
+                            <input class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label class="col-form-label">Address</label>
+                            <input class="form-control validation-error">
+                            <div class="error-description">
+                                Please enter your "Address"
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label class="col-form-label">City</label>
+                            <input class="form-control validation-error">
+                            <div class="error-description">
+                                Please enter your "Address"
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label class="col-form-label">Province / State</label>
+                            <input class="form-control validation-error">
+                            <div class="error-description">
+                                Please enter your "Province / State"
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label class="col-form-label">ZIP / Postal Code</label>
+                            <input class="form-control validation-error">
+                            <div class="error-description">
+                                Please enter your "Postal Code"
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label class="col-form-label">Country</label>
+                            <select class="form-control select-conner validation-error">
+                                <option value="">--- Select country ---</option>
+                                <option value="">USA</option>
+                                <option value="">Germany</option>
+                                <option value="">Brazil</option>
+                            </select>
+                            <div class="error-description">
+                                Please select a "Country"
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label class="col-form-label">Phone Number</label>
+                            <div class="group-wrap">
+                                <div class="float-field">
+                                    <select name="phones" id="" class="float-field-select">
+                                        <option value="" data-country="flag-shadowed-cl-shadow">+ 62</option>
+                                        <option value="" data-country="flag-shadowed-br_shadow-2">+ 565</option>
+                                        <option value="" data-country="flag-shadowed-US-shadow">+ 5999</option>
+                                    </select>
+                                    <span id="phoneFlag" class="float-field-icon flag-shadowed flag-shadowed-cl-shadow"></span>
+                                </div>
+                                <input class="form-control validation-error" placeholder="09 9087 6543">
+                            </div>
+                            <div class="error-description">
+                                Please enter a valid "Phone Number"
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12 mobile-order-2">
+                        <div class="form-group">
+                            <label class="col-form-label">Email</label>
+                            <input class="form-control validation-error">
+                            <div class="error-description">
+                                Please enter a valid "Email"
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label class="col-form-label">Password</label>
+                            <input class="form-control validation-error" placeholder="***">
+                        </div>
+                    </div>
+                </div>
+                <div class="row mobile-flexbox">
+                    <div class="col-md-6 col-sm-6 col-xs-12 mobile-order-2">
+                        <div class="form-group">
+                            <div class="custom-checkbox flexbox">
+                                <input id="second" type="checkbox" checked>
+                                <label for="second" class="pseudo-checkbox"></label>
+                                <label for="second">
+                                    Use this data as Billing Information
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="note validation-error">
+                            <div class="note__title note__title--error">
+                                <div class="note-icon">
+                                    <svg fill="#ff3823" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"></path>
+                                    </svg>
+                                </div>
+                                Your password needs to:
+                            </div>
+                            <div class="simple-list">
+                                <div class="simple-list__item simple-list__item--error-icon">
+                                    include both lower and upper case characters.
+                                </div>
+                                <div class="simple-list__item simple-list__item--error-icon">
+                                    include at least one number or symbol.
+                                </div>
+                                <div class="simple-list__item simple-list__item--error-icon">
+                                    be at least 8 characters long.
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </form>
-            <div class="payment-description">
-                <div class="payment-description__item">
-                    <div class="row">
-                        <div class="col-md-12 remark">
-                            **The transaction will be processed in a secure environment.
+        </div>
+        <div class="content-box">
+            <div class="content-box__header content-box__form-header">
+                <div class="helper-wrap">
+                    Billing Information
+                    <div class="helper desktop-hide helper--color-blue" title="" data-toggle="tooltip" data-placement="right" data-original-title="For the extension .Thailand that represents the country of Thailand, only nationals or residents of this country are allowed to register. In case you are not able to meet this requirement. we can offer you a Trustee Service.">
+                        <svg height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"></path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="desktop-hide content-box_header-context">
+                    Please select a Contact Profile for Owner Information, or create a new Contact.
+                </div>
+            </div>
+            <form class="form sign-up-form sign-up-form__dark">
+                <div class="row">
+                    <div class="col-md-3 col-sm-4 col-xs-12">
+                        <div class="form-group">
+                            <label class="col-form-label">Bill to</label>
+                            <select name="" id="bill" class="form-control select-conner">
+                                <option>Individual</option>
+                                <option>Company</option>
+                            </select>
                         </div>
                     </div>
                 </div>
-                <div class="payment-description__item">
-                    <div class="row">
-                        <div class="col-md-12 image-list">
-                            <div class="image-list__item">
-                                <a href="#">
-                                    <img src="../img/credit-cards/visa.png" alt="">
-                                </a>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label class="col-form-label">Company Name</label>
+                            <input class="form-control" placeholder="Miramax LLc">
+                            <div class="error-description">
+                                Please enter your "Company Name"
                             </div>
-                            <div class="image-list__item">
-                                <a href="#">
-                                    <img src="../img/credit-cards/mastercard.png" alt="">
-                                </a>
-                            </div>
-                            <div class="image-list__item">
-                                <a href="#">
-                                    <img src="../img/credit-cards/discover.png" alt="">
-                                </a>
-                            </div>
+                        </div>
 
-                            <div class="image-list__item">
-                                <a href="#">
-                                    <img src="../img/credit-cards/amex.png" alt="">
-                                </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label class="col-form-label">Address</label>
+                            <input class="form-control" placeholder="Broad way 431">
+                            <div class="error-description">
+                                Please enter your "Address"
                             </div>
-                            <div class="image-list__item">
-                                <a href="#">
-                                    <img src="../img/credit-cards/diners-club.png" alt="">
-                                </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label class="col-form-label">City</label>
+                            <input class="form-control" placeholder="miami">
+                            <div class="error-description">
+                                Please enter your "City"
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="payment-description__item">
-                    <div class="row">
-                        <div class="col-md-12 image-list ">
-                            <div class="image-list__item image-list__item--large">
-                                <a href="#">
-                                    <img src="../img/credit-cards/Norton.png" alt="">
-                                </a>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label class="col-form-label">Province / State</label>
+                            <input class="form-control" placeholder="Florida">
+                            <div class="error-description">
+                                Please enter your "Province / State"
                             </div>
-                            <div class="image-list__item image-list__item--large">
-                                <a href="#">
-                                    <img src="../img/credit-cards/Truste.png" alt="">
-                                </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label class="col-form-label">ZIP / Postal Code</label>
+                            <input class="form-control" placeholder="9999909">
+                            <div class="error-description">
+                                Please enter your "Postal Code"
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label class="col-form-label">Country</label>
+                            <select class="form-control select-conner">
+                                <option value="">Chile</option>
+                                <option value="">USA</option>
+                                <option value="">Germany</option>
+                                <option value="">Brazil</option>
+                            </select>
+                            <div class="error-description">
+                                Please select a "Country"
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-md-4 col-xs-12">
+                        <label class="col-form-label">Preferred Currency</label>
+                        <select class="form-control select-conner">
+                            <option value="">$ U.S. Dollars</option>
+                            <option value="">$ R.S. Dollars</option>
+                            <option value="">$ U.S. Dollars</option>
+                            <option value="">$ U.S. Dollars</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row mobile-flexbox">
+                    <div class="col-md-6 col-sm-6 col-xs-12 mobile-order-2">
+                        <div class="form-group">
+                            <div class="custom-checkbox flexbox">
+                                <input id="first" type="checkbox" checked>
+                                <label for="first" class="pseudo-checkbox"></label>
+                                <label for="first">
+                                    I agree with <a class="link-underline" href="javascript:;">Terms & Conditions</a>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="error-description">
+                            You must agree with "Terms of Use" in order to continue
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <img src="../img/icons/capthca-img.png" alt="">
+                    </div>    
+                </div>
+            </form>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <button class="btn-next btn-next--large">
+                    Sign Up
+                </button>
             </div>
         </div>
     </div>
-</div>
+</section>
 <footer class="footer">
     <div class="container">
         <div class="footer-callback">
@@ -670,10 +789,37 @@
         </div>
     </div>
 </footer>
+<div class="modal fade modal-text modal-terms" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-text__header">
+                Terms & Conditions
+            </div>
+            <div class="modal-text__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.
+                <br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.
+            </div>
+
+            <button class="btn-next">OK</button>
+        </div>
+    </div>
+</div>
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script>window.jQuery || document.write('<script src="app/js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
 <script src="../js/plugins.js"></script>
+<script src="../js/bootstrap/tooltip.js"></script>
 <script src="../js/bootstrap/modal.js"></script>
 <script src="../js/main.js"></script>
+<script>
+    $('.float-field-select').on('change', function(){
+        var flag = $(".float-field-select option:selected").data('country');
+        $('#phoneFlag').attr('class', 'float-field-icon flag-shadowed ' + flag );
+    });
+
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    });
+</script>
 </body>
 </html>

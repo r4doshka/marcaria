@@ -407,133 +407,136 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-7">
             <div class="content-box">
                 <div class="content-box__header">
                     Credit Card Payment
                 </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <form class="card-payment">
-                            <div class="form-group">
-                                <label for="name" class="card-payment__name">Name <span class="context-remark">(as appears on your card)</span></label>
-                                <input type="text" id="name" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <label for="number" class="card-payment__name">Card Number</label>
-                                <input type="text" id="number" class="form-control icon-field" placeholder="1234 5678 9012 3456">
-                            </div>
-                            <div class="form-group">
-                                <div class="row">
-                                    <div class="col-md-12 image-list">
-                                        <div class="image-list__item">
-                                            <a href="#">
-                                                <img src="../img/credit-cards/visa.png" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="image-list__item">
-                                            <a href="#">
-                                                <img src="../img/credit-cards/mastercard.png" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="image-list__item">
-                                            <a href="#">
-                                                <img src="../img/credit-cards/discover.png" alt="">
-                                            </a>
-                                        </div>
-
-                                        <div class="image-list__item">
-                                            <a href="#">
-                                                <img src="../img/credit-cards/amex.png" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="image-list__item">
-                                            <a href="#">
-                                                <img src="../img/credit-cards/diners-club.png" alt="">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="month" class="card-payment__name">Expiration Date</label>
-                                <select name="month" class="default-select" id="month">
-                                    <option value="">01 - January</option>
-                                    <option value="">02 - February</option>
-                                    <option value="">03 - March</option>
-                                </select>
-                                <select name="year" class="default-select" id="year">
-                                    <option value="">2016</option>
-                                    <option value="">2017</option>
-                                    <option value="">2018</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="cvc" class="card-payment__name">Security Code  <span class="context-remark">(3 on back, Amex: 4 on front)</span></label>
-                                <input type="text" id="cvc" class="form-control cvc-cod-field">
-                                <div class="image">
-                                    <img src="../img/icons/credit-card_back_side_3.png" alt="">
-                                </div>
-                                <div class="image">
-                                    <img src="../img/icons/credit-card_back_side_4.png" alt="">
-                                </div>
-                            </div>
-                        </form>
+                <form class="card-payment">
+                    <div class="form-group">
+                        <label for="name" class="card-payment__name">Name <span class="context-remark">(as appears on your card)</span></label>
+                        <input type="text" id="name" class="form-control">
                     </div>
-                    <div class="col-md-6">
-                        <div class="card-payment">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="card-payment__header">
-                                        Order Summary
+                    <div class="form-group">
+                        <label for="number" class="card-payment__name">Card Number</label>
+                        <input type="text" id="number" class="form-control icon-field" placeholder="1234 5678 9012 3456">
+                    </div>
+                    <div class="form-group">
+                        <label for="month" class="card-payment__name">Expiration Date</label>
+                        <select name="month" class="default-select select-conner card-payment__select-gap" id="month">
+                            <option value="">01 - January</option>
+                            <option value="">02 - February</option>
+                            <option value="">03 - March</option>
+                        </select>
+                        <select name="year" class="default-select select-conner" id="year">
+                            <option value="">2016</option>
+                            <option value="">2017</option>
+                            <option value="">2018</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="cvc" class="card-payment__name">Security Code  <span class="context-remark">(3 on back, Amex: 4 on front)</span></label>
+                        <input type="text" id="cvc" class="form-control cvc-cod-field">
+                        <div class="image">
+                            <img src="../img/icons/credit-card_back_side_3.png" alt="">
+                        </div>
+                        <div class="image">
+                            <img src="../img/icons/credit-card_back_side_4.png" alt="">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <form action="">
+                <div class="content-box shopping-cart">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="content-box__header">
+                                Order Summary
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="checkout">
+                                <div class="checkout-item">
+                                    <div class="checkout-item__name">
+                                        4 Items total:
+                                    </div>
+                                    <div class="checkout-item__price">
+                                        $ 450
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="checkout">
-                                        <div class="checkout-item">
-                                            <div class="checkout-item__name">
-                                                5 Items total:
-                                            </div>
-                                            <div class="checkout-item__price">
-                                                $ 450
-                                            </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="total-price">
+                                            Total:   $ 400
                                         </div>
-                                        <div class="checkout-item">
-                                            <div class="checkout-item__name">
-                                                Reseller Discount:
-                                            </div>
-                                            <div class="checkout-item__price">
-                                                $ (50)
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="total-price">
-                                        Total:   $ 400
-                                    </div>
-                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <a href="./receipt.html" class="btn-next btn-next--large">Pay now</a>
+                    </div>
+                </div>
+            </form>
+            <div class="payment-description">
+                <div class="payment-description__item">
+                    <div class="row">
+                        <div class="col-md-12 remark">
+                            **The transaction will be processed in a secure environment.
+                        </div>
+                    </div>
+                </div>
+                <div class="payment-description__item">
+                    <div class="row">
+                        <div class="col-md-12 image-list">
+                            <div class="image-list__item">
+                                <a href="#">
+                                    <img src="../img/credit-cards/visa.png" alt="">
+                                </a>
                             </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <a href="./receipt.html" class="btn-next">Pay now</a>
-                                </div>
+                            <div class="image-list__item">
+                                <a href="#">
+                                    <img src="../img/credit-cards/mastercard.png" alt="">
+                                </a>
                             </div>
-                            <div class="row">
-                                <div class="col-md-12 image-list">
-                                    <div class="image-list__item image-list__item--large">
-                                        <a href="#">
-                                            <img src="../img/credit-cards/Norton.png" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-md-12 remark">
-                                    **The transaction will be processed in a secure environment.
-                                </div>
+                            <div class="image-list__item">
+                                <a href="#">
+                                    <img src="../img/credit-cards/discover.png" alt="">
+                                </a>
+                            </div>
+
+                            <div class="image-list__item">
+                                <a href="#">
+                                    <img src="../img/credit-cards/amex.png" alt="">
+                                </a>
+                            </div>
+                            <div class="image-list__item">
+                                <a href="#">
+                                    <img src="../img/credit-cards/diners-club.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="payment-description__item">
+                    <div class="row">
+                        <div class="col-md-12 image-list ">
+                            <div class="image-list__item image-list__item--large">
+                                <a href="#">
+                                    <img src="../img/credit-cards/Norton.png" alt="">
+                                </a>
+                            </div>
+                            <div class="image-list__item image-list__item--large">
+                                <a href="#">
+                                    <img src="../img/credit-cards/Truste.png" alt="">
+                                </a>
                             </div>
                         </div>
                     </div>

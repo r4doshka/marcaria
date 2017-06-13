@@ -3028,7 +3028,7 @@ second site
   display: none;
   width: 170px;
   position: absolute;
-  top: 57px;
+  top: 55px;
   left: 0;
   right: 0;
   z-index: 10;
@@ -3989,6 +3989,8 @@ user login  start
   .btn-next.sign-up{
     display: block;
     width: 200px;
+    padding: 10px 0;
+    font-size: 26px;
     margin: auto;
     float: none;
     background: #3d8af7;
@@ -4031,14 +4033,15 @@ user login  start
     }
   }
 
+  .form-icon{
+    position: absolute;
+    top: 8px;
+    right: 5px;
+  }
+
   .login-form-error{
     svg{
       fill:#ff3823;
-    }
-    .form-icon{
-      position: absolute;
-      top: 8px;
-      right: 5px;
     }
     .form-control{
       &::-webkit-input-placeholder {color:#ff3823;}
@@ -4057,11 +4060,10 @@ user login  start
   }
 
   .action-button{
-    width: 100%;
-    height: 40px;
+    padding: 10px 40px;
     border: none;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 26px;
     background: #0d58cf;
     -webkit-box-shadow: 0 0 3px 0 rgba(0,0,0,0.75);
     -moz-box-shadow: 0 0 3px 0 rgba(0,0,0,0.75);
@@ -4502,6 +4504,7 @@ domain select  start
     float: left;
   }
   &.btn-next--large{
+    font-size: 22px;
     padding: 14px 60px;
   }
   &.btn-next--live-chat{
@@ -4811,7 +4814,7 @@ domain configurations  start
 
 .default-select{
   max-width: 100%;
-  padding: 3px;
+  padding: 5px;
   color: #01309a;
   border:1px solid #3359ae;
   border-radius: 5px;
@@ -4928,6 +4931,7 @@ domain configurations  start
 
 .error-description{
   display: block;
+  margin: 5px 0 0;
   font-size: 16px;
   color: #e61610;
   &.error-description--image-load{
@@ -4946,9 +4950,13 @@ domain configurations  start
 .validation-error{
   border-color: #e61610 !important;
   color: #e61610 !important;
+  &.select-conner{
+    background-image: url('../img/icons/select-corner-red.png');
+  }
   &:focus,
   &:active{
     outline: none;
+    box-shadow: none;
   }
 }
 .error-description__term-error{
@@ -5303,6 +5311,30 @@ domain configurations  start
 .form-control-group{
   margin-top: 30px;
 }
+.form-control__checked{
+  position: relative;
+  display: inline-block;
+  &:after{
+    content: "\f00c";
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    margin-top: -10px;
+    font-size: 20px;
+    color: #999999;
+  }
+  &.form-control__checked--error{
+    &:after{
+      color: #e61610;
+    }
+  }
+}
+
 
 .payments-options{
   display: flex;
@@ -5336,6 +5368,10 @@ domain configurations  start
     margin-right: 5px;
     &.image-list__item--small{
       width: 40px;
+    }
+    &.image-list__item--large{
+      width: 120px;
+      margin-top: 50px;
     }
   }
 
@@ -5423,16 +5459,14 @@ card-payment  start
 }
 
 .card-payment{
-  padding: 0 80px 0 50px;
-  margin: 40px 0 70px;
-  border-right: 1px solid #c0c0c0;
+  padding: 40px 80px 20px 50px;
   .card-payment__name{
     display: block;
     color: #0c59cf;
     font-size: 23px;
   }
   .icon-field{
-    width: 80%;
+    width: 300px;
   }
   .form-group{
     margin-bottom: 25px;
@@ -5445,6 +5479,10 @@ card-payment  start
   .cvc-cod-field{
     width: 100px;
     display: inline-block;
+  }
+  .card-payment__select-gap{
+    margin-right: 20px;
+
   }
   .checkout{
     margin: 10px 0 10px 0 ;
@@ -5495,10 +5533,7 @@ card-payment  start
       font-size: 12px;
       margin: 10px 0;
     }
-    .image-list__item--large{
-      width: 120px;
-      margin-top: 50px;
-    }
+
   }
   .image-list__item{
     width: 40px;
@@ -5990,9 +6025,19 @@ card-payment  end
       width: 100px;
     }
   }
-
   .btn-next{
     margin: 40px 0 0 0;
+  }
+
+  *::-webkit-input-placeholder {color:#021f54;}
+  *::-moz-placeholder          {color:#021f54;}
+  *:-moz-placeholder           {color:#021f54;}
+  *:-ms-input-placeholder      {color:#021f54;}
+
+  &.sign-up-form__dark{
+    .form-control{
+      color: #021f54;
+      }
   }
 }
 
@@ -6165,6 +6210,9 @@ card-payment  end
 }
 .justify-start{
   justify-content: flex-start;
+}
+.justify-end{
+  justify-content: flex-end;
 }
 .align-items-middle{
   align-items: center;
@@ -6844,7 +6892,8 @@ Trademarks start
   background: url(../img/icons/select-conner.png) no-repeat;
   background-position-x: 100%;
   background-size: contain;
-  padding:0 26px 0 5px;
+  padding-right: 30px;
+  padding-left: 5px;
 }
 
 /*============
@@ -7872,6 +7921,26 @@ animate loader end
   }
   .order-list__item--price{
 
+  }
+}
+
+.payment-description{
+  margin-top: 60px;
+  .payment-description__item{
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .remark{
+    font-size: 12px;
+  }
+  .image-list{
+    .image-list__item{
+      width: 45px;
+      &.image-list__item--large{
+        width: 120px;
+        margin-top: 0;
+      }
+    }
   }
 }
 
